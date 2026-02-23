@@ -1,13 +1,24 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Briefing Spec",
-  "description": "Schema for user briefing.yaml files",
+  "description": "Schema for merged briefing configs (after extends resolution)",
   "type": "object",
   "required": ["version", "delivery"],
   "properties": {
     "version": {
       "type": "integer",
       "enum": [1]
+    },
+    "extends": {
+      "type": "string",
+      "description": "Name of a shared briefing definition in briefings/<name>.yaml"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name for the briefing"
+    },
+    "description": {
+      "type": "string"
     },
     "user": {
       "type": "object",
@@ -69,7 +80,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["type", "label"],
+        "required": ["type"],
         "properties": {
           "type": {
             "type": "string",
@@ -89,21 +100,7 @@
           },
           "league": { "type": "string" },
           "team": { "type": "string" }
-        },
-        "allOf": [
-          {
-            "if": { "properties": { "type": { "const": "weather" } } },
-            "then": { "required": ["location"] }
-          },
-          {
-            "if": { "properties": { "type": { "const": "stocks" } } },
-            "then": { "required": ["tickers"] }
-          },
-          {
-            "if": { "properties": { "type": { "const": "sports" } } },
-            "then": { "required": ["league", "team"] }
-          }
-        ]
+        }
       }
     },
     "filters": {
@@ -127,6 +124,7 @@
     "format": {
       "type": "object",
       "properties": {
+        "title": { "type": "string" },
         "max_items": {
           "type": "integer",
           "minimum": 1,
@@ -143,6 +141,11 @@
           "type": "string",
           "enum": ["concise", "detailed", "accessible"],
           "default": "concise"
+        },
+        "theme": {
+          "type": "string",
+          "enum": ["dashboard", "print"],
+          "default": "dashboard"
         }
       }
     },

@@ -1,8 +1,8 @@
-version: 1
+# Shared briefing definition: Silent Reflux
+# Subscribe via: extends: silent-reflux
 
-user:
-  id: silent-reflux-weekly
-  name: Silent Reflux Weekly
+name: Silent Reflux
+description: LPR research, diet strategies, GERD treatment, throat symptom management
 
 topics:
   - name: Silent reflux / LPR
@@ -30,7 +30,4 @@ format:
   max_items: 15
   summary_items: 3
   style: accessible
-
-delivery:
-  time: "08:00"
-  timezone: America/New_York
+  theme: print

@@ -59,6 +59,14 @@ rss:
     section: Blogs
     notes: Broad tech, but strong AI coverage with more depth than TC.
 
+  - name: AI Daily Brief
+    url: https://news.google.com/rss/search?q=site:aidailybrief.beehiiv.com&hl=en-US&gl=US&ceid=US:en
+    section: Newsletters
+    notes: >
+      Nathaniel Whittemore's AI news briefing. Broad AI coverage (policy,
+      products, industry) — not engineering-specific, so relies on keyword
+      filtering. Via Google News proxy (beehiiv RSS is paywalled).
+
 # ---------------------------------------------------------------------------
 # Hacker News — via Algolia search API
 # ---------------------------------------------------------------------------
@@ -127,42 +135,56 @@ reddit:
     - programming
 
 # ---------------------------------------------------------------------------
-# Twitter/X — via Nitter RSS (with instance fallback)
+# Twitter/X — hybrid: Nitter RSS for accounts, free API for search
 # ---------------------------------------------------------------------------
 twitter:
-  # Nitter instances to try in order. These frequently go down;
-  # the collector tries each until one works.
+  # Nitter instances to try in order (confirmed working Feb 2026).
   nitter_instances:
+    - xcancel.com
     - nitter.poast.org
-    - nitter.privacydev.net
-    - nitter.net
-    - nitter.cz
-    - nitter.unixfox.eu
-    - nitter.1d4.us
-    - nitter.kavin.rocks
-    - nitter.namazso.eu
-    - nitter.hu
-    - nitter.it
+    - nitter.privacyredirect.com
+    - nitter.catsarch.com
+    - nitter.tiekoetter.com
 
   accounts:
-    # AI companies & products
-    - AnthropicAI
-    - OpenAI
-    - GoogleDeepMind
-    - cursor_ai
-    - github
+    # Bleeding-edge practitioners
+    - simonw            # Simon Willison — LLM tools, datasette
+    - karpathy          # Andrej Karpathy — AI education, builds things
+    - mitsuhiko         # Armin Ronacher — Flask, Rye, Sentry
+    - bcherny           # Boris Cherny — created Claude Code
+    - searls            # Justin Searls — Test Double, Ruby, honest takes
 
-    # AI engineering thought leaders
-    - karpathy          # Andrej Karpathy
-    - GergelyOrosz      # Engineering leadership
-    - swyx              # AI/dev community
-    - simonw            # Simon Willison — LLM tools
+    # AI toolmakers
+    - mitchellh         # Mitchell Hashimoto — Ghostty, AI adoption writing
+    - rauchg            # Guillermo Rauch — Vercel, v0
+    - swyx              # Shawn Wang — Latent Space, AI Engineer
+    - antirez           # Salvatore Sanfilippo — Redis creator
+
+  # Free-tier API search (1,500 reads/month, 1 req per 15 min).
+  # Keep this to 1 query — use OR to cover breadth, min_faves to
+  # surface only high-engagement tweets worth reading.
+  search_queries:
+    - "AI software engineering"
+  min_faves: 50
+  min_retweets: 10
 
 # ---------------------------------------------------------------------------
-# Bluesky — public RSS feeds (more reliable than Nitter)
+# Bluesky — native RSS feeds (reliable, no auth needed)
+#
+# Primary social media source. Same people as the Twitter list above;
+# Nitter is unreliable so Bluesky is the workhorse for now.
 # ---------------------------------------------------------------------------
 bluesky:
   accounts:
-    - simonwillison.net   # Simon Willison
-    - karpathy.ai         # Andrej Karpathy
-    - swyx.io             # swyx
+    # Active on Bluesky (posting in Feb 2026)
+    - simonwillison.net     # Simon Willison — daily posts, very high signal
+    - mitsuhiko.at          # Armin Ronacher — Flask, Rye, Sentry
+    - searls.bsky.social    # Justin Searls — Test Double, Ruby
+    - antirez.bsky.social   # Salvatore Sanfilippo — Redis creator
+
+    # On Bluesky but inactive (kept for when they return)
+    - karpathy.bsky.social  # Andrej Karpathy — inactive since 2023
+    - bcherny.bsky.social   # Boris Cherny — inactive since Jun 2025
+    - rauchg.bsky.social    # Guillermo Rauch — inactive since Nov 2024
+    - swyx.io               # Shawn Wang — inactive since Oct 2025
+    - mitchellh.com         # Mitchell Hashimoto

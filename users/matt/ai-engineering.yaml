@@ -1,0 +1,12 @@
+extends: ai-engineering
+
+blocks:
+  - type: weather
+    label: Weather
+    location: "Seattle, WA"
+    days: 7
+    highlight: sunny
+
+delivery:
+  time: "07:00"
+  timezone: America/New_York

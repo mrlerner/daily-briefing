@@ -8,14 +8,16 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-# Add project root to path for imports
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from config import load_user_config, discover_users, PROJECT_ROOT as ROOT
+from config import load_user_briefing, discover_user_briefings, PROJECT_ROOT as ROOT
 from fetchers.rss import fetch_feed
 from fetchers.hn import fetch_hn
 from fetchers.reddit import fetch_reddit
+from fetchers.nitter import fetch_nitter
+from fetchers.twitter import fetch_twitter_search
+from fetchers.bluesky import fetch_bluesky
 from blocks.weather import fetch_weather
 from normalize import normalize_item, deduplicate
 from rank import score_items, filter_items, rank_and_cap
@@ -35,7 +37,6 @@ def fetch_all_sources(config: dict) -> list[dict]:
     """Fetch items from all configured sources (inline + catalog)."""
     raw_items = []
 
-    # Inline RSS sources
     for source in config.get("sources", []):
         if source.get("type") == "rss":
             try:
@@ -44,10 +45,8 @@ def fetch_all_sources(config: dict) -> list[dict]:
             except Exception as e:
                 logger.warning("Failed to fetch source '%s': %s", source.get("name"), e)
 
-    # Catalog sources
     catalog = config.get("_catalog")
     if catalog:
-        # RSS feeds from catalog
         for rss_source in catalog.get("rss", []):
             try:
                 items = fetch_feed(rss_source)
@@ -55,7 +54,6 @@ def fetch_all_sources(config: dict) -> list[dict]:
             except Exception as e:
                 logger.warning("Failed to fetch catalog RSS '%s': %s", rss_source.get("name"), e)
 
-        # Hacker News
         if "hn" in catalog:
             try:
                 freshness = config.get("filters", {}).get("max_age_hours", 36)
@@ -64,7 +62,6 @@ def fetch_all_sources(config: dict) -> list[dict]:
             except Exception as e:
                 logger.warning("Failed to fetch HN: %s", e)
 
-        # Reddit
         if "reddit" in catalog:
             try:
                 freshness = config.get("filters", {}).get("max_age_hours", 36)
@@ -72,6 +69,26 @@ def fetch_all_sources(config: dict) -> list[dict]:
                 raw_items.extend(reddit_items)
             except Exception as e:
                 logger.warning("Failed to fetch Reddit: %s", e)
+
+        if "twitter" in catalog:
+            try:
+                nitter_items = fetch_nitter(catalog["twitter"])
+                raw_items.extend(nitter_items)
+            except Exception as e:
+                logger.warning("Failed to fetch Nitter: %s", e)
+
+            try:
+                api_items = fetch_twitter_search(catalog["twitter"])
+                raw_items.extend(api_items)
+            except Exception as e:
+                logger.warning("Failed to fetch Twitter API: %s", e)
+
+        if "bluesky" in catalog:
+            try:
+                bsky_items = fetch_bluesky(catalog["bluesky"])
+                raw_items.extend(bsky_items)
+            except Exception as e:
+                logger.warning("Failed to fetch Bluesky: %s", e)
 
     return raw_items
 
@@ -93,32 +110,32 @@ def fetch_all_blocks(config: dict) -> list[dict]:
     return blocks
 
 
-def build_user(user_id: str) -> dict:
-    """Build briefing for a single user. Returns build summary."""
+def build_briefing(user_id: str, briefing_file: str) -> dict:
+    """Build a single briefing for a user. Returns build summary."""
+    briefing_name = briefing_file.replace(".yaml", "")
+    label = f"{user_id}/{briefing_name}"
+
     logger.info("=" * 50)
-    logger.info("Building briefing for: %s", user_id)
+    logger.info("Building: %s", label)
     logger.info("=" * 50)
 
     start = datetime.now()
-    result = {"user_id": user_id, "success": False, "error": None}
+    result = {"user_id": user_id, "briefing": briefing_name, "success": False, "error": None}
 
     try:
-        config = load_user_config(user_id)
+        config = load_user_briefing(user_id, briefing_file)
     except Exception as e:
-        logger.error("Failed to load config for '%s': %s", user_id, e)
+        logger.error("Failed to load config for '%s': %s", label, e)
         result["error"] = str(e)
         return result
 
-    # Fetch sources
     raw_items = fetch_all_sources(config)
     logger.info("Fetched %d raw items from all sources", len(raw_items))
 
-    # Normalize and deduplicate
     items = [normalize_item(item) for item in raw_items]
     items = deduplicate(items)
     logger.info("After dedup: %d items", len(items))
 
-    # Score and filter
     topics = config.get("topics", [])
     filters = config.get("filters", {})
     format_config = config.get("format", {})
@@ -131,25 +148,21 @@ def build_user(user_id: str) -> dict:
     items = rank_and_cap(items, max_items=max_items)
     logger.info("After ranking: %d items", len(items))
 
-    # Fetch blocks
     blocks = fetch_all_blocks(config)
     logger.info("Fetched %d blocks", len(blocks))
 
-    # Determine output paths
+    # Output to out/<user_id>/<briefing_name>/
     date_str = datetime.now().strftime("%Y-%m-%d")
-    user_out = OUT_DIR / user_id
-    html_path = user_out / f"{date_str}.html"
-    json_path = user_out / f"{date_str}.json"
-    summary_path = user_out / f"{date_str}.summary.txt"
-    index_path = user_out / "index.html"
+    briefing_out = OUT_DIR / user_id / briefing_name
+    html_path = briefing_out / f"{date_str}.html"
+    json_path = briefing_out / f"{date_str}.json"
+    summary_path = briefing_out / f"{date_str}.summary.txt"
 
-    # Render outputs
     render_html(items, blocks, config, html_path)
     render_json(items, blocks, json_path)
     render_summary(items, blocks, config, summary_path)
 
-    # Write index.html redirect
-    _write_index_redirect(index_path, f"{date_str}.html")
+    _write_index_redirect(briefing_out / "index.html", f"{date_str}.html")
 
     elapsed = (datetime.now() - start).total_seconds()
     result["success"] = True
@@ -157,27 +170,41 @@ def build_user(user_id: str) -> dict:
     result["items_after_filter"] = len(items)
     result["blocks"] = len(blocks)
     result["elapsed_seconds"] = round(elapsed, 1)
-    result["output_html"] = str(html_path)
+    result["display_name"] = config.get("_briefing_display_name", briefing_name)
 
     logger.info("Built %s in %.1fs — %d items, %d blocks",
-                user_id, elapsed, len(items), len(blocks))
+                label, elapsed, len(items), len(blocks))
     return result
 
 
 def _write_root_index(results: list[dict]) -> None:
-    """Write a root index.html listing all user briefings."""
+    """Write root index.html listing all users and their briefings."""
     now = datetime.now()
-    date_str = now.strftime("%Y-%m-%d")
 
-    user_links = []
+    # Group results by user
+    by_user: dict[str, list[dict]] = {}
     for r in results:
-        if r.get("success"):
-            uid = r["user_id"]
-            user_links.append(
-                f'<li><a href="{uid}/index.html">{uid}</a> '
-                f'— {r.get("items_after_filter", 0)} items, '
-                f'{r.get("blocks", 0)} blocks</li>'
-            )
+        uid = r["user_id"]
+        if uid not in by_user:
+            by_user[uid] = []
+        by_user[uid].append(r)
+
+    user_sections = []
+    for uid, briefings in sorted(by_user.items()):
+        links = []
+        for b in briefings:
+            if b.get("success"):
+                bname = b["briefing"]
+                display = b.get("display_name", bname)
+                links.append(
+                    f'<li><a href="{uid}/{bname}/index.html">{display}</a> '
+                    f'— {b.get("items_after_filter", 0)} items</li>'
+                )
+            else:
+                links.append(f'<li>{b["briefing"]}: build failed</li>')
+        user_sections.append(
+            f'<h2>{uid}</h2><ul>{"".join(links)}</ul>'
+        )
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -186,19 +213,18 @@ def _write_root_index(results: list[dict]) -> None:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Briefings</title>
     <style>
-        body {{ font-family: -apple-system, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 16px; color: #1e293b; }}
-        h1 {{ color: #0f172a; }}
-        a {{ color: #059669; }}
-        li {{ margin: 8px 0; }}
-        .date {{ color: #64748b; font-size: 14px; }}
+        body {{ font-family: Georgia, serif; max-width: 620px; margin: 48px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.6; }}
+        h1 {{ font-size: 24px; margin-bottom: 4px; }}
+        h2 {{ font-size: 16px; text-transform: uppercase; letter-spacing: 1px; color: #666; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; margin-top: 32px; }}
+        a {{ color: #1a1a1a; }}
+        li {{ margin: 6px 0; }}
+        .date {{ color: #888; font-size: 14px; font-style: italic; }}
     </style>
 </head>
 <body>
     <h1>Daily Briefings</h1>
     <p class="date">Built {now.strftime('%B %d, %Y at %H:%M')}</p>
-    <ul>
-        {''.join(user_links) if user_links else '<li>No briefings built yet.</li>'}
-    </ul>
+    {''.join(user_sections) if user_sections else '<p>No briefings built yet.</p>'}
 </body>
 </html>"""
 
@@ -206,6 +232,43 @@ def _write_root_index(results: list[dict]) -> None:
     index_path.parent.mkdir(parents=True, exist_ok=True)
     index_path.write_text(html, encoding="utf-8")
     logger.info("Wrote root index: %s", index_path)
+
+
+def _write_user_index(user_id: str, briefings: list[dict]) -> None:
+    """Write per-user index listing their briefings."""
+    links = []
+    for b in briefings:
+        if b.get("success"):
+            bname = b["briefing"]
+            display = b.get("display_name", bname)
+            links.append(
+                f'<li><a href="{bname}/index.html">{display}</a> '
+                f'— {b.get("items_after_filter", 0)} items</li>'
+            )
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{user_id}'s Briefings</title>
+    <style>
+        body {{ font-family: Georgia, serif; max-width: 620px; margin: 48px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.6; }}
+        h1 {{ font-size: 24px; }}
+        a {{ color: #1a1a1a; }}
+        li {{ margin: 8px 0; font-size: 18px; }}
+    </style>
+</head>
+<body>
+    <h1>{user_id.title()}'s Briefings</h1>
+    <ul>{''.join(links)}</ul>
+    <p><a href="../index.html">&larr; All users</a></p>
+</body>
+</html>"""
+
+    index_path = OUT_DIR / user_id / "index.html"
+    index_path.parent.mkdir(parents=True, exist_ok=True)
+    index_path.write_text(html, encoding="utf-8")
 
 
 def _write_index_redirect(index_path: Path, target_filename: str) -> None:
@@ -227,37 +290,56 @@ def _write_index_redirect(index_path: Path, target_filename: str) -> None:
 def main():
     parser = argparse.ArgumentParser(description="Build daily briefings")
     parser.add_argument("--user", help="Build for a specific user only")
+    parser.add_argument("--briefing", help="Build a specific briefing only (requires --user)")
     args = parser.parse_args()
 
     start = datetime.now()
 
-    if args.user:
-        users = [args.user]
+    if args.user and args.briefing:
+        pairs = [(args.user, f"{args.briefing}.yaml")]
+    elif args.user:
+        all_pairs = discover_user_briefings()
+        pairs = [(u, b) for u, b in all_pairs if u == args.user]
     else:
-        users = discover_users()
+        pairs = discover_user_briefings()
 
-    if not users:
-        logger.error("No users found in users/ directory")
+    if not pairs:
+        logger.error("No briefings found")
         sys.exit(1)
 
-    logger.info("Building briefings for %d user(s): %s", len(users), ", ".join(users))
+    logger.info("Building %d briefing(s): %s",
+                len(pairs),
+                ", ".join(f"{u}/{b.replace('.yaml','')}" for u, b in pairs))
 
     results = []
-    for user_id in users:
+    for user_id, briefing_file in pairs:
         try:
-            result = build_user(user_id)
+            result = build_briefing(user_id, briefing_file)
             results.append(result)
         except Exception as e:
-            logger.error("Build failed for '%s': %s", user_id, e)
-            results.append({"user_id": user_id, "success": False, "error": str(e)})
+            bname = briefing_file.replace(".yaml", "")
+            logger.error("Build failed for '%s/%s': %s", user_id, bname, e)
+            results.append({
+                "user_id": user_id, "briefing": bname,
+                "success": False, "error": str(e)
+            })
 
-    # Write root index page listing all users
+    # Write index pages
     _write_root_index(results)
+
+    by_user: dict[str, list[dict]] = {}
+    for r in results:
+        uid = r["user_id"]
+        if uid not in by_user:
+            by_user[uid] = []
+        by_user[uid].append(r)
+    for uid, user_results in by_user.items():
+        _write_user_index(uid, user_results)
 
     # Write build log
     build_log = {
         "timestamp": datetime.now().isoformat(),
-        "users_built": len(results),
+        "briefings_built": len(results),
         "successful": sum(1 for r in results if r.get("success")),
         "failed": sum(1 for r in results if not r.get("success")),
         "results": results,
@@ -274,13 +356,13 @@ def main():
     print("Build Summary")
     print("=" * 50)
     for r in results:
-        status = "✓" if r.get("success") else "✗"
-        user = r.get("user_id", "?")
+        status = "\u2713" if r.get("success") else "\u2717"
+        label = f"{r['user_id']}/{r['briefing']}"
         if r.get("success"):
-            print(f"  {status} {user}: {r.get('items_after_filter', 0)} items, "
+            print(f"  {status} {label}: {r.get('items_after_filter', 0)} items, "
                   f"{r.get('blocks', 0)} blocks ({r.get('elapsed_seconds', 0)}s)")
         else:
-            print(f"  {status} {user}: {r.get('error', 'unknown error')}")
+            print(f"  {status} {label}: {r.get('error', 'unknown error')}")
 
     elapsed = (datetime.now() - start).total_seconds()
     print(f"\nTotal: {elapsed:.1f}s")

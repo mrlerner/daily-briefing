@@ -245,3 +245,9 @@ The Daily Briefing Builder:
 **The nightly build is the production layer.**
 
 Everything is controlled through editable briefing specs — not code.
+
+---
+
+## 6. Related Projects
+
+- **[Signex](https://github.com/zhiyuzi/Signex)** — A personal intelligence agent powered by Claude Code. Users describe what to watch, and it collects, analyzes, and learns using extensible sensors (Hacker News, GitHub Trending, Reddit, RSS, search APIs, etc.) and lenses (deep insight, flash brief, pro/con, timeline). Runs entirely inside Claude Code with SQLite storage and a feedback loop for continuous refinement. Similar in spirit to Daily Briefing Builder but oriented around signal monitoring and analysis rather than curated daily delivery.

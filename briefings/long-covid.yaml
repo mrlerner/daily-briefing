@@ -1,8 +1,8 @@
-version: 1
+# Shared briefing definition: Long COVID
+# Subscribe via: extends: long-covid
 
-cohort:
-  id: trial-of-one-long-covid
-  name: Trial of One — Long COVID
+name: Long COVID
+description: Treatment updates, clinical trials, pacing strategies, ME/CFS research
 
 topics:
   - name: Long COVID treatment
@@ -30,7 +30,4 @@ format:
   max_items: 15
   summary_items: 3
   style: accessible
-
-delivery:
-  time: "08:00"
-  timezone: America/New_York
+  theme: print

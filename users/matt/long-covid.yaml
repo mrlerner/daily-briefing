@@ -1,0 +1,11 @@
+extends: long-covid
+
+blocks:
+  - type: weather
+    label: Weather
+    location: "Seattle, WA"
+    days: 3
+
+delivery:
+  time: "07:00"
+  timezone: America/New_York

@@ -155,9 +155,15 @@ def render_html(
     template = env.get_template(template_name)
 
     now = datetime.now()
-    user = user_config.get("user", user_config.get("cohort", {}))
-    user_name = user.get("name", "User")
-    briefing_title = user_config.get("format", {}).get("title") or f"{user_name}\u2019s Briefing"
+    format_title = user_config.get("format", {}).get("title", "")
+    display_name = user_config.get("_briefing_display_name", "")
+    if format_title:
+        briefing_title = format_title
+    elif display_name:
+        briefing_title = display_name
+    else:
+        user = user_config.get("user", user_config.get("cohort", {}))
+        briefing_title = f"{user.get('name', 'User')}\u2019s Briefing"
 
     sections = build_sections(items)
 
@@ -213,8 +219,9 @@ def render_summary(
     if not briefing_url:
         user = user_config.get("user", user_config.get("cohort", {}))
         user_id = user.get("id", "unknown")
+        briefing_name = user_config.get("_briefing_name", "briefing")
         date_str = datetime.now().strftime("%Y-%m-%d")
-        briefing_url = f"https://mrlerner.github.io/daily-briefing/{user_id}/{date_str}.html"
+        briefing_url = f"https://mrlerner.github.io/daily-briefing/{user_id}/{briefing_name}/{date_str}.html"
 
     summary = template.render(
         blocks=blocks,

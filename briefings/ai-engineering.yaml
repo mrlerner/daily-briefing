@@ -1,8 +1,8 @@
-version: 1
+# Shared briefing definition: AI Engineering
+# Subscribe via: extends: ai-engineering
 
-user:
-  id: matt
-  name: Matt
+name: AI Engineering
+description: AI/ML engineering news, LLM tooling, coding assistants
 
 topics:
   - name: AI engineering
@@ -20,13 +20,6 @@ topics:
 
 sources_from: ai-engineering
 
-blocks:
-  - type: weather
-    label: Weather
-    location: "Seattle, WA"
-    days: 7
-    highlight: sunny
-
 filters:
   exclude_keywords: ["crypto", "NFT", "blockchain", "web3"]
   max_age_hours: 36
@@ -37,7 +30,3 @@ format:
   summary_items: 4
   style: concise
   theme: print
-
-delivery:
-  time: "07:00"
-  timezone: America/New_York

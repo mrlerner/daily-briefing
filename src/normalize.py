@@ -29,6 +29,8 @@ def normalize_item(raw: dict) -> dict:
         "author": raw.get("author"),
         "subreddit": raw.get("subreddit"),
         "hn_url": raw.get("hn_url"),
+        "likes": raw.get("likes"),
+        "retweets": raw.get("retweets"),
         "section": raw.get("section"),
         # Ranking fields (set later by rank.py)
         "topics_matched": [],
