@@ -1,0 +1,11 @@
+{%- for block in blocks %}
+{%- if block.summary_line %}
+{{ block.summary_line }}
+{% endif %}
+{%- endfor %}
+Today's briefing:
+{%- for item in top_items %}
+{{ loop.index }}. {{ item.title }}
+{%- endfor %}
+
+Full briefing: {{ briefing_url }}

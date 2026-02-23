@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Briefing Spec",
+  "description": "Schema for user briefing.yaml files",
+  "type": "object",
+  "required": ["version", "delivery"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "enum": [1]
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+        "name": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    },
+    "cohort": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+        "name": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "keywords"],
+        "properties": {
+          "name": { "type": "string" },
+          "keywords": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["high", "medium", "low"],
+            "default": "medium"
+          }
+        }
+      }
+    },
+    "sources_from": {
+      "type": "string",
+      "description": "Name of a curated source catalog in sources/<name>.yaml"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "url"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["rss", "api", "web"]
+          },
+          "url": { "type": "string", "format": "uri" },
+          "params": { "type": "object" }
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "label"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["weather", "stocks", "sports"]
+          },
+          "label": { "type": "string" },
+          "location": { "type": "string" },
+          "days": { "type": "integer", "minimum": 1, "maximum": 14 },
+          "highlight": { "type": "string" },
+          "tickers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "show": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "league": { "type": "string" },
+          "team": { "type": "string" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "type": { "const": "weather" } } },
+            "then": { "required": ["location"] }
+          },
+          {
+            "if": { "properties": { "type": { "const": "stocks" } } },
+            "then": { "required": ["tickers"] }
+          },
+          {
+            "if": { "properties": { "type": { "const": "sports" } } },
+            "then": { "required": ["league", "team"] }
+          }
+        ]
+      }
+    },
+    "filters": {
+      "type": "object",
+      "properties": {
+        "exclude_keywords": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "max_age_hours": {
+          "type": "number",
+          "minimum": 1
+        },
+        "min_relevance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "format": {
+      "type": "object",
+      "properties": {
+        "max_items": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 15
+        },
+        "summary_items": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 4
+        },
+        "style": {
+          "type": "string",
+          "enum": ["concise", "detailed", "accessible"],
+          "default": "concise"
+        }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "required": ["time", "timezone"],
+      "properties": {
+        "time": {
+          "type": "string",
+          "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+        },
+        "timezone": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "anyOf": [
+    { "required": ["sources"] },
+    { "required": ["sources_from"] },
+    { "required": ["blocks"] }
+  ]
+}

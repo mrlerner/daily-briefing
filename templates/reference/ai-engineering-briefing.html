@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering Briefing - February 22, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #1e293b;
+            margin: 0;
+            padding: 24px 16px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 32px 0;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: #64748b;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* TOC */
+        .toc {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+        .toc h2 {
+            margin: 0 0 16px 0;
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .toc-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .toc-icon {
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
+        .toc-link {
+            color: #059669;
+            text-decoration: none;
+            flex-grow: 1;
+            font-weight: 500;
+        }
+        .toc-link:hover { color: #047857; text-decoration: underline; }
+        .toc-count {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 0;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            z-index: 10;
+        }
+        .section-icon { font-size: 22px; }
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+            color: #0f172a;
+        }
+        .section-count {
+            color: #64748b;
+            font-size: 13px;
+            margin-left: auto;
+            font-weight: 500;
+        }
+
+        /* Cards */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            border-color: #059669;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Post specific */
+        .post-rank {
+            background: #d1fae5;
+            color: #047857;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 12px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .post-title {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .post-title a {
+            color: #059669;
+            text-decoration: none;
+        }
+        .post-title a:hover { color: #047857; text-decoration: underline; }
+        .post-meta {
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .post-meta a {
+            color: #059669;
+            text-decoration: none;
+        }
+        .post-meta a:hover { color: #047857; }
+        .post-description {
+            color: #64748b;
+            font-size: 13px;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .subreddit {
+            color: #059669;
+            font-weight: 600;
+        }
+        .news-source {
+            color: #059669;
+            font-weight: 600;
+        }
+
+        /* Back to top */
+        .back-to-top {
+            text-align: center;
+            padding: 24px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 32px;
+        }
+        .back-to-top a {
+            color: #059669;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-to-top a:hover { color: #047857; }
+
+        /* Footer branding */
+        .footer-brand {
+            text-align: center;
+            padding-top: 16px;
+            color: #64748b;
+            font-size: 12px;
+        }
+        .footer-brand a {
+            color: #059669;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-brand a:hover { color: #047857; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering Briefing</h1>
+            <div class="subtitle">February 22, 2026 at 06:00</div>
+        </header>
+
+        <nav class="toc">
+            <h2>Contents</h2>
+            <div class="toc-list">
+                <div class="toc-item">
+                    <span class="toc-icon">📰</span>
+                    <a href="#wsj" class="toc-link">Wall Street Journal</a>
+                    <span class="toc-count">5 headlines</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-icon">🟠</span>
+                    <a href="#hackernews" class="toc-link">Hacker News</a>
+                    <span class="toc-count">10 posts</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-icon">🔵</span>
+                    <a href="#reddit" class="toc-link">Reddit</a>
+                    <span class="toc-count">10 posts</span>
+                </div>
+                <div class="toc-item">
+                    <span class="toc-icon">💚</span>
+                    <a href="#techcrunch" class="toc-link">TechCrunch</a>
+                    <span class="toc-count">5 headlines</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Weather card: injected after TOC, before first section -->
+        <div class="card" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; margin-bottom: 20px; padding: 16px;">
+            <div style="margin-bottom: 12px; font-weight: 600; color: #166534; font-size: 16px;">☀️ Upcoming Sunny Days in Seattle</div>
+            <div style="font-size: 14px; line-height: 2; color: #334155;">
+                <div>• <strong style="color: #0f172a;">Wednesday, Feb 25</strong>: Sunny (39-51°F)</div>
+                <div>• <strong style="color: #0f172a;">Thursday, Feb 26</strong>: Partly cloudy (42-55°F)</div>
+            </div>
+            <div style="margin-top: 12px; font-size: 13px; color: #64748b; font-weight: 500;">Perfect days for outdoor activities!</div>
+        </div>
+
+        <!-- Section 1: Wall Street Journal (top 5 headlines) -->
+        <section class="section" id="wsj">
+            <div class="section-header">
+                <span class="section-icon">📰</span>
+                <h2 class="section-title">Wall Street Journal</h2>
+                <span class="section-count">Top 5 headlines</span>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">1</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Tech Giants Race to Build AI That Can Reason Like Humans</a></div>
+                        <div class="post-meta">
+                            <span class="news-source">WSJ</span>
+                            <span>🕐 3h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">2</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">AI Coding Tools Transform Software Development at Major Banks</a></div>
+                        <div class="post-meta">
+                            <span class="news-source">WSJ</span>
+                            <span>🕐 5h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">3</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Anthropic Raises $3B as AI Startup Valuations Soar</a></div>
+                        <div class="post-meta">
+                            <span class="news-source">WSJ</span>
+                            <span>🕐 8h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Hacker News (top 10 by points) -->
+        <section class="section" id="hackernews">
+            <div class="section-header">
+                <span class="section-icon">🟠</span>
+                <h2 class="section-title">Hacker News</h2>
+                <span class="section-count">Top 10 by points</span>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">1</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Cowork: Claude Code for the rest of your work</a></div>
+                        <div class="post-meta">
+                            <span>⬆️ 1298 points</span>
+                            <span>💬 565 comments</span>
+                            <span>by adocomplete</span>
+                            <span>🕐 6h ago</span>
+                            <a href="#" target="_blank">discuss →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">2</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">How to code Claude Code in 200 lines of code</a></div>
+                        <div class="post-meta">
+                            <span>⬆️ 816 points</span>
+                            <span>💬 240 comments</span>
+                            <span>by nutellalover</span>
+                            <span>🕐 12h ago</span>
+                            <a href="#" target="_blank">discuss →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">3</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Google AI Studio is now sponsoring Tailwind CSS</a></div>
+                        <div class="post-meta">
+                            <span>⬆️ 777 points</span>
+                            <span>💬 298 comments</span>
+                            <span>by qwertyforce</span>
+                            <span>🕐 14h ago</span>
+                            <a href="#" target="_blank">discuss →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Reddit (top 10 by score) -->
+        <section class="section" id="reddit">
+            <div class="section-header">
+                <span class="section-icon">🔵</span>
+                <h2 class="section-title">Reddit</h2>
+                <span class="section-count">Top 10 by score</span>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">1</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Anthropic: AI assisted coding doesn&rsquo;t show efficiency gains and impairs developers abilities.</a></div>
+                        <div class="post-meta">
+                            <span class="subreddit">r/programming</span>
+                            <span>⬆️ 3851 points</span>
+                            <span>💬 669 comments</span>
+                            <span>by u/Gil_berth</span>
+                            <span>🕐 9h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">2</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">10 Claude Code tips from Boris, the creator of Claude Code, summarized</a></div>
+                        <div class="post-meta">
+                            <span class="subreddit">r/ClaudeAI</span>
+                            <span>⬆️ 1468 points</span>
+                            <span>💬 112 comments</span>
+                            <span>by u/yksugi</span>
+                            <span>🕐 11h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">3</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Yann LeCun: the best open models are not coming from the West</a></div>
+                        <div class="post-meta">
+                            <span class="subreddit">r/LocalLLaMA</span>
+                            <span>⬆️ 1386 points</span>
+                            <span>💬 183 comments</span>
+                            <span>by u/Nunki08</span>
+                            <span>🕐 15h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: TechCrunch (top 5 AI headlines, with descriptions) -->
+        <section class="section" id="techcrunch">
+            <div class="section-header">
+                <span class="section-icon">💚</span>
+                <h2 class="section-title">TechCrunch</h2>
+                <span class="section-count">Top 5 AI headlines</span>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">1</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Anthropic launches new enterprise tier for Claude with SOC 2 compliance</a></div>
+                        <div class="post-meta">
+                            <span class="news-source">TechCrunch</span>
+                            <span>🕐 4h ago</span>
+                        </div>
+                        <div class="post-description">Anthropic is rolling out a new enterprise plan for Claude that includes SOC 2 Type II compliance, SSO, and admin controls aimed at large organizations deploying AI across engineering teams.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: flex-start;">
+                    <div class="post-rank">2</div>
+                    <div style="flex-grow: 1;">
+                        <div class="post-title"><a href="#" target="_blank">Cursor raises $100M Series B to expand AI code editor</a></div>
+                        <div class="post-meta">
+                            <span class="news-source">TechCrunch</span>
+                            <span>🕐 7h ago</span>
+                        </div>
+                        <div class="post-description">The AI-powered code editor Cursor has raised a $100M Series B, signaling continued investor appetite for developer tools that deeply integrate large language models into the coding workflow.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="back-to-top">
+            <a href="#top">↑ Back to top</a>
+            <div class="footer-brand">
+                Generated by <a href="#">Daily Briefing Builder</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

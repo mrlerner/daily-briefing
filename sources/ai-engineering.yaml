@@ -1,0 +1,137 @@
+# Curated source catalog: AI Engineering
+#
+# Hand-validated sources for AI/ML news, developer tools, and engineering
+# leadership. Ported from the original openclaw-setup briefing system
+# (Feb 2026) and verified to produce useful signal.
+#
+# Referenced by briefing.yaml via: sources_from: ai-engineering
+
+catalog: ai-engineering
+name: AI Engineering
+description: >
+  AI/ML engineering news, LLM tooling, coding assistants, and tech leadership.
+  Covers Hacker News, Reddit, Twitter/X, Bluesky, and traditional tech news RSS.
+
+# ---------------------------------------------------------------------------
+# RSS feeds — traditional news sources
+# ---------------------------------------------------------------------------
+rss:
+  - name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    notes: High volume, broad AI coverage. Good for major launches and funding.
+
+  - name: WSJ AI (via Google News)
+    url: https://news.google.com/rss/search?q=site:wsj.com+artificial+intelligence&hl=en-US&gl=US&ceid=US:en
+    notes: WSJ's own RSS died Jan 2025. Google News proxy works reliably.
+
+  - name: WSJ Tech (via Google News)
+    url: https://news.google.com/rss/search?q=site:wsj.com+technology+business&hl=en-US&gl=US&ceid=US:en
+    notes: Broader tech/business coverage from WSJ.
+
+# ---------------------------------------------------------------------------
+# Hacker News — via Algolia search API
+# ---------------------------------------------------------------------------
+hn:
+  api: https://hn.algolia.com/api/v1/search
+  freshness_hours: 24
+  queries:
+    - "AI engineering team"
+    - "agentic development"
+    - "AI adoption engineering"
+    - "AI codebase"
+    - "AI developer productivity"
+    - "AI code review"
+    - "enterprise AI coding"
+    - "AI engineering leadership"
+    - "Claude Code"
+    - "Cursor AI"
+    - "GitHub Copilot team"
+    - "LLM coding assistant"
+
+# ---------------------------------------------------------------------------
+# Reddit — subreddit top posts + targeted searches
+# ---------------------------------------------------------------------------
+reddit:
+  freshness_hours: 24
+
+  subreddits:
+    - ExperiencedDevs
+    - programming
+    - MachineLearning
+    - LocalLLaMA
+    - ChatGPT
+    - ClaudeAI
+
+  # Keyword filter applied to top posts from each subreddit.
+  # A post's title must contain at least one of these to be included.
+  keywords:
+    - ai
+    - llm
+    - gpt
+    - claude
+    - copilot
+    - cursor
+    - coding assistant
+    - machine learning
+    - ml
+    - artificial intelligence
+    - chatgpt
+    - gemini
+    - agentic
+    - automation
+    - productivity
+
+  # Targeted search queries run against specific subreddits
+  search_queries:
+    - "AI engineering team"
+    - "AI coding assistant"
+    - "Copilot team"
+    - "Claude Code"
+    - "Cursor AI"
+    - "AI developer productivity"
+    - "LLM coding"
+    - "agentic coding"
+  search_subreddits:
+    - ExperiencedDevs
+    - programming
+
+# ---------------------------------------------------------------------------
+# Twitter/X — via Nitter RSS (with instance fallback)
+# ---------------------------------------------------------------------------
+twitter:
+  # Nitter instances to try in order. These frequently go down;
+  # the collector tries each until one works.
+  nitter_instances:
+    - nitter.poast.org
+    - nitter.privacydev.net
+    - nitter.net
+    - nitter.cz
+    - nitter.unixfox.eu
+    - nitter.1d4.us
+    - nitter.kavin.rocks
+    - nitter.namazso.eu
+    - nitter.hu
+    - nitter.it
+
+  accounts:
+    # AI companies & products
+    - AnthropicAI
+    - OpenAI
+    - GoogleDeepMind
+    - cursor_ai
+    - github
+
+    # AI engineering thought leaders
+    - karpathy          # Andrej Karpathy
+    - GergelyOrosz      # Engineering leadership
+    - swyx              # AI/dev community
+    - simonw            # Simon Willison — LLM tools
+
+# ---------------------------------------------------------------------------
+# Bluesky — public RSS feeds (more reliable than Nitter)
+# ---------------------------------------------------------------------------
+bluesky:
+  accounts:
+    - simonwillison.net   # Simon Willison
+    - karpathy.ai         # Andrej Karpathy
+    - swyx.io             # swyx
