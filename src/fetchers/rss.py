@@ -68,7 +68,7 @@ def fetch_feed(source: dict) -> list[dict]:
 
         item_id = hashlib.sha256(link.encode()).hexdigest()[:16]
 
-        items.append({
+        item = {
             "id": item_id,
             "title": title,
             "url": link,
@@ -77,7 +77,10 @@ def fetch_feed(source: dict) -> list[dict]:
             "published": published.isoformat() if published else None,
             "published_dt": published,
             "summary": summary,
-        })
+        }
+        if source.get("section"):
+            item["section"] = source["section"]
+        items.append(item)
 
     logger.info("Fetched %d items from RSS feed '%s'", len(items), name)
     return items

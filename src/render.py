@@ -13,15 +13,33 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = PROJECT_ROOT / "templates"
 
 SECTION_CONFIG = {
-    "rss": {"icon": "📰", "unit": "headlines", "sort_label": "headlines"},
     "hn": {"icon": "🟠", "unit": "posts", "sort_label": "by points"},
     "reddit": {"icon": "🔵", "unit": "posts", "sort_label": "by score"},
+    "rss": {"icon": "📰", "unit": "headlines", "sort_label": "headlines"},
 }
 
 SOURCE_DISPLAY_NAMES = {
     "hn": "Hacker News",
     "reddit": "Reddit",
 }
+
+RSS_SECTION_ORDER = ["TechCrunch", "Blogs"]
+DEFAULT_RSS_SECTION = "Blogs"
+
+
+import re as _re
+
+
+def first_sentences(text: str, n: int = 2, max_chars: int = 300) -> str:
+    """Extract the first n sentences from text, capped at max_chars."""
+    if not text:
+        return ""
+    text = text.strip()
+    parts = _re.split(r'(?<=[.!?])\s+', text, maxsplit=n)
+    result = " ".join(parts[:n])
+    if len(result) > max_chars:
+        result = result[:max_chars].rsplit(" ", 1)[0] + "…"
+    return result
 
 
 def time_ago(published_dt: datetime | None) -> str:
@@ -44,7 +62,11 @@ def time_ago(published_dt: datetime | None) -> str:
 
 
 def build_sections(items: list[dict]) -> list[dict]:
-    """Group items by source_type into display sections with rendering metadata."""
+    """Group items by source_type into display sections with rendering metadata.
+
+    Section order: Hacker News, Reddit, then RSS grouped by the 'section'
+    field from the source catalog (e.g. "TechCrunch", "Blogs").
+    """
     groups: dict[str, list[dict]] = {}
 
     for item in items:
@@ -53,58 +75,67 @@ def build_sections(items: list[dict]) -> list[dict]:
             groups[source_type] = []
 
         item["time_ago"] = time_ago(item.get("published_dt"))
+        item["summary_short"] = first_sentences(item.get("summary", ""))
         groups[source_type].append(item)
 
-    section_order = ["rss", "hn", "reddit"]
     sections = []
 
-    for stype in section_order:
+    # HN and Reddit as single sections
+    for stype in ("hn", "reddit"):
         if stype not in groups:
             continue
-        cfg = SECTION_CONFIG.get(stype, {"icon": "📰", "unit": "items", "sort_label": "items"})
-
-        # Re-sort within section by platform-native ranking
+        cfg = SECTION_CONFIG[stype]
         group_items = groups[stype]
         if stype == "hn":
             group_items.sort(key=lambda x: x.get("points", 0), reverse=True)
         elif stype == "reddit":
             group_items.sort(key=lambda x: x.get("score", 0), reverse=True)
 
-        # Group RSS items by source name for display
-        if stype == "rss":
-            # Show RSS as individual source sections
-            rss_by_source: dict[str, list[dict]] = {}
-            for item in group_items:
-                src = item.get("source", "News")
-                if src not in rss_by_source:
-                    rss_by_source[src] = []
-                rss_by_source[src].append(item)
+        sections.append({
+            "id": stype.replace("_", "-"),
+            "name": SOURCE_DISPLAY_NAMES.get(stype, stype),
+            "icon": cfg["icon"],
+            "unit": cfg["unit"],
+            "sort_label": cfg["sort_label"],
+            "entries": group_items[:10],
+            "source_type": stype,
+        })
 
-            for src_name, src_items in rss_by_source.items():
-                section_id = src_name.lower().replace(" ", "-").replace("/", "-")
-                sections.append({
-                    "id": section_id,
-                    "name": src_name,
-                    "icon": cfg["icon"],
-                    "unit": cfg["unit"],
-                    "sort_label": cfg["sort_label"],
-                    "entries": src_items[:10],
-                    "source_type": stype,
-                })
-        else:
-            display_name = SOURCE_DISPLAY_NAMES.get(stype, stype)
-            section_id = stype.replace("_", "-")
+    # RSS items grouped by their 'section' tag
+    if "rss" in groups:
+        cfg = SECTION_CONFIG["rss"]
+        rss_by_section: dict[str, list[dict]] = {}
+        for item in groups["rss"]:
+            section_name = item.get("section") or DEFAULT_RSS_SECTION
+            if section_name not in rss_by_section:
+                rss_by_section[section_name] = []
+            rss_by_section[section_name].append(item)
+
+        ordered = list(RSS_SECTION_ORDER)
+        for name in rss_by_section:
+            if name not in ordered:
+                ordered.append(name)
+
+        for section_name in ordered:
+            if section_name not in rss_by_section:
+                continue
+            section_items = rss_by_section[section_name]
+            section_id = section_name.lower().replace(" ", "-").replace("/", "-")
             sections.append({
                 "id": section_id,
-                "name": display_name,
+                "name": section_name,
                 "icon": cfg["icon"],
                 "unit": cfg["unit"],
                 "sort_label": cfg["sort_label"],
-                "entries": group_items[:10],
-                "source_type": stype,
+                "entries": section_items[:10],
+                "source_type": "rss",
             })
 
     return sections
+
+
+VALID_THEMES = {"dashboard", "print"}
+DEFAULT_THEME = "print"
 
 
 def render_html(
@@ -114,17 +145,24 @@ def render_html(
     output_path: Path,
 ) -> None:
     """Render the full HTML briefing."""
+    theme = user_config.get("format", {}).get("theme", DEFAULT_THEME)
+    if theme not in VALID_THEMES:
+        logger.warning("Unknown theme %r, falling back to %s", theme, DEFAULT_THEME)
+        theme = DEFAULT_THEME
+    template_name = f"briefing-{theme}.html.j2"
+
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)), autoescape=True)
-    template = env.get_template("briefing.html.j2")
+    template = env.get_template(template_name)
 
     now = datetime.now()
     user = user_config.get("user", user_config.get("cohort", {}))
     user_name = user.get("name", "User")
+    briefing_title = user_config.get("format", {}).get("title") or f"{user_name}\u2019s Briefing"
 
     sections = build_sections(items)
 
     html = template.render(
-        briefing_title=f"{user_name}\u2019s Briefing",
+        briefing_title=briefing_title,
         date_formatted=now.strftime("%B %d, %Y"),
         time_formatted=now.strftime("%H:%M"),
         sections=sections,

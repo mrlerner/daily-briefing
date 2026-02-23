@@ -299,8 +299,8 @@
                             {% if item.time_ago %}<span>🕐 {{ item.time_ago }}</span>{% endif %}
                             {% endif %}
                         </div>
-                        {% if item.summary and item.source_type == "rss" %}
-                        <div class="post-description">{{ item.summary }}</div>
+                        {% if item.summary %}
+                        <div class="post-description">{{ item.summary_short or item.summary }}</div>
                         {% endif %}
                     </div>
                 </div>

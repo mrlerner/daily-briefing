@@ -1,0 +1,235 @@
+# Curated source catalog: Long COVID
+#
+# Hand-validated sources for long COVID research, clinical trials, ME/CFS,
+# and patient advocacy. Originally researched for the healthcoach-v1
+# newsletter (2025) and ported here Feb 2026.
+#
+# Referenced by briefing.yaml via: sources_from: long-covid
+
+catalog: long-covid
+name: Long COVID
+description: >
+  Long COVID treatment research, clinical trials, ME/CFS, post-exertional
+  malaise, and patient advocacy. Covers medical journals, science news
+  aggregators, patient journalism, clinical trial registries, and Reddit
+  patient communities.
+
+# ---------------------------------------------------------------------------
+# RSS feeds
+#
+# Three tiers:
+#   Clinical / Research — journals, trial registries, PubMed.
+#   Science news        — aggregators that summarize research.
+#   Patient / Journalism — patient-centered reporting and advocacy.
+# ---------------------------------------------------------------------------
+rss:
+  # --- Clinical / Research (high signal, low volume) ---
+
+  - name: Nature Medicine
+    url: https://www.nature.com/nm.rss
+    notes: >
+      High-impact long COVID research — disease subtypes, biomarkers,
+      RECOVER cohort analyses. Low volume but very high signal.
+
+  - name: Nature Communications
+    url: https://www.nature.com/ncomms.rss
+    notes: >
+      Broader than Nature Medicine but publishes long COVID mechanistic
+      studies. Needs keyword filtering. Low volume for long COVID.
+
+  - name: The Lancet (RSS)
+    url: https://www.thelancet.com/rssfeed/lancet_current.xml
+    notes: >
+      Premier medical journal. Landmark long COVID studies, meta-analyses,
+      CO-FLOW trajectory studies. Very low volume for long COVID.
+
+  - name: ClinicalTrials.gov Long COVID
+    url: https://clinicaltrials.gov/search?cond=Long+COVID&aggFilters=status:rec&limit=20&fmt=rss
+    notes: >
+      Recruiting long COVID trials. Surfaces new trials patients might
+      be eligible for. Filter for newly posted/updated only.
+
+  - name: PubMed Long COVID
+    url: https://pubmed.ncbi.nlm.nih.gov/rss/search/1ibnEMNOb3P7cxAejO5k1tS3jANwnMxmxl7m-qLf26jnXPkFNq/?limit=20&utm_campaign=pubmed-2&fc=20250101000000
+    notes: >
+      Saved search: "long COVID" OR "PASC" OR "post-acute sequelae".
+      High volume — the ranker's keyword filtering handles relevance.
+
+  # --- Science news (medium signal, needs filtering) ---
+
+  - name: STAT News Coronavirus
+    url: https://www.statnews.com/topic/coronavirus/feed/
+    notes: >
+      Leading health journalism. Covers COVID policy, research breakthroughs,
+      pharma. Broad coronavirus feed — needs keyword filtering for long COVID.
+
+  - name: ScienceDaily — Infectious Diseases
+    url: https://www.sciencedaily.com/rss/health_medicine/infectious_diseases.xml
+    notes: Aggregates university research press releases. Broad, needs filtering.
+
+  - name: ScienceDaily — Chronic Fatigue Syndrome
+    url: https://www.sciencedaily.com/rss/health_medicine/chronic_fatigue_syndrome.xml
+    notes: Directly relevant to ME/CFS overlap with long COVID.
+
+  - name: ScienceDaily — Immune System
+    url: https://www.sciencedaily.com/rss/health_medicine/immune_system.xml
+    notes: Immune dysfunction research relevant to long COVID mechanisms.
+
+  - name: ScienceDaily — Viruses
+    url: https://www.sciencedaily.com/rss/health_medicine/viruses.xml
+    notes: SARS-CoV-2 virology, viral persistence research.
+
+  # --- Preprints (high volume, cutting-edge, needs keyword filtering) ---
+
+  - name: medRxiv — Infectious Diseases
+    url: https://connect.medrxiv.org/medrxiv_xml.php?subject=infectious_diseases
+    notes: >
+      Preprint server for medical research. Catches long COVID studies
+      before peer review. High volume — relies on keyword filtering.
+
+  # --- Science journalism (medium volume, accessible language) ---
+
+  - name: New Scientist — Health
+    url: https://www.newscientist.com/subject/health/feed/
+    notes: >
+      Covers long COVID and ME/CFS research in accessible language.
+      Broad health feed — needs keyword filtering.
+
+  - name: The Guardian — Long COVID
+    url: https://www.theguardian.com/society/long-covid/rss
+    notes: >
+      Dedicated long COVID section. Patient stories, policy, research
+      coverage. Active as of Feb 2026.
+
+  # --- Patient / Journalism / Advocacy (high relevance, low–medium volume) ---
+
+  - name: The Sick Times
+    url: https://thesicktimes.org/feed/
+    notes: >
+      Journalist-founded outlet dedicated to the long COVID crisis.
+      Covers science, policy, advocacy, and patient experience.
+
+  - name: Trial by Error (Virology Blog)
+    url: https://www.virology.ws/feed/
+    notes: >
+      David Tuller's column at UC Berkeley critically examining ME/CFS
+      and long COVID research. Publishes 2–3 times per week. High signal
+      for research methodology, clinical trial critique, and advocacy.
+
+  - name: Solve ME/CFS Initiative
+    url: https://solvecfs.org/feed/
+    notes: >
+      Leading ME/CFS research advocacy organization. Covers research
+      breakthroughs, clinical trials, PolyBio Symposium, and policy.
+
+  # --- Disease nonprofits (research-focused, medium volume) ---
+
+  - name: Open Medicine Foundation
+    url: https://ftp.omf.ngo/news-blog/feed/
+    notes: >
+      ME/CFS + Long COVID research foundation. Funds collaborative
+      centers worldwide (Melbourne, Stanford, Harvard, Uppsala). Posts
+      weekly — biomarker studies, clinical updates, Science Wednesdays.
+
+  - name: Dysautonomia International (The Dysautonomia Dispatch)
+    url: https://dysautonomiainternational.org/blog/wordpress/feed/
+    notes: >
+      POTS and dysautonomia research, patient education, and advocacy.
+      Active WordPress blog. Relevant for the large POTS/dysautonomia
+      overlap with long COVID.
+
+# ---------------------------------------------------------------------------
+# Reddit — patient communities and research discussion
+# ---------------------------------------------------------------------------
+reddit:
+  freshness_hours: 48
+
+  subreddits:
+    - covidlonghaulers
+    - cfs
+    - POTS
+    - dysautonomia
+    - LongCovid
+
+  keywords:
+    - long covid
+    - pasc
+    - post-covid
+    - pem
+    - post-exertional
+    - me/cfs
+    - chronic fatigue
+    - pacing
+    - brain fog
+    - dysautonomia
+    - pots
+    - microclots
+    - viral persistence
+    - recover trial
+    - clinical trial
+    - autoimmune
+    - mast cell
+    - mcas
+    - antiviral
+    - metformin
+    - low dose naltrexone
+    - ldn
+
+  search_queries:
+    - "long COVID treatment"
+    - "long COVID recovery"
+    - "RECOVER trial"
+    - "long COVID clinical trial"
+    - "post-exertional malaise"
+    - "long COVID research"
+    - "long COVID biomarker"
+    - "POTS treatment"
+    - "viral persistence SARS"
+  search_subreddits:
+    - covidlonghaulers
+    - cfs
+    - POTS
+    - dysautonomia
+
+# ---------------------------------------------------------------------------
+# Sources researched but not yet implemented (need HTML scraper fetcher)
+# ---------------------------------------------------------------------------
+# RECOVER COVID Initiative — https://recovercovid.org/news
+#   NIH-led long COVID research program ($1.15B). No RSS.
+#
+# Stanford Long COVID Care REACH
+#   https://med.stanford.edu/long-covid-care-reach/news-and-publications.html
+#   No RSS. Academic medical center producing original research.
+#
+# Mount Sinai Newsroom — https://www.mountsinai.org/about/newsroom
+#   Home to CoRE (David Putrino). Microclots, antivirals, autonomic dysfunction.
+#   No RSS, would need keyword-filtered HTML scrape.
+#
+# Body Politic — https://www.wearebodypolitic.com
+#   Patient-led advocacy org. Irregular publishing schedule since 2023.
+#
+# ME/CFS Community News Aggregator — https://me-cfs.github.io/news/rss/community.xml
+#   Aggregates Trial by Error, Sick Times, The Canary, Science for ME, etc.
+#   Last updated July 2025 — may be abandoned. Monitor before adding.
+#
+# PolyBio Research Foundation — https://polybio.org/news/
+#   Funds long COVID tissue persistence, microclots research. No RSS.
+#
+# Survivor Corps — https://www.survivorcorps.com/covid19-news
+#   Patient-led COVID and long COVID news aggregation. No RSS.
+#
+# Patient-Led Research Collaborative — https://patientresearchcovid19.com
+#   Patient-driven long COVID research org (PLRC). Quarterly newsletter,
+#   no RSS. Influential publications in Nature, EClinicalMedicine.
+#   Also runs PLRC Registry connecting patients to clinical trials.
+#
+# Long COVID Studies — https://longcovidstudies.net
+#   Patient-friendly clinical trial finder (550+ trials, 55 countries).
+#   Built on ClinicalTrials.gov API. No RSS — search tool, not a feed.
+#   We already pull from ClinicalTrials.gov RSS directly.
+#
+# Foundation for NIH (RECOVER-TLC) — helps translate RECOVER into treatments.
+#   No standalone feed; covered by RECOVER Initiative above.
+#
+# Future: CDC Long COVID pages, The Scientist (long-covid tag),
+#         EurekAlert! (very broad, may be too noisy).

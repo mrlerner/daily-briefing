@@ -36,6 +36,7 @@ format:
   max_items: 30
   summary_items: 4
   style: concise
+  theme: print
 
 delivery:
   time: "07:00"

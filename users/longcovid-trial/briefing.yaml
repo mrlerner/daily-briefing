@@ -1,8 +1,8 @@
 version: 1
 
-cohort:
-  id: trial-of-one-long-covid
-  name: Trial of One — Long COVID
+user:
+  id: longcovid-trial
+  name: Long COVID Trial
 
 topics:
   - name: Long COVID treatment

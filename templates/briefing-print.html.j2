@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ briefing_title }} — {{ date_formatted }}</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>{{ briefing_title }}</h1>
+            <div class="date">{{ date_formatted }}</div>
+        </header>
+
+        {% if sections %}
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                {% for section in sections %}
+                <li><a href="#{{ section.id }}">{{ section.name }}</a> <span class="toc-count">{{ section.entries | length }} {{ section.unit }}</span></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        {% endif %}
+
+        {% for block in blocks %}
+        {% if block.type == "weather" %}
+        <div class="weather" id="weather">
+            <p class="label">Weather — {{ block.location }}</p>
+            <div class="forecast">
+            {% for day in block.days %}
+                <div>{{ day.day_full }}: {{ day.condition }}, {{ day.low }}–{{ day.high }}°F</div>
+            {% endfor %}
+            </div>
+            {% if block.summary_line %}
+            <p class="summary">{{ block.summary_line }}</p>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        {% for section in sections %}
+        <div class="section" id="{{ section.id }}">
+            <h2>{{ section.name }}</h2>
+
+            {% for item in section.entries %}
+            <div class="item">
+                <p class="item-title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></p>
+                <div class="item-meta">
+                    {% if item.source_type == "hn" %}
+                    {{ item.points }} points · {{ item.comments }} comments · {{ item.time_ago }}
+                    {% if item.hn_url %} · <a href="{{ item.hn_url }}" target="_blank">discussion</a>{% endif %}
+                    {% elif item.source_type == "reddit" %}
+                    r/{{ item.subreddit }} · {{ item.score }} points · {{ item.comments }} comments · {{ item.time_ago }}
+                    {% elif item.source_type == "rss" %}
+                    {{ item.source }}{% if item.time_ago %} · {{ item.time_ago }}{% endif %}
+                    {% else %}
+                    {{ item.source }}{% if item.time_ago %} · {{ item.time_ago }}{% endif %}
+                    {% endif %}
+                </div>
+                {% if item.summary %}
+                <div class="item-summary">{{ item.summary_short or item.summary }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated {{ date_formatted }} at {{ time_formatted }}
+        </footer>
+    </div>
+</body>
+</html>

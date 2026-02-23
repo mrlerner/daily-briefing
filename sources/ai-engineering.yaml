@@ -13,20 +13,51 @@ description: >
   Covers Hacker News, Reddit, Twitter/X, Bluesky, and traditional tech news RSS.
 
 # ---------------------------------------------------------------------------
-# RSS feeds — traditional news sources
+# RSS feeds
+#
+# Two tiers:
+#   Focused blogs — every post is on-topic; low volume, high signal.
+#   Broad feeds  — cover AI among other things; need keyword filtering.
 # ---------------------------------------------------------------------------
 rss:
+  # --- Focused blogs (high signal, every post relevant) ---
+
+  - name: Simon Willison
+    url: https://simonwillison.net/atom/everything/
+    section: Blogs
+    notes: Best single source for practical LLM engineering. Daily posts.
+
+  - name: Anthropic Blog
+    url: https://news.google.com/rss/search?q=site:anthropic.com&hl=en-US&gl=US&ceid=US:en
+    section: Blogs
+    notes: Via Google News proxy (Anthropic has no native RSS). Research, safety, product updates.
+
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    section: Blogs
+    notes: GPT releases, research, API updates.
+
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    section: Blogs
+    notes: DeepMind, Gemini, and Google Research.
+
+  - name: Chip Huyen
+    url: https://huyenchip.com/feed.xml
+    section: Blogs
+    notes: ML systems, MLOps, AI engineering practices.
+
+  # --- Broad feeds (need keyword filtering to stay focused) ---
+
   - name: TechCrunch AI
     url: https://techcrunch.com/category/artificial-intelligence/feed/
-    notes: High volume, broad AI coverage. Good for major launches and funding.
+    section: TechCrunch
+    notes: High volume, broad. Useful for major launches and funding rounds.
 
-  - name: WSJ AI (via Google News)
-    url: https://news.google.com/rss/search?q=site:wsj.com+artificial+intelligence&hl=en-US&gl=US&ceid=US:en
-    notes: WSJ's own RSS died Jan 2025. Google News proxy works reliably.
-
-  - name: WSJ Tech (via Google News)
-    url: https://news.google.com/rss/search?q=site:wsj.com+technology+business&hl=en-US&gl=US&ceid=US:en
-    notes: Broader tech/business coverage from WSJ.
+  - name: Ars Technica AI
+    url: https://feeds.arstechnica.com/arstechnica/technology-lab
+    section: Blogs
+    notes: Broad tech, but strong AI coverage with more depth than TC.
 
 # ---------------------------------------------------------------------------
 # Hacker News — via Algolia search API

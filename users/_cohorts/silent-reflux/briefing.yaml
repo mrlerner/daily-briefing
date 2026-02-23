@@ -1,0 +1,36 @@
+version: 1
+
+cohort:
+  id: silent-reflux
+  name: Silent Reflux (LPR) Weekly
+
+topics:
+  - name: Silent reflux / LPR
+    keywords: ["silent reflux", "LPR", "laryngopharyngeal reflux", "pepsin", "throat reflux"]
+    priority: high
+  - name: Reflux diet and lifestyle
+    keywords: ["reflux diet", "alkaline water", "low acid", "trigger foods", "wedge pillow", "Gaviscon"]
+    priority: high
+  - name: GERD treatment
+    keywords: ["GERD", "acid reflux", "proton pump inhibitor", "PPI", "esophageal", "antireflux"]
+    priority: medium
+  - name: Throat and voice symptoms
+    keywords: ["throat clearing", "hoarseness", "globus", "chronic cough", "post-nasal drip", "vocal fatigue"]
+    priority: medium
+
+sources_from: silent-reflux
+
+filters:
+  exclude_keywords: []
+  max_age_hours: 168
+  min_relevance: 0.2
+
+format:
+  title: Silent Reflux Briefing
+  max_items: 15
+  summary_items: 3
+  style: accessible
+
+delivery:
+  time: "08:00"
+  timezone: America/New_York

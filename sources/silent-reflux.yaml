@@ -1,0 +1,112 @@
+# Curated source catalog: Silent Reflux (LPR)
+#
+# Sources for laryngopharyngeal reflux (LPR), commonly called "silent reflux."
+# Covers patient-focused newsletters, medical research, and Reddit communities.
+# Researched Feb 2026.
+#
+# Volume is low — most sources publish weekly or less. This catalog is
+# designed for a weekly briefing with a 7-day lookback window.
+#
+# Referenced by briefing.yaml via: sources_from: silent-reflux
+
+catalog: silent-reflux
+name: Silent Reflux (LPR)
+description: >
+  Laryngopharyngeal reflux (LPR / silent reflux) treatment, research,
+  diet, and patient experience. Covers Substack newsletters, medical
+  journals, Google News, and Reddit patient communities.
+
+# ---------------------------------------------------------------------------
+# RSS feeds
+#
+# Three tiers:
+#   Patient newsletters — dedicated LPR content, highest signal.
+#   News / aggregators  — broader health coverage, needs keyword filtering.
+#   Research            — journals and science news, very low LPR volume.
+# ---------------------------------------------------------------------------
+rss:
+  # --- Patient newsletters (high signal, dedicated LPR content) ---
+
+  - name: Reflux Life
+    url: https://refluxlife.substack.com/feed
+    notes: >
+      Weekly Substack by Ann. Covers LPR management, diet, breathing exercises,
+      pepsin research, and lived experience. The single best patient-focused
+      source for LPR. Publishes ~1-2x per week.
+
+  - name: The Zebra's Voice (Stacey Menton)
+    url: https://staceymenton.substack.com/feed
+    notes: >
+      Speech pathologist covering voice/breathing/swallowing in hypermobility
+      (EDS/HSD). Occasional LPR-specific posts on the reflux-hypermobility
+      connection, pepsin, and sphincter dysfunction. Broader than pure LPR —
+      needs keyword filtering. Publishes ~biweekly.
+
+  # --- News / aggregators (broader coverage, keyword filtering needed) ---
+
+  - name: Google News — Silent Reflux
+    url: https://news.google.com/rss/search?q=%22silent+reflux%22+OR+%22laryngopharyngeal+reflux%22+OR+%22LPR+treatment%22&hl=en-US&gl=US&ceid=US:en
+    notes: >
+      Catches mainstream health articles from AARP, Cleveland Clinic,
+      Prevention, Healthline, etc. Sporadic but useful for accessible
+      patient-facing content.
+
+  - name: Google News — GERD Treatment
+    url: https://news.google.com/rss/search?q=%22GERD+treatment%22+OR+%22acid+reflux+treatment%22+OR+%22reflux+diet%22&hl=en-US&gl=US&ceid=US:en
+    notes: >
+      Broader acid reflux news. Many GERD treatments overlap with LPR
+      management. Higher volume than the LPR-specific search.
+
+  # --- Research (low volume, high signal when it hits) ---
+
+  - name: ScienceDaily — Gastrointestinal Problems
+    url: https://www.sciencedaily.com/rss/health_medicine/gastrointestinal_problems.xml
+    notes: >
+      Aggregates university research on digestive disorders. Occasionally
+      surfaces reflux studies. Needs keyword filtering.
+
+  - name: Refluxgate Blog
+    url: https://www.refluxgate.com/blog?format=rss
+    notes: >
+      Comprehensive LPR resource by Gerrit Sonnabend. Covers diet,
+      pepsin science, sleeping position, treatment options. May not
+      have a working RSS feed — if this fails, the build skips it.
+
+# ---------------------------------------------------------------------------
+# Reddit — patient communities
+# ---------------------------------------------------------------------------
+reddit:
+  freshness_hours: 168
+
+  subreddits:
+    - LPR
+    - GERD
+    - acidreflux
+
+  keywords:
+    - silent reflux
+    - lpr
+    - laryngopharyngeal
+    - pepsin
+    - throat clearing
+    - globus
+    - hoarseness
+    - alkaline water
+    - gaviscon advance
+    - ppi
+    - proton pump
+    - reflux diet
+    - wedge pillow
+    - low acid diet
+    - esophageal sphincter
+
+  search_queries:
+    - "silent reflux treatment"
+    - "LPR diet"
+    - "LPR recovery"
+    - "silent reflux symptoms"
+    - "pepsin reflux"
+    - "LPR what helped"
+  search_subreddits:
+    - LPR
+    - GERD

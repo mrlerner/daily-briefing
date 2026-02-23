@@ -50,8 +50,7 @@ def fetch_all_sources(config: dict) -> list[dict]:
         # RSS feeds from catalog
         for rss_source in catalog.get("rss", []):
             try:
-                source_dict = {"name": rss_source["name"], "url": rss_source["url"]}
-                items = fetch_feed(source_dict)
+                items = fetch_feed(rss_source)
                 raw_items.extend(items)
             except Exception as e:
                 logger.warning("Failed to fetch catalog RSS '%s': %s", rss_source.get("name"), e)

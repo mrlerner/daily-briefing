@@ -56,11 +56,21 @@ def score_items(items: list[dict], topics: list[dict]) -> list[dict]:
     return items
 
 
+# HN/Reddit have community votes doing the curation, so they can pass with
+# a weak keyword match.  RSS relies solely on keyword relevance — the user's
+# min_relevance in their briefing.yaml controls the threshold.
+TYPE_MIN_RELEVANCE = {
+    "rss": 0.0,
+    "hn": 0.0,
+    "reddit": 0.0,
+}
+
+
 def filter_items(items: list[dict], filters: dict) -> list[dict]:
     """Apply exclusion filters, age filter, and relevance threshold."""
     exclude_keywords = [kw.lower() for kw in filters.get("exclude_keywords", [])]
     max_age_hours = filters.get("max_age_hours", 48)
-    min_relevance = filters.get("min_relevance", 0.0)
+    global_min = filters.get("min_relevance", 0.0)
 
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=max_age_hours)
@@ -75,6 +85,8 @@ def filter_items(items: list[dict], filters: dict) -> list[dict]:
         if published_dt and published_dt < cutoff:
             continue
 
+        stype = item.get("source_type", "rss")
+        min_relevance = max(global_min, TYPE_MIN_RELEVANCE.get(stype, global_min))
         if item.get("relevance_score", 0) < min_relevance:
             continue
 
