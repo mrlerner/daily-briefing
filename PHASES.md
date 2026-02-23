@@ -144,12 +144,14 @@ Tested: 326 items fetched from 3 RSS feeds + HN Algolia + Reddit JSON API. Filte
 
 ### Phase 2.1 — Manual Deploy
 
-- [ ] Create the GitHub repo (public or private with Pages enabled)
-- [ ] Push the project
-- [ ] Run `python src/build.py` locally
-- [ ] Push `out/` to `gh-pages` branch manually
-- [ ] Verify the briefing loads at the GitHub Pages URL
+- [x] Create the GitHub repo (public or private with Pages enabled)
+- [x] Push the project
+- [x] Run `python src/build.py` locally
+- [x] Push `out/` to `gh-pages` branch manually
+- [x] Verify the briefing loads at the GitHub Pages URL
 - [ ] Test on mobile
+
+Live at: https://mrlerner.github.io/daily-briefing/matt/2026-02-23.html
 
 ### Phase 2.2 — Index Page
 
