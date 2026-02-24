@@ -15,9 +15,8 @@ from config import load_user_briefing, discover_user_briefings, PROJECT_ROOT as 
 from fetchers.rss import fetch_feed
 from fetchers.hn import fetch_hn
 from fetchers.reddit import fetch_reddit
-from fetchers.nitter import fetch_nitter
-from fetchers.twitter import fetch_twitter_search
 from fetchers.bluesky import fetch_bluesky
+from fetchers.gnews_twitter import fetch_gnews_twitter
 from blocks.weather import fetch_weather
 from normalize import normalize_item, deduplicate
 from rank import score_items, filter_items, rank_and_cap
@@ -71,17 +70,12 @@ def fetch_all_sources(config: dict) -> list[dict]:
                 logger.warning("Failed to fetch Reddit: %s", e)
 
         if "twitter" in catalog:
-            try:
-                nitter_items = fetch_nitter(catalog["twitter"])
-                raw_items.extend(nitter_items)
-            except Exception as e:
-                logger.warning("Failed to fetch Nitter: %s", e)
-
-            try:
-                api_items = fetch_twitter_search(catalog["twitter"])
-                raw_items.extend(api_items)
-            except Exception as e:
-                logger.warning("Failed to fetch Twitter API: %s", e)
+            for gnews_src in catalog["twitter"].get("google_news_rss", []):
+                try:
+                    items = fetch_gnews_twitter(gnews_src)
+                    raw_items.extend(items)
+                except Exception as e:
+                    logger.warning("Failed to fetch Twitter via Google News: %s", e)
 
         if "bluesky" in catalog:
             try:

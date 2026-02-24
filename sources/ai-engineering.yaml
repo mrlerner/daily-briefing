@@ -135,38 +135,16 @@ reddit:
     - programming
 
 # ---------------------------------------------------------------------------
-# Twitter/X — hybrid: Nitter RSS for accounts, free API for search
+# Twitter/X — popular tweets via Google News (free, no API key needed)
+#
+# Google indexes tweets and naturally surfaces the ones with traction.
+# URLs are decoded to direct x.com links at fetch time.
 # ---------------------------------------------------------------------------
 twitter:
-  # Nitter instances to try in order (confirmed working Feb 2026).
-  nitter_instances:
-    - xcancel.com
-    - nitter.poast.org
-    - nitter.privacyredirect.com
-    - nitter.catsarch.com
-    - nitter.tiekoetter.com
-
-  accounts:
-    # Bleeding-edge practitioners
-    - simonw            # Simon Willison — LLM tools, datasette
-    - karpathy          # Andrej Karpathy — AI education, builds things
-    - mitsuhiko         # Armin Ronacher — Flask, Rye, Sentry
-    - bcherny           # Boris Cherny — created Claude Code
-    - searls            # Justin Searls — Test Double, Ruby, honest takes
-
-    # AI toolmakers
-    - mitchellh         # Mitchell Hashimoto — Ghostty, AI adoption writing
-    - rauchg            # Guillermo Rauch — Vercel, v0
-    - swyx              # Shawn Wang — Latent Space, AI Engineer
-    - antirez           # Salvatore Sanfilippo — Redis creator
-
-  # Free-tier API search (1,500 reads/month, 1 req per 15 min).
-  # Keep this to 1 query — use OR to cover breadth, min_faves to
-  # surface only high-engagement tweets worth reading.
-  search_queries:
-    - "AI software engineering"
-  min_faves: 50
-  min_retweets: 10
+  google_news_rss:
+    - name: Twitter — Claude Code / Cursor / Vibe Coding
+      url: https://news.google.com/rss/search?q=site:x.com+(%22Claude+Code%22+OR+%22vibe+coding%22+OR+%22Cursor+AI%22)&hl=en-US&gl=US&ceid=US:en
+      section: Twitter
 
 # ---------------------------------------------------------------------------
 # Bluesky — native RSS feeds (reliable, no auth needed)

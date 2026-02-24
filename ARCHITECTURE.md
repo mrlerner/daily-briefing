@@ -452,28 +452,26 @@ No server required. No authentication for now (briefings are not sensitive in v1
 
 ## 8. OpenClaw Integration
 
-### Delivery Flow
+### Division of Responsibility
 
-After the nightly build completes:
+**This repo** handles briefing generation: fetching content, ranking, rendering HTML/JSON/summary, and publishing to GitHub Pages. A laptop `launchd` cron job runs `python3 src/build.py` daily at 5 AM ET so briefings are pre-built.
 
-1. OpenClaw checks each user's delivery time
-2. At the scheduled time, reads `out/<user_id>/<date>.summary.txt`
-3. Sends the summary + link as a chat message
+**OpenClaw** handles everything user-facing: scheduled delivery (via its own cron system), messaging (via whatever channel each user is on — Telegram, WhatsApp, iMessage, etc.), and conversational interaction. OpenClaw already knows how to reach each user; we don't duplicate that.
 
-### Skill: `briefing_builder`
+**The filesystem is the contract.** OpenClaw writes YAML configs, the build reads them. The build writes output files, OpenClaw reads them.
 
-Triggered during onboarding. Steps:
+### Skill: `daily-briefing`
 
-1. Ask what the user wants in their briefing
-2. Clarify only if needed (stocks, teams, timing)
-3. Search for sources matching the user's interests
-4. Assemble a candidate `briefing.yaml`
-5. Run a preview build to show the user a sample
-6. On approval, commit the YAML to the repo
+Installed at `~/.openclaw/skills/daily-briefing/SKILL.md` (shared across all OpenClaw agents). This single skill teaches OpenClaw three capabilities:
 
-### Skill: `briefing_admin`
+**1. Find a briefing.** The skill tells the agent where pre-built output lives:
+- Summary: `out/<user_id>/<briefing_name>/<YYYY-MM-DD>.summary.txt`
+- Full HTML: `out/<user_id>/<briefing_name>/<YYYY-MM-DD>.html`
+- GitHub Pages: `https://mrlerner.github.io/daily-briefing/<user_id>/<briefing_name>/<date>.html`
 
-Triggered by ongoing feedback. Maps natural language to YAML edits:
+The pre-built summary is already formatted for messaging (top headlines + link). OpenClaw sends it directly without rewriting.
+
+**2. Modify a briefing.** The skill maps natural language to YAML edits:
 
 | User says | YAML change |
 |-----------|-------------|
@@ -483,17 +481,27 @@ Triggered by ongoing feedback. Maps natural language to YAML edits:
 | "Add clinical trials" | Add topic + discover relevant sources |
 | "Remove ArXiv" | Remove source entry |
 | "Add weather for New York" | Add weather block to `blocks` |
-| "Show me stock prices for TSLA" | Add stocks block to `blocks` |
 | "I don't need the sports section" | Remove block entry |
 
-Every edit follows the same cycle:
+Workflow: read the YAML, make the edit, show a diff, write on confirmation.
 
-1. Parse intent
-2. Produce a YAML diff
-3. Validate against schema
-4. Run preview build
-5. Show user the preview
-6. Commit on approval
+**3. Generate on demand.** The skill tells the agent how to run the build:
+```
+cd /Users/Shared/daily-briefing && python3 src/build.py --user <user_id> --briefing <briefing_name>
+```
+After building (~25 seconds), the agent reads the summary and sends it to the user. This is used when a user modifies their briefing and wants to see the result immediately.
+
+### Scheduled Delivery
+
+OpenClaw configures its own cron job (via `openclaw cron add`) to deliver briefings at each user's preferred time. The cron job triggers an agent turn that uses the `daily-briefing` skill to find and send the pre-built summary. Delivery channel and timing are OpenClaw's concern, not this repo's.
+
+### Laptop Build Cron
+
+A `launchd` plist (`~/Library/LaunchAgents/com.dailybriefing.build.plist`) runs `scripts/build.sh` daily at 5 AM ET. The script:
+1. Runs `python3 src/build.py` (generates all users' briefings)
+2. Logs to `logs/build.log`
+
+GitHub Pages deployment is handled separately (GitHub Actions or manual push).
 
 ---
 
@@ -536,60 +544,7 @@ Validation runs:
 
 ## 11. Build Phases
 
-### Phase 1 — End-to-end proof of concept
-
-Goal: Matt receives his first real briefing.
-
-- [ ] Define `briefing.schema.json`
-- [ ] Write Matt's `briefing.yaml` by hand (including a weather block)
-- [ ] Build RSS fetcher
-- [ ] Build weather block fetcher
-- [ ] Build normalizer and keyword ranker
-- [ ] Build HTML template (clean, simple, mobile-friendly) with block rendering
-- [ ] Build summary generator (block lines + news headlines)
-- [ ] Wire up `build.py` to run for a single user
-- [ ] Deploy to GitHub Pages manually
-- [ ] Verify the output looks good
-
-### Phase 2 — Automation
-
-Goal: Briefings build and publish themselves daily.
-
-- [ ] Set up GitHub Actions nightly build
-- [ ] Set up GitHub Pages deployment
-- [ ] Add `index.html` generation (redirect to latest)
-- [ ] Add error handling and build logging
-
-### Phase 3 — OpenClaw integration
-
-Goal: OpenClaw can deliver briefings and accept feedback.
-
-- [ ] Build `briefing_admin` skill (YAML edits, preview, commit)
-- [ ] Build delivery flow (read summary, send message at scheduled time)
-- [ ] Build `briefing_builder` skill (onboarding, source discovery)
-- [ ] Add schema validation to the edit cycle
-
-### Phase 4 — Cohort support
-
-Goal: Trial of One long COVID briefing works for a group.
-
-- [ ] Build cohort template system
-- [ ] Create long COVID cohort default
-- [ ] Build cohort onboarding flow
-- [ ] Test with a small group
-
-### Phase 5 — Hardening
-
-Goal: Reliable enough for health use cases.
-
-- [ ] Add stocks block fetcher
-- [ ] Add sports block fetcher
-- [ ] Add API news fetcher
-- [ ] Add web fallback news fetcher
-- [ ] Add build failure alerts
-- [ ] Add source health monitoring (detect dead feeds)
-- [ ] Add access control for sensitive briefings (if needed)
-- [ ] Improve relevance scoring (embeddings, feedback loop)
+See [PHASES.md](PHASES.md) for the detailed, up-to-date phase tracker.
 
 ---
 

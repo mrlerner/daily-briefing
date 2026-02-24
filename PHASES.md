@@ -224,82 +224,92 @@ All error handling is built into `build.py`. Each fetcher catches its own except
 
 ## Phase 4 — Deliver Briefing Through OpenClaw
 
-**Goal:** Users receive their briefing summary as a message from OpenClaw at their chosen time.
+**Goal:** Users receive their briefing summary as a message from OpenClaw at their chosen time, and can modify briefings or request on-demand generation through conversation.
 
-### Phase 4.1 — Delivery Mechanism
+### Architecture
 
-- [ ] Determine how OpenClaw sends scheduled messages (cron job, webhook, polling)
-- [ ] Build the delivery script or skill that reads `<date>.summary.txt`
-- [ ] Construct the message: summary text + GitHub Pages link
-- [ ] Send via OpenClaw's messaging channel
+Two independent systems connected by the filesystem:
 
-### Phase 4.2 — Scheduled Delivery
+- **Laptop cron job** (`launchd`) runs `python3 src/build.py` daily at 5 AM ET. Generates all briefings so they're pre-built and ready.
+- **OpenClaw skill** (`daily-briefing`) teaches OpenClaw where briefings live, how to modify YAML configs, and how to run the build on demand.
+- **OpenClaw cron job** (configured in OpenClaw, not in this repo) handles scheduled delivery. OpenClaw already knows each user's messaging channel.
 
-- [ ] Read each user's `delivery.time` and `delivery.timezone` from their YAML
-- [ ] Schedule message delivery at the correct local time
-- [ ] Handle timezone edge cases (DST transitions, UTC offsets)
-- [ ] Test: configure a delivery time a few minutes in the future, verify message arrives
+The contract between the two systems is the filesystem: OpenClaw writes YAML configs, the build reads them. The build writes output files, OpenClaw reads them.
 
-### Phase 4.3 — Delivery Confirmation & Error Handling
+### Phase 4.1 — OpenClaw Skill
 
-- [ ] Log each delivery (user, timestamp, success/failure)
-- [ ] Handle missing briefing gracefully (build failed? send a "no briefing today" note)
-- [ ] Handle missing summary file (fall back to just sending the link)
-- [ ] Test: delete a summary file, verify OpenClaw handles it gracefully
+- [x] Write `daily-briefing` SKILL.md with repo structure, YAML editing instructions, build command, and output paths
+- [x] Install to `~/.openclaw/skills/daily-briefing/SKILL.md` (shared across all agents)
+- [ ] Test: ask OpenClaw to show today's briefing summary
+- [ ] Test: ask OpenClaw to modify a briefing ("make it shorter")
+- [ ] Test: ask OpenClaw to regenerate after a modification
 
-**Milestone:** Each morning, OpenClaw sends a short message with the top headlines and a link to the full briefing, at the right time for each user.
+The skill teaches OpenClaw three things:
+1. **Where things are** — repo path, user configs, output files, GitHub Pages URLs
+2. **How to modify** — which YAML fields map to which user requests, workflow for showing diffs
+3. **How to generate** — the `build.py` command and where to find the output afterward
+
+### Phase 4.2 — Laptop Build Cron Job
+
+- [x] Create `scripts/build.sh` wrapper script
+- [x] Create `~/Library/LaunchAgents/com.dailybriefing.build.plist` (5 AM daily)
+- [ ] Load the plist: `launchctl load ~/Library/LaunchAgents/com.dailybriefing.build.plist`
+- [ ] Test: trigger manually with `launchctl start com.dailybriefing.build`
+- [ ] Verify output appears in `out/` and logs appear in `logs/`
+
+### Phase 4.3 — OpenClaw Scheduled Delivery
+
+Configured in OpenClaw (not in this repo). OpenClaw sets up its own cron job to:
+1. Read the pre-built `<date>.summary.txt` for each user
+2. Send it via the user's messaging channel at their configured delivery time
+
+- [ ] Set up OpenClaw cron job for Matt's AI engineering briefing
+- [ ] Set up OpenClaw cron job for Matt's long COVID briefing (if desired)
+- [ ] Test: verify briefing message arrives at the configured time
+
+### Phase 4.4 — Error Handling
+
+- [ ] Skill handles missing summary file gracefully (offer to build on demand)
+- [ ] Build script logs errors to `logs/build.log`
+- [ ] Test: delete a summary file, verify OpenClaw offers to regenerate
+
+**Milestone:** Each morning, OpenClaw sends a short message with the top headlines and a link to the full briefing. Users can also modify their briefing or request a fresh build through conversation.
 
 ---
 
-## Phase 5 — Conversational Modification Through OpenClaw
+## Phase 5 — Onboarding & Source Discovery
 
-**Goal:** Users can change their briefing by talking to OpenClaw.
+**Goal:** New users can set up a briefing from scratch through conversation with OpenClaw.
 
-### Phase 5.1 — `briefing_admin` Skill (Simple Edits)
+Note: Simple conversational modifications (add topic, change filters, adjust length) are handled by the `daily-briefing` skill from Phase 4. This phase adds the more complex onboarding and source discovery workflows.
 
-- [ ] Build the OpenClaw skill that can read a user's `briefing.yaml`
-- [ ] Implement: add a topic (new entry in `topics`)
-- [ ] Implement: remove a topic
-- [ ] Implement: add a source (new entry in `sources`)
-- [ ] Implement: remove a source
-- [ ] Implement: add a block (new entry in `blocks`)
-- [ ] Implement: remove a block
-- [ ] Implement: change `format.max_items` (make it shorter/longer)
-- [ ] Implement: add/remove `filters.exclude_keywords`
-- [ ] Implement: change `delivery.time`
-- [ ] All edits validate against schema before committing
-- [ ] Test: "Make it shorter" → verify `max_items` decreases in the YAML
+### Phase 5.1 — Onboarding Flow
 
-### Phase 5.2 — Preview Before Commit
-
-- [ ] After producing a YAML edit, run a preview build
-- [ ] Show the user a before/after summary (what changed in the YAML)
-- [ ] Show a preview of what tomorrow's briefing would look like
-- [ ] User confirms → commit the change
-- [ ] User rejects → discard the change
-- [ ] Test: request a change, review preview, confirm, verify YAML is updated
-
-### Phase 5.3 — `briefing_builder` Skill (Onboarding)
-
-- [ ] Build the onboarding conversation flow
+- [ ] Extend the `daily-briefing` skill (or create a companion skill) for onboarding
+- [ ] Build the onboarding conversation flow: ask what the user wants, clarify, create config
 - [ ] Parse natural language into candidate topics, keywords, and block types
-- [ ] Run source discovery: search for feeds matching the user's interests
-- [ ] Present candidate sources to the user for approval
-- [ ] Assemble and validate the new `briefing.yaml`
+- [ ] Assemble and validate a new `<user_id>/<briefing_name>.yaml`
 - [ ] Run a preview build and show the user a sample briefing
-- [ ] On approval, commit the YAML and trigger the first real build
+- [ ] On approval, write the YAML and trigger the first real build
 - [ ] Test: walk through onboarding for a brand new interest ("Kansas City Chiefs updates")
 
-### Phase 5.4 — Source Discovery
+### Phase 5.2 — Source Discovery
 
-- [ ] Build the source discovery logic (search for RSS feeds given a topic)
+- [ ] Build source discovery logic (search for RSS feeds given a topic)
 - [ ] Rank candidate sources by quality signals (official domain, feed freshness, item count)
 - [ ] Apply the source discovery rules from SPEC.md (prefer primary, prefer structured, avoid junk)
-- [ ] Present top 3–5 candidates to the user
-- [ ] Store selected sources in YAML
+- [ ] Present top 3–5 candidates to the user for approval
+- [ ] Store selected sources in the user's YAML or a new source catalog
 - [ ] Test: discover sources for "electric vehicle news", verify quality
 
-**Milestone:** A user can say "Add weather for San Francisco" or "I want less hype" and OpenClaw updates their briefing with a preview.
+### Phase 5.3 — Cohort Onboarding
+
+- [ ] Build a script or skill to onboard a new user from a cohort template
+- [ ] Onboarding copies the shared definition and creates a user YAML that extends it
+- [ ] The new user's YAML is independent — edits don't affect the shared definition
+- [ ] Test: onboard a new Trial of One user, verify their briefing builds correctly
+
+**Milestone:** A new user can say "I want car news and Kansas City Chiefs updates" and OpenClaw discovers sources, creates a briefing, and starts delivering it.
 
 ---
 
@@ -407,6 +417,6 @@ These are known directions but not yet planned in detail.
 | **1** | A real HTML briefing generated from code | ✅ Complete |
 | **2** | Briefing auto-published to a URL every morning | 🔶 Partial (needs repo + deploy) |
 | **3** | Multiple users, cohort onboarding, long COVID briefing live | 🔶 Partial (structure done) |
-| **4** | OpenClaw sends you the briefing summary each morning | Not started |
-| **5** | Change your briefing by talking to OpenClaw | Not started |
+| **4** | OpenClaw delivers briefings + conversational modification | 🔶 Partial (skill + cron created, needs testing) |
+| **5** | New user onboarding and source discovery via OpenClaw | Not started |
 | **6** | A briefing that looks as good as it reads | 🔶 Partial (baseline styling done) |

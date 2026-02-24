@@ -16,11 +16,15 @@ SECTION_CONFIG = {
     "hn": {"icon": "🟠", "unit": "posts", "sort_label": "by points"},
     "reddit": {"icon": "🔵", "unit": "posts", "sort_label": "by score"},
     "rss": {"icon": "📰", "unit": "headlines", "sort_label": "headlines"},
+    "twitter_gnews": {"icon": "🐦", "unit": "tweets", "sort_label": "trending"},
+    "bluesky": {"icon": "🦋", "unit": "posts", "sort_label": "recent"},
 }
 
 SOURCE_DISPLAY_NAMES = {
     "hn": "Hacker News",
     "reddit": "Reddit",
+    "twitter_gnews": "Twitter / X",
+    "bluesky": "Bluesky",
 }
 
 RSS_SECTION_ORDER = ["TechCrunch", "Blogs"]
@@ -80,28 +84,50 @@ def build_sections(items: list[dict]) -> list[dict]:
 
     sections = []
 
-    # HN and Reddit as single sections
-    for stype in ("hn", "reddit"):
-        if stype not in groups:
-            continue
-        cfg = SECTION_CONFIG[stype]
-        group_items = groups[stype]
-        if stype == "hn":
-            group_items.sort(key=lambda x: x.get("points", 0), reverse=True)
-        elif stype == "reddit":
-            group_items.sort(key=lambda x: x.get("score", 0), reverse=True)
-
+    # 1. Hacker News
+    if "hn" in groups:
+        cfg = SECTION_CONFIG["hn"]
+        hn_items = groups["hn"]
+        hn_items.sort(key=lambda x: x.get("points", 0), reverse=True)
         sections.append({
-            "id": stype.replace("_", "-"),
-            "name": SOURCE_DISPLAY_NAMES.get(stype, stype),
+            "id": "hn",
+            "name": "Hacker News",
             "icon": cfg["icon"],
             "unit": cfg["unit"],
             "sort_label": cfg["sort_label"],
-            "entries": group_items[:10],
-            "source_type": stype,
+            "entries": hn_items[:10],
+            "source_type": "hn",
         })
 
-    # RSS items grouped by their 'section' tag
+    # 2. Reddit
+    if "reddit" in groups:
+        cfg = SECTION_CONFIG["reddit"]
+        reddit_items = groups["reddit"]
+        reddit_items.sort(key=lambda x: x.get("score", 0), reverse=True)
+        sections.append({
+            "id": "reddit",
+            "name": "Reddit",
+            "icon": cfg["icon"],
+            "unit": cfg["unit"],
+            "sort_label": cfg["sort_label"],
+            "entries": reddit_items[:10],
+            "source_type": "reddit",
+        })
+
+    # 3. X & Bluesky combined
+    social_items = groups.get("twitter_gnews", []) + groups.get("bluesky", [])
+    if social_items:
+        sections.append({
+            "id": "social",
+            "name": "X & Bluesky",
+            "icon": "🐦",
+            "unit": "posts",
+            "sort_label": "trending",
+            "entries": social_items[:10],
+            "source_type": "social",
+        })
+
+    # 4. RSS items grouped by their 'section' tag (TechCrunch, Blogs, etc.)
     if "rss" in groups:
         cfg = SECTION_CONFIG["rss"]
         rss_by_section: dict[str, list[dict]] = {}

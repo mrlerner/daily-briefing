@@ -35,28 +35,23 @@ def fetch_twitter_search(catalog_twitter: dict) -> list[dict]:
     if not queries:
         return []
 
-    min_faves = catalog_twitter.get("min_faves", 0)
-    min_retweets = catalog_twitter.get("min_retweets", 0)
+    max_results = min(catalog_twitter.get("max_results", 10), 100)
+    top_k = catalog_twitter.get("top_k", 0)
 
     all_items = {}
     headers = {"Authorization": f"Bearer {bearer_token}"}
 
     for query_text in queries:
-        parts = [query_text, "-is:retweet"]
-        if min_faves > 0:
-            parts.append(f"min_faves:{min_faves}")
-        if min_retweets > 0:
-            parts.append(f"min_retweets:{min_retweets}")
-
-        full_query = " ".join(parts)
-        logger.info("Twitter API search: %s", full_query)
+        full_query = f"{query_text} -is:retweet lang:en"
+        logger.info("Twitter API search: %s (max_results=%d)", full_query, max_results)
 
         try:
             resp = requests.get(
                 SEARCH_URL,
                 params={
                     "query": full_query,
-                    "max_results": 10,
+                    "max_results": max_results,
+                    "sort_order": "recency",
                     "tweet.fields": "created_at,public_metrics,lang,author_id",
                     "expansions": "author_id",
                     "user.fields": "username",
@@ -80,6 +75,8 @@ def fetch_twitter_search(catalog_twitter: dict) -> list[dict]:
                 authors[user["id"]] = user.get("username", "")
 
             for tweet in data.get("data", []):
+                if tweet.get("text", "").startswith("RT @"):
+                    continue
                 item = _parse_tweet(tweet, authors)
                 if item and item["id"] not in all_items:
                     all_items[item["id"]] = item
@@ -88,9 +85,27 @@ def fetch_twitter_search(catalog_twitter: dict) -> list[dict]:
             logger.warning("Twitter API request failed: %s", e)
             continue
 
-    items = sorted(all_items.values(), key=lambda x: x.get("likes", 0), reverse=True)
-    logger.info("Fetched %d tweets from Twitter API (%d queries)", len(items), len(queries))
+    items = sorted(all_items.values(), key=_engagement_score, reverse=True)
+
+    if top_k > 0 and len(items) > top_k:
+        logger.info("Keeping top %d of %d tweets by engagement", top_k, len(items))
+        items = items[:top_k]
+
+    if items:
+        top = items[0]
+        logger.info("Top tweet: %d likes, %d RT — @%s",
+                     top.get("likes", 0), top.get("retweets", 0), top.get("author", "?"))
+
+    logger.info("Returning %d tweets from Twitter API (%d queries, %d fetched)",
+                len(items), len(queries), len(all_items))
     return items
+
+
+def _engagement_score(item: dict) -> float:
+    """Weighted engagement score: likes + 2*retweets + 0.5*replies."""
+    return (item.get("likes", 0)
+            + 2 * item.get("retweets", 0)
+            + 0.5 * item.get("comments", 0))
 
 
 def _parse_tweet(tweet: dict, authors: dict) -> dict | None:
