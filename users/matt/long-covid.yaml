@@ -7,5 +7,5 @@ blocks:
     days: 3
 
 delivery:
-  time: "07:00"
-  timezone: America/New_York
+  time: "06:00"
+  timezone: America/Los_Angeles

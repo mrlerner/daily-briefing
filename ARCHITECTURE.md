@@ -454,7 +454,7 @@ No server required. No authentication for now (briefings are not sensitive in v1
 
 ### Division of Responsibility
 
-**This repo** handles briefing generation: fetching content, ranking, rendering HTML/JSON/summary, and publishing to GitHub Pages. A laptop `launchd` cron job runs `python3 src/build.py` daily at 5 AM ET so briefings are pre-built.
+**This repo** handles briefing generation: fetching content, ranking, rendering HTML/JSON/summary, and publishing to GitHub Pages. A laptop `launchd` cron job runs `python3 src/build.py` daily at 5 AM PT so briefings are pre-built.
 
 **OpenClaw** handles everything user-facing: scheduled delivery (via its own cron system), messaging (via whatever channel each user is on — Telegram, WhatsApp, iMessage, etc.), and conversational interaction. OpenClaw already knows how to reach each user; we don't duplicate that.
 
@@ -497,7 +497,7 @@ OpenClaw configures its own cron job (via `openclaw cron add`) to deliver briefi
 
 ### Laptop Build Cron
 
-A `launchd` plist (`~/Library/LaunchAgents/com.dailybriefing.build.plist`) runs `scripts/build.sh` daily at 5 AM ET. The script:
+A `launchd` plist (`~/Library/LaunchAgents/com.dailybriefing.build.plist`) runs `scripts/build.sh` daily at 5 AM PT. The script:
 1. Runs `python3 src/build.py` (generates all users' briefings)
 2. Logs to `logs/build.log`
 

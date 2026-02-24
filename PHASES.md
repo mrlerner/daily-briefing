@@ -230,7 +230,7 @@ All error handling is built into `build.py`. Each fetcher catches its own except
 
 Two independent systems connected by the filesystem:
 
-- **Laptop cron job** (`launchd`) runs `python3 src/build.py` daily at 5 AM ET. Generates all briefings so they're pre-built and ready.
+- **Laptop cron job** (`launchd`) runs `python3 src/build.py` daily at 5 AM PT. Generates all briefings so they're pre-built and ready.
 - **OpenClaw skill** (`daily-briefing`) teaches OpenClaw where briefings live, how to modify YAML configs, and how to run the build on demand.
 - **OpenClaw cron job** (configured in OpenClaw, not in this repo) handles scheduled delivery. OpenClaw already knows each user's messaging channel.
 
