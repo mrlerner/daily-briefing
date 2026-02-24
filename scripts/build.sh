@@ -18,5 +18,17 @@ mkdir -p "$LOG_DIR"
     "$PYTHON" src/build.py 2>&1
 
     echo ""
-    echo "Build completed at $(date '+%H:%M:%S %Z')"
+    echo "Deploying to GitHub Pages..."
+    OUT_DIR="$REPO_DIR/out"
+    cd "$OUT_DIR"
+    git init -q
+    git checkout -q -b gh-pages
+    git add -A
+    git commit -q -m "Deploy briefings — $(date '+%Y-%m-%d')"
+    git remote add origin https://github.com/mrlerner/daily-briefing.git
+    git push -q -u origin gh-pages --force
+    rm -rf "$OUT_DIR/.git"
+    cd "$REPO_DIR"
+
+    echo "Deploy completed at $(date '+%H:%M:%S %Z')"
 } >> "$LOG_FILE" 2>&1
