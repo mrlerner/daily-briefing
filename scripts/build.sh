@@ -8,6 +8,10 @@ PYTHON="/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
 
 mkdir -p "$LOG_DIR"
 
+# Ensure output files are world-writable so both launchd (mattlerner)
+# and OpenClaw (openclaw) can overwrite them.
+umask 000
+
 {
     echo "========================================="
     echo "Daily Briefing Build — $(date '+%Y-%m-%d %H:%M:%S %Z')"
@@ -15,7 +19,7 @@ mkdir -p "$LOG_DIR"
 
     cd "$REPO_DIR"
 
-    "$PYTHON" src/build.py 2>&1
+    "$PYTHON" src/build.py "$@" 2>&1
 
     echo ""
     echo "Deploying to GitHub Pages..."

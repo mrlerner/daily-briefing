@@ -40,7 +40,7 @@ def score_items(items: list[dict], topics: list[dict]) -> list[dict]:
         published_dt = item.get("published_dt")
         if published_dt:
             age_hours = (datetime.now(timezone.utc) - published_dt).total_seconds() / 3600
-            if age_hours < 6:
+            if 0 < age_hours < 6:
                 total_score += MAX_RECENCY_BOOST * (1 - age_hours / 6)
 
         # Platform engagement boost for HN/Reddit

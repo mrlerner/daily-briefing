@@ -4,3 +4,4 @@ pyyaml>=6.0,<7.0
 jsonschema>=4.20,<5.0
 requests>=2.31,<3.0
 googlenewsdecoder>=0.1.7
+pytest>=8.0,<9.0

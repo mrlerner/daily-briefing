@@ -1,0 +1,25 @@
+---
+description: Red/Green TDD workflow — write failing tests before implementation
+alwaysApply: true
+---
+
+# Red/Green TDD
+
+When building new features or modifying existing behavior, follow this cycle:
+
+1. **Red**: Write a pytest test that describes the expected behavior. Run it and confirm it fails.
+2. **Green**: Write the minimal implementation to make the test pass. Run the full suite.
+3. **Refactor** (if needed): Clean up while keeping all tests green.
+
+## Running tests
+
+```bash
+python3 -m pytest tests/ -v
+```
+
+## Conventions
+
+- Tests live in `tests/` and are named `test_<module>.py`
+- Shared fixtures are in `tests/conftest.py` (e.g. `make_item`, `sample_topics`)
+- Source modules are in `src/` — the conftest adds `src/` to `sys.path`
+- Always run the full suite after implementation, not just the new test — existing tests catch regressions
