@@ -1,0 +1,9 @@
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. Claude is both the moral &amp; the better choice
+2. Free Claude Max for (large project) open source maintainers
+3. Claude Code Chooses – a followup deepdive on email providers
+4. Show HN: Claude-plan-reviewer – Rival AI reviews Claude Code's plans
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-01.html

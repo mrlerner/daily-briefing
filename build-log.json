@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-01T05:05:13.335498",
+  "briefings_built": 3,
+  "successful": 3,
+  "failed": 0,
+  "results": [
+    {
+      "user_id": "jo",
+      "briefing": "silent-reflux",
+      "success": true,
+      "error": null,
+      "items_fetched": 216,
+      "items_after_filter": 5,
+      "blocks": 0,
+      "elapsed_seconds": 19.3,
+      "display_name": "Silent Reflux"
+    },
+    {
+      "user_id": "matt",
+      "briefing": "ai-engineering",
+      "success": true,
+      "error": null,
+      "items_fetched": 1410,
+      "items_after_filter": 30,
+      "blocks": 1,
+      "elapsed_seconds": 182.7,
+      "display_name": "AI Engineering"
+    },
+    {
+      "user_id": "matt",
+      "briefing": "long-covid",
+      "success": true,
+      "error": null,
+      "items_fetched": 572,
+      "items_after_filter": 6,
+      "blocks": 1,
+      "elapsed_seconds": 109.6,
+      "display_name": "Long COVID"
+    }
+  ],
+  "total_elapsed_seconds": 311.6
+}
