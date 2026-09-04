@@ -1,0 +1,11 @@
+S&P 500 closed at 7,209.01, up +1.0% (+73.06 pts).
+
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Claude Code dies with ANTHROPIC_API_KEY in cloud environment
+2. What I changed in how I use Claude Code after Anthropic's postmortem
+3. Technical interviews with AI allowed on CoderPad — what are interviewers actually evaluating?
+4. This guy literally broke down everything to build a 21 agent dev team in Claude Code: 0:00 - Why one prompt = AI slop 1:...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-01.html

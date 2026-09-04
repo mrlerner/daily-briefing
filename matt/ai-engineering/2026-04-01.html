@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — April 01, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">April 01, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">9 posts</span></li>
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">1 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 6,528.52, up
+                +2.9%
+                (+184.80 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Apr 01: Overcast , 39–51°F</div>
+            
+                <div>Thursday, Apr 02: Partly Cloudy , 40–48°F</div>
+            
+                <div>Friday, Apr 03: Overcast , 42–51°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/Fried_rice/status/2038894956459290963" target="_blank">Claude Code&#39;s source code has been leaked via a map file in their NPM registry</a></p>
+                <div class="item-meta">
+                    
+                    1993 points · 980 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47584540" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/" target="_blank">The Claude Code Source Leak: fake tools, frustration regexes, undercover mode</a></p>
+                <div class="item-meta">
+                    
+                    1200 points · 485 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=47586778" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://systima.ai/blog/claude-code-leak-compliance-implications" target="_blank">What the Claude Code Leak Means for Regulated Industries</a></p>
+                <div class="item-meta">
+                    
+                    9 points · 1 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=47598803" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/anthropics/claude-code" target="_blank">Anthropic open sourced Claude Code repo after the source code leak</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 3 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=47598634" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/jiangyurong609/claude-code-any" target="_blank">Claude Code fork that works with any OpenAI-compatible LLM</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=47591693" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.theregister.com/2026/04/01/claude_code_source_leak_privacy_nightmare/" target="_blank">Claude Code source leak reveals how much info Anthropic can hoover up about you</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=47597948" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://layer5.io/blog/engineering/the-claude-code-source-leak-512000-lines-a-missing-npmignore-and-the-fastest-growing-repo-in-github-history/" target="_blank">Anthropic open sourced Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 8h ago
+                     · <a href="https://news.ycombinator.com/item?id=47596233" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/" target="_blank">Major Claude Code source leak offers deep insight into how Anthropic tool works</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=47592087" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/bcherny/status/2039210700657307889" target="_blank">Claude Code source code leak was a developper error</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 1 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=47598608" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1s8lkkm/i_dug_through_claude_codes_leaked_source_and/" target="_blank">i dug through claude code&#39;s leaked source and anthropic&#39;s codebase is absolutely unhinged</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 4526 points · 533 comments · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">so claude code&#39;s full source leaked through a .map file in their npm package and someone uploaded it to github. i spent a few hours going through it and honestly i don&#39;t know where to start.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1s8zxt4/thanks_to_the_leaked_source_code_for_claude_code/" target="_blank">Thanks to the leaked source code for Claude Code, I used Codex to find and patch the root cause of the insane token drain in Claude Code and patched it. Usage limits are back to normal for me!</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 1543 points · 135 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">https://github.com/Rangizingo/cc-cache-fix/tree/main
+
+Disclaimer : Codex found and fixed this, not me. I work in IT and know how to ask the right questions, but it did the work.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LocalLLaMA/comments/1s8uerc/analyzing_claude_code_source_code_write_wtf_and/" target="_blank">Analyzing Claude Code Source Code. Write &#34;WTF&#34; and Anthropic knows.</a></p>
+                <div class="item-meta">
+                    
+                    r/LocalLLaMA · 447 points · 124 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">So I spent some time going through the Claude Code source, expecting a smarter terminal assistant. What I found instead feels closer to a fully instrumented system that observes how you behave while using it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1s8mbqm/i_read_17_papers_on_agentic_ai_workflows_most/" target="_blank">I read 17 papers on agentic AI workflows. Most Claude Code advice is measurably wrong</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 311 points · 123 comments · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">I lead a small engineering team doing a greenfield SaaS rewrite. I&#39;ve been testing agentic coding but could never get reliable enough output to integrate it into our workflow.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1s8y0yg/anthropic_employees_use_this_secret_claudemd_user/" target="_blank">Anthropic Employees Use This Secret CLAUDE.md (USER_TYPE=ant) – Here’s the leaked &amp;amp; improved version</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 298 points · 32 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">u/iamfakeguru recently dropped a detailed thread after digging into the leaked Claude Code source:
+
+→ [https://x.com/iamfakeguru/status/2038965567269249484](https://x.com/iamfakeguru/status/2038965567269249484)
+
+He showed that Anthropic seems to gate better verification, context handling, and anti-l</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1s9dvi8/anthropic_staff_reacts_to_claude_code_leak/" target="_blank">Anthropic staff reacts to Claude code leak 👀</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 185 points · 12 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Source url: https://x.com/trq212/status/2039201498996035924</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LocalLLaMA/comments/1s951bw/1bit_llms_on_device/" target="_blank">1-bit llms on device?!</a></p>
+                <div class="item-meta">
+                    
+                    r/LocalLLaMA · 50 points · 21 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">everyone&#39;s talking about the claude code stuff (rightfully so) but [this paper](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/1-bit-bonsai-8b-whitepaper.pdf) came out today, and the claims are pretty wild:
+
+* 1-bit 8b param model that fits in 1.15 gb of memory ... * competitive with llama3 8B</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1s9d9j9/claude_code_source_leak_megathread/" target="_blank">Claude Code Source Leak Megathread</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 19 points · 20 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">As most of you know, Claude Code CLI source code was apparently leaked yesterday [https://www.axios.com/2026/03/31/anthropic-leaked-source-code-ai](https://www.axios.com/2026/03/31/anthropic-leaked-source-code-ai)
+
+We are getting a ton of posts about the Claude Code source code leak so we have set u</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/programming/comments/1s9fifq/vibe_coding_vs_vibe_engineering_why_the/" target="_blank">Vibe Coding vs Vibe Engineering: Why the Difference Matters in the AI Era</a></p>
+                <div class="item-meta">
+                    
+                    r/programming · 0 points · 3 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">After the recent leaks from **Anthropic** Claude Code&#39;s source code, it&#39;s crucial to understand software concepts when shipping a data-sensitive production application. **This raises the question:** do you need an engineer or developer to bring your idea to a production application?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/programming/comments/1s9f8cx/anthropic_shipped_claude_codes_entire_source_code/" target="_blank">Anthropic Shipped Claude Code’s Entire Source Code</a></p>
+                <div class="item-meta">
+                    
+                    r/programming · 0 points · 4 comments · 1h ago
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/q_yeon_gyu_kim/status/2039144761375043873" target="_blank">🚨 DO NOT USE THIS This emulator makes your api call to claude 100% identical to claude code request from your subscripti...</a></p>
+                <div class="item-meta">
+                    
+                    @q_yeon_gyu_kim · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">🚨 DO NOT USE THIS This emulator makes your api call to claude 100% identical to claude code request from your subscription plan. Since this is 100% same, making @AnthropicAI difficult to detect abusers.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/dani_avila7/status/2039130384399515724" target="_blank">Got this email from GitHub, possibly related to the Claude Code codebase leak but the repo they&#39;re referencing is a fork...</a></p>
+                <div class="item-meta">
+                    
+                    @dani_avila7 · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Got this email from GitHub, possibly related to the Claude Code codebase leak but the repo they&#39;re referencing is a fork of Anthropic&#39;s own public repo It&#39;s not the codebase one, it&#39;s a repo with Skills, examples, docs, etc. If you want more details, here&#39;s all the inf</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/tszzl/status/2039125632907661379" target="_blank">hmm I guess if I squint I can understand why anthropic included 100 MB of the plain UTF Tibetan Kangyur canon in the Cla...</a></p>
+                <div class="item-meta">
+                    
+                    @tszzl · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">hmm I guess if I squint I can understand why anthropic included 100 MB of the plain UTF Tibetan Kangyur canon in the Claude code package … but it is a bit strange …</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/GergelyOrosz/status/2038982433714905253" target="_blank">Ironic how Anthropic sells Claude Code security reviews positioned as something v powerful (costing $15-25 per PR review...</a></p>
+                <div class="item-meta">
+                    
+                    @GergelyOrosz · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">Ironic how Anthropic sells Claude Code security reviews positioned as something v powerful (costing $15-25 per PR review), and being clear they use it on all PRs... then leaking all of Claude Code&#39;s code thanks to publishing their sourcemap.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/DailyDarkWeb/status/2038917695609917448" target="_blank">The source code for Anthropic&#39;s Claude Code has reportedly been exposed via a misconfigured map file in their npm regist...</a></p>
+                <div class="item-meta">
+                    
+                    @DailyDarkWeb · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">The source code for Anthropic&#39;s Claude Code has reportedly been exposed via a misconfigured map file in their npm registry. The leak includes extensive internal scripts, unreleased AI features, and references to upcoming models.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/altryne/status/2038693399285596222" target="_blank">I&#39;m going to take a stab in the dark here for the sequence of events for @AnthropicAI recently (all made up conjecture, ...</a></p>
+                <div class="item-meta">
+                    
+                    @altryne · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;m going to take a stab in the dark here for the sequence of events for @AnthropicAI recently (all made up conjecture, I know nothing) &gt; Dec-Feb: @AnthropicAI sees incredible surge in popularity driven mainly by Claude Code &gt; Superbowl ad is a dud &gt; Hegs</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/sahilypatel/status/2039004352367689891" target="_blank">Anthropic built two anti-distillation systems into Claude Code to stop competitors from training on its data One injects...</a></p>
+                <div class="item-meta">
+                    
+                    @sahilypatel · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic built two anti-distillation systems into Claude Code to stop competitors from training on its data One injects fake tool calls into the model&#39;s output stream to corrupt any scraped training data Another strips all tool call details into vague summaries so co</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohan_2502/status/2038927786228998194" target="_blank">claude code is anthropic&#39;s terminal-based AI coding agent. you type a prompt, it reads your codebase, runs commands, edi...</a></p>
+                <div class="item-meta">
+                    
+                    @rohan_2502 · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">claude code is anthropic&#39;s terminal-based AI coding agent. you type a prompt, it reads your codebase, runs commands, edits files.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/SemiAnalysis_/status/2039010124644089947" target="_blank">NON-PROFESSIONAL &amp; ENGAGEMENT BAIT: Anyone &#34;classically trained&#34; to write code pre-LLMs will take on look at the leaked ...</a></p>
+                <div class="item-meta">
+                    
+                    @SemiAnalysis_ · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">NON-PROFESSIONAL &amp; ENGAGEMENT BAIT: Anyone &#34;classically trained&#34; to write code pre-LLMs will take on look at the leaked Claude Code repo and see that it&#39;s a pile of unmaintainable slop. However, it is becoming increasingly clear that this doesn&#39;t actu</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/heyshrutimishra/status/2039109796322853058" target="_blank">Anthropic leaked 512,000 lines of Claude Code source code yesterday. What happened in the next 12 hours is absolutely wi...</a></p>
+                <div class="item-meta">
+                    
+                    @heyshrutimishra · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic leaked 512,000 lines of Claude Code source code yesterday. What happened in the next 12 hours is absolutely wild.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU0J3MC1EbkpmdDMzV1BuX0g5eEpIQTM4Q2NaRElXSmpuZVhFcG5ONG8xUEZfWDA2Tm03eHF5N3F5Nl9vSXAzTlZSSmpJQzdVUVZILTBjeWpMOHhfMmtqRTNHTXVpR0VfYkVwc1loNWVWWU8tRVNrVDk5MHF2ZXl3UlpEUUtfRW5B?oc=5" target="_blank">Ship Code Faster with Claude Code on Vertex AI - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Ship Code Faster with Claude Code on Vertex AI&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 01, 2026 at 04:02
+        </footer>
+    </div>
+</body>
+</html>

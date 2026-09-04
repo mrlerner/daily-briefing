@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — March 01, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">March 01, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Mar 01: Clear , 36–56°F</div>
+            
+                <div>Monday, Mar 02: Cloudy , 33–58°F</div>
+            
+                <div>Tuesday, Mar 03: Overcast , 46–50°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun — good day to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rhpvjd/pharmaceutical_companies_block_dr_avindra_naths/" target="_blank">Pharmaceutical companies block Dr Avindra Nath&#39;s attempts to treat long COVID ME/CFS with anti-T-cell exhaustion drug, which could revamp the immune system, allowing it to clear the active viral infections found in ME/CFS.</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 90 points · 14 comments · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Dr Avindra Nath&#39;s found that in ME/CFS patients, the T-cells of the immune system have become exhausted, so they cannot properly clear viral infections ([**this post**](https://forums.phoenixrising.me/threads/avindra-nath-finds-t-cell-exhaustion-in-me-cfs-which-weakens-immunity-and-is-possibly-cause</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rhhzr9/mourning_and_pem/" target="_blank">Mourning and PEM</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 23 points · 16 comments · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi everyone,
+
+A bit of a personal question perhaps. But my dog passed away quite suddenly yesterday.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rhst1s/balancing_pacing_with_sanity/" target="_blank">Balancing pacing with sanity</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 7 points · 3 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">So, I&#39;ve been in a crash for a while. I generally understand PEM, but I&#39;m still getting used to pacing, as like many others here I thought &#34;just pushing through&#34; was the cure for my problems :[
+
+I want to get better at pacing.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rhvu50/anecdotal_library_of_long_covid_treatments/" target="_blank">Anecdotal Library of Long Covid &#34;Treatments&#34;</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 6 points · 3 comments · 50m ago
+                    
+                </div>
+                
+                <div class="item-summary">**Pharmaceutical Interventions**  *\[in no particular order\]*
+
+* Low-Dose Naltrexone 
+* Sofosbuvir
+* Tirzepatide or Semaglutide
+* Midodrine 
+* Guanfacine or Clonidine
+* H1/H2/Sodium-Cromolyn
+* Maraviroc
+* Fluvoximine 
+* Low-Dose Abilify 
+* Ivabradine
+* Pyridostigmine 
+* Rifaximin
+* Pentoxifylline
+*</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1rh3dtj/long_covid_explained_for_people_just_learning/" target="_blank">Long COVID explained for people just learning about this condition and those who need help educating those around them.</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 2 points · 0 comments · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">This page explains what Long COVID is so you can help people understand what you are going through. [About Long COVID](https://www.promedview.com/about-long-covid)
+
+The symptoms checklist will help you organize your thoughts when you speak to the dr.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rhknag/iv_therapy/" target="_blank">Iv therapy</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 1 points · 3 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Has anyone done this and it has helped. I’m talking to those who have long covid with CFS and pem symptoms</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 01, 2026 at 05:05
+        </footer>
+    </div>
+</body>
+</html>

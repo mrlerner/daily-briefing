@@ -1,0 +1,9 @@
+Sunny Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Claude code meetup in London @AnthropicAI @ClaudeDevs
+2. How Anthropic’s product team moves faster than anyone else I sat down with @_catwu, Head of Product for Claude Code at @...
+3. Anyone have a claude code clone recco? I've been using opencode for open API's, but it's not really working well for vib...
+4. An update on recent Claude Code quality reports - Anthropic
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-25.html

@@ -1,0 +1,9 @@
+Sunny Thu, Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. 🚨 LATEST: China's DeepSeek launches a new "Harness Team" and is hiring to build AI agents that can rival Anthropic's Cla...
+2. Anthropic makes Claude Code’s auto mode default for paid users. Developers can finish and ship more work using this mode...
+3. little detail from anthropic: in the desktop version of claude code if you use ctrl+r it opens a small search history ut...
+4. Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-13.html

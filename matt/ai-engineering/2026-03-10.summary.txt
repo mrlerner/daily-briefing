@@ -1,0 +1,7 @@
+Today's briefing:
+1. Introducing Code Review, a new feature for Claude Code.
+2. Anthropic launches code review tool to check flood of AI-generated code
+3. #Anthropic launches #Claude Code Review, a multi agent #AI system that scans code for bugs
+4. No, it doesn't cost Anthropic $5k per Claude Code user
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-10.html

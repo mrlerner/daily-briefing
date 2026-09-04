@@ -1,0 +1,141 @@
+{
+  "generated": "2026-04-06T14:31:00.700172+00:00",
+  "items": [
+    {
+      "id": "c6e0e3c33ef4a157",
+      "title": "The Severe PEM Crash Survival Guide",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1sdhlx2/the_severe_pem_crash_survival_guide/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-05T22:50:30+00:00",
+      "summary": "I've been fighting Long COVID (ME subtype) since 2022 but have mostly been mild. At the beginning of the year, I plummeted into an extended bedbound PEM crash for the first time. Being mentally and logistically unprepared for how to navigate such a severe situation caused me to crash six additional ",
+      "points": null,
+      "score": 59,
+      "comments": 3,
+      "author": "Liface",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "15h ago",
+      "summary_short": "I've been fighting Long COVID (ME subtype) since 2022 but have mostly been mild. At the beginning of the year, I plummeted into an extended bedbound PEM crash for the first time."
+    },
+    {
+      "id": "345f3752d1ffd12e",
+      "title": "Wearable devices for pacing",
+      "url": "https://reddit.com/r/cfs/comments/1sdgxa6/wearable_devices_for_pacing/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-05T22:21:03+00:00",
+      "summary": "Am newly diagnosed with CFS/ME. \n\nHaving been very active and fit until four years ago one of the hardest things for me right now is pacing. \n\nI feel a little better and end up overdoing it and crashing with PEM. \n\nHas anyone tried a wearable device that tracks HRV, HR, etc and found it helpful?\n\nIf",
+      "points": null,
+      "score": 6,
+      "comments": 15,
+      "author": "FormerPark6164",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "16h ago",
+      "summary_short": "Am newly diagnosed with CFS/ME. Having been very active and fit until four years ago one of the hardest things for me right now is pacing."
+    },
+    {
+      "id": "3e5eff384b42e9c2",
+      "title": "PEM and medication",
+      "url": "https://reddit.com/r/cfs/comments/1sd9alf/pem_and_medication/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-05T17:18:20+00:00",
+      "summary": "hi\n\nI developed me/cfs 5.5 years ago after a viral infection and it’s been brutal, over half my twenties has been wiped out and my life is so small still. PEM is my biggest symptom and what limits my life. I do pace properly and have PEM under control, but if I do a little extra i feel awful. has an",
+      "points": null,
+      "score": 6,
+      "comments": 18,
+      "author": "phoebesophie01",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "21h ago",
+      "summary_short": "hi\n\nI developed me/cfs 5.5 years ago after a viral infection and it’s been brutal, over half my twenties has been wiped out and my life is so small still. PEM is my biggest symptom and what limits my life."
+    },
+    {
+      "id": "97b47217d016a3bd",
+      "title": "how it feels to describe ME/CFS to literally anyone",
+      "url": "https://reddit.com/r/cfs/comments/1sdoi4l/how_it_feels_to_describe_mecfs_to_literally_anyone/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-06T04:06:35+00:00",
+      "summary": "",
+      "points": null,
+      "score": 179,
+      "comments": 4,
+      "author": "SuitBoth8537",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.3,
+      "time_ago": "10h ago",
+      "summary_short": ""
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-06",
+          "day": "Mon",
+          "day_full": "Monday, Apr 06",
+          "high": 72,
+          "low": 47,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-04-07",
+          "day": "Tue",
+          "day_full": "Tuesday, Apr 07",
+          "high": 52,
+          "low": 42,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-04-08",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 08",
+          "high": 57,
+          "low": 41,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Mon",
+        "Wed"
+      ],
+      "summary_line": "Sunny Mon and Wed — good days to be outside."
+    }
+  ]
+}

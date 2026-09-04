@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — May 22, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">May 22, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Friday, May 22: Sunny, 52–75°F</div>
+            
+                <div>Saturday, May 23: Partly Cloudy , 48–73°F</div>
+            
+                <div>Sunday, May 24: Partly Cloudy , 45–69°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Fri, Sat and Sun — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tk391j/symptoms_back_after_moderna_booster/" target="_blank">Symptoms back after Moderna booster</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 44 points · 94 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">I was about 90% recovered from long COVID for months. Then I got a Moderna booster 3 weeks ago and it feels like all my old symptoms came roaring back crushing fatigue, PEM, feeling off in my body again.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tjnm5w/how_do_you_pronounce_pem/" target="_blank">How do you pronounce PEM?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 26 points · 40 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve actually got an appointment with an me/cfs specialist coming up and I don&#39;t want to sound like a fool, lol. [View Poll](https://www.reddit.com/poll/1tjnm5w)</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1tjs3x6/the_possible_role_of_the_vitamin_d_receptors_vdr/" target="_blank">The possible role of the vitamin D receptors (VDR). The case of relatively high vit D post-COVID.</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 17 points · 13 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">I wanted to share an observation from my Long Covid experience and see whether anyone else has noticed something similar. Since having COVID, my **25(OH)D vitamin D levels have consistently been in the upper-normal range**.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tjwzqz/has_anyone_tried_minocycline_for_mecfs/" target="_blank">Has anyone tried minocycline for ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 4 points · 13 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;Oral minocycline therapy as first-line treatment in patients with Myalgic encephalomyelitis and long COVID: A pilot study&#34;  
+[https://pubmed.ncbi.nlm.nih.gov/39720104/](https://pubmed.ncbi.nlm.nih.gov/39720104/)
+
+Research out of Japan from 2024 (and they did an earlier one in 2021 that had like a 4</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tjx0j4/the_next_phase_in_long_covid_research_addressing/" target="_blank">The next phase in Long COVID research: addressing the ethical challenges in trials</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 0 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Taken together, there is a strong ethical case that the time is ripe for more trials of disease-modifying treatments for all PWLC, including groups who might require special protections in clinical trials
+
+[https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(26)00166-5/fulltext](https://</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tkgk3z/a_lc_mecfs_type_ms_adhd_story_can_my_brain_and/" target="_blank">A LC (ME/CFS type) + MS + ADHD story : can my brain and its thoughts be trusted?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 1 points · 0 comments · 16m ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve been wanting to write this for a while but brain fog kept getting in the way. I have stable relapsing-remitting MS since 2021.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated May 22, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Please help me spread the word about this. People still think Claude Code subs won’t work in apps like T3 Code. Anthropi...
+2. 📕An idea by my friends @marckohlbrugge and @andreyazimov Add a SKILL.md to readmake.com so you can just load the book in...
+3. Most AI data tools make you move into their stack before you find out if the data is any good. Teneo's CLI speaks MCP. O...
+4. Show HN: Safety Guardrails for Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-07.html

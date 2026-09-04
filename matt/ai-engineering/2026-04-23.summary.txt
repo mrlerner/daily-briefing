@@ -1,0 +1,11 @@
+S&P 500 closed at 7,137.90, up +1.1% (+73.89 pts).
+
+Sunny Thu, Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. Anthropic tests pulling Claude Code from its Pro plan revealing AI pricing truth
+2. Claude Code spend had gotten to $10.95M runrate peak at SemiAnalysis But then Opus 4.7 saved me. More token effecient fo...
+3. Is Claude Code going to cost $100/month? Probably not - it's all very confusing
+4. Claude Code for Healthcare: How Physicians Build with AI - Anthropic
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-23.html

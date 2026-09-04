@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — March 20, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">March 20, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">8 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">2 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="http://muratbuffalo.blogspot.com/2026/03/claude-code-experiment-visualizing.html" target="_blank">Claude Code Experiment: Visualizing Hybrid Logical Clocks</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 0 comments · 22h ago
+                     · <a href="https://news.ycombinator.com/item?id=47442338" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/spencermarx/obsidian-ai" target="_blank">Show HN: Agentic Copilot – Bring Claude Code, OpenCode, Gemini CLI into Obsidian</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47438423" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=47435275" target="_blank">TTal – CLI that turns Claude Code into a multi-agent software factory</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 3 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47435275" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.claudecodecamp.com/p/i-take-my-laptop-to-the-gym-so-claude-doesn-t-have-downtime" target="_blank">I Can&#39;t Stop Running Claude Code Sessions</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 22h ago
+                     · <a href="https://news.ycombinator.com/item?id=47442786" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://codeset.ai/blog/improving-claude-code-with-codeset" target="_blank">We Made Haiku as Good as Opus. Improving Claude Code with Codeset</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=47445611" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://doneyli.substack.com/p/how-i-automated-my-wifes-content" target="_blank">Building a content system for solo founders with Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=47446619" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://rubyonai.com/my-harness-how-i-stopped-babysitting-ai-and-went-kitesurfing/" target="_blank">My Rails harness for autonomous AI coding with Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=47453735" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Shmayro/singularity-claude" target="_blank">Show HN: Singularity-Claude – Self-Evolving Skills for Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 4h ago
+                     · <a href="https://news.ycombinator.com/item?id=47453245" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=47452104" target="_blank">Role-based AI persona packs for Claude Code and Cursor</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 6h ago
+                     · <a href="https://news.ycombinator.com/item?id=47452104" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://jaredezz.tech/posts/claude-code-channels-discord-openclaw-alternative/" target="_blank">Show HN: Claude Code Channels Headless via Discord (OpenClaw Alternative)</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 2h ago
+                     · <a href="https://news.ycombinator.com/item?id=47453943" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ryeh0y/claude_has_no_idea_what_youre_capable_of/" target="_blank">claude has no idea what you&#39;re capable of</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 420 points · 91 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">this is how i prompt claude code before i touch any plan or implementation:  
+&#34;if time and labor were not a consideration, what would the optimal version of X look like? don&#39;t plan, just describe.&#34;
+
+then i iterate.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rymg3i/i_made_the_claude_code_ai_logo_star_for_my_desk/" target="_blank">I made the Claude Code AI Logo Star for my desk</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 409 points · 52 comments · 11h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ry9aqa/most_used_claude_code_development_workflows/" target="_blank">Most used claude code development workflows</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 296 points · 28 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">all details are here [https://github.com/shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ryh3da/new_in_claude_code_telegram_and_discord_remote/" target="_blank">New in Claude Code: Telegram and Discord remote control</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 288 points · 44 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">New: Claude Code channels, which allows you to control your Claude Code session through select MCPs, starting with Telegram and Discord. Use this to message Claude Code directly from your phone.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ry5im4/me_since_i_started_using_claude_code/" target="_blank">Me since I started using Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 108 points · 4 comments · 23h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ryr3c2/anthropic_silently_restricted_my_paid_account_no/" target="_blank">Anthropic silently restricted my paid account &amp;gt;&amp;gt; no notice, no explanation, no response to support tickets</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 35 points · 56 comments · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">I run a cybersecurity company and I&#39;m a paying Claude subscriber. A few weeks ago I noticed that shell/bash execution stopped working across all my Claude sessions, including Claude Code.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ryq5t1/anthropic_just_accepted_my_agency_into_the_claude/" target="_blank">Anthropic just accepted my agency into the Claude Partner Network  here&#39;s what they require</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 19 points · 50 comments · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">Just got accepted into the Anthropic Claude Partner Network for my web dev agency (teebostudio.fr). Wanted to share the process since I couldn&#39;t find much info about it online.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ryc9tb/built_an_entire_ai_baseball_simulation_engine_in/" target="_blank">Built an entire AI baseball simulation engine in 2 weeks with Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 10 points · 3 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi folks. I&#39;m a professional writer, not an engineer, and just wanted to share a project I&#39;ve been building over the past few weeks.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ryuwrk/i_have_made_a_macos_menu_bar_app_that_shows_your/" target="_blank">I have made a macOS menu bar app that shows your Claude usage</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 9 points · 6 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">I have noticed that I regularly check the usage page, so I have built a small menu bar app that shows session % and weekly % in real time   
+  
+It reads the same data as [claude.ai/settings/usage](http://claude.ai/settings/usage) using Claude Code&#39;s OAuth token from your Keychain, so no extra login</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/programming/comments/1ryo0xy/has_anyone_else_noticed_their_ai_tool_usage/" target="_blank">Has anyone else noticed their AI tool usage patterns feel uncomfortably like behavioral addiction loops?</a></p>
+                <div class="item-meta">
+                    
+                    r/programming · 0 points · 35 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve been using AI coding tools heavily for the past year+ (Claude Code, Copilot, Cursor) and started noticing patterns in my own work that bothered me. The loop: feed a prompt → get partial result → tweak → re-prompt → get closer but not right → &#34;just one more try.&#34; Look up, it&#39;s 2 AM.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/" target="_blank">The best AI investment might be in energy tech</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · just now
+                    
+                </div>
+                
+                <div class="item-summary">Power has become one of the biggest bottlenecks in rolling out new AI data centers. That&#39;s creating an opening for investors.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/20/ai-notetaker-hardware-devices-pins-pendants-record-transcribe/" target="_blank">These AI notetaking devices can help you record and transcribe your meetings</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · just now
+                    
+                </div>
+                
+                <div class="item-summary">These physical notetakers transcribe audio and give users summaries and action items of meetings using AI. Some even offer live translation.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/" target="_blank">Jeff Bezos reportedly wants $100 billion to buy and transform old manufacturing firms with AI</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">The Amazon magnate has a new project centered around acquiring industrial firms and revamping them with AI technology.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/19/online-bot-traffic-will-exceed-human-traffic-by-2027-cloudflare-ceo-says/" target="_blank">Online bot traffic will exceed human traffic by 2027, Cloudflare CEO says</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI bots may outnumber humans online by 2027, says Cloudflare CEO Matthew Prince, as generative AI agents dramatically increase web traffic and infrastructure demands.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/19/meta-rolls-out-new-ai-content-enforcement-systems-while-reducing-reliance-on-third-party-vendors/" target="_blank">Meta rolls out new AI content enforcement systems while reducing reliance on third-party vendors</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Meta believes these AI systems can detect more violations with greater accuracy, better prevent scams, respond more quickly to real-world events, and reduce over-enforcement.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/19/doordash-launches-a-new-tasks-app-that-pays-couriers-to-submit-videos-to-train-ai/" target="_blank">DoorDash launches a new ‘Tasks’ app that pays couriers to submit videos to train AI</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Delivery couriers will be able to earn money by completing activities like filming everyday tasks or recording themselves speaking in another language.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/19/multiverse-computing-pushes-its-compressed-ai-models-into-the-mainstream/" target="_blank">Multiverse Computing pushes its compressed AI models into the mainstream</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">After compressing models from major AI labs, including OpenAI, Meta, DeepSeek, and Mistral AI, Multiverse Computing has launched both an app that showcases the capabilities of its compressed models and an API that makes them more widely available.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta is having trouble with rogue AI agents</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">A rogue AI agent inadvertently exposed Meta company and user data to engineers who didn&#39;t have permission to see it.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment" target="_blank">How we monitor internal coding agents for misalignment</a></p>
+                <div class="item-meta">
+                    
+                    OpenAI Blog · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://openai.com/index/openai-to-acquire-astral" target="_blank">OpenAI to acquire Astral</a></p>
+                <div class="item-meta">
+                    
+                    OpenAI Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Accelerates Codex growth to power the next generation of Python developer tools</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 20, 2026 at 08:48
+        </footer>
+    </div>
+</body>
+</html>

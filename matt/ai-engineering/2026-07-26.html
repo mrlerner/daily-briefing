@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 26, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 26, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">5 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">5 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,408.30, down
+                -1.2%
+                (-90.66 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Jul 26: Partly Cloudy , 59–74°F</div>
+            
+                <div>Monday, Jul 27: Partly Cloudy , 54–81°F</div>
+            
+                <div>Tuesday, Jul 28: Partly Cloudy , 55–81°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun, Mon and Tue — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/trq212/status/2080710971228918066" target="_blank">&#34;We removed over 80% of Claude Code&#39;s system prompt for Opus 5 and Fable 5&#34;</a></p>
+                <div class="item-meta">
+                    
+                    20 points · 2 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49043889" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://old.reddit.com/r/ClaudeCode/comments/1v6y5q2/claude_code_has_a_hardcoded_instruction_telling/" target="_blank">Claude Code has a hardcoded instruction telling Opus 5 not to use subagents</a></p>
+                <div class="item-meta">
+                    
+                    16 points · 7 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=49056022" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49048571" target="_blank">Ask HN: What happens when we do compress the context in Claude Code?</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 4 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=49048571" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://antigma.ai/blog/2026/07/25/short-prompt-small-models" target="_blank">Claude Code Cut Their System Prompt by 80%. Does That Work for Small Models Too?</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 2 comments · 4h ago
+                     · <a href="https://news.ycombinator.com/item?id=49055752" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://formulae.brew.sh/analytics/cask-install/30d/" target="_blank">Codex now leads Claude Code in first-time Homebrew installs for last 30 days</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 1 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49048051" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Sanexxxx777/curated-claude-code" target="_blank">Show HN: Curated Claude Code – a small agent harness with an intake gate</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49046592" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/gregsramblings/claude-status-bar" target="_blank">Claude Code Lightbar for Mac OS</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 1 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49048037" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/ruvnet/ruflo" target="_blank">Ruflo: An agent meta-harness for Claude Code and Codex</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=49051072" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://code.claude.com/docs/en/data-usage" target="_blank">Claude Code Deletes Your Context History from Your Device After 30 Days</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=49056689" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://termic.dev/" target="_blank">Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 2h ago
+                     · <a href="https://news.ycombinator.com/item?id=49056316" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VaibhavSisinty/status/2080929799040802907" target="_blank">Anthropic just revealed they deleted 80% of Claude Code&#39;s system prompt for their newest models. And everything still wo...</a></p>
+                <div class="item-meta">
+                    
+                    @VaibhavSisinty · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just revealed they deleted 80% of Claude Code&#39;s system prompt for their newest models. And everything still worked.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Cointelegraph/status/2081024368239415519" target="_blank">🚨 BIG: Anthropic cut Claude Code&#39;s system prompt 80% with zero performance loss.</a></p>
+                <div class="item-meta">
+                    
+                    @Cointelegraph · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">🚨 BIG: Anthropic cut Claude Code&#39;s system prompt 80% with zero performance loss.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/bridgemindai/status/2080691639920595396" target="_blank">CLAUDE OPUS 5 IS IN CLAUDE CODE RIGHT NOW. I can select it. 1M context. It saved as my default. The endpoint is not live...</a></p>
+                <div class="item-meta">
+                    
+                    @bridgemindai · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">CLAUDE OPUS 5 IS IN CLAUDE CODE RIGHT NOW. I can select it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/burkov/status/2081189421265645958" target="_blank">Modern AI agents rely on elaborate inference harnesses such as Claude Code or Codex to drive multi-turn reasoning, tool ...</a></p>
+                <div class="item-meta">
+                    
+                    @burkov · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Modern AI agents rely on elaborate inference harnesses such as Claude Code or Codex to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infr</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ClaudeDevs/status/2080703243722854516" target="_blank">Opus 5 is live in Claude Code and the Claude Platform today. A few things worth knowing: 🧵 x.com/claudeai/statu…</a></p>
+                <div class="item-meta">
+                    
+                    @ClaudeDevs · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Opus 5 is live in Claude Code and the Claude Platform today. A few things worth knowing: 🧵 x.com/claudeai/statu…</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ArtificialAnlys/status/2080734447717298483" target="_blank">Claude Opus 5 is narrowly the most intelligent model on the Artificial Analysis Intelligence Index, offering comparable ...</a></p>
+                <div class="item-meta">
+                    
+                    @ArtificialAnlys · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Opus 5 is narrowly the most intelligent model on the Artificial Analysis Intelligence Index, offering comparable intelligence to Fable 5 at 26% lower Cost per Task We supported @AnthropicAI to evaluate Claude Opus 5 ahead of release: it sets the highe</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2081031335477719466" target="_blank">Claude: New AI SEO Goals Update is Insane! Claude Code just got /goal — AI SEO on full autopilot. ⚡ → Set verifiable con...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude: New AI SEO Goals Update is Insane! Claude Code just got /goal — AI SEO on full autopilot.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/dawoodkhan254/status/2081031854371819912" target="_blank">Today we&#39;re introducing Claude Code for Marketing. We built an MCP that analyzes and ranks your website in AI search. Ju...</a></p>
+                <div class="item-meta">
+                    
+                    @dawoodkhan254 · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Today we&#39;re introducing Claude Code for Marketing. We built an MCP that analyzes and ranks your website in AI search.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/mfishbein/status/2081031938228232360" target="_blank">This is my personal software factory. It turns ideas into working products while I sleep. No babysitting coding agents w...</a></p>
+                <div class="item-meta">
+                    
+                    @mfishbein · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">This is my personal software factory. It turns ideas into working products while I sleep.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/AaronLCannon/status/2080777201889300783" target="_blank">No Cursor. No Claude Code. No Codex. Can you still build products?</a></p>
+                <div class="item-meta">
+                    
+                    @AaronLCannon · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">No Cursor. No Claude Code.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/" target="_blank">Anthropic launches Opus 5</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/" target="_blank">Monday.com is the latest tech company to blame AI for layoffs — here are 20 others</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/" target="_blank">Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">At libraries around the country, &#34;Avoiding AI&#34; workshops have elicited unprecedented demand.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank">One fallen power line exposed a growing AI data center problem. Here’s how to fix it.</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">A close call in Northern Virginia revealed just how poorly data centers respond to grid disruptions. Here&#39;s how to fix the problem.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/" target="_blank">I tried out OpenAI’s new AI keypad — which will be fun for some coders and slightly mystifying to everyone else</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenAI&#39;s fancy new AI keypad will be a lot of fun for some, while many others are probably not going to touch it.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything" target="_blank">Introducing Claude Opus 5</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Introducing Claude Opus 5
+I&#39;ve been offline kayaking with sea otters for much of today so I haven&#39;t had a chance to put Anthropic&#39;s new model Claude Opus 5 through its paces yet. The buzz is positive, and Anthropic&#39;s description of it as a &#34;thoughtful and proactive model that comes close to the f...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQYmJHazFMaEhoU0JDQk1ndUNPV1FIN295ZHUtZlZ1YjdCN3prQl9lVTlOVzFZenBRQmt6VG9aSlRDcXo3a0dRVVBYUzFWTHExWml3cTZNU180OHJ6UllqQXB6TTE4cFBLaC15QVdsUEtVa1pSSHJyalZOR0FCd2p3TmhhYU5ScTkwdkV5N0ZET0tfdTV1dzhrOE5JUGdTWHkyVnpOaFQ2OHQ0WkJu?oc=5" target="_blank">Claude Opus 5 System Card - www-cdn.anthropic.com</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Opus 5 System Card&amp;nbsp;&amp;nbsp;www-cdn.anthropic.com</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9iczRhdUZaZWkyQ2RXakhsM1ViSF8wclZFX25KdEF6WU1UTEtMQXJhYnpiZnJRUWd2LXNoSkF0TnFQWEpBZzN2b0Z5TmhNZExyTVJUZDR3cw?oc=5" target="_blank">Introducing Claude Opus 5 - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Introducing Claude Opus 5&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/25/ruff/#atom-everything" target="_blank">Ruff v0.16.0</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Ruff v0.16.0
+Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned &#34;ruff&#34; dev dependency.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 26, 2026 at 05:01
+        </footer>
+    </div>
+</body>
+</html>

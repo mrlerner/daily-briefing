@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — February 25, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">February 25, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">9 posts</span></li>
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">1 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://code.claude.com/docs/en/remote-control" target="_blank">Claude Code Remote Control</a></p>
+                <div class="item-meta">
+                    
+                    144 points · 95 comments · 6h ago
+                     · <a href="https://news.ycombinator.com/item?id=47148454" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/PocketConservatory/plugins/tree/main/subtask" target="_blank">Subtask – Multi-LLM routing for Claude Code quota limits</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 1 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=47139170" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote" target="_blank">Anthropic just released a mobile version of Claude Code called Remote Control</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=47150459" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.noahlebovic.com/hacking-claude-code-on-the-web-breaking-yolo-mode-sandboxing/" target="_blank">Hacking Claude Code remote: escaping YOLO-mode sandboxing</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 2h ago
+                     · <a href="https://news.ycombinator.com/item?id=47150170" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://antirez.com/news/160" target="_blank">Writing a &#34;clear room&#34; Z80 and Spectrum emulator with Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=47149829" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://manojgopanapalli.substack.com/p/claude-code-to-figma-the-complete" target="_blank">Claude Code to Figma: The Complete Guide to AI Driven Product Design Workflows</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47133822" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/sarukas/claude-code-agent-sdk-router" target="_blank">Show HN: Run any LLM inside Claude Code. A local auditable proxy for 7 providers</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=47141088" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://timonweb.com/ai/i-checked-5-security-skills-for-claude-code-only-one-is-worth-installing/" target="_blank">Comparing 5 security review skills for Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=47149897" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/JSK9999/ai-nexus" target="_blank">Show HN: AI-Nexus – Unified Rule Manager for Claude Code, Cursor, and Codex</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 22h ago
+                     · <a href="https://news.ycombinator.com/item?id=47138102" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rdyhk4/new_in_claude_code_remote_control/" target="_blank">New in Claude Code: Remote Control</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 982 points · 133 comments · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Kick off a task in your terminal and pick it up from your phone while you take a walk or join a meeting. Claude keeps running on your machine, and you can control the session from the Claude app or claude.ai/code
+
+Source tweet: https://x.com/claudeai/status/2026418433911603668?s=46</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rdqdib/exclusive_hegseth_gives_anthropic_until_friday_to/" target="_blank">Exclusive: Hegseth gives Anthropic until Friday to back down on AI safeguards</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 828 points · 218 comments · 18h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rdr9pn/claude_code_just_got_remote_control/" target="_blank">Claude Code just got Remote Control</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 247 points · 73 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just announced a new Claude Code feature called Remote Control. It&#39;s rolling out now to Max users as a research preview.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rdsnxi/this_feels_like_it_was_human_written_it_wasnt/" target="_blank">&#34;This feels like it was human written&#34; : it wasn&#39;t. Voice extraction process for Claude Code, template included</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 90 points · 17 comments · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">A couple weeks ago I posted about my AI poisoning setup and someone immediately proved it doesn&#39;t work by asking Gemini about me. Turns out explaining your anti-AI defense system in detail on a public forum that AI crawlers index is not the 200 IQ move I thought it was.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1re71lw/youre_out_of_extra_usage_claude_uh_finds_a_way/" target="_blank">&#34;You&#39;re out of extra usage&#34; - Claude, uh, finds a way</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 48 points · 7 comments · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Was just testing out Agent Teams, and much to my disappointment, hit my limits. I was about to call it a night, then realized that the agent somehow figured a way to just use Haiku and carry on.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rdqgex/when_you_have_to_close_your_main_claude_code/" target="_blank">When you have to close your main Claude code instance after it starts to crash.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 36 points · 7 comments · 18h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rea7by/i_made_a_plugin_that_plays_typingclicking_sounds/" target="_blank">I made a plugin that plays typing/clicking sounds while Claude is working. As if its sitting and burning tokens right next to you!</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 19 points · 10 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve built a little Claude Code extension that breathes some life into it. It adds nice oldschool keyboard typing and clicking sounds on tool calls and other processes.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1re1iyx/i_built_a_claude_code_plugin_that_gives_it_live/" target="_blank">I built a Claude Code plugin that gives it live screen/voice/audio context, acts like pair programmer</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 15 points · 9 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hey everyone, I’ve been building something at the intersection of desktop perception and AI coding. The problem: Claude Code is powerful, but it’s context blind.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1re18nv/continue_local_sessions_from_any_device_with/" target="_blank">Continue local sessions from any device with Remote Control - Claude Code Docs</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 6 points · 2 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Does this kill happy.engineering? It definitely affects my current tailscale -&amp;gt; termux -&amp;gt; ssh workflow.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1recva7/pentagon_claude_and_the_military_use/" target="_blank">Pentagon, Claude and the military use</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 6 points · 9 comments · 49m ago
+                    
+                </div>
+                
+                <div class="item-summary">https://www.bfmtv.com/tech/intelligence-artificielle/le-pentagone-donne-72-heures-a-anthropic-pour-permettre-a-l-armee-d-utiliser-son-ia-claude-sous-peine-de-forcer-la-start-up-avec-une-loi-de-1950_AD-202602250483.html</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Marmankites/status/2026616534454436021/photo/3" target="_blank">I recently built my first Claude Code plugin for the team and quickly realised the hardest part wasn&#39;t the code, it was ...</a></p>
+                <div class="item-meta">
+                    
+                    @Marmankites · just now
+                    
+                </div>
+                
+                <div class="item-summary">I recently built my first Claude Code plugin for the team and quickly realised the hardest part wasn&#39;t the code, it was explaining what a plugin actually is, and why it&#39;s not just a prompt file. So I put together this cheat sheet.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/lukOlejnik/status/2026045217380385162" target="_blank">Anthropic published a blog post and playbook on how Claude Code handles COBOL. This isn’t about fixing old code or keepi...</a></p>
+                <div class="item-meta">
+                    
+                    @lukOlejnik · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic published a blog post and playbook on how Claude Code handles COBOL. This isn’t about fixing old code or keeping it on a mainframe.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/zerohedge/status/2026009262929920436" target="_blank">*ANTHROPIC SAYS CLAUDE CODE CAN AUTOMATE COBOL MODERNIZATION And there goes IBM Amodei is now funding Anthropic by buyin...</a></p>
+                <div class="item-meta">
+                    
+                    @zerohedge · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">*ANTHROPIC SAYS CLAUDE CODE CAN AUTOMATE COBOL MODERNIZATION And there goes IBM Amodei is now funding Anthropic by buying puts on all the companies he &#34;disrupts&#34; daily</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kavitath/status/2026256313706229912" target="_blank">Anthropic’s new AI security plug-in, Claude Code Security, just sent shockwaves through cybersecurity stocks. Is this th...</a></p>
+                <div class="item-meta">
+                    
+                    @kavitath · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic’s new AI security plug-in, Claude Code Security, just sent shockwaves through cybersecurity stocks. Is this the beginning of AI-led disruption in cyber defense?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/CyberNews/status/2026412949078778100" target="_blank">When Anthropic launched Claude Code Security, a tool capable of autonomously finding and patching vulnerabilities, share...</a></p>
+                <div class="item-meta">
+                    
+                    @CyberNews · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">When Anthropic launched Claude Code Security, a tool capable of autonomously finding and patching vulnerabilities, shares of elite cybersecurity companies plummeted in a flash. #Claude #AI #cybersecurity</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VentureBeat/status/2026488313117344144" target="_blank">Anthropic just released a mobile version of Claude Code called Remote Control</a></p>
+                <div class="item-meta">
+                    
+                    @VentureBeat · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just released a mobile version of Claude Code called Remote Control</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/techradar/status/2026627498096865664" target="_blank">Local Claude Code CLI sessions can now be accessed from apps or browsers through Remote Control, and it&#39;s different to C...</a></p>
+                <div class="item-meta">
+                    
+                    @techradar · just now
+                    
+                </div>
+                
+                <div class="item-summary">Local Claude Code CLI sessions can now be accessed from apps or browsers through Remote Control, and it&#39;s different to Claude Code on the web.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/mattpocockuk/status/2026612337440870781" target="_blank">Claude Code: &#34;npm add ...&#34; You: &#34;Use pnpm, you idiot!&#34; *adds it to CLAUDE​.md* Claude: &#34;npm add ...&#34; There&#39;s a better wa...</a></p>
+                <div class="item-meta">
+                    
+                    @mattpocockuk · just now
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code: &#34;npm add ...&#34; You: &#34;Use pnpm, you idiot!&#34; *adds it to CLAUDE​.md* Claude: &#34;npm add ...&#34; There&#39;s a better way:</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/sethjkramer/status/2026511698576760964" target="_blank">some evening vibe coding (about 30 minutes) - used claude code to build an app builder that runs claude code inside an @...</a></p>
+                <div class="item-meta">
+                    
+                    @sethjkramer · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">some evening vibe coding (about 30 minutes) - used claude code to build an app builder that runs claude code inside an @e2b sandbox. insane how quickly ideas can be built</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/aakashgupta/status/2026457332536979500" target="_blank">Claude Code + MCP = Vibe PMing Here&#39;s your complete guide with @frankdotlee, Principal AI PM at @Amplitude_HQ: 3:45 - Se...</a></p>
+                <div class="item-meta">
+                    
+                    @aakashgupta · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code + MCP = Vibe PMing Here&#39;s your complete guide with @frankdotlee, Principal AI PM at @Amplitude_HQ: 3:45 - Setting Up Claude Code + MCP 11:08 - Top 5 Use Cases for PMs 40:35 - Biggest Mistakes</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/" target="_blank">Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic accuses DeepSeek, Moonshot, and MiniMax of using 24,000 fake accounts to distill Claude’s AI capabilities, as U.S. officials debate export controls aimed at slowing China’s AI progress.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated February 25, 2026 at 06:03
+        </footer>
+    </div>
+</body>
+</html>

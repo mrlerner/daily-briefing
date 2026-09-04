@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. Anthropic Launches New /design Skill for Claude Code UI Workflows Source: cybersecuritynews.com/anthropic-laun… Anthropi...
+2. Anthropic extending the 50% increase to weekly Claude Code limits till August 31
+3. ANTHROPIC 🔥: Claude Code got a new /design command in research preview! Design in Claude Code adds an artboard workflow ...
+4. Claude Code Helps Ransomware Operator Steal LDAP Passwords, Backdoor VPNs and Exfiltrate SQL Databases Source: cybersecu...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-19.html

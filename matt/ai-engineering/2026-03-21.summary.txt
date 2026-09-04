@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. I supercharged Claude Code's Telegram plugin — voice messages, stickers, group threading, reactions &amp; more [open source]
+2. I have made a macOS menu bar app that shows your Claude usage
+3. anthropic’s openclaw-killer is complete. fucking crazy what they’ve shipped in 4 weeks: - texting claude code - 10,000s ...
+4. You've been using Claude Code long enough to know it works, and now you're hunting for every edge you can find. I put to...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-21.html

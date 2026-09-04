@@ -1,0 +1,11 @@
+S&P 500 closed at 6,782.81, up +2.5% (+165.96 pts).
+
+Sunny Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. Anthropic just taught you how to build the best AI agent harness.Claude Code's source is sitting in the open: 55 directo...
+2. Show HN: Obsidian AI Copilot – Bring Claude Code, OpenCode, etc. into Obsidian
+3. Claude Code plugin for LLM research with typed claims and conflict detection
+4. I've been trying to work towards "Level 5" AI-assisted development for a year. I'm not quite there, but this is the flow that's working for me.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-09.html

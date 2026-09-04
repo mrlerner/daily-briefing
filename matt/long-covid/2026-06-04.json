@@ -1,0 +1,121 @@
+{
+  "generated": "2026-06-04T12:02:33.487138+00:00",
+  "items": [
+    {
+      "id": "a019e6cc619baf10",
+      "title": "Research ethics boards need urgent training on Long COVID and myalgic encephalomyelitis",
+      "url": "https://thesicktimes.org/2026/06/02/research-ethics-boards-need-urgent-training-on-long-covid-and-myalgic-encephalomyelitis/?utm_source=rss&utm_medium=rss&utm_campaign=research-ethics-boards-need-urgent-training-on-long-covid-and-myalgic-encephalomyelitis",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-06-03T01:17:32+00:00",
+      "summary": "Last year, researchers in Ontario, Canada started recruiting participants for a Long COVID trial testing the feasibility of exercise and rehabilitation. Like many other studies of exercise, it doesn’t use validated measures for post-exertional malaise (PEM). But the Pursuing Reduction in Fatigue ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management",
+        "Clinical trials",
+        "ME/CFS research"
+      ],
+      "relevance_score": 1.15,
+      "time_ago": "1d ago",
+      "summary_short": "Last year, researchers in Ontario, Canada started recruiting participants for a Long COVID trial testing the feasibility of exercise and rehabilitation. Like many other studies of exercise, it doesn’t use validated measures for post-exertional malaise (PEM)."
+    },
+    {
+      "id": "16d7bc168ea90b4a",
+      "title": "Rationale and Design of RECOVER-ENERGIZE: A Platform Clinical Trial of Interventions for Exercise Intolerance With and Without Post-exertional Malaise in Long COVID",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.06.02.26354455v1?rss=1",
+      "source": "medRxiv — Infectious Diseases",
+      "source_type": "rss",
+      "published": "2026-06-03T08:00:00+00:00",
+      "summary": "Introduction: A prominent symptom of post-acute sequelae of SARS-CoV-2 infection (i.e., Long COVID) is exercise intolerance with or without post-exertional malaise (PEM). PEM is characterized by the worsening of both symptoms and function following even minor physical or mental exertion, with sym...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.95,
+      "time_ago": "1d ago",
+      "summary_short": "Introduction: A prominent symptom of post-acute sequelae of SARS-CoV-2 infection (i.e., Long COVID) is exercise intolerance with or without post-exertional malaise (PEM). PEM is characterized by the worsening of both symptoms and function following even minor physical or mental exertion, with sym..."
+    },
+    {
+      "id": "f0b082cd2520a267",
+      "title": "Why are RECOVER’s first round of Long COVID clinical trials failing?",
+      "url": "https://thesicktimes.org/2026/06/02/why-are-recovers-first-round-of-long-covid-clinical-trials-failing/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-recovers-first-round-of-long-covid-clinical-trials-failing",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-06-03T00:29:09+00:00",
+      "summary": "The U.S.'s flagship Long COVID research program has received over a billion dollars in funding and had years of input from people with the disease. But its first round of clinical trials are failing, at least in the results out so far.\nThe post Why are RECOVER’s first round of Long COVID clinical...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "The U.S.'s flagship Long COVID research program has received over a billion dollars in funding and had years of input from people with the disease. But its first round of clinical trials are failing, at least in the results out so far."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-04",
+          "day": "Thu",
+          "day_full": "Thursday, Jun 04",
+          "high": 69,
+          "low": 50,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-05",
+          "day": "Fri",
+          "day_full": "Friday, Jun 05",
+          "high": 61,
+          "low": 46,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-06-06",
+          "day": "Sat",
+          "day_full": "Saturday, Jun 06",
+          "high": 55,
+          "low": 43,
+          "condition": "Light drizzle"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Fri"
+      ],
+      "summary_line": "Sunny Thu and Fri — good days to be outside."
+    }
+  ]
+}

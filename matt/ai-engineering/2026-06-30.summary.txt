@@ -1,0 +1,11 @@
+S&P 500 closed at 7,440.43, up +1.2% (+86.41 pts).
+
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. The Information: Meta has reportedly limited engineer use of Claude Code and Codex because rival model outputs could con...
+2. Exclusive: Meta has instructed engineers to limit how they use Anthropic's Claude Code and OpenAI's Codex over concerns ...
+3. Scoop: Meta is limiting how engineers use OpenAI’s Codex and Anthropic’s Claude Code for AI model-building tasks. Intern...
+4. #TechToday | Meta restricts employee access to Anthropic Claude Code, OpenAI’s Codex over distillation risks
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-30.html

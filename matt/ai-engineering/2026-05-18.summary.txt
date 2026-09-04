@@ -1,0 +1,11 @@
+S&P 500 closed at 7,408.50, down -1.2% (-92.74 pts).
+
+Sunny Mon and Wed — good days to be outside.
+
+Today's briefing:
+1. Claude Code | Anthropic's agentic coding system - Anthropic
+2. Read it before the weekend's over! Every enterprise Claude Code rollout hits the same wall: the model gets better, the s...
+3. LLMs are commodities. I switched all my AI workflows from Claude Code to @kirodotdev CLI and @opencode today. It took le...
+4. Team-memory – your team's shared brain, auto-built from Claude Code CLI or UI
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-18.html

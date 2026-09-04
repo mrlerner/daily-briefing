@@ -1,0 +1,9 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Having used Fable in Claude Code, it feels to me like Anthropic should start their harness from scratch and build one sp...
+2. It feels like Claude Fable 5, paired with Claude Code, is at a point where it can auto-downgrade to cheaper models (sonn...
+3. want to point out a few really interesting things here 1. Claude Code is actually the worst performing harness when usin...
+4. The Anthropic leader who built Claude Code says he ditched prompting — now he just writes loops.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-13.html

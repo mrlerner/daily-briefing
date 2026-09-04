@@ -1,0 +1,9 @@
+Sunny Mon, Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. 2026 is the year of Agents OpenClaw, Claude Code, Codex and Cursor... In this video, I broke it all down with @Rasmic. C...
+2. Anthropic just launched an AWS Serverless plugin for Claude Code 👾 It knows serverless patterns! 𝗪𝗵𝗮𝘁 𝗶𝘁 𝗰𝗼𝘃𝗲𝗿𝘀 • Lambda...
+3. Anthropic is doubling down on agentic workflows with a redesigned Claude Code desktop app. Frederic Lardinois highlights...
+4. Your Claude Code agent is always working from stale context. I built it a fix it can rewind, replay, and stay ahead of every edit.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-04.html

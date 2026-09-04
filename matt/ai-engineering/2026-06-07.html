@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — June 07, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">June 07, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">6 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">4 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,383.74, down
+                -2.6%
+                (-200.57 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Jun 07: Sunny, 46–63°F</div>
+            
+                <div>Monday, Jun 08: Light drizzle, 48–56°F</div>
+            
+                <div>Tuesday, Jun 09: Light drizzle, 50–60°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun — good day to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/" target="_blank">I design with Claude more than Figma now</a></p>
+                <div class="item-meta">
+                    
+                    189 points · 154 comments · 6h ago
+                     · <a href="https://news.ycombinator.com/item?id=48431981" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/ingram-technologies/claude-git-sessions" target="_blank">Show HN: Ccgs – Collaborative Claude Code sessions, stored in Git branches</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 2 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=48426297" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://12gramsofcarbon.com/p/agentics-local-coding-agents-are" target="_blank">I&#39;m waiting for Claude to rm rf my computer</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 1 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=48426730" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/waldekmastykarz/atifact" target="_blank">Turn HAR Files, Claude Code, Copilot CLI, and Codex CLI Logs into ATIF</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48422341" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/wastedcode/claudemux" target="_blank">Claudemux – Run and coordinate multiple Claude Codes reliably</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48426188" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/fabioconcina/claumon" target="_blank">Claumon – Forecasting Claude Code usage limits with a Gamma process</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48423227" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/yazon/oh-my-wrist" target="_blank">Show HN: Oh my wrist – Garmin alerts for Claude Code and OpenCode</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48426168" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://theconversationdaemon.com/p/what-you-made-as-real" target="_blank">Claude Code, the conversational window, and what happens to the human &#34;I&#34;</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48423810" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/devenjarvis/lathe" target="_blank">Show HN: Lathe – Use LLMs to learn a new domain, not skip past it</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 44m ago
+                     · <a href="https://news.ycombinator.com/item?id=48433756" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/param087/agent-ml-skills" target="_blank">Agent-ML-skills – Teach Codex/Claude/Cursor to stop making ML mistakes</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48420791" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/zendadddy/status/2062973067354419656" target="_blank">Excited to share that I’m joining @AnthropicAI! I’ll be working on Claude Code and helping bridge brand and product. Dre...</a></p>
+                <div class="item-meta">
+                    
+                    @zendadddy · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Excited to share that I’m joining @AnthropicAI! I’ll be working on Claude Code and helping bridge brand and product.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kimmonismus/status/2062997809067139468" target="_blank">Reports claim Claude’s API may have returned another user’s inference output during today’s outage. Anthropic’s status p...</a></p>
+                <div class="item-meta">
+                    
+                    @kimmonismus · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Reports claim Claude’s API may have returned another user’s inference output during today’s outage. Anthropic’s status page confirms elevated errors affecting Claude API, Claude Code, Claude.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/DataChaz/status/2063158890469196218" target="_blank">🚨 ANTHROPIC JUST PUBLISHED A 36-PAGE SECURITY GUIDE THAT BASICALLY TELLS YOU TO STOP TRUSTING YOUR OWN AI AGENTS. If you...</a></p>
+                <div class="item-meta">
+                    
+                    @DataChaz · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">🚨 ANTHROPIC JUST PUBLISHED A 36-PAGE SECURITY GUIDE THAT BASICALLY TELLS YOU TO STOP TRUSTING YOUR OWN AI AGENTS. If you run agents on Claude Code, MCP servers, or automation tools, pay attention.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2063347508831764647" target="_blank">Head of Claude Code Boris Cherny at Anthropic&#39;s annual developer conference in San Francisco on how his life changed in ...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Head of Claude Code Boris Cherny at Anthropic&#39;s annual developer conference in San Francisco on how his life changed in the last 6 months with AI writing all the code. &#34;About six months ago what happened is all the code that I used to have written by hand</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/MsftSecIntel/status/2062954638899282077" target="_blank">Microsoft discovered that Anthropic&#39;s Claude Code GitHub Action could expose CI/CD workflow secrets when AI agents proce...</a></p>
+                <div class="item-meta">
+                    
+                    @MsftSecIntel · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Microsoft discovered that Anthropic&#39;s Claude Code GitHub Action could expose CI/CD workflow secrets when AI agents process untrusted content, including issue bodies, pull request descriptions, and comments. msft.it/6017vdfUc Following our disclosure, Ant</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/The_Cyber_News/status/2063084278372864441" target="_blank">🔻Anthropic&#39;s Claude Services Down — claude[.]ai, Claude Code, and Cowork Affected Source: cybersecuritynews.com/anthropi...</a></p>
+                <div class="item-meta">
+                    
+                    @The_Cyber_News · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">🔻Anthropic&#39;s Claude Services Down — claude[.]ai, Claude Code, and Cowork Affected Source: cybersecuritynews.com/anthropics-cla… Anthropic&#39;s Claude platform suffered a significant service disruption on June 5, 2026, with elevated error rates impacting m</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/DanKornas/status/2063380643334009196" target="_blank">AI-built UI does not have to look like the same template again. Hallmark is a design skill for Claude Code, Cursor, and ...</a></p>
+                <div class="item-meta">
+                    
+                    @DanKornas · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI-built UI does not have to look like the same template again. Hallmark is a design skill for Claude Code, Cursor, and Codex that helps AI coding assistants produce UI that feels more intentionally designed.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2063289804708835412" target="_blank">&#34;I don&#39;t prompt Claude anymore. I have loops running that prompt Claude and figuring out what to do. My job is to write ...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;I don&#39;t prompt Claude anymore. I have loops running that prompt Claude and figuring out what to do.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/DanKornas/status/2063222091726377227" target="_blank">Want to inspect a Claude Code-style agent instead of treating the CLI as a black box? Open Claude Code is a clean-room, ...</a></p>
+                <div class="item-meta">
+                    
+                    @DanKornas · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">Want to inspect a Claude Code-style agent instead of treating the CLI as a black box? Open Claude Code is a clean-room, open-source rebuild of Anthropic’s Claude Code CLI for builders who want to inspect, run, and extend a tool-using coding agent.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Dinosn/status/2063176836478103826" target="_blank">Microsoft discovered that Anthropic&#39;s Claude Code GitHub Action is vulnerable to prompt injection attacks via issues and...</a></p>
+                <div class="item-meta">
+                    
+                    @Dinosn · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">Microsoft discovered that Anthropic&#39;s Claude Code GitHub Action is vulnerable to prompt injection attacks via issues and Pull Requests</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/" target="_blank">OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/" target="_blank">Sriram Krishnan is leaving his role as White House AI advisor</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Krishnan is reportedly starting a new institution to continue shaping Trump&#39;s AI policy.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/" target="_blank">The Trump administration might take an equity stake in OpenAI</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">President Donald Trump said he&#39;s discussing deals &#34;where the American people can benefit from the success of AI.&#34;</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/05/startup-battlefield-200-applications-officially-close-in-3-days/" target="_blank">Startup Battlefield 200 applications officially close in 3 days</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Applications for Startup Battlefield 200 officially close on June 8, 11:59 p.m. PT.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/" target="_blank">Google will pay SpaceX $920M per month for compute</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/video/the-most-interesting-startups-right-now-want-to-get-you-off-your-phone/" target="_blank">The most interesting startups right now want to get you off your phone</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">While the AI fundraising machine&amp;#160;keeps breaking its own records, some founders are building in the other direction.&amp;#160; Mirror founder Brynn Putnam just raised money for&amp;#160;Board, a startup focused on bringing people together through in-person games and social experiences.&amp;#160;Cyberdeck...</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE8wMkgxR3JCakJ0S2pJLUEzQ2gzZjVHdjNjUjBaV2hVTHE4UFYtTVdpdmdUcUtzeldxWXpEXzJRX2dTTzJjSGlpbm1CME9mZkJZa2FWVnpCdU1UeDhYbEprQjVSeVdQakUzMGc?oc=5" target="_blank">Making Claude a chemist - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Making Claude a chemist&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1kVFMxTVBWcUZWaURhUVBkRV93SklCVTktc3FsOVFHRHN4UlhMMml3MkVCZVgwbDFrbjJaNFJTOTBoS2o3ZV9jM1VVTEJNZFNPR0dWRmh2Q0RaMi1JWHAyQTlEZUhwV1laMW1Lc0l0aw?oc=5" target="_blank">When AI builds itself - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · just now
+                    
+                </div>
+                
+                <div class="item-summary">When AI builds itself&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE0zNTRQa1Q1UVRmZEQ4aFJJTjh5aTZNTHd3cDFSUjVoVHV5LXlWc2ZnbWg1TDN0QlBDc3lMb3hpVnlPYWEzc1ByOVRtUFg3ZFIxNFdmbnljMTZvX0lWM0ZTNGRsYW9VcWZJR0JobjNB?oc=5" target="_blank">ANT-2026-EBDTPNVH · jq - Anthropic Red</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">ANT-2026-EBDTPNVH · jq&amp;nbsp;&amp;nbsp;Anthropic Red</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything" target="_blank">OpenAI Help: Lockdown Mode</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenAI Help: Lockdown Mode
+OpenAI first teased this in February, but now it&#39;s live and &#34;rolling out to eligible personal accounts, including Free, Go, Plus, and Pro, and self-serve ChatGPT Business accounts&#34;:
+
+Lockdown Mode is designed to help prevent the final stage of data exfiltration from a p...</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated June 07, 2026 at 05:01
+        </footer>
+    </div>
+</body>
+</html>

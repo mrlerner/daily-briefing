@@ -1,0 +1,78 @@
+{
+  "generated": "2026-07-25T12:02:27.503941+00:00",
+  "items": [
+    {
+      "id": "a935fe745923d3c7",
+      "title": "Trial By Error: No Benefits for Multidisciplinary Rehabilitation in New ME/CFS Study",
+      "url": "https://virology.ws/2026/07/23/trial-by-error-no-benefits-for-multidisciplinary-rehabilitation-in-new-me-cfs-study/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-07-24T03:09:23+00:00",
+      "summary": "By David Tuller, DrPH It is refreshing to read a study about a rehabilitative intervention for ME/CFS or Long Covid or so-called “medically unexplained symptoms” that acknowledges the lack of meaningful benefits. This is a rare event. In multiple cases, the trialed interventions produce marginall...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "By David Tuller, DrPH It is refreshing to read a study about a rehabilitative intervention for ME/CFS or Long Covid or so-called “medically unexplained symptoms” that acknowledges the lack of meaningful benefits. This is a rare event."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7408.2998046875,
+      "prev_close": 7498.9599609375,
+      "change_pts": -90.66,
+      "change_pct": -1.21,
+      "direction": "down",
+      "summary_line": "S&P 500 closed at 7,408.30, down -1.2% (-90.66 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-25",
+          "day": "Sat",
+          "day_full": "Saturday, Jul 25",
+          "high": 75,
+          "low": 58,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-26",
+          "day": "Sun",
+          "day_full": "Sunday, Jul 26",
+          "high": 78,
+          "low": 60,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-27",
+          "day": "Mon",
+          "day_full": "Monday, Jul 27",
+          "high": 79,
+          "low": 56,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat and Mon — good days to be outside."
+    }
+  ]
+}

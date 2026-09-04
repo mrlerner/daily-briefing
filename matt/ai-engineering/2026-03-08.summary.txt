@@ -1,0 +1,9 @@
+S&P 500 closed at 6,740.02, down -1.3% (-90.69 pts).
+
+Today's briefing:
+1. Anthropic just made Claude Code run without you. Scheduled tasks are live. This is a big deal.
+2. the real story here isnt the feature list, its that anthropic is reportedly building most of this with claude code itsel...
+3. Show HN: Apc-CLI – sync AI memory across Claude Code, Cursor, Copilot
+4. Those of you who routinely hit usage limits, can you explain what your workflow looks like?
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-08.html

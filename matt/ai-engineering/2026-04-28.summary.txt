@@ -1,0 +1,9 @@
+Sunny Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. Anthropic just quietly locked Opus behind a paywall-within-a-paywall for Pro users in Claude Code
+2. one of the big advantages Anthropic had in its Claude Code enterprise growth was having its models available on AWS, Goo...
+3. Claude-powered AI coding agent deletes entire company database in 9 seconds — backups zapped, after Cursor tool powered by Anthropic's Claude goes rogue
+4. I'm done with using local LLMs for coding
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-28.html

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — May 12, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">May 12, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">5 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Tuesday, May 12: Sunny, 51–83°F</div>
+            
+                <div>Wednesday, May 13: Partly Cloudy , 52–71°F</div>
+            
+                <div>Thursday, May 14: Partly Cloudy , 49–66°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Tue and Wed — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1taqn99/the_daily_show_mentioned_chronic_fatigue_syndrome/" target="_blank">The Daily Show Mentioned &#34;Chronic Fatigue Syndrome&#34; Tonight</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 323 points · 61 comments · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">TLDR: Our illness was mentioned in passing, as part of a joke. One of the frustrating things about living with ME/CFS is the fact that it affects MILLIONS of people in my country (the United States) and yet the vast majority of Americans have never heard of the illness.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tajvuo/major_funding_secured_for_sequence_me_long_covid/" target="_blank">Major funding secured for Sequence ME &amp;amp; Long Covid, a DecodeME project</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 214 points · 10 comments · 12h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tab9jg/the_berlin_conference_2026_by_mecfs_science/" target="_blank">“The Berlin Conference 2026” by ME/CFS Science</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 71 points · 5 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">First paragraph: “In this article, we summarise the most interesting presentations from the 2026 Berlin conference on myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). Genetic evidence pointed towards neural tissue, whole-body scans highlighted muscles and bone marrow, while trials on imm</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tahdba/just_wanted_to_share_this_in_case_anyones_looking/" target="_blank">Just wanted to share this in case anyone’s looking for a way to feel a little less alone.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 29 points · 4 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve been living with Long Covid and ME/CFS for about two years now, and it completely changed the pace of my life. Slowing down, letting go of old routines, and learning how to stay connected without constantly burning out became essential.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1ta7c3w/is_it_possible_this_was_always_long_covid_advice/" target="_blank">Is it possible this was always long COVID? Advice for improvement?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 8 points · 7 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">I developed chronic symptoms after having E. Coli last April (2025) and have gotten worse in the last couple of months.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated May 12, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

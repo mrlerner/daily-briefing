@@ -1,0 +1,9 @@
+Sunny Mon, Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. Xiaomi's MiMo Code claims it beats Claude Code past 200 steps
+2. This guy just unlocked “Claude Fable 5 Lite” and the results are insaneeee. 🤯 Fable 5 got pulled by the US government. S...
+3. “You're not supposed to watch Claude Code work. You're supposed to wake up and review what it shipped.” In a new 14-minu...
+4. Really excited to open source a new project: Omnigent, a meta-harness for AI agents. It lets you build multi-agent codin...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-15.html

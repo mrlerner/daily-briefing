@@ -1,0 +1,7 @@
+Today's briefing:
+1. Official: Anthropic just released Claude Code 2.1.63 with 26 CLI and 6 flag changes, details below
+2. How Anthropic Teams use Claude Code [pdf]
+3. How Anthropic uses Claude Code for product design.
+4. Claude Code creator: In the next version, introducing two new skills
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-02-28.html

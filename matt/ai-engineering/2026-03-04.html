@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — March 04, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">March 04, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">8 posts</span></li>
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">1 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">1 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://ona.com/stories/how-claude-code-escapes-its-own-denylist-and-sandbox" target="_blank">Claude Code escapes its own denylist and sandbox</a></p>
+                <div class="item-meta">
+                    
+                    31 points · 14 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=47236910" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://yaw.sh" target="_blank">Show HN: Yaw – A terminal built around the Claude Code/Codex CLI workflow</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 2 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47231524" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=47231176" target="_blank">Show HN: Claude Gym – a tiny CLI that nudges you to move while Claude Code runs</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47231176" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/toroleapinc/claude-brain" target="_blank">Show HN: Claude-brain – Sync your Claude Code brain across machines via Git</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 8h ago
+                     · <a href="https://news.ycombinator.com/item?id=47243124" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/spivx/agent-skills" target="_blank">Show HN: GSC Skill – Live SEO Analytics for AI Agents (Claude Code, OpenClaw)</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=47238497" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.roryteehan.com/writing/i-built-an-ai-agent-that-writes-its-own-rules" target="_blank">Show HN: Persistent Agent Framework – Self-Correcting AI Agents on Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 23h ago
+                     · <a href="https://news.ycombinator.com/item?id=47232088" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/alvdef/obsidian-deep-research" target="_blank">Show HN: Skill for structured deep research with Claude Code and Obsidian</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 35m ago
+                     · <a href="https://news.ycombinator.com/item?id=47246516" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/yury-egorenkov/claude-code-docker" target="_blank">Multi-agent Claude Code setup – 3 roles, Markdown coordination, Docker</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 3 comments · 2h ago
+                     · <a href="https://news.ycombinator.com/item?id=47245373" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rjyp7d/claude_and_claude_code_traffic_grew_faster_than/" target="_blank">Claude and Claude Code traffic grew faster than expected this week</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 1868 points · 72 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic says Claude and Claude Code usage spiked so much this week that it was genuinely hard to forecast. They’re currently scaling the infrastructure.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ChatGPT/comments/1rkd4td/openai_loses_15_million_subscribers_in_less_than/" target="_blank">OpenAI loses 1.5 million subscribers in less than 48 hours after CEO Sam Altman says yes to the deal that Anthropic rejected</a></p>
+                <div class="item-meta">
+                    
+                    r/ChatGPT · 1681 points · 88 comments · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">Wow!!!</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rk7fwq/openais_posttraining_lead_leaves_and_joins/" target="_blank">OpenAI&#39;s post-training lead leaves and joins Anthropic: he helped ship GPT-5, 5.1, 5.2, 5.3-Codex, o3 and o1 and will return to hands-on RL research at Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 1225 points · 83 comments · 11h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rk06ou/anthropic_your_fastestgrowing_region_cant/" target="_blank">Anthropic, your fastest-growing region can&#39;t actually use Claude properly. Here&#39;s why EU data residency for claude.ai matters.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 170 points · 32 comments · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">I run a digital agency in Germany. I&#39;m a paying Max subscriber.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LocalLLaMA/comments/1rkai3l/ever_wonder_how_much_cost_you_can_save_when/" target="_blank">Ever wonder how much cost you can save when coding with local LLM?</a></p>
+                <div class="item-meta">
+                    
+                    r/LocalLLaMA · 101 points · 95 comments · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">https://preview.redd.it/rxaew4on0ymg1.png?width=3834&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=31c7d72c951f614debddf8630d66aebfbcf1fd1c
+
+For the past few days, I&#39;ve been using Qwen3.5 35B A3B (Q2\_K\_XL and Q4\_K\_M) inside Claude Code to build a pet project. The model was able to complete almost everythi</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rjt5tr/i_built_a_full_desktop_app_with_claude_code_28m/" target="_blank">I built a full desktop app with Claude Code — 2.8M artists, local AI, Rust + SvelteKit</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 45 points · 20 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">https://preview.redd.it/teb9omv8sumg1.png?width=1904&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=78d397fa5dc34bd64f00cd585435d233a38095c2
+
+  
+I spent 15 years thinking about building a music discovery app. Claude Code made it real.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ChatGPT/comments/1rjribq/anthropic_just_launched_memory_import_for_claude/" target="_blank">Anthropic just launched memory import for Claude. It proves the real problem: you shouldn&#39;t have to beg each platform to remember you.</a></p>
+                <div class="item-meta">
+                    
+                    r/ChatGPT · 35 points · 36 comments · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic recently introduced a feature that allows users to export their ChatGPT memories and import them into Claude. It’s an interesting step toward memory portability between AI systems.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rkh8s4/i_used_claude_to_create_a_simple_local_hook_that/" target="_blank">I used Claude to create a simple local hook that cut my AI costs by 50-70%</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 20 points · 12 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">I use Claude AI models in Cursor. One of my good buddies uses Claude Code.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rkfm2z/i_built_a_multiagent_hierarchy_on_top_of_claude/" target="_blank">I built a Multi-Agent Hierarchy on top of Claude Code — COO agent, Advisory Council, Domain workers, persistent memory across sessions</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 15 points · 5 comments · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">**Body:**
+
+I&#39;ve been building a system called Violet that turns Claude Code into something closer to an AI operations team than a single assistant. Open-sourced the framework — wanted to share what it does and how, in case anyone finds it useful or wants to adapt the patterns.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rjqaew/i_built_a_tool_with_claude_code_for_claude_code/" target="_blank">I built a tool with Claude Code for Claude Code. It turns YouTube videos, PDFs, and docs into SKILL.md files. Free to try.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 8 points · 9 comments · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">Built this with Claude Code and the Claude API. Smidge takes source material and turns it into production-ready SKILLmd files, and goes right back into Claude Code (or any other platform that uses SKILLmd for that matter).</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/alexalbert__/status/2028586222776721844" target="_blank">It was easy to miss all the stuff we shipped at Anthropic this past week given... everything else that happened. A few o...</a></p>
+                <div class="item-meta">
+                    
+                    @alexalbert__ · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">It was easy to miss all the stuff we shipped at Anthropic this past week given... everything else that happened.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ai_for_success/status/2028655498644558063" target="_blank">Voice mode is rolling out in Claude Code now. It means you can code even faster. Freaking awesome. No matter what is goi...</a></p>
+                <div class="item-meta">
+                    
+                    @ai_for_success · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Voice mode is rolling out in Claude Code now. It means you can code even faster.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/alliekmiller/status/2028943088333328416" target="_blank">I love Claude Code, but Anthropic&#39;s speech to text inside of the Claude mobile app is one of the worst dictation options...</a></p>
+                <div class="item-meta">
+                    
+                    @alliekmiller · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">I love Claude Code, but Anthropic&#39;s speech to text inside of the Claude mobile app is one of the worst dictation options out there (especially compared to ChatGPT/Whisper and Wispr Flow). I&#39;m glad this voice mode now exists, but I&#39;m not betting it will be as goo</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/johncrickett/status/2028827317959627172" target="_blank">Everyone talks about Claude Code vs Codex, but I think there are three opinionated tools that deserve more attention. Th...</a></p>
+                <div class="item-meta">
+                    
+                    @johncrickett · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Everyone talks about Claude Code vs Codex, but I think there are three opinionated tools that deserve more attention. They are: Kiro - Kiro ( @kirodotdev) is Amazon’s Agentic AI development tool that puts a strong focus on spec-driven development and prope</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/svpino/status/2028545907499872690" target="_blank">Claude Code tips: (Add these to your CLAUDE .md file) 1. Before writing any code, describe your approach and wait for ap...</a></p>
+                <div class="item-meta">
+                    
+                    @svpino · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code tips: (Add these to your CLAUDE .md file) 1. Before writing any code, describe your approach and wait for approval.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/gregisenberg/status/2028533746073321919" target="_blank">how to use claude code, railway, meta etc to spin up digital employees that run your marketing 24/7 1. create one folder...</a></p>
+                <div class="item-meta">
+                    
+                    @gregisenberg · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">how to use claude code, railway, meta etc to spin up digital employees that run your marketing 24/7 1. create one folder.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/lkr/status/2028903941153706125" target="_blank">CLAUDE CODE FOR NON-DEVS OK today&#39;s discovery is cc makes it instant to look up data that you&#39;ve always had access to, b...</a></p>
+                <div class="item-meta">
+                    
+                    @lkr · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">CLAUDE CODE FOR NON-DEVS OK today&#39;s discovery is cc makes it instant to look up data that you&#39;ve always had access to, but didn&#39;t bother to look up before. Yesterday I changed the landing page in one of our meta campaigns.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/YingjunWu/status/2028937342376161502" target="_blank">Claude Code should support ‘-dangerously-skip-permissions’ in remote control mode cc @claudeai @bcherny</a></p>
+                <div class="item-meta">
+                    
+                    @YingjunWu · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code should support ‘-dangerously-skip-permissions’ in remote control mode cc @claudeai @bcherny</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/toddsaunders/status/2028984983197512148" target="_blank">Anyone that says “you can’t build production apps” in Claude Code is either lying to themselves to justify their job sec...</a></p>
+                <div class="item-meta">
+                    
+                    @toddsaunders · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anyone that says “you can’t build production apps” in Claude Code is either lying to themselves to justify their job security or is being willfully ignorant. We need to stop calling it “vibe coding.” That was useful 6 months ago.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/deedydas/status/2028608293531435114" target="_blank">Narrative violation. Cursor goes $1B to $2B in 3mos. Claude Code went $0 to $2.5B in 8mos. Everyone in the tech/X bubble...</a></p>
+                <div class="item-meta">
+                    
+                    @deedydas · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Narrative violation. Cursor goes $1B to $2B in 3mos.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/" target="_blank">Claude Code rolls out a voice mode capability</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic is stepping up its game in the AI coding space with the rollout of Voice Mode in Claude Code.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Mar/3/donald-knuth/#atom-everything" target="_blank">Quoting Donald Knuth</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Shock! Shock!</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 04, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

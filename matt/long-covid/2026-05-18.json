@@ -1,0 +1,151 @@
+{
+  "generated": "2026-05-18T12:03:15.402191+00:00",
+  "items": [
+    {
+      "id": "363894ac80cd047d",
+      "title": "Crazy to see the contrast between doctors",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1tggdve/crazy_to_see_the_contrast_between_doctors/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-18T08:33:10+00:00",
+      "summary": "I was just reading some articles about the conference in Berlin. Its amazing to see what work all these researchers are doing.\n\nAnd then you go on reddit and you see doctors with confidence saying long covid and me/cfs is FND and we all need psychotherapy",
+      "points": null,
+      "score": 21,
+      "comments": 4,
+      "author": "Spirited_Weekend_103",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.512,
+      "time_ago": "3h ago",
+      "summary_short": "I was just reading some articles about the conference in Berlin. Its amazing to see what work all these researchers are doing."
+    },
+    {
+      "id": "5de793df464abeda",
+      "title": "Extremely fast decline despite pacing - from mild to very severe in 5 months",
+      "url": "https://reddit.com/r/cfs/comments/1tfsayr/extremely_fast_decline_despite_pacing_from_mild/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-17T15:14:36+00:00",
+      "summary": "The last few weeks I really took pacing very seriously and stopped going to the toilet, eye mask and earplugs and doing absolutely nothing to get out (what I thought) of rolling PEM. \n\nInstead I am still getting worse.\n\nI also don't seem to recover from PEM at all (also before this). EVERY crash low",
+      "points": null,
+      "score": 23,
+      "comments": 5,
+      "author": "NitroMacks",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "20h ago",
+      "summary_short": "The last few weeks I really took pacing very seriously and stopped going to the toilet, eye mask and earplugs and doing absolutely nothing to get out (what I thought) of rolling PEM. Instead I am still getting worse."
+    },
+    {
+      "id": "37043da0ffab3dce",
+      "title": "Could this be ME/CFS? Suffering from extreme fatigue and PEM. Need your input.",
+      "url": "https://reddit.com/r/cfs/comments/1tfue8o/could_this_be_mecfs_suffering_from_extreme/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-17T16:31:58+00:00",
+      "summary": "Hi everyone,\n\nI am 24 years old, and I’m reaching out to this community because I’ve been struggling with severe, debilitating health issues for the past year. It is incredibly exhausting, and I’m trying to figure out if what I’m experiencing could be ME/CFS.\n\nHere is a breakdown of my main symptoms",
+      "points": null,
+      "score": 3,
+      "comments": 3,
+      "author": "Prudent_Pilot_2591",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "19h ago",
+      "summary_short": "Hi everyone,\n\nI am 24 years old, and I’m reaching out to this community because I’ve been struggling with severe, debilitating health issues for the past year. It is incredibly exhausting, and I’m trying to figure out if what I’m experiencing could be ME/CFS."
+    },
+    {
+      "id": "74d2f16df2d3384c",
+      "title": "***TRIGGER WARNING - Suicide****",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1tgi7je/trigger_warning_suicide/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-18T10:14:40+00:00",
+      "summary": "This has got to be one of the most difficult posts I've had to write in a long time. As unfortunately I was given notice by her mother that a beloved member of our FB Long Covid community, PAOLA GARZA, left this world last weekend. \n\nPaola was a young, healthy, passionate woman. She came to Vancouve",
+      "points": null,
+      "score": 58,
+      "comments": 10,
+      "author": "LC_support_4all",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.355,
+      "time_ago": "1h ago",
+      "summary_short": "This has got to be one of the most difficult posts I've had to write in a long time. As unfortunately I was given notice by her mother that a beloved member of our FB Long Covid community, PAOLA GARZA, left this world last weekend."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7408.5,
+      "prev_close": 7501.240234375,
+      "change_pts": -92.74,
+      "change_pct": -1.24,
+      "direction": "down",
+      "summary_line": "S&P 500 closed at 7,408.50, down -1.2% (-92.74 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-05-18",
+          "day": "Mon",
+          "day_full": "Monday, May 18",
+          "high": 67,
+          "low": 46,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-19",
+          "day": "Tue",
+          "day_full": "Tuesday, May 19",
+          "high": 61,
+          "low": 48,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-05-20",
+          "day": "Wed",
+          "day_full": "Wednesday, May 20",
+          "high": 67,
+          "low": 47,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Mon",
+        "Wed"
+      ],
+      "summary_line": "Sunny Mon and Wed — good days to be outside."
+    }
+  ]
+}

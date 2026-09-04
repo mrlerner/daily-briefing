@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — May 17, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">May 17, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,408.50, down
+                -1.2%
+                (-92.74 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, May 17: Sunny, 41–64°F</div>
+            
+                <div>Monday, May 18: Overcast , 45–65°F</div>
+            
+                <div>Tuesday, May 19: Patchy rain nearby, 51–64°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun and Mon — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tf44go/heart_rate_pacing_in_severe_mecfs_dysautonomia_my/" target="_blank">Heart Rate Pacing in Severe ME/CFS + Dysautonomia (My Experience)</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 7 points · 8 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">I don’t really understand heart rate pacing anymore, especially being severe and mostly bedbound. My resting heart rate is usually around **50–55 bpm**.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tfj5xg/a_major_theme_of_polybios_2026_spring_symposium/" target="_blank">A major theme of PolyBio’s 2026 Spring Symposium: developing and validating Long COVID biomarkers to enable smarter clinical trials, stratified by patient subtype. Here are 6 key presenters that will… | PolyBio Research Foundation</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 6 points · 1 comments · 3h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/dysautonomia/comments/1tf42rw/heart_rate_pacing_in_severe_mecfs_dysautonomia_my/" target="_blank">Heart Rate Pacing in Severe ME/CFS + Dysautonomia (My Experience)</a></p>
+                <div class="item-meta">
+                    
+                    r/dysautonomia · 4 points · 0 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">I don’t really understand heart rate pacing anymore, especially being severe and mostly bedbound. My resting heart rate is usually around **50–55 bpm**.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1tezf9x/did_ldn_help_you_with_postcovid_hair_loss/" target="_blank">Did LDN help you with post-COVID hair loss?</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 3 points · 7 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Dear community, I would love to hear your stories about using LDN for long COVID relief and if it helped you regarding the hair shedding/loss that COVID had caused in you. I&#39;ve been experiencing extreme hair shedding with regrowth and loss all over the body for more than a year, tried everything (</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1teyoyx/wa_state_telehealth_doctor_recommendations_for/" target="_blank">WA state telehealth doctor recommendations for long COVID, ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 2 comments · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">**Trying to find a good telehealth long COVID doctor/provider that serves** ***Washington state***, since I recently moved. Due to being mostly homebound, I strongly prefer all-telehealth care if possible.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tfm71o/how_do_you_know_if_youre_experiencing_pem/" target="_blank">How do you know if you&#39;re experiencing pem?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 2 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">How do you know if you&#39;re experiencing pem if your symptoms are random and you feel shitty majority of the time? I do know that eating is a trigger for me, it makes me crash instantly, but that could be something else...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1tet2ia/long_covid_explained_for_people_just_learning/" target="_blank">Long COVID explained for people just learning about this condition and those who need help educating those around them.</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 1 points · 0 comments · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">This page explains what Long COVID is so you can help people understand what you are going through. [About Long COVID](https://www.promedview.com/about-long-covid)
+
+The symptoms checklist will help you organize your thoughts when you speak to the dr.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1teza8b/wa_state_telehealth_doctor_recommendations_for/" target="_blank">WA state telehealth doctor recommendations for long COVID, ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 1 points · 0 comments · 19h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1tfm6fn/how_do_you_know_youre_experiencing_pem/" target="_blank">How do you know you&#39;re experiencing pem?</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 1 points · 0 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">How do you know if you&#39;re experiencing pem if your symptoms are random and you feel shitty majority of the time? I do know that eating is a trigger for me, it makes me crash instantly, but that could be something else...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tfmwo9/what_do_you_guys_think_of_this_program/" target="_blank">What do you guys think of this program?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 2 comments · 33m ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi, I’m Ida, and I’m from Germany. I’m pretty sure ME/CFS is what’s going on with me.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated May 17, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

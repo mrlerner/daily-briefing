@@ -1,0 +1,7 @@
+Today's briefing:
+1. Claude Code rolls out a voice mode capability
+2. Claude and Claude Code traffic grew faster than expected this week
+3. It was easy to miss all the stuff we shipped at Anthropic this past week given... everything else that happened. A few o...
+4. I used Claude to create a simple local hook that cut my AI costs by 50-70%
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-04.html

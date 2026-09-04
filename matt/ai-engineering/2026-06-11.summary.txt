@@ -1,0 +1,11 @@
+S&P 500 closed at 7,266.99, down -1.6% (-119.66 pts).
+
+Sunny Thu, Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude
+2. 3/ The same packages install across Claude Desktop, Claude Code, Codex, Cursor, GitHub Copilot, Snowflake Cortex Code CL...
+3. SLOP ALERT: Claude Code UI is complete slop. In the in-app file tree, when u click on a .png, it opens it as a base64-en...
+4. Claude Code Free is the shortcut for agentic coding when you want the Claude Code workflow without hitting the usual lim...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-11.html

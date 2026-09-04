@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Claude Certified Architect
+2. Anthropic’s Cat Wu says that, in the future, AI will anticipate your needs before you know what they are
+3. Anthropic was not just another AI company. Startups were switching to Claude Code and dropping other tools, and that's w...
+4. Boom! @rewhiles of Viettel Cyber Security was able to exploit Anthropic Claude Code! If confirmed, they win $40,000 and ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-15.html

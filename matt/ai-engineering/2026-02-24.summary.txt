@@ -1,0 +1,9 @@
+Sunny Tue — good day to be outside.
+
+Today's briefing:
+1. Anthropic’s new AI security plug-in, Claude Code Security, just sent shockwaves through cybersecurity stocks. Is this th...
+2. Anthropic says Claude Code can help streamline 'cost-prohibitive' COBOL modernization, but IBM says it's not that simple...
+3. IBM is the latest AI casualty. Stock fell 13% on Anthropic programming language threat Anthropic said in a blog post tha...
+4. Aaj 1100 point BSE kyun giri? Anthropic Claude Code Security Tool ki wajah se?🤷‍♂️
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-02-24.html

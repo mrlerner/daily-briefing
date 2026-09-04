@@ -1,0 +1,68 @@
+{
+  "generated": "2026-08-21T12:03:07.955052+00:00",
+  "items": [
+    {
+      "id": "9bbe6892a319814b",
+      "title": "Trial By Error: Some Things I’ve Recently Read…Ponting on BPS, Viral Reactivation, and ME/CFS and HIV/AIDS",
+      "url": "https://virology.ws/2026/08/19/trial-by-error-some-things-ive-recently-read-ponting-on-bps-viral-reactivation-and-me-cfs-and-hiv-aids/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-08-19T23:52:19+00:00",
+      "summary": "By David Tuller, DrPH Professor Ponting on the biopsychosocial approach Chris Ponting, a geneticist at the University of Edinburgh, has long been a critic of biopsychosocial treatments for ME/CFS, Long Covid, and related illnesses. Professor Ponting is the lead investigator of the groundbreaking ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "By David Tuller, DrPH Professor Ponting on the biopsychosocial approach Chris Ponting, a geneticist at the University of Edinburgh, has long been a critic of biopsychosocial treatments for ME/CFS, Long Covid, and related illnesses. Professor Ponting is the lead investigator of the groundbreaking ..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-21",
+          "day": "Fri",
+          "day_full": "Friday, Aug 21",
+          "high": 86,
+          "low": 58,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-22",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 22",
+          "high": 74,
+          "low": 60,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-08-23",
+          "day": "Sun",
+          "day_full": "Sunday, Aug 23",
+          "high": 76,
+          "low": 59,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [
+        "Fri",
+        "Sun"
+      ],
+      "summary_line": "Sunny Fri and Sun — good days to be outside."
+    }
+  ]
+}

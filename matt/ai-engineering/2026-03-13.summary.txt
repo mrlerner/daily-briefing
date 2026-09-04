@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Anthropic launches a multi-agent code review tool for Claude Code
+2. Built an open-source gateway daemon for Claude Code CLI with multi-agent org, cron, Slack &amp; web dashboard. Runs on Max plan too.
+3. How are in office dev jobs now?
+4. Blader/humanizer: Claude Code skill to remove AI-generated tells from writing
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-13.html

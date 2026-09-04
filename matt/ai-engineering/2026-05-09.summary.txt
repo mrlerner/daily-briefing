@@ -1,0 +1,9 @@
+Sunny Sat and Mon — good days to be outside.
+
+Today's briefing:
+1. How are you handling project conventions across Cursor / Claude Code / Copilot?
+2. Head of Claude Code Boris Cherny at Anthropic's annual developer conference in San Francisco on how his life changed in ...
+3. Using Claude Code: The Unreasonable Effectiveness of HTML
+4. Anthropic quietly shipped the "Champion Kit" slide decks, ROI calculators, rollout playbooks... every artifact to evange...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-09.html

@@ -1,0 +1,9 @@
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. Processed 1400 replies ◾ OpenAI is catching up to Anthropic ◾ 'Codex' got more mentions than 'Claude Code' ◾ However, by...
+2. Cache miss in Claude Code costs 12.5× more than a hit. Here are 5 things you do mid session that quietly trigger it
+3. WAIT. This is actually insane. A solo dev just won the Anthropic hackathon, shipped a working product in 8 hours with Cl...
+4. 🚨 I just watched @bcherny (the guy who built Claude Code at Anthropic) explain why most of us are using Claude completel...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-24.html

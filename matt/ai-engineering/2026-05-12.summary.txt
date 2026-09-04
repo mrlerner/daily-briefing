@@ -1,0 +1,9 @@
+Sunny Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. My Claude Max 5x usage data: $159 normal month vs $6.6k in API-equivalent during a burst month. Is Pro enough?
+2. New in Claude Code: agent view.
+3. Claude FM
+4. 🤩🤯🤩 Claude Code (still not AGI but biggest advance since GPT-4) is the most neurosymbolic thing I have ever seen in my l...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-12.html

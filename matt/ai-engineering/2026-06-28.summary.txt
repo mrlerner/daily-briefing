@@ -1,0 +1,9 @@
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. can somebody over anthropic fix this bug with claude code: 1. ssh into VM from iterm2 2. start tmux 3. run claude code i...
+2. Automates economic research workflows with AI skills for Claude Code and Cursor github.com/meleantonio/aw…
+3. Why is Claude Code ending Converstaion
+4. Show HN: Claude-CLI – Run Claude Code in a throwaway Docker container
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-28.html

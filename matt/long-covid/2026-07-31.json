@@ -1,0 +1,79 @@
+{
+  "generated": "2026-07-31T12:02:54.690386+00:00",
+  "items": [
+    {
+      "id": "843d08dd71c3664f",
+      "title": "Research 1st Roundup: July 2026",
+      "url": "https://solvecfs.org/research-1st-roundup-july-2026/",
+      "source": "Solve ME/CFS Initiative",
+      "source_type": "rss",
+      "published": "2026-07-30T00:51:47+00:00",
+      "summary": "This quarter’s summaries highlight several studies examining the biological mechanisms of ME/CFS and Long Covid,  including the roles of specific autoantibodies and persisting viral components in driving distinct symptoms. Several [&#8230;]\nThe post Research 1st Roundup: July 2026 appeared first ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "This quarter’s summaries highlight several studies examining the biological mechanisms of ME/CFS and Long Covid,  including the roles of specific autoantibodies and persisting viral components in driving distinct symptoms. Several [&#8230;]\nThe post Research 1st Roundup: July 2026 appeared first ..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7437.6298828125,
+      "prev_close": 7316.14990234375,
+      "change_pts": 121.48,
+      "change_pct": 1.66,
+      "direction": "up",
+      "summary_line": "S&P 500 closed at 7,437.63, up +1.7% (+121.48 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-31",
+          "day": "Fri",
+          "day_full": "Friday, Jul 31",
+          "high": 84,
+          "low": 56,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-08-01",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 01",
+          "high": 70,
+          "low": 55,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-08-02",
+          "day": "Sun",
+          "day_full": "Sunday, Aug 02",
+          "high": 74,
+          "low": 53,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "summary_line": "Sunny Fri, Sat and Sun — good days to be outside."
+    }
+  ]
+}

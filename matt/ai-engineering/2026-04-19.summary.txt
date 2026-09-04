@@ -1,0 +1,11 @@
+S&P 500 closed at 7,126.06, up +1.2% (+84.78 pts).
+
+Sunny Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Claude system prompts as a git timeline
+2. One of the most loved things at Anthropic since Claude Code. Can't wait to see what ya'll build.
+3. Anthropic Uses This Startup’s AI To Answer People’s Questions About Claude Code forbes.com/sites/the-prom… (Photo: Mintl...
+4. RIP Anthropic API fees. Someone just made Claude Code run 100% locally on a MacBook for $0/month. 122B parameter model. ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-19.html

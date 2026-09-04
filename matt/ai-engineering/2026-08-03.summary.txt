@@ -1,0 +1,9 @@
+Sunny Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. claude-code-local lets you run Claude Code fully offline on Apple Silicon. It bypasses cloud proxies by running an MLX-n...
+2. Show HN: Claude Code takes forever, so I filled the waiting with Pokémon
+3. Why many companies still not getting big productivity gains from integrating AI into the workflows. Claude Code creator ...
+4. Claude Code is no longer locked to Claude. And that's a much bigger shift than most people realize. Here's what changed:...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-03.html

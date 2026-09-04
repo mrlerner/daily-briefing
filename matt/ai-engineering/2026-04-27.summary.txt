@@ -1,0 +1,9 @@
+Sunny Mon and Wed — good days to be outside.
+
+Today's briefing:
+1. OpenAI has long been the leader for paid usage by U.S. businesses, but Anthropic has closed the gap with tools like Clau...
+2. Qwen 3.6 27B in Claude Code says it will do something then stops and prompts for user reply (not failing a tool call)
+3. Thanks @Gavriel_Cohen. You’re right. I never used an IDE. Claude Code made all edits. No @karpathy ‘vibe coding’. All I ...
+4. The debugging wars: Cursor 3 takes aim at Claude Code's agentic edge
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-27.html

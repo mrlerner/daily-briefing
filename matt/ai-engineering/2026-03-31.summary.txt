@@ -1,0 +1,9 @@
+Sunny Tue — good day to be outside.
+
+Today's briefing:
+1. Ship Code Faster with Claude Code on Vertex AI - Anthropic
+2. Claude Code for Semiconductor Teams: Live AMA with Anthropic’s Applied AI Team - Anthropic
+3. I'm going to take a stab in the dark here for the sequence of events for @AnthropicAI recently (all made up conjecture, ...
+4. Someone just leaked claude code's Source code on X
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-31.html

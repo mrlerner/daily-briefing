@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — April 17, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">April 17, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Friday, Apr 17: Clear , 38–57°F</div>
+            
+                <div>Saturday, Apr 18: Overcast , 44–67°F</div>
+            
+                <div>Sunday, Apr 19: Partly Cloudy , 53–70°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Fri and Sun — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/abhishekray/status/2044891304786788508" target="_blank">Anthropic&#39;s Claude Opus 4.7 migration guide says the new tokenizer uses &#34;roughly 1.0 to 1.35x as many tokens&#34; as 4.6. I ...</a></p>
+                <div class="item-meta">
+                    
+                    @abhishekray · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic&#39;s Claude Opus 4.7 migration guide says the new tokenizer uses &#34;roughly 1.0 to 1.35x as many tokens&#34; as 4.6. I measured 1.47x on technical docs.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/_catwu/status/2044808533905178822" target="_blank">Opus 4.7 is live in Claude Code today! The model performs best if you treat it like an engineer you&#39;re delegating to, no...</a></p>
+                <div class="item-meta">
+                    
+                    @_catwu · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Opus 4.7 is live in Claude Code today! The model performs best if you treat it like an engineer you&#39;re delegating to, not a pair programmer you&#39;re guiding line by line.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kimmonismus/status/2044787072947601796" target="_blank">Claude Opus 4.7 is out. the TL;DR Anthropic released Opus 4.7 today. Same pricing as 4.6 ($5/$25 per million tokens), av...</a></p>
+                <div class="item-meta">
+                    
+                    @kimmonismus · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Opus 4.7 is out. the TL;DR Anthropic released Opus 4.7 today.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Prathkum/status/2044704637706752012" target="_blank">Unpopular opinion: AI tools like Claude Code actually widen the gap between junior and senior engineers. Top engineers c...</a></p>
+                <div class="item-meta">
+                    
+                    @Prathkum · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">Unpopular opinion: AI tools like Claude Code actually widen the gap between junior and senior engineers. Top engineers can spot AI mistake in seconds because they know how the system should work.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/aakashgupta/status/2044520404094759185" target="_blank">The math on building a Team OS in Claude Code is the part most PMs won&#39;t believe until they see it. One PM. 30 days of s...</a></p>
+                <div class="item-meta">
+                    
+                    @aakashgupta · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">The math on building a Team OS in Claude Code is the part most PMs won&#39;t believe until they see it. One PM.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/DimitrisPapail/status/2044908174969639105" target="_blank">I&#39;ve started referring to how I use Claude Code as Claude Code Descent. You start with a problem description and a sketc...</a></p>
+                <div class="item-meta">
+                    
+                    @DimitrisPapail · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve started referring to how I use Claude Code as Claude Code Descent. You start with a problem description and a sketch of an experiment that would validate your hypothesis, hopefully something close to the right shape, maybe not quite there, and certainly</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/garrytan/status/2044860610228416716" target="_blank">Pro tip for the GFamily - if you use GStack with Claude Code, but also have a Claw/Hermes with GBrain... I like to do my...</a></p>
+                <div class="item-meta">
+                    
+                    @garrytan · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Pro tip for the GFamily - if you use GStack with Claude Code, but also have a Claw/Hermes with GBrain... I like to do my GStack planning (autoplan skill) in Claw/Hermes since it&#39;s faster, and then drop the plan and do plan-eng-review Here I am working on a to</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/slashdot/status/2044900473451216939" target="_blank">OpenAI&#39;s Big Codex Update Is a Direct Shot At Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    @slashdot · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenAI&#39;s Big Codex Update Is a Direct Shot At Claude Code</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/deedydas/status/2044685150324465900" target="_blank">i generated this entire 45s movie clip (audio + video) with claude code + seedance 2 api there&#39;s still telltale AI smell...</a></p>
+                <div class="item-meta">
+                    
+                    @deedydas · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">i generated this entire 45s movie clip (audio + video) with claude code + seedance 2 api there&#39;s still telltale AI smell, but we should be at full length movies indistinguishable from real ones by the end of the year (veo 5)</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VaibhavSisinty/status/2044534228357157237" target="_blank">Uber gave 5,000 engineers Claude Code in December. 😨 By April, the CTO had burned through the entire annual AI budget. T...</a></p>
+                <div class="item-meta">
+                    
+                    @VaibhavSisinty · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Uber gave 5,000 engineers Claude Code in December. 😨 By April, the CTO had burned through the entire annual AI budget.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 17, 2026 at 07:18
+        </footer>
+    </div>
+</body>
+</html>

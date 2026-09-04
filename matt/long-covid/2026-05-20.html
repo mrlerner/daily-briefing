@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — May 20, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">May 20, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">9 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, May 20: Mist, 46–66°F</div>
+            
+                <div>Thursday, May 21: Sunny, 46–74°F</div>
+            
+                <div>Friday, May 22: Sunny, 48–75°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Wed, Thu and Fri — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tiew9s/2026_long_covid_fact_sheet/" target="_blank">2026 Long COVID Fact Sheet</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 28 points · 9 comments · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Only 5-9% of people with Long COVID report recovery at 2-3 years (...)
+
+Only 7% of physicians are very confident diagnosing Long COVID and only 4% are very confident treating it
+
+[https://patientresearchcovid19.com/2026-long-covid-fact-sheet-text-version/](https://patientresearchcovid19.com/2026-lon</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1thler9/i_am_from_japansevere_mecfs/" target="_blank">I am from Japan.severe mecfs.</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 27 points · 18 comments · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hello. I live in Japan.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tih5cq/psychotherapy_spot_lined_up_with_meliterate/" target="_blank">Psychotherapy spot lined up with ME-literate psychotherapist!!!</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 15 points · 0 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;m so happy to have landed a therapy spot with her, she&#39;s very knowledgeable about ME/CFS and has several severe and very severe patients. She&#39;s fine with appointments on a as-needed-and-possible basis.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1ti008l/please_help_me_with_my_elaborate_case/" target="_blank">Please Help Me with My Elaborate Case</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 14 points · 15 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">I (25M) got infected with COVID around the holiday season of 2021. After an easy first two weeks of recovery, I developed into a **very severe case of Long COVID** that resulted in me dropping out of college (where I was previously the best in my program).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1thqyj1/severe_diarrhea_and_crash_after_9_days_of/" target="_blank">Severe diarrhea and crash after 9 days of ultra-low-dose LDN — could this be from LDN?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 4 points · 15 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi everyone,
+
+I’ve been dealing with Long COVID for 3 years and 3 months now. My main symptoms are severe fatigue and post-exertional malaise (PEM).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tig2li/intolerance_to_almost_all_medical_procedures/" target="_blank">Intolerance to almost all medical procedures?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 4 points · 8 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Just curious, my body seems to have been hypersensitive to normal medical procedures even before my Long Covid. E.g.: 
+
+Dysautonomia after a “minimally invasive” laparoscopic surgery.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tihhd4/heart_rate_variabilitymonitoring_can_someone/" target="_blank">Heart rate variability/monitoring - Can someone advise me?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 0 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Recovering from ME/CFS caused by covid. Non-linear recovery, had a bad month, lost some gains.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tif4lw/can_i_ensure_a_gastroscopy_or_should_i_cancel_it/" target="_blank">can I ensure a gastroscopy or should I cancel it</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 1 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">CFS and long COVID for 1.5y now. My conditions worsened a lot one month ago due to an unknown infection (tested negative for covid, flu and rsv).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1thqohu/brain_retrainingresetting_stress_systems/" target="_blank">Brain Retraining/Resetting Stress Systems?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 32 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi - I&#39;ve had long covid PEM for about 18 months. About 6 months ago I saw a specialist who was helpful in general.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated May 20, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

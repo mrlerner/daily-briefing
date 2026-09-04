@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — February 24, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">February 24, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">9 posts</span></li>
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">2 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Tuesday, Feb 24: Mist, 37–44°F</div>
+            
+                <div>Wednesday, Feb 25: Overcast , 37–45°F</div>
+            
+                <div>Thursday, Feb 26: Overcast , 42–46°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Tue — good day to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.snowflake.com/en/blog/cortex-code-cli-expands-support/" target="_blank">Snowflake&#39;s AI coding agent beats Claude Code at data engineering</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 3 comments · 17h ago
+                     · <a href="https://news.ycombinator.com/item?id=47129566" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://snyk.io/articles/anthropic-launches-claude-code-security/" target="_blank">Anthropic Just Launched Claude Code Security. That&#39;s Great News for the Industry</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 23h ago
+                     · <a href="https://news.ycombinator.com/item?id=47123915" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" target="_blank">Show HN: System prompts and models of top AI tools (Claude Code, Cursor, Devin)</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 13h ago
+                     · <a href="https://news.ycombinator.com/item?id=47131877" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://manojgopanapalli.substack.com/p/claude-code-to-figma-the-complete" target="_blank">Claude Code to Figma: The Complete Guide to AI Driven Product Design Workflows</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 8h ago
+                     · <a href="https://news.ycombinator.com/item?id=47133822" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.tomshardware.com/tech-industry/cyber-security/user-accidentally-gains-control-of-over-6-700-robot-vacuums-while-tinkering-with-their-own-device-to-enable-control-with-a-playstation-controller-security-flaw-reveals-floor-plans-and-live-video-feeds" target="_blank">User gains control of over 6,700 DJI robot vacuums with help from Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=47125850" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/JSK9999/ai-nexus" target="_blank">Show HN: AI-Nexus – Unified Rule Manager for Claude Code, Cursor, and Codex</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 8m ago
+                     · <a href="https://news.ycombinator.com/item?id=47138102" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/taylorarndt/a11y-agent-team" target="_blank">Accessibility Review Agents for Claude Code, GitHub Copilot, and Claude Desktop</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=47128409" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://appmetahub.com" target="_blank">Show HN: AppMetaHub – Update App Store Metadata from Claude Code via MCP</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=47137227" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://daveinside.com/blog/scoring-and-improving-your-claude-code-setup-across-8-dimensions/" target="_blank">Scoring and Improving Your Claude Code Setup Across 8 Dimensions</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=47136925" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rd1j8u/anthropic_just_dropped_evidence_that_deepseek/" target="_blank">Anthropic just dropped evidence that DeepSeek, Moonshot and MiniMax were mass-distilling Claude. 24K fake accounts, 16M+ exchanges.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 1645 points · 314 comments · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic dropped a pretty detailed report — three Chinese AI labs were systematically extracting Claude&#39;s capabilities through fake accounts at massive scale. DeepSeek had Claude explain its own reasoning step by step, then used that as training data.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rcmvj5/claude_is_the_better_product_two_compounding/" target="_blank">Claude is the better product. Two compounding usage caps on the $20 plan are why OpenAI keeps my money.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 677 points · 214 comments · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">To Anthropic&#39;s product team, if you read this sub:
+I&#39;m a ChatGPT Plus user who prefers Claude. I&#39;m not here to vent — I&#39;m here because you&#39;re losing a paying customer not to a better product, but to a better-structured one.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LocalLLaMA/comments/1rcseh1/fun_fact_anthropic_has_never_opensourced_any_llms/" target="_blank">Fun fact: Anthropic has never open-sourced any LLMs</a></p>
+                <div class="item-meta">
+                    
+                    r/LocalLLaMA · 661 points · 91 comments · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve been working on a little side project comparing tokenizer efficiency across different companies’ models for multilingual encoding. Then I saw Anthropic’s announcement today and suddenly realized: there’s no way to analyze claude’s tokenizer lmao!</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ExperiencedDevs/comments/1rcy0lr/new_management_asked_me_to_use_a_nocode_platform/" target="_blank">New management asked me to use a no-code platform instead of our normal workflow to increase our speed</a></p>
+                <div class="item-meta">
+                    
+                    r/ExperiencedDevs · 77 points · 55 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;m not sure how to handle this. New management has just arrived at my company and after reviewing our project decided that we were too slow and told us to use something like lovable/replit/base 44.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rd3ogd/anthropic_catches_deepseek_moonshot_and_minimax/" target="_blank">Anthropic catches DeepSeek, Moonshot, and MiniMax running 16M+ distillation attacks on Claude</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 40 points · 28 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just published their findings on industrial-scale distillation attacks. Three Chinese AI labs — DeepSeek, Moonshot, and MiniMax — created over 24,000 fraudulent accounts and generated 16 million+ exchanges with Claude to extract its reasoning capabilities.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1rdfelr/i_pointed_claude_code_at_a_halffinished_idea_and/" target="_blank">I pointed Claude Code at a half-finished idea and it shipped the entire thing. Real-time
+multiplayer, ELO rankings, daily challenges, behavioral analytics</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 5 points · 2 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">I had a half-finished side project, a competitive estimation game exploring human cognitive biases. Pointed Claude Code at it and let it ship the entire thing while I focused on my day job.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kavitath/status/2026256313706229912" target="_blank">Anthropic’s new AI security plug-in, Claude Code Security, just sent shockwaves through cybersecurity stocks. Is this th...</a></p>
+                <div class="item-meta">
+                    
+                    @kavitath · just now
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic’s new AI security plug-in, Claude Code Security, just sent shockwaves through cybersecurity stocks. Is this the beginning of AI-led disruption in cyber defense?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ITPro/status/2026259565462126901" target="_blank">Anthropic says Claude Code can help streamline &#39;cost-prohibitive&#39; COBOL modernization, but IBM says it&#39;s not that simple...</a></p>
+                <div class="item-meta">
+                    
+                    @ITPro · just now
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic says Claude Code can help streamline &#39;cost-prohibitive&#39; COBOL modernization, but IBM says it&#39;s not that simple – &#39;decades of hardware-software integration cannot be replicated by moving code&#39;</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/_soniashenoy/status/2026123431390191668" target="_blank">IBM is the latest AI casualty. Stock fell 13% on Anthropic programming language threat Anthropic said in a blog post tha...</a></p>
+                <div class="item-meta">
+                    
+                    @_soniashenoy · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">IBM is the latest AI casualty. Stock fell 13% on Anthropic programming language threat Anthropic said in a blog post that Claude Code can automate COBOL modernization, and, with the help of human judgment, migrate this code incrementally into modern lan</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/bsdhanoa/status/2026233303846748352" target="_blank">Aaj 1100 point BSE kyun giri? Anthropic Claude Code Security Tool ki wajah se?🤷‍♂️</a></p>
+                <div class="item-meta">
+                    
+                    @bsdhanoa · just now
+                    
+                </div>
+                
+                <div class="item-summary">Aaj 1100 point BSE kyun giri? Anthropic Claude Code Security Tool ki wajah se?🤷‍♂️</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/zerohedge/status/2026009262929920436" target="_blank">*ANTHROPIC SAYS CLAUDE CODE CAN AUTOMATE COBOL MODERNIZATION And there goes IBM Amodei is now funding Anthropic by buyin...</a></p>
+                <div class="item-meta">
+                    
+                    @zerohedge · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">*ANTHROPIC SAYS CLAUDE CODE CAN AUTOMATE COBOL MODERNIZATION And there goes IBM Amodei is now funding Anthropic by buying puts on all the companies he &#34;disrupts&#34; daily</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/lukOlejnik/status/2026045217380385162" target="_blank">Anthropic published a blog post and playbook on how Claude Code handles COBOL. This isn’t about fixing old code or keepi...</a></p>
+                <div class="item-meta">
+                    
+                    @lukOlejnik · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic published a blog post and playbook on how Claude Code handles COBOL. This isn’t about fixing old code or keeping it on a mainframe.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/sarbjeetjohal/status/2026054406626812114/photo/1" target="_blank">. @IBM falling 13% after Anthropic said its Claude Code tool could be used to modernize legacy systems that run COBOL. M...</a></p>
+                <div class="item-meta">
+                    
+                    @sarbjeetjohal · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">. @IBM falling 13% after Anthropic said its Claude Code tool could be used to modernize legacy systems that run COBOL.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/CNBCTV18Live/status/2026132546195738736" target="_blank">What&#39;s #Anthropic’s #Claude Code Security that has shaken cybersecurity stocks</a></p>
+                <div class="item-meta">
+                    
+                    @CNBCTV18Live · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">What&#39;s #Anthropic’s #Claude Code Security that has shaken cybersecurity stocks</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/trashh_dev/status/2026024802335813954" target="_blank">most people on timeline them: “man fuck anthropic!” *goes back to using claude code/opus*</a></p>
+                <div class="item-meta">
+                    
+                    @trashh_dev · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">most people on timeline them: “man fuck anthropic!” *goes back to using claude code/opus*</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VentureBeat/status/2025960041065426973" target="_blank">Anthropic&#39;s Claude Code Security finds 500+ vulnerabilities: how security leaders should respond</a></p>
+                <div class="item-meta">
+                    
+                    @VentureBeat · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic&#39;s Claude Code Security finds 500+ vulnerabilities: how security leaders should respond</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/" target="_blank">Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic accuses DeepSeek, Moonshot, and MiniMax of using 24,000 fake accounts to distill Claude’s AI capabilities, as U.S. officials debate export controls aimed at slowing China’s AI progress.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/02/23/defense-secretary-summons-anthropics-amodei-over-military-use-of-claude/" target="_blank">Defense Secretary summons Anthropic’s Amodei over military use of Claude</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">Defense Secretary Pete Hegseth has summoned Anthropic CEO Dario Amodei to the Pentagon for a tense discussion over the military&#39;s use of Claude. Hegseth has threatened to designate Anthropic a &#34;supply chain risk.&#34;</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated February 24, 2026 at 07:16
+        </footer>
+    </div>
+</body>
+</html>

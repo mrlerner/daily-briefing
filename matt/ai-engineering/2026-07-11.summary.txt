@@ -1,0 +1,9 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. ANTHROPIC 🔥: Claude desktop app got a built-in web browser for Claude Code. This feature allows Claude to open and debug...
+2. I ❤️ vibe coding! Yesterday, my Claude Code usage was showing me that I have only 50% tokens left and 40% on Fable. Toda...
+3. Anthropic just gave Claude Code eyes. It can now open a browser inside the desktop app, load the site it just built, cli...
+4. Show HN: Code Airlock: Run Claude Code and Codex in Disposable MicroVMs
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-11.html

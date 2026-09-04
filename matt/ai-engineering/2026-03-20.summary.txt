@@ -1,0 +1,7 @@
+Today's briefing:
+1. Anthropic silently restricted my paid account &gt;&gt; no notice, no explanation, no response to support tickets
+2. Has anyone else noticed their AI tool usage patterns feel uncomfortably like behavioral addiction loops?
+3. Role-based AI persona packs for Claude Code and Cursor
+4. I made the Claude Code AI Logo Star for my desk
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-20.html

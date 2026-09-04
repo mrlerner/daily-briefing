@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Anthropic launches code review tool to check flood of AI-generated code
+2. 🚨 BREAKING: Anthropic quietly dropped a 32-page playbook on building Claude Skills. Skills let you teach Claude your exa...
+3. Run Claude Code using local LLMs for FREE. No API costs. No data leaving your machine. Here's how it works: Claude Code ...
+4. #Anthropic launches #Claude Code Review, a multi agent #AI system that scans code for bugs
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-11.html

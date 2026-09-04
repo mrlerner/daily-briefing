@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — August 17, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">August 17, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">9 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">6 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Monday, Aug 17: Patchy rain nearby, 42–72°F</div>
+            
+                <div>Tuesday, Aug 18: Patchy rain nearby, 43–44°F</div>
+            
+                <div>Wednesday, Aug 19: Patchy rain nearby, 44–45°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Tue and Wed — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://philippdubach.com/posts/kimi-k3-inside-claude-code/" target="_blank">Testing Moonshot AI&#39;s Kimi K3 Inside Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    7 points · 3 comments · 23h ago
+                     · <a href="https://news.ycombinator.com/item?id=49319610" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://chat.dropstone.io" target="_blank">Open-source models on Dropstone feel noticeably more human than Claude</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 23h ago
+                     · <a href="https://news.ycombinator.com/item?id=49319552" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/anthropics/claude-code/issues/6235" target="_blank">Claude Code &#34;Feature Request: Support Agents.md&#34;: Closed as Completed</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 2 comments · 8h ago
+                     · <a href="https://news.ycombinator.com/item?id=49326393" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://thomas-witt.com/blog/blog-subagent-model-pin/" target="_blank">I stopped my Claude Code subagents from running on Fable instead of Sonnet</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=49320976" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.zhcinstitute.com/research/oh-my-claudecode-multi-agent-field-notes/" target="_blank">Oh-My-Claudecode, Orchestration Layer That Removes Humans from the Build Loop</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49318935" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49325946" target="_blank">Ask HN: How do you keep track of all your codex/Claude sessions?</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 9h ago
+                     · <a href="https://news.ycombinator.com/item?id=49325946" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://cursor.com/blog/aiuc-1" target="_blank">Cursor earns AIUC-1 certification for agent security and reliability</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 8h ago
+                     · <a href="https://news.ycombinator.com/item?id=49326334" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.feedspace.io/" target="_blank">AI Native Review Collection on auto pilot mode</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=49328916" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://theworkingmodel.co/analysis/null-result-openai-enterprise-paper/" target="_blank">The null result in OpenAI&#39;s enterprise AI paper</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 5h ago
+                     · <a href="https://news.ycombinator.com/item?id=49327276" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/KirkDBorne/status/2089103110778290517" target="_blank">Best-seller in AI on Amazon... &#34;Agentic Coding with Claude Code: The everyday developer&#39;s guide to agentic coding with C...</a></p>
+                <div class="item-meta">
+                    
+                    @KirkDBorne · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Best-seller in AI on Amazon... &#34;Agentic Coding with Claude Code: The everyday developer&#39;s guide to agentic coding with Claude Code&#34; 𝗚𝗲𝘁 𝗶𝘁 𝗵𝗲𝗿𝗲: amzn.to/42FSct9 v/ @PacktDataML 𝗪𝗵𝗮𝘁 𝘆𝗼𝘂 𝘄𝗶𝗹𝗹 𝗹𝗲𝗮𝗿𝗻: ❇️Design agentic coding workflows in t</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ibuildthecloud/status/2088719400593699262" target="_blank">I run Claude code in a sandbox on my desktop and then use remote connect to work with it for my phone. It&#39;s a pretty nic...</a></p>
+                <div class="item-meta">
+                    
+                    @ibuildthecloud · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I run Claude code in a sandbox on my desktop and then use remote connect to work with it for my phone. It&#39;s a pretty nice solution.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/testingcatalog/status/2088999252559024420" target="_blank">ANTHROPIC 🔥: Claude Tag is coming to Claude Desktop in the form of collaborative Projects for Claude Code. That&#39;s essent...</a></p>
+                <div class="item-meta">
+                    
+                    @testingcatalog · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">ANTHROPIC 🔥: Claude Tag is coming to Claude Desktop in the form of collaborative Projects for Claude Code. That&#39;s essentially a built-in Slack 👀 &gt; Earlier spotted Managed Projects feature got a slight upgrade, mentioning that users will be able to spawn diff</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2089045576042307783" target="_blank">Agent OS models: the guy who created Claude Code deleted all his skills. It got BETTER. Boris from Anthropic emptied his...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Agent OS models: the guy who created Claude Code deleted all his skills. It got BETTER.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/DanKornas/status/2089292395829510230" target="_blank">Your AI coding bill shows the total. It doesn’t show where the spend went. CodeBurn is a free, local-first tool for trac...</a></p>
+                <div class="item-meta">
+                    
+                    @DanKornas · just now
+                    
+                </div>
+                
+                <div class="item-summary">Your AI coding bill shows the total. It doesn’t show where the spend went.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/GuangyuRobert/status/2089141312796893254" target="_blank">They trained a 27B model to reproduce ML papers and beat Claude Code/Codex Post-training a ~30B model can often lift per...</a></p>
+                <div class="item-meta">
+                    
+                    @GuangyuRobert · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">They trained a 27B model to reproduce ML papers and beat Claude Code/Codex Post-training a ~30B model can often lift performance ~20 points if the benchmark wasn&#39;t saturated</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/emollick/status/2089233231853785118" target="_blank">Its interesting to see the experiments on how to give AI a computer: Codex &amp; Claude Code use your local machine, ChatGPT...</a></p>
+                <div class="item-meta">
+                    
+                    @emollick · just now
+                    
+                </div>
+                
+                <div class="item-summary">Its interesting to see the experiments on how to give AI a computer: Codex &amp; Claude Code use your local machine, ChatGPT Work on the web (as well as Claude and ChatGPT) give the AI a one-time machine online that gets reset, and Grokbot gives each AI a</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/jun_song/status/2089268351629758898" target="_blank">AI agents like Codex and Claude Code seem to be eating up way more RAM lately. I&#39;m not even talking about local models. ...</a></p>
+                <div class="item-meta">
+                    
+                    @jun_song · just now
+                    
+                </div>
+                
+                <div class="item-summary">AI agents like Codex and Claude Code seem to be eating up way more RAM lately. I&#39;m not even talking about local models.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VaibhavSisinty/status/2089043926355415409" target="_blank">AI Job Search : Turns Claude Code into a personal job search assistant. Evaluates listings. Tailors your resume. Writes ...</a></p>
+                <div class="item-meta">
+                    
+                    @VaibhavSisinty · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI Job Search : Turns Claude Code into a personal job search assistant. Evaluates listings.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Chain_GPT/status/2088928944066326715" target="_blank">Claude can spend from a wallet it cannot drain. In our Developer Kit for Claude Code, anything that moves funds comes ba...</a></p>
+                <div class="item-meta">
+                    
+                    @Chain_GPT · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude can spend from a wallet it cannot drain. In our Developer Kit for Claude Code, anything that moves funds comes back as an unsigned transaction and you sign it yourself.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" target="_blank">Anthropic shares more details about how Claude’s new watermarks will work</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">How will the watermarking actually work? Can it be hidden with editing?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/" target="_blank">Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Dario Amodei is pushing back against the idea that he&#39;s been painting an overly pessimistic picture of AI.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/" target="_blank">SpaceX officially closes its Cursor acquisition</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">AI coding startup Cursor is now officially a part of SpaceX.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" target="_blank">Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenRouter&#39;s CEO recently described the startup as Stripe for AI.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · just now
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://openai.com/index/new-policy-ideas-for-the-intelligence-age" target="_blank">New policy ideas for the Intelligence Age</a></p>
+                <div class="item-meta">
+                    
+                    OpenAI Blog · 46m ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/" target="_blank">Markdown SVG upgrades</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">I started building my markdown-svg-renderer tool in May, but I&#39;ve since added enough features to it that it&#39;s worth talking about here again. It&#39;s evolved into my ideal tool for sharing Markdown transcripts that include SVG documents.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" target="_blank">Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Friday&#39;s big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba&#39;s Qwen research lab. I&#39;ve been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was impressive.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/16/dario-amodei/" target="_blank">Quoting Dario Amodei</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisis of trust.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/" target="_blank">Get closer to the game with Gemini and Pixel</a></p>
+                <div class="item-meta">
+                    
+                    Google AI Blog · just now
+                    
+                </div>
+                
+                <div class="item-summary">Low-angle view of a soccer player kicking a ball mid-air against a bright blue sky, with grass flying from their cleats.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated August 17, 2026 at 05:01
+        </footer>
+    </div>
+</body>
+</html>

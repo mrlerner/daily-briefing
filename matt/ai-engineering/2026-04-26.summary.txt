@@ -1,0 +1,9 @@
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. PSA: The string "HERMES.md" in your git commit history silently routes Claude Code billing to extra usage — cost me $200
+2. Thanks @Gavriel_Cohen. You’re right. I never used an IDE. Claude Code made all edits. No @karpathy ‘vibe coding’. All I ...
+3. ICYMI: Inside Claude Code's leaked source: swarms, daemons, and 44 features Anthropic kept behind flags
+4. Stop using Claude Code without this plugin. There's an official Anthropic plugin called claude-code-setup. It scans your...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-26.html

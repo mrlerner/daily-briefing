@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 19, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 19, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">5 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,126.06, up
+                +1.2%
+                (+84.78 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Apr 19: Clear , 49–76°F</div>
+            
+                <div>Monday, Apr 20: Partly Cloudy , 48–71°F</div>
+            
+                <div>Tuesday, Apr 21: Partly Cloudy , 50–66°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun and Mon — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sp4k1f/new_stanford_research_developing_long_covid/" target="_blank">New Stanford research: developing long COVID diagnostics, help us show investors demand</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 132 points · 25 comments · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">Folks, These people at Stanford have developed pretty important new diagnostics that can unlock clinical trials. I signed up for free and it helps them get money for this from investors.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1spa7ii/i_wish_we_all_could_get_a_personal_pacingpem/" target="_blank">I wish we all could get a personal pacing/PEM manager</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 77 points · 21 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">It&#39;s just so draining to have to keep track of what works for you, what doesn&#39;t, how long you can spend or not spend on a certain activity. How much noise, how much light!</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sp4a6c/lowdose_abilify_andor_pemgarda_have_had_a_huge_so/" target="_blank">Low-dose Abilify and/or Pemgarda have had a huge, so far sustained positive effect</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 22 points · 5 comments · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">A brief background: Been long-hauling since 2021, have had a total of four infections, symptoms are of the ME/CFS variety. Around six to nine months after each infection I recover to a baseline where I can carry out ADLs with no issue, but I still experience persistent fatigue and will crash if I ov</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sprktp/trt_treatment_update_not_a_good_one_unfortunately/" target="_blank">TRT treatment update! Not a good one, unfortunately.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 1 points · 1 comments · 54m ago
+                    
+                </div>
+                
+                <div class="item-summary">(I do have a sense of humour about this, but that doesn’t mean I’m not taking it seriously). So a couple months ago, my clinic picked up that I had hypogonadism, and while we cannot confirm definitively that long covid is the sole reason, we do believe it played a hand in it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sp5tlh/long_covid/" target="_blank">Long Covid</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 10 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">If someone have always symptoms , but don’t change in severity when goes to work or gym does this mean it’s  more likely to be long covid / other conditions and no cfs me ? Or you can be in rolling pem for 2,5 years +?</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 19, 2026 at 06:19
+        </footer>
+    </div>
+</body>
+</html>

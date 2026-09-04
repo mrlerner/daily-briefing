@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — March 08, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">March 08, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">7 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 6,740.02, down
+                -1.3%
+                (-90.69 pts).</p>
+        </div>
+        
+        
+
+        
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rnnoxk/what_chronic_illness_researchers_wont_tell_you/" target="_blank">What chronic illness researchers won&#39;t tell you</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 111 points · 25 comments · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">I do research on chronic illness and I’m appalled at the bad behaviour out there. Some of the things you should know:
+
+* Fabricated evidence gets published.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rnulhk/blood_sex_and_inflammation_did_the_impacc_study/" target="_blank">Blood, Sex and Inflammation: Did the IMPACC Study Uncover Core Issues in Long COVID and ME/CFS?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 30 points · 6 comments · 8h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rnbkov/im_a_caretaker_who_wants_to_create_social/" target="_blank">I’m a caretaker who wants to create social opportunities for my daughter and others</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 18 points · 2 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">After reading a thread about making friends when you have ME/CFS, I feel prompted to offer my help as my daughter (20f) has been sick with Long COVID (ME/CFS) for four years and is mostly homebound, often bed bound. We live in the Portland, Oregon area and she is always looking for ways to leave the</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1ro033m/how_do_severe_mecfs_patients_maintain_pacing_when/" target="_blank">How do severe ME/CFS patients maintain pacing when caregivers are unpredictable and you sometimes lose the ability to communicate?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 17 points · 12 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Whitney Dafoe often talks about how the most important strategy in severe ME/CFS is staying strictly within your energy limit. If you exceed it, you crash (PEM), symptoms worsen, and your energy limit can permanently drop.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1rnzbti/blood_sex_and_inflammation_did_the_impacc_study/" target="_blank">Blood, Sex and Inflammation: Did the IMPACC Study Uncover Core Issues in Long COVID and ME/CFS?</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 3 points · 1 comments · 3h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rnz9s2/blood_sex_and_inflammation_did_the_impacc_study/" target="_blank">Blood, Sex and Inflammation: Did the IMPACC Study Uncover Core Issues in Long COVID and ME/CFS?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 2 points · 0 comments · 3h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1rnapgw/long_covid_explained_for_people_just_learning/" target="_blank">Long COVID explained for people just learning about this condition and those who need help educating those around them.</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 1 points · 0 comments · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">This page explains what Long COVID is so you can help people understand what you are going through. [About Long COVID](https://www.promedview.com/about-long-covid)
+
+The symptoms checklist will help you organize your thoughts when you speak to the dr.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 08, 2026 at 05:07
+        </footer>
+    </div>
+</body>
+</html>

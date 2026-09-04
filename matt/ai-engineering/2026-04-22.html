@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — April 22, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">April 22, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">7 posts</span></li>
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">9 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">2 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Apr 22: Patchy rain nearby, 47–57°F</div>
+            
+                <div>Thursday, Apr 23: Patchy rain nearby, 44–55°F</div>
+            
+                <div>Friday, Apr 24: Sunny, 39–63°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Fri — good day to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://bsky.app/profile/edzitron.com/post/3mjzxwfx3qs2a" target="_blank">Claude Code to be removed from Anthropic&#39;s Pro plan?</a></p>
+                <div class="item-meta">
+                    
+                    588 points · 544 comments · 14h ago
+                     · <a href="https://news.ycombinator.com/item?id=47854477" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.theregister.com/2026/04/22/anthropic_removes_claude_code_pro/" target="_blank">Anthropic tests how devs react to yanking Claude Code from Pro plan</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 2 comments · 11h ago
+                     · <a href="https://news.ycombinator.com/item?id=47857130" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Mason-Teams/mason-teams" target="_blank">Mason – A multi agent system in a container using Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=47844806" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=47856900" target="_blank">Ravix – An AI agent that runs on your Claude Code subscription (alpha)</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 11h ago
+                     · <a href="https://news.ycombinator.com/item?id=47856900" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/codecoincognition/vibe-guard-skills" target="_blank">Vibe Guard – three Claude Code skills that audit AI code before push</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=47849818" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=47849308" target="_blank">Write a prompt once, sync it to Cursor, Claude Code and VS Code automatically</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=47849308" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://instavm.io/blog/how-claude-code-and-codex-approach-sandboxing" target="_blank">How Claude Code and Codex approach sandboxing</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 3m ago
+                     · <a href="https://news.ycombinator.com/item?id=47862324" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1srzhd7/psa_claude_pro_no_longer_lists_claude_code_as_an/" target="_blank">PSA: Claude Pro no longer lists Claude Code as an included feature</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 2432 points · 684 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Just noticed while checking the pricing page. Claude Code is no longer listed as a feature of the Pro plan.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LocalLLaMA/comments/1ss23b8/claude_code_removed_from_claude_pro_plan_better/" target="_blank">Claude Code removed from Claude Pro plan - better time than ever to switch to Local Models.</a></p>
+                <div class="item-meta">
+                    
+                    r/LocalLLaMA · 1112 points · 323 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Time to switch to Kimi k2.6 guys if you haven&#39;t already. For $20 a month you can buy the OpenCode Go coding plan (its actually $5 for the first month then $10) which gives you many more tokens on models like Kimi K2.6, and then you can pay for the rest of the usage.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ss5fi4/anthropic_response_to_claude_code_change/" target="_blank">Anthropic response to Claude Code change</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 944 points · 323 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;gt;For clarity, we&#39;re running a small test on \~2% of new prosumer signups. Existing Pro and Max subscribers aren&#39;t affected.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ss3asp/does_claudes_20_plan_no_longer_include_claude_code/" target="_blank">Does Claude&#39;s $20 Plan No Longer Include Claude Code?</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 772 points · 224 comments · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Was looking at buying the $20 Plan today after a demonstration from a friend (and wanting to switch/try my options from Codex), but saw that Claude Code was not included. I wanted to ask if this was a temporary change, or if the Pro plan truly never had Claude Code, and I was mistaken.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ChatGPT/comments/1ss5slk/prepare_for_horde_of_switchers_to_openai_as/" target="_blank">Prepare for horde of switchers to OpenAI as Anthropic removes claude code from $20 . Minimum $100 to access it soon</a></p>
+                <div class="item-meta">
+                    
+                    r/ChatGPT · 706 points · 151 comments · 11h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ss28rj/i_built_a_graphify_skill_for_claude_code_that/" target="_blank">I built a /graphify skill for Claude Code that maps your entire codebase into a knowledge graph, 71x fewer tokens, way less hallucination (32k stars, 250k downloads)</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 421 points · 48 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Every time I joined a new codebase I’d spend the first week asking Claude to “explain how X works”, watching it hallucinate, then reading 40 files to correct it. The problem isn’t the LLM — it’s that raw files are an awful context format.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ss29p9/just_opensourced_a_protocol_sdk_that_lets_claude/" target="_blank">Just open-sourced a protocol + SDK that lets Claude drive your live app (ships as a Claude Code plugin)</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 60 points · 10 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">https://github.com/BrainBlend-AI/tesseron
+
+Just open-sourced a protocol and TypeScript SDK I built mostly *with* Claude Code. The goal: let *Claude* (or any MCP client) drive a live application (browser tab, *Electron* / *Tauri* desktop app, Node daemon, CLI) by calling typed handlers inside your co</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ss7f38/we_ran_52_controlled_benchmarks_on_claude_code/" target="_blank">We ran 52 controlled benchmarks on Claude Code. Agent Teams cost 73-124% more than sequential with zero quality gain.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 59 points · 24 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Three weeks of controlled experiments on a real production Next.js/TypeScript/Supabase codebase, Sonnet 4.6 worker, Opus 4.7 grader. Full data public, tool is MIT.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1srv9lj/i_started_building_claude_code_plugins_then/" target="_blank">I started building Claude Code plugins, then realized I didn’t want to duplicate the same plugin for every AI agent</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 15 points · 12 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve been building plugins for Claude Code, and the first version of the idea was very Claude-focused. That made sense at the start.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2046765840477945942" target="_blank">Anthropic said only 2% of new users would see the “claude code requires max tier” change. 100% of users saw it. They wer...</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic said only 2% of new users would see the “claude code requires max tier” change. 100% of users saw it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/edzitron/status/2046740569037402319" target="_blank">&#34;Current plans weren&#39;t built for this&#34; sure sounds like Anthropic will start walking away from the current subscription ...</a></p>
+                <div class="item-meta">
+                    
+                    @edzitron · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;Current plans weren&#39;t built for this&#34; sure sounds like Anthropic will start walking away from the current subscription models. They won&#39;t even admit they&#39;re pulling Claude Code from Pro, claiming it&#39;s a &#34;test&#34; despite support docs no longer referencing Pro in Clau</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/GergelyOrosz/status/2046783673664405609" target="_blank">... and Anthropic reverted this change. Claude Code is now part of Pro, as per the Pricing page. Important note on the g...</a></p>
+                <div class="item-meta">
+                    
+                    @GergelyOrosz · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">... and Anthropic reverted this change.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/simonw/status/2046774737683325028" target="_blank">Wrote up Anthropic&#39;s self-own about Claude Code pricing from this afternoon on my blog - it turned out they&#39;d reversed c...</a></p>
+                <div class="item-meta">
+                    
+                    @simonw · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Wrote up Anthropic&#39;s self-own about Claude Code pricing from this afternoon on my blog - it turned out they&#39;d reversed course just as I hit publish, so I&#39;ve tried to update it to reflect the current state</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/jeremyphoward/status/2046741451040751836" target="_blank">For the &#34;small test&#34; they&#39;ve modified their docs to remove mention of Claude Code in Claude Pro: support.claude.com/en/a...</a></p>
+                <div class="item-meta">
+                    
+                    @jeremyphoward · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">For the &#34;small test&#34; they&#39;ve modified their docs to remove mention of Claude Code in Claude Pro: support.claude.com/en/articles/11… It&#39;s been a shock to see Anthropic&#39;s integrity collapse in the face of commercial pressure. Would love a renewed commitment t</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/GergelyOrosz/status/2046739299240948067" target="_blank">Confirmed that Anthropic - as of now - has removed Claude Code from new Pro signups. This is what the pricing page looks...</a></p>
+                <div class="item-meta">
+                    
+                    @GergelyOrosz · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Confirmed that Anthropic - as of now - has removed Claude Code from new Pro signups. This is what the pricing page looks like.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Techmeme/status/2046734740708053294" target="_blank">Anthropic appears to have removed access to Claude Code from its $20/month Pro plan; Anthropic says it is &#34;running a sma...</a></p>
+                <div class="item-meta">
+                    
+                    @Techmeme · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic appears to have removed access to Claude Code from its $20/month Pro plan; Anthropic says it is &#34;running a small test on ~2% of new prosumer signups&#34; ( @edzitron / Ed Zitron&#39;s Where&#39;s Your Ed At) (Visit Techmeme dot com for the link and full cont</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/firt/status/2046733027221352679" target="_blank">So, it seems Anthropic has decided to remove Claude Code support from the Pro $20/m plan 🙀 Codex and Google agentic tool...</a></p>
+                <div class="item-meta">
+                    
+                    @firt · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">So, it seems Anthropic has decided to remove Claude Code support from the Pro $20/m plan 🙀 Codex and Google agentic tools work even with the free plan. 😬</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/simonw/status/2046732056995205620" target="_blank">This is so confusing. Did Anthropic really just drop Claude Code from their $20/month plan? Why would they do that throu...</a></p>
+                <div class="item-meta">
+                    
+                    @simonw · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">This is so confusing. Did Anthropic really just drop Claude Code from their $20/month plan?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/scaling01/status/2046723822716358714" target="_blank">Anthropic removed Claude Code from the Pro plan I&#39;m obviously going to cancel my subscription if I lose access to Claude...</a></p>
+                <div class="item-meta">
+                    
+                    @scaling01 · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic removed Claude Code from the Pro plan I&#39;m obviously going to cancel my subscription if I lose access to Claude Code Mythos was actually the top of the Anthropic hype cycle</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Apr/22/claude-code-confusion/#atom-everything" target="_blank">Is Claude Code going to cost $100/month? Probably not - it&#39;s all very confusing</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic today quietly (as in silently, no announcement anywhere at all) updated their claude.com/pricing page (but not their Choosing a Claude plan page, which shows up first for me on Google) to add this tiny but significant detail (arrow is mine, and it&#39;s already reverted):
+
+The Internet Arch...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/#atom-everything" target="_blank">Changes to GitHub Copilot Individual plans</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 32m ago
+                    
+                </div>
+                
+                <div class="item-summary">Changes to GitHub Copilot Individual plans
+On the same day as Claude Code&#39;s temporary will-they-won&#39;t-they $100/month kerfuffle (for the moment, they won&#39;t), here&#39;s the latest on GitHub Copilot pricing. Unlike Anthropic, GitHub put up an official announcement about their changes, which include ti...</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 22, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

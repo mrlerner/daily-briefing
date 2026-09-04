@@ -1,0 +1,125 @@
+{
+  "generated": "2026-04-20T12:03:21.985134+00:00",
+  "items": [
+    {
+      "id": "843de44d8d25e961",
+      "title": "I'm starting two major treatments soon",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1sqm65l/im_starting_two_major_treatments_soon/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-20T11:09:58+00:00",
+      "summary": "This week I'm getting a subcutaneous immunoglobulin infusion for the first time in my life. It's a very involved process to have gotten approval to use this and to prepare for the infusion itself. There has been research done that shows that IG infusions have helped a number of long covid patients e",
+      "points": null,
+      "score": 2,
+      "comments": 2,
+      "author": "coderrover",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.378,
+      "time_ago": "53m ago",
+      "summary_short": "This week I'm getting a subcutaneous immunoglobulin infusion for the first time in my life. It's a very involved process to have gotten approval to use this and to prepare for the infusion itself."
+    },
+    {
+      "id": "5cd5d23cfbfa75c4",
+      "title": "Your experience with POTS post-ankle fracture/sprain when a camboot was prescribed for the injury.",
+      "url": "https://reddit.com/r/POTS/comments/1sqlmti/your_experience_with_pots_postankle/",
+      "source": "r/POTS",
+      "source_type": "reddit",
+      "published": "2026-04-20T10:42:52+00:00",
+      "summary": "Hey, so I am 3-4 weeks post a fall and also have post-viral (Long COVID) POTS. I injured each foot/ankle and have to wear matching Camboots.\n\nWhilst having a camboot on each foot is easier to style (jokes), I cannot wear my full compression tights because way too difficult to put on.\n\nHas anyone bee",
+      "points": null,
+      "score": 1,
+      "comments": 0,
+      "author": "JoJo_kitten",
+      "subreddit": "POTS",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.366,
+      "time_ago": "1h ago",
+      "summary_short": "Hey, so I am 3-4 weeks post a fall and also have post-viral (Long COVID) POTS. I injured each foot/ankle and have to wear matching Camboots."
+    },
+    {
+      "id": "5563391ebac4ece0",
+      "title": "What’s everyone’s sleep schedules like? [Writing an article for Garmin &amp; M.E]",
+      "url": "https://reddit.com/r/cfs/comments/1sqktmv/whats_everyones_sleep_schedules_like_writing_an/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-20T09:57:46+00:00",
+      "summary": "Hey all, I've been working on a big guide for Garmin watches and M.E - including tips for pacing, improving patient autonomy, how to identify and interpret a wide variety of trends to prevent harm + increase the chances of a baseline increase in the long run etc.\n\nI wanted to gather some input from ",
+      "points": null,
+      "score": 7,
+      "comments": 7,
+      "author": "No-Anywhere8698",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.348,
+      "time_ago": "2h ago",
+      "summary_short": "Hey all, I've been working on a big guide for Garmin watches and M.E - including tips for pacing, improving patient autonomy, how to identify and interpret a wide variety of trends to prevent harm + increase the chances of a baseline increase in the long run etc. I wanted to gather some input from"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7126.06005859375,
+      "prev_close": 7041.27978515625,
+      "change_pts": 84.78,
+      "change_pct": 1.2,
+      "direction": "up",
+      "summary_line": "S&P 500 closed at 7,126.06, up +1.2% (+84.78 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-20",
+          "day": "Mon",
+          "day_full": "Monday, Apr 20",
+          "high": 74,
+          "low": 50,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-04-21",
+          "day": "Tue",
+          "day_full": "Tuesday, Apr 21",
+          "high": 57,
+          "low": 47,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-04-22",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 22",
+          "high": 53,
+          "low": 48,
+          "condition": "Mist"
+        }
+      ],
+      "highlights": [
+        "Mon",
+        "Tue"
+      ],
+      "summary_line": "Sunny Mon and Tue — good days to be outside."
+    }
+  ]
+}

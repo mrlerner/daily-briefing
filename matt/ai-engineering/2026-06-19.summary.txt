@@ -1,0 +1,11 @@
+S&P 500 closed at 7,420.10, down -1.2% (-91.25 pts).
+
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. ANTHROPIC 🔥: Claude Design has been updated with broader design system support, a canvas editor, and Claude Code sync. >...
+2. Anthropic just dropped a paper on 400,000 Claude Code sessions, and the headline finding flips a year of assumptions: do...
+3. LLM biased against accessible code (Claude Code issue #56079)
+4. Anthropic's Claude Code Artifacts update brings live, shared dashboards and interactive workspaces to enterprises
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-19.html

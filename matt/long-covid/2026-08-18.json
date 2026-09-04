@@ -1,0 +1,43 @@
+{
+  "generated": "2026-08-18T12:02:37.876509+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-18",
+          "day": "Tue",
+          "day_full": "Tuesday, Aug 18",
+          "high": 84,
+          "low": 57,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-19",
+          "day": "Wed",
+          "day_full": "Wednesday, Aug 19",
+          "high": 81,
+          "low": 56,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-20",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 20",
+          "high": 85,
+          "low": 58,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "summary_line": "Sunny Tue, Wed and Thu — good days to be outside."
+    }
+  ]
+}

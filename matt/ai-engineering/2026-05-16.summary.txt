@@ -1,0 +1,11 @@
+S&P 500 closed at 7,408.50, down -1.2% (-92.74 pts).
+
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Boom! @rewhiles of Viettel Cyber Security was able to exploit Anthropic Claude Code! If confirmed, they win $40,000 and ...
+2. Anthropic responded less than an hour later by raising Claude Code weekly limits by 50% until July 13 for Pro, Max, Team...
+3. Anthropic's Claude Code agent view is a better dashboard. So why aren't developers convinced?
+4. I built a self-hosted open-source MCP server that gives any local LLM real financial data — SEC filings, 13F, insider &amp; congressional trades, short data, FRED
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-16.html

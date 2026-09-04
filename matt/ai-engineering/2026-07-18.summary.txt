@@ -1,0 +1,9 @@
+S&P 500 closed at 7,457.69, down -1.0% (-76.08 pts).
+
+Today's briefing:
+1. I am begging @AnthropicAI please add an automated test suite somewhere that ensures Claude Code on the web never blocks ...
+2. looks like anthropic just silently removed the separate rate limit for fable in claude code:
+3. Show HN: A hook that stops Claude Code from re-trying fixes that failed
+4. Available in all Claude Code sessions. Update Claude Code and run /code-review on your next PR.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-18.html

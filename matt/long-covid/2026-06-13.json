@@ -1,0 +1,68 @@
+{
+  "generated": "2026-06-13T12:02:36.293747+00:00",
+  "items": [
+    {
+      "id": "7938c6fd0a2428c4",
+      "title": "Disentangling Confounders from Pathology in Long-COVID Trajectory Prediction for Women: An Interpretable Large-Language-Model Approach",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.06.10.26355420v1?rss=1",
+      "source": "medRxiv — Infectious Diseases",
+      "source_type": "rss",
+      "published": "2026-06-12T08:00:00+00:00",
+      "summary": "Objective. Post-acute sequelae of SARS-CoV-2 infection (PASC, \"Long COVID\") dispropor- tionately affects women, in whom hallmark symptoms--insomnia, fatigue, palpitations, cogni- tive difficulty--overlap with comorbidities and hormonal transitions such as menopause. This diagnostic overlap is a c...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.75,
+      "time_ago": "1d ago",
+      "summary_short": "Objective. Post-acute sequelae of SARS-CoV-2 infection (PASC, \"Long COVID\") dispropor- tionately affects women, in whom hallmark symptoms--insomnia, fatigue, palpitations, cogni- tive difficulty--overlap with comorbidities and hormonal transitions such as menopause."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-13",
+          "day": "Sat",
+          "day_full": "Saturday, Jun 13",
+          "high": 82,
+          "low": 55,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-14",
+          "day": "Sun",
+          "day_full": "Sunday, Jun 14",
+          "high": 86,
+          "low": 55,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-15",
+          "day": "Mon",
+          "day_full": "Monday, Jun 15",
+          "high": 87,
+          "low": 59,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat, Sun and Mon — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "generated": "2026-07-10T12:02:26.532079+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-10",
+          "day": "Fri",
+          "day_full": "Friday, Jul 10",
+          "high": 77,
+          "low": 55,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-11",
+          "day": "Sat",
+          "day_full": "Saturday, Jul 11",
+          "high": 70,
+          "low": 52,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-12",
+          "day": "Sun",
+          "day_full": "Sunday, Jul 12",
+          "high": 74,
+          "low": 46,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Fri",
+        "Sun"
+      ],
+      "summary_line": "Sunny Fri and Sun — good days to be outside."
+    }
+  ]
+}

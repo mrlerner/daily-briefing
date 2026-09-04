@@ -1,0 +1,9 @@
+Sunny Wed and Fri — good days to be outside.
+
+Today's briefing:
+1. Shopify's CEO threatened to ban Claude Code. Anthropic had already closed the feature request.
+2. Claude Code is not gonna like this.. When an AI coding agent finishes a task, running the code without errors is usually...
+3. OpenAI just told people to run Codex inside Claude Code The Claude vs Codex debate is officially getting stupid Yesterda...
+4. Claude Cowork finally remembers what you told the app in chat
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-26.html

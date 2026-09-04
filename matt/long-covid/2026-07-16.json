@@ -1,0 +1,69 @@
+{
+  "generated": "2026-07-16T12:02:30.792236+00:00",
+  "items": [
+    {
+      "id": "061bbc8c9868dcbd",
+      "title": "Experimental peptides are being advertised for Long COVID. But the evidence is trailing behind.",
+      "url": "https://thesicktimes.org/2026/07/14/experimental-peptides-are-being-advertised-for-long-covid-but-the-evidence-is-trailing-behind/?utm_source=rss&utm_medium=rss&utm_campaign=experimental-peptides-are-being-advertised-for-long-covid-but-the-evidence-is-trailing-behind",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-07-14T23:29:59+00:00",
+      "summary": "Some FDA-approved GLP-1s are being studied in clinical trials for the disease, but their results aren’t available yet. Experts caution against using experimental peptides for Long COVID.\nThe post Experimental peptides are being advertised for Long COVID. But the evidence is trailing behind. first...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "Some FDA-approved GLP-1s are being studied in clinical trials for the disease, but their results aren’t available yet. Experts caution against using experimental peptides for Long COVID."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-16",
+          "day": "Thu",
+          "day_full": "Thursday, Jul 16",
+          "high": 78,
+          "low": 57,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-07-17",
+          "day": "Fri",
+          "day_full": "Friday, Jul 17",
+          "high": 80,
+          "low": 51,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-07-18",
+          "day": "Sat",
+          "day_full": "Saturday, Jul 18",
+          "high": 81,
+          "low": 52,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu, Fri and Sat — good days to be outside."
+    }
+  ]
+}

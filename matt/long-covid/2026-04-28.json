@@ -1,0 +1,140 @@
+{
+  "generated": "2026-04-28T12:03:56.141183+00:00",
+  "items": [
+    {
+      "id": "ce7250a123db7fe3",
+      "title": "Park-Pagliuca Fund Donates $10 Million to PolyBio Long COVID Cure Initiative",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1sx4ejm/parkpagliuca_fund_donates_10_million_to_polybio/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-27T13:54:44+00:00",
+      "summary": "This is some really great news! Really hope they get something for this. \n\n[https://www.prnewswire.com/news-releases/park-pagliuca-fund-donates-10-million-to-polybio-long-covid-cure-initiative-302754302.html](https://www.prnewswire.com/news-releases/park-pagliuca-fund-donates-10-million-to-polybio-l",
+      "points": null,
+      "score": 155,
+      "comments": 20,
+      "author": "technician_902",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.6,
+      "time_ago": "22h ago",
+      "summary_short": "This is some really great news! Really hope they get something for this."
+    },
+    {
+      "id": "333adc6351ccd8ab",
+      "title": "Recommendations for long covid doctors who take insurance?",
+      "url": "https://reddit.com/r/LongCovid/comments/1sx7w8s/recommendations_for_long_covid_doctors_who_take/",
+      "source": "r/LongCovid",
+      "source_type": "reddit",
+      "published": "2026-04-27T15:58:06+00:00",
+      "summary": "Hi there! I was with Klimas’s clinic while I had Medicare but now I have Cigna and they charge. They don’t take any other kind of insurance. My long time doctor there is also very conservative with treatments.\n\nCan anyone recommend a long covid that \n\n1. Takes commercial insurance \n2. Is MECFS/PEM-l",
+      "points": null,
+      "score": 2,
+      "comments": 2,
+      "author": "Former-Airport9812",
+      "subreddit": "LongCovid",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "20h ago",
+      "summary_short": "Hi there! I was with Klimas’s clinic while I had Medicare but now I have Cigna and they charge."
+    },
+    {
+      "id": "1792bfc0ab6217fb",
+      "title": "The MS Ghost",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1sxywxh/the_ms_ghost/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-28T11:41:52+00:00",
+      "summary": "I am suffering from long covid for 1.5 years. MCAS, and neurological problems are the worst. POTS is also bad. Low mood low libido bad sleep, numbness. The first thing I did after covid, that I went to neurology and told them I want to know is it MS or not. They did an MRI and EEg, and they said its",
+      "points": null,
+      "score": 1,
+      "comments": 2,
+      "author": "Spare-Mud-8192",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.391,
+      "time_ago": "22m ago",
+      "summary_short": "I am suffering from long covid for 1.5 years. MCAS, and neurological problems are the worst."
+    },
+    {
+      "id": "6b3d9f9e0cd8c0cf",
+      "title": "Finding happiness despite ME/CFS",
+      "url": "https://reddit.com/r/cfs/comments/1sxejfm/finding_happiness_despite_mecfs/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-27T19:48:54+00:00",
+      "summary": "I have had ME/CFS for over a decade. I would describe my level of debilitation as moderate.  I’m mostly housebound but can occasionally grocery shop or meet a friend for lunch.  I’m too sick to work and its been that way for a long time.  The disease has gotten progressively worse.  I used to be abl",
+      "points": null,
+      "score": 109,
+      "comments": 9,
+      "author": "ambitiousinpajamas",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.3,
+      "time_ago": "16h ago",
+      "summary_short": "I have had ME/CFS for over a decade. I would describe my level of debilitation as moderate."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-28",
+          "day": "Tue",
+          "day_full": "Tuesday, Apr 28",
+          "high": 57,
+          "low": 45,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-04-29",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 29",
+          "high": 65,
+          "low": 43,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-04-30",
+          "day": "Thu",
+          "day_full": "Thursday, Apr 30",
+          "high": 70,
+          "low": 45,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu"
+      ],
+      "summary_line": "Sunny Wed and Thu — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Sunny Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Show HN: Aletheia – The Uncertainty Loop Agent for Claude Code and Codex
+2. The simplest way to run cold email from Claude Code:
+3. Why pay for AI coding? Run Free Claude Code with powerful local models and build apps, automations, and AI agents withou...
+4. I just found a tool that makes your Claude Code sessions basically unlimited. It's called 9Router and it's trending on G...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-06.html
