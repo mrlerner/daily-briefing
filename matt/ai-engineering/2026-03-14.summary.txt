@@ -1,0 +1,9 @@
+Sunny Sat — good day to be outside.
+
+Today's briefing:
+1. I'm fully blind, and AI is a game changer for me. Are there any local LLMS that can rival claude code and codex?
+2. Someone just open-sourced the Claude Code setup that won an Anthropic hackathon. You get agents and skills already confi...
+3. [New Model &amp; Agent] LocoTrainer-4B: A Claude Code-style local agent designed specifically to master the MS-SWIFT framework (4B, 32K, GGUF)
+4. I figured out another reason why people think AI is less powerful than it actually is
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-14.html

@@ -1,0 +1,9 @@
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Anthropic said it found three issues with Claude Code after users complained the AI tool deteriorated.
+2. Claude Code for Healthcare: How Physicians Build with AI - Anthropic
+3. Anthropic tests pulling Claude Code from its Pro plan revealing AI pricing truth
+4. Claude Code spend had gotten to $10.95M runrate peak at SemiAnalysis But then Opus 4.7 saved me. More token effecient fo...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-24.html

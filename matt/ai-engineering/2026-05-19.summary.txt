@@ -1,0 +1,9 @@
+Sunny Tue, Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. Just finished the Claude Code certification and would heavily recommend it to all “vibe coders”
+2. 11 Claude things I wish someone had told me 12 months ago
+3. I figured out the best workflow for Claude Code/Codex ever By using a couple free tools as 2nd brains, my vibe coding sp...
+4. Vibe coding is cool. But have you tried vibe-tuning? Here’s Claude Code using the @lightningrodai SDK to turn messy Fed ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-19.html

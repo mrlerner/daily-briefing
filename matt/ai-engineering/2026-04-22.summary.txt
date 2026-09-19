@@ -1,0 +1,9 @@
+Sunny Fri — good day to be outside.
+
+Today's briefing:
+1. Prepare for horde of switchers to OpenAI as Anthropic removes claude code from $20 . Minimum $100 to access it soon
+2. Is Claude Code going to cost $100/month? Probably not - it's all very confusing
+3. Anthropic said only 2% of new users would see the “claude code requires max tier” change. 100% of users saw it. They wer...
+4. Changes to GitHub Copilot Individual plans
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-22.html

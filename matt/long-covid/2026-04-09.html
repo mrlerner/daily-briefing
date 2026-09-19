@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 09, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 09, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">1 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 6,782.81, up
+                +2.5%
+                (+165.96 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Thursday, Apr 09: Clear , 40–65°F</div>
+            
+                <div>Friday, Apr 10: Clear , 47–73°F</div>
+            
+                <div>Saturday, Apr 11: Overcast , 48–61°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Thu and Fri — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sg2ovi/long_covid_predicted_to_cost_oecd_economies_135/" target="_blank">Long Covid Predicted to Cost OECD Economies $135 Billion a Year</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 142 points · 19 comments · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">If some can find a non pay walled version. Good to see it being talked about.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sg951p/severe_sudden_crash_with_weird_brain_symptoms/" target="_blank">Severe sudden crash with weird brain symptoms</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 20 points · 13 comments · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">long time lurker in this sub, first time posting! I had a very weird crash/episode a few months ago and wondering if anyone has had a similar experience.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sgm91j/i_have_pem_symptoms_its_awful_and_people_cant/" target="_blank">I have PEM symptoms, it&#39;s awful and people can&#39;t relate</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 5 points · 1 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">I have these symptoms. I&#39;m an invalid.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sfz4je/curious_about_longcovid_and_blood_types/" target="_blank">Curious about long-covid and blood types</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 4 points · 46 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Long covid seems like one of the most awful things to have happened since all this started in 2019. I’m very curious if those of us affected have anything in common relating to blood types.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sfz98b/blood_types_regarding_longcovid/" target="_blank">Blood types regarding long-covid.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 4 points · 1 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’m trying to gather data on those of us affected by long covid to see if we have blood types in common. I created a poll for the other types and linked it above.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sgb4ym/does_anyone_else_with_mecfs_mcas_or_dysautonomia/" target="_blank">Does anyone else with ME/CFS, MCAS, or Dysautonomia also have a Deep Brain Stimulator?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 4 points · 1 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Several years ago, I was implanted with a DBS system as a subject in a clinical trial for Treatment-Resistant Depression. It works very well for my Depression in combination with an MAOI.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sge557/if_you_have_pericarditis_and_are_on_colchicine/" target="_blank">If you have pericarditis and are on colchicine, what other meds have helped your broader symptoms?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 1 comments · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">For people here who have pericarditis, especially if you also deal with something like Long COVID, ME/CFS, dysautonomia, or a similar chronic illness, what medications have actually helped your other symptoms outside of the pericarditis itself? I’m not asking which meds treat pericarditis directly</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/dysautonomia/comments/1sgb5zx/does_anyone_else_with_mecfs_mcas_or_dysautonomia/" target="_blank">Does anyone else with ME/CFS, MCAS, or Dysautonomia also have a Deep Brain Stimulator?</a></p>
+                <div class="item-meta">
+                    
+                    r/dysautonomia · 2 points · 1 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">TLDR: The Title
+
+Several years ago, I was implanted with a DBS system as a subject in a clinical trial for Treatment-Resistant Depression. It works very well for my Depression in combination with an MAOI.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sge649/if_you_have_pericarditis_and_are_on_colchicine/" target="_blank">If you have pericarditis and are on colchicine, what other meds have helped your broader symptoms?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 2 comments · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">For people here who have pericarditis, especially if you also deal with something like Long COVID, ME/CFS, dysautonomia, or a similar chronic illness, what medications have actually helped your other symptoms outside of the pericarditis itself? I’m not asking which meds treat pericarditis directly,</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sgmszl/advice_on_my_current_treatment/" target="_blank">Advice on my current treatment</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 0 comments · 40m ago
+                    
+                </div>
+                
+                <div class="item-summary">I started having covid in 2020. I have been catching this virus once a year ever since.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://thesicktimes.org/2026/04/07/research-updates-april-7/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=research-updates-april-7" target="_blank">Research updates, April 7</a></p>
+                <div class="item-meta">
+                    
+                    The Sick Times · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">A clinical trial for non-invasive vagal nerve stimulation failed in improving fatigue in Long COVID. 45 participants used a specific transcutaneous auricular vagus nerve stimulation (taVNS) device, or a sham (placebo), during the four-week trial.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 09, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

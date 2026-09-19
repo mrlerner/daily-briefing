@@ -1,0 +1,9 @@
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. A GitHub repo that deserves 100k stars. works with Claude Code, Cursor, Copilot, OpenClaw, Codex, Hermes, and any agent ...
+2. Browser Use plugins are now available in Claude Code. claude plugin marketplace add browser-use/plugins
+3. 10 Claude Code agent resources make the subagent scavenger hunt less random. The pain is not writing one more prompt fil...
+4. Claude Code fully dissected! Researchers from UCL reverse-engineered the leaked Claude source. What they found changes h...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-14.html

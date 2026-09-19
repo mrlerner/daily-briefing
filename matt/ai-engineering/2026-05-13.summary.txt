@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. PSA: If your project has an ANTHROPIC_API_KEY in any .env file, Claude Code will silently bill your API account instead of your Max plan — Anthropic calls it "intentional functionality"
+2. Show HN: Atlas - Local-first AI code reviewer for Claude Code, Codex, Cursor
+3. Anthropic released Agent View in Claude Code CLI, from where users can observe and interact with parallel-running agents...
+4. Cursor with Claude Opus 4.7 is the #1 coding agent in the world. Artificial Analysis just launched the first benchmark t...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-13.html

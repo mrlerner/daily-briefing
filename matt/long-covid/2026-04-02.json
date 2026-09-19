@@ -1,0 +1,117 @@
+{
+  "generated": "2026-04-02T12:03:14.798300+00:00",
+  "items": [
+    {
+      "id": "9b8445ed04da5319",
+      "title": "Would you take paxlovid?",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1s9tf9u/would_you_take_paxlovid/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-01T18:43:16+00:00",
+      "summary": "I already have ME/CFS from long COVID, and I just found out I’m reinfected. I was already in rolling PEM when I got sick and wasn’t thinking clearly, I didn’t realize that I should test until last night, now I’m on day six. I got a rx for paxlovid, but is it even worth taking at this point? I asked ",
+      "points": null,
+      "score": 4,
+      "comments": 34,
+      "author": "Born_Screen8030",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.7,
+      "time_ago": "17h ago",
+      "summary_short": "I already have ME/CFS from long COVID, and I just found out I’m reinfected. I was already in rolling PEM when I got sick and wasn’t thinking clearly, I didn’t realize that I should test until last night, now I’m on day six."
+    },
+    {
+      "id": "25afe29457bf8839",
+      "title": "Opinions on ALCAR dose",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1saee1h/opinions_on_alcar_dose/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-02T11:09:18+00:00",
+      "summary": "ALCAR was instrumental in pulling me out of chronic fatigue and being able to work again, (all be it limited to part time). Largely by nudging my body back into a morning rythme. \n\nHowever, I learnt the hard way how easy it was to overshoot myself, my mistake for not pacing myself enough, but PEM is",
+      "points": null,
+      "score": 2,
+      "comments": 0,
+      "author": "Teknon0tice",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.628,
+      "time_ago": "53m ago",
+      "summary_short": "ALCAR was instrumental in pulling me out of chronic fatigue and being able to work again, (all be it limited to part time). Largely by nudging my body back into a morning rythme."
+    },
+    {
+      "id": "88d75453eecccca7",
+      "title": "I have ME/CFS &amp; POTS and spent the last year and a half building the symptom tracker I wished I had from the start (Self Promo Day)",
+      "url": "https://reddit.com/r/cfs/comments/1s9uz59/i_have_mecfs_pots_and_spent_the_last_year_and_a/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-01T19:37:07+00:00",
+      "summary": "Hi everyone,\n\nI’m a software engineer / data scientist who had to stop working 4 years ago due to worsening ME/CFS. I tried all the symptom tracker apps I could find but found them unsustainable for my needs because logging took too long and there was too much scrolling and not enough customization.",
+      "points": null,
+      "score": 158,
+      "comments": 63,
+      "author": "ElectronicCat3293",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.3,
+      "time_ago": "16h ago",
+      "summary_short": "Hi everyone,\n\nI’m a software engineer / data scientist who had to stop working 4 years ago due to worsening ME/CFS. I tried all the symptom tracker apps I could find but found them unsustainable for my needs because logging took too long and there was too much scrolling and not enough customization."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-02",
+          "day": "Thu",
+          "day_full": "Thursday, Apr 02",
+          "high": 52,
+          "low": 39,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-04-03",
+          "day": "Fri",
+          "day_full": "Friday, Apr 03",
+          "high": 52,
+          "low": 43,
+          "condition": "Cloudy "
+        },
+        {
+          "date": "2026-04-04",
+          "day": "Sat",
+          "day_full": "Saturday, Apr 04",
+          "high": 61,
+          "low": 35,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu and Sat — good days to be outside."
+    }
+  ]
+}

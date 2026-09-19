@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. Anthropic may have leaked Claude Code source on purpose
+2. Before you add more agents, fix your CLAUDE.md. It's the cheapest fix for context anxiety
+3. Free live Claude Code deep dive with the Anthropic team – April 21st
+4. Claude Code and Claude are both down for me. Switching to Codex for now. If you’ve seen how bad Claude’s uptime is latel...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-08.html

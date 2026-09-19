@@ -1,0 +1,127 @@
+{
+  "generated": "2026-03-28T12:01:45.313914+00:00",
+  "items": [
+    {
+      "id": "adef66f5174e04ed",
+      "title": "Is Renegade Research Medical Coaching worth trying, and are there other good international options?",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1s5uqtn/is_renegade_research_medical_coaching_worth/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-28T08:21:30+00:00",
+      "summary": "TLDR: Is Renegade Research Medical Coaching worth trying, and are there other good overseas options?\n\nI have moderate-severe ME/CFS (yes I know not exactly long covid, but I figure the treatments overlap so much that I'm trying here) and I live in New Zealand. We're looking internationally for reall",
+      "points": null,
+      "score": 1,
+      "comments": 1,
+      "author": "Bupsy_",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.508,
+      "time_ago": "3h ago",
+      "summary_short": "TLDR: Is Renegade Research Medical Coaching worth trying, and are there other good overseas options? I have moderate-severe ME/CFS (yes I know not exactly long covid, but I figure the treatments overlap so much that I'm trying here) and I live in New Zealand."
+    },
+    {
+      "id": "6be669c219159798",
+      "title": "Looking for someone who can conduct an accurate functional assessment for long covid / ME/CFS in the Toronto area",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1s5hwth/looking_for_someone_who_can_conduct_an_accurate/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-27T21:53:51+00:00",
+      "summary": "Im currently battling with LTD, who is insisting I go through a rehab program to “get me back to work”. This will obviously just make me more ill, even just the stress of dealing with it over the last week has made me significantly more ill than I have been for the last 3 weeks where I hadn’t heard ",
+      "points": null,
+      "score": 2,
+      "comments": 0,
+      "author": "beautiflimperfection",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "14h ago",
+      "summary_short": "Im currently battling with LTD, who is insisting I go through a rehab program to “get me back to work”. This will obviously just make me more ill, even just the stress of dealing with it over the last week has made me significantly more ill than I have been for the last 3 weeks where I hadn’t heard"
+    },
+    {
+      "id": "df43d0f8d6787b82",
+      "title": "Long Covid?",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1s5x96o/long_covid/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-28T10:55:25+00:00",
+      "summary": " I’ve been going crazy the last few weeks, I had a pretty bad infection maybe 7-8 weeks ago which made me have a day off work, which an illness has to be fairly bad to make me take a day off as I’m self employed and don’t get paid if I don’t go to work. About a week after I got better I started havi",
+      "points": null,
+      "score": 5,
+      "comments": 2,
+      "author": "HovercraftOk6647",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.372,
+      "time_ago": "1h ago",
+      "summary_short": "I’ve been going crazy the last few weeks, I had a pretty bad infection maybe 7-8 weeks ago which made me have a day off work, which an illness has to be fairly bad to make me take a day off as I’m self employed and don’t get paid if I don’t go to work. About a week after I got better I started havi"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 6368.85009765625,
+      "prev_close": 6477.16015625,
+      "change_pts": -108.31,
+      "change_pct": -1.67,
+      "direction": "down",
+      "summary_line": "S&P 500 closed at 6,368.85, down -1.7% (-108.31 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-03-28",
+          "day": "Sat",
+          "day_full": "Saturday, Mar 28",
+          "high": 56,
+          "low": 41,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-03-29",
+          "day": "Sun",
+          "day_full": "Sunday, Mar 29",
+          "high": 51,
+          "low": 41,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-03-30",
+          "day": "Mon",
+          "day_full": "Monday, Mar 30",
+          "high": 48,
+          "low": 33,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat and Mon — good days to be outside."
+    }
+  ]
+}

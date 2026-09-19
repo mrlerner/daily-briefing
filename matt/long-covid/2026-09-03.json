@@ -1,0 +1,65 @@
+{
+  "generated": "2026-09-03T12:02:37.939057+00:00",
+  "items": [
+    {
+      "id": "888e35a15f19598a",
+      "title": "Department of Defense funds $8 million grant for Long COVID trials",
+      "url": "https://thesicktimes.org/2026/09/01/department-of-defense-funds-8-million-grant-for-long-covid-trials/?utm_source=rss&utm_medium=rss&utm_campaign=department-of-defense-funds-8-million-grant-for-long-covid-trials",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-09-02T01:17:31+00:00",
+      "summary": "A new U.S. clinical trials program called PROBE-PASC was announced on Friday at a Long COVID conference in Amsterdam. The program received initial funding of $8 million from a Department of Defense (DOD) grant.\nThe post Department of Defense funds $8 million grant for Long COVID trials first appe...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.9,
+      "time_ago": "1d ago",
+      "summary_short": "A new U.S. clinical trials program called PROBE-PASC was announced on Friday at a Long COVID conference in Amsterdam."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-03",
+          "day": "Thu",
+          "day_full": "Thursday, Sep 03",
+          "high": 66,
+          "low": 53,
+          "condition": "Moderate rain"
+        },
+        {
+          "date": "2026-09-04",
+          "day": "Fri",
+          "day_full": "Friday, Sep 04",
+          "high": 69,
+          "low": 53,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-09-05",
+          "day": "Sat",
+          "day_full": "Saturday, Sep 05",
+          "high": 71,
+          "low": 52,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

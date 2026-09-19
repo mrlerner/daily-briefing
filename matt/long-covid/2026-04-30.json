@@ -1,0 +1,118 @@
+{
+  "generated": "2026-04-30T12:04:05.364443+00:00",
+  "items": [
+    {
+      "id": "523e221681014314",
+      "title": "Germany: Long COVID and ME/CFS cost €64.4 billion in 2025",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1szphbs/germany_long_covid_and_mecfs_cost_644_billion_in/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-30T07:52:36+00:00",
+      "summary": "As of December 2025, more than 1.4 million people in Germany are living with Long COVID and ME/CFS. Of these, around 757.000 people are suffering from Long COVID and a further 657.000 from ME/CFS\n\n[https://mecfs-research.org/en/costreport-long-covid-and-mecfs/](https://mecfs-research.org/en/costrepo",
+      "points": null,
+      "score": 64,
+      "comments": 9,
+      "author": "historyisfarfromover",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.745,
+      "time_ago": "4h ago",
+      "summary_short": "As of December 2025, more than 1.4 million people in Germany are living with Long COVID and ME/CFS. Of these, around 757.000 people are suffering from Long COVID and a further 657.000 from ME/CFS\n\n[https://mecfs-research.org/en/costreport-long-covid-and-mecfs/](https://mecfs-research.org/en/costrepo"
+    },
+    {
+      "id": "50dc332c2421549c",
+      "title": "Can't tell if I have PEM/CFS or some other exercise intolerance issues",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1szl28c/cant_tell_if_i_have_pemcfs_or_some_other_exercise/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-30T03:53:08+00:00",
+      "summary": "Some background: In 2023 I had long COVID and a downstream trend of other health issues that piled up: autoimmune diagnosis, caught mono/EBV, developed more GI issues.\n\nEven after all this, I was doing moderately ok - able to do basic tasks and workout once a week with a trainer. I felt like I was r",
+      "points": null,
+      "score": 3,
+      "comments": 6,
+      "author": "United_Chapter4097",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "8h ago",
+      "summary_short": "Some background: In 2023 I had long COVID and a downstream trend of other health issues that piled up: autoimmune diagnosis, caught mono/EBV, developed more GI issues. Even after all this, I was doing moderately ok - able to do basic tasks and workout once a week with a trainer."
+    },
+    {
+      "id": "352114ab6fa971ab",
+      "title": "Does anyone have theories on what predisposed us to developing long covid?",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1sz3ekn/does_anyone_have_theories_on_what_predisposed_us/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-29T16:13:12+00:00",
+      "summary": "Title. Just curious if anyone has any theories as to what made us develop long covid while others didn't. I have been on this sub for almost 6 years now, and I come across certain similarities, one being that so many of us (including myself) were young and healthy and active with no history of subst",
+      "points": null,
+      "score": 113,
+      "comments": 281,
+      "author": "sourdoughluvr1991",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "19h ago",
+      "summary_short": "Title. Just curious if anyone has any theories as to what made us develop long covid while others didn't."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-30",
+          "day": "Thu",
+          "day_full": "Thursday, Apr 30",
+          "high": 74,
+          "low": 47,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-01",
+          "day": "Fri",
+          "day_full": "Friday, May 01",
+          "high": 69,
+          "low": 47,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-02",
+          "day": "Sat",
+          "day_full": "Saturday, May 02",
+          "high": 67,
+          "low": 48,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu, Fri and Sat — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Sunny Thu and Sat — good days to be outside.
+
+Today's briefing:
+1. 🇨🇳 NEW: China's cybersecurity platform flags a "backdoor" security risk in Anthropic's Claude Code, claiming it can tran...
+2. Claude Code creator Boris Cherny: Anthropic’s reported jump of roughly 250% in code written per engineer without a visib...
+3. Head of Claude Code Boris Cherny at Anthropic's annual developer conference in San Francisco on how his life changed in ...
+4. China warns about AI risks with Anthropic's Claude Code https://t.co/0qwcAc2R4X
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-09.html

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — May 16, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">May 16, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">5 posts</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">1 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,408.50, down
+                -1.2%
+                (-92.74 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Saturday, May 16: Patchy rain nearby, 42–55°F</div>
+            
+                <div>Sunday, May 17: Cloudy , 42–60°F</div>
+            
+                <div>Monday, May 18: Partly Cloudy , 44–67°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tefmmi/data_on_how_87_people_recovered_from_long_covid/" target="_blank">Data on how 87 people recovered from Long COVID, post-vax, and ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 82 points · 38 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Thank you to the **1456** or so of you who contributed your data! 🤩 This subreddit accounted for about half of the participants (!!!).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1te4cgf/interesting_article/" target="_blank">Interesting article</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 9 points · 1 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">https://www.healthrising.org/blog/2026/05/13/precision-life-me-cfs-long-covid-jigsaw-puzzle/
+
+&#34;A major ME/CFS study finds thousands of gene signatures and hundreds of core genes that make a difference. PrecisionLife has identified 40 drug candidates it believes it can help specific ME/CFS subsets.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1te3zff/what_does_post_exertional_malaise_feel_like_to_you/" target="_blank">What does post exertional malaise feel like to you?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 11 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">I am trying to figure out if I have me/cfs. I am struggling to figure out if I am experiencing PEM, or if I am experiencing residual issues related to the mono virus I got 5 months ago.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1ter51k/long_covid_prevalence/" target="_blank">Long Covid prevalence.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 1 points · 0 comments · 29m ago
+                    
+                </div>
+                
+                <div class="item-summary">When I first got long covid there was almost no one who could relate. I remember looking at every website I could find looking for something, thinking maybe I was crazy.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tdyran/has_anyone_in_europe_managed_to_get_dr_bruce/" target="_blank">Has anyone in Europe managed to get Dr. Bruce Patterson’s incellKINE Long Hauler Index test without leaving the continent?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 7 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hey r/covidlonghaulers,
+
+Dr. Bruce Patterson’s incellKINE Long Hauler Index is a machine-learning cytokine panel that identifies a unique immune signature in Long COVID/PASC and can differentiate it from Chronic Lyme and ME/CFS.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://solvecfs.org/solve-ceo-emily-taylor-la-weekly/" target="_blank">Solve M.E. CEO Emily Taylor Featured in LA Weekly for Advancing Breakthrough Research</a></p>
+                <div class="item-meta">
+                    
+                    Solve ME/CFS Initiative · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Our CEO, Emily Taylor, is featured in LA Weekly for her leadership in shaping the Solve ME/CFS Catalyst Awards—an innovative program that supports critical ME/CFS and Long Covid research. The [&amp;#8230;]
+The post Solve M.E.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated May 16, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

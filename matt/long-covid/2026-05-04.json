@@ -1,0 +1,144 @@
+{
+  "generated": "2026-05-04T12:03:21.027128+00:00",
+  "items": [
+    {
+      "id": "a2db642544d14d98",
+      "title": "ME/CFS with severe PEM but no brain fog or POTS?",
+      "url": "https://reddit.com/r/cfs/comments/1t344z6/mecfs_with_severe_pem_but_no_brain_fog_or_pots/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-04T01:50:12+00:00",
+      "summary": "I fit essentially all the other criteria for ME/CFS and have very clear, sometimes severe post-exertional malaise.  I’ve been working with an ME/CFS doctor for years.\n\nBut I don’t seem to have brain fog or orthostatic intolerance (no POTS, and I feel fine at baseline when upright unless I’m a flare,",
+      "points": null,
+      "score": 3,
+      "comments": 11,
+      "author": "themunchkinland",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.7,
+      "time_ago": "10h ago",
+      "summary_short": "I fit essentially all the other criteria for ME/CFS and have very clear, sometimes severe post-exertional malaise. I’ve been working with an ME/CFS doctor for years."
+    },
+    {
+      "id": "658cf674060bda5b",
+      "title": "Long Covid without pem",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1t2n4j6/long_covid_without_pem/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-03T14:35:14+00:00",
+      "summary": "I feel sto wired and weird . The drunk feeling head pressure and lethargic fatigue feeling . I don’t think I have pem . I feel\n\nBetter when work out with my fatigue level . Do you feel better when you exercise ( if you don’t have pem )?\n\n[View Poll](https://www.reddit.com/poll/1t2n4j6)",
+      "points": null,
+      "score": 2,
+      "comments": 20,
+      "author": "ilovepenguins17",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "21h ago",
+      "summary_short": "I feel sto wired and weird . The drunk feeling head pressure and lethargic fatigue feeling ."
+    },
+    {
+      "id": "4715cdd395daf6c6",
+      "title": "How does fatigue from POTS feel compared to PEM?",
+      "url": "https://reddit.com/r/POTS/comments/1t32f2l/how_does_fatigue_from_pots_feel_compared_to_pem/",
+      "source": "r/POTS",
+      "source_type": "reddit",
+      "published": "2026-05-04T00:32:32+00:00",
+      "summary": "I know a lot of people have both. But for the people who have POTS but \\*don't\\* have ME/CFS, what's your fatigue like?\n\nI have co-morbid ME/CFS and POTS so it's hard to imnagine what POTS fatigue would be like without PEM.",
+      "points": null,
+      "score": 29,
+      "comments": 49,
+      "author": "hotairballoonstomach",
+      "subreddit": "POTS",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "11h ago",
+      "summary_short": "I know a lot of people have both. But for the people who have POTS but \\*don't\\* have ME/CFS, what's your fatigue like?"
+    },
+    {
+      "id": "b65ef362a9ffae4e",
+      "title": "stellate ganglion block",
+      "url": "https://reddit.com/r/POTS/comments/1t2lag6/stellate_ganglion_block/",
+      "source": "r/POTS",
+      "source_type": "reddit",
+      "published": "2026-05-03T13:19:44+00:00",
+      "summary": "i have long covid that has caused POTS, MCAS, and ME/CFS whilst also having HEDS, chronic pain, endo, and PCOS (a real mouthful ik). my specialist has recommended a stellate ganglion block to control my pain and help with some of the other symptoms i experience too but it looks terrifying. i would l",
+      "points": null,
+      "score": 2,
+      "comments": 3,
+      "author": "moonmilk17",
+      "subreddit": "POTS",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "22h ago",
+      "summary_short": "i have long covid that has caused POTS, MCAS, and ME/CFS whilst also having HEDS, chronic pain, endo, and PCOS (a real mouthful ik). my specialist has recommended a stellate ganglion block to control my pain and help with some of the other symptoms i experience too but it looks terrifying."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-05-04",
+          "day": "Mon",
+          "day_full": "Monday, May 04",
+          "high": 81,
+          "low": 54,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-05",
+          "day": "Tue",
+          "day_full": "Tuesday, May 05",
+          "high": 76,
+          "low": 51,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-06",
+          "day": "Wed",
+          "day_full": "Wednesday, May 06",
+          "high": 71,
+          "low": 49,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Mon",
+        "Tue",
+        "Wed"
+      ],
+      "summary_line": "Sunny Mon, Tue and Wed — good days to be outside."
+    }
+  ]
+}

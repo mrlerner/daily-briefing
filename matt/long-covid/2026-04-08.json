@@ -1,0 +1,93 @@
+{
+  "generated": "2026-04-08T12:02:43.640355+00:00",
+  "items": [
+    {
+      "id": "de0fa1cadc8a6ad3",
+      "title": "Research updates, April 7",
+      "url": "https://thesicktimes.org/2026/04/07/research-updates-april-7/?utm_source=rss&utm_medium=rss&utm_campaign=research-updates-april-7",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-04-07T19:55:00+00:00",
+      "summary": "A clinical trial for non-invasive vagal nerve stimulation failed in improving fatigue in Long COVID. 45 participants used a specific transcutaneous auricular vagus nerve stimulation (taVNS) device, or a sham (placebo), during the four-week trial.\nThe post Research updates, April 7 first appeared ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "16h ago",
+      "summary_short": "A clinical trial for non-invasive vagal nerve stimulation failed in improving fatigue in Long COVID. 45 participants used a specific transcutaneous auricular vagus nerve stimulation (taVNS) device, or a sham (placebo), during the four-week trial."
+    },
+    {
+      "id": "1bb068bf91e6fd44",
+      "title": "Got labs and I have no idea what they mean",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1sfpg0y/got_labs_and_i_have_no_idea_what_they_mean/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-08T10:54:47+00:00",
+      "summary": "Recently got a bunch of labs taken and they just came back with \n\nIgM positive (97) RE/ml\n\nANA + 1:320 speckled \n\nother than that only slight Vit D deficiency and criminally low ferritin which is already being addressed tho \n\nWhat do the IgM and ANA mean in the context of long covid? I do have POTS ",
+      "points": null,
+      "score": 1,
+      "comments": 2,
+      "author": "leneeey",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.372,
+      "time_ago": "1h ago",
+      "summary_short": "Recently got a bunch of labs taken and they just came back with \n\nIgM positive (97) RE/ml\n\nANA + 1:320 speckled \n\nother than that only slight Vit D deficiency and criminally low ferritin which is already being addressed tho \n\nWhat do the IgM and ANA mean in the context of long covid? I do have POTS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-08",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 08",
+          "high": 62,
+          "low": 39,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-04-09",
+          "day": "Thu",
+          "day_full": "Thursday, Apr 09",
+          "high": 65,
+          "low": 42,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-04-10",
+          "day": "Fri",
+          "day_full": "Friday, Apr 10",
+          "high": 71,
+          "low": 46,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "summary_line": "Sunny Wed, Thu and Fri — good days to be outside."
+    }
+  ]
+}

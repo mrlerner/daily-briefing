@@ -1,0 +1,9 @@
+S&P 500 closed at 6,710.57, up +1.2% (+78.38 pts).
+
+Today's briefing:
+1. It’s a funny curiosity to me that Claude chat and Claude Code keep insisting to me to use npm to install Claude Code (no...
+2. What Anthropic has shipped so far in 2026 is just insane: → Claude Cowork → Free plan upgrades with connectors + skills ...
+3. I fed 14 years of daily journals into Claude Code
+4. Can I get some questions answered by someone at Anthropic? 1. Can you use an OAuth token generated from a subscription t...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-16.html

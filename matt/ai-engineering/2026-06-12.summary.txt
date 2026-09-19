@@ -1,0 +1,11 @@
+S&P 500 closed at 7,394.30, up +1.8% (+127.31 pts).
+
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. It feels like Claude Fable 5, paired with Claude Code, is at a point where it can auto-downgrade to cheaper models (sonn...
+2. “It's okay to be wrong.” At Fortune #BrainstormTech, @AnthropicAI Head of Claude Code @bcherny shared the three qualitie...
+3. Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude
+4. Most people run Claude Code while watching a usage counter tick down. There's a setup that lets you build all day withou...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-12.html

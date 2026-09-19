@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 23, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 23, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">7 posts</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">1 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,137.90, up
+                +1.1%
+                (+73.89 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Thursday, Apr 23: Overcast , 46–57°F</div>
+            
+                <div>Friday, Apr 24: Sunny, 43–62°F</div>
+            
+                <div>Saturday, Apr 25: Sunny, 42–66°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Thu, Fri and Sat — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sso0h9/exercise_advice_for_long_covid_may_be_doing_more/" target="_blank">Exercise advice for long covid may be doing more harm than good</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 191 points · 18 comments · 21h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sskt8d/treatment_report_ive_improved_enough_to_return_to/" target="_blank">Treatment report - I&#39;ve improved enough to return to part time work! (Pyridostigmine/Mestinon)</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 176 points · 60 comments · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi, all. I comment here a fair amount, rarely post.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sso0yg/exercise_advice_for_long_covid_may_be_doing_more/" target="_blank">Exercise advice for long covid may be doing more harm than good</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 101 points · 12 comments · 21h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1stch1t/defining_pem/" target="_blank">Defining PEM</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 8 points · 12 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi all,
+
+TL;DR: How do you define PEM to ensure it is specific to ME? I’m testing a new fatigue app that a university here is developing.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/POTS/comments/1ssvs6r/please_give_me_your_positive_perspectives_on/" target="_blank">Please give me your positive perspectives on ivabradine and pyridostigmine (and possibly LDN)</a></p>
+                <div class="item-meta">
+                    
+                    r/POTS · 2 points · 3 comments · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">34m, formerly fit and healthy, now significantly struggling with post-covid symptoms of fatigue, dysautonomia resembling elements of POTS and IST, breathlessness and signs of ME/CFS (PEM), and head pain. Gone from full time work, exercise and social activities to part time work, recumbent exercise a</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1stfeop/i_hear_some_people_say_they_have_long_covid_but/" target="_blank">I hear some people say they have long covid but not ME/cfs - i thought long covid was just ME from covid?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 11 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Am i missing something or is long covid used to describe any lasting damage from covid infection?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1stghze/pregnant_long_covid_babys_health/" target="_blank">Pregnant, long covid, babys health?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 1 points · 0 comments · 11m ago
+                    
+                </div>
+                
+                <div class="item-summary">Is there any data how LC is affecting the baby in the womb? Well i thought i was finally ok, it was half year without symptoms.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.newscientist.com/article/2523882-exercise-advice-for-long-covid-may-be-doing-more-harm-than-good/?utm_campaign=RSS%7CNSNS&amp;utm_source=NSNS&amp;utm_medium=RSS&amp;utm_content=health" target="_blank">Exercise advice for long covid may be doing more harm than good</a></p>
+                <div class="item-meta">
+                    
+                    New Scientist — Health · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Exercise has been touted as a tool for managing and treating long covid, but much of the evidence has neglected one of its most debilitating symptoms: post-exertional malaise</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 23, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

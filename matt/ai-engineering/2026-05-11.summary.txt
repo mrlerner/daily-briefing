@@ -1,0 +1,9 @@
+Sunny Mon, Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. Dynatrace expands AI Coding Agent monitoring for Claude Code, Google Gemini CLI, Codex CLI, OpenCode, and GitHub Copilot...
+2. Anthropic: It is the sci-fi authors, not us, that are to blame for Claude blackmailing users
+3. I think the design influence of TUIs (claude code, mainly) is going to start showing up in UIs over the next 5 years. I ...
+4. 8 Advanced Claude Code Tips I've Discovered After Heavy Daily Use (Cost saving, Context, Custom Commands)
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-11.html

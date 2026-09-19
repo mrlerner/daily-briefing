@@ -1,0 +1,7 @@
+Today's briefing:
+1. Dear Anthropic: the ChatGPT refugees are here. Here’s why they’ll leave again.
+2. tl;dr so far: 2026 is the year where agents will succeed in all other domains. We have witnessed the first breakthroughs...
+3. 🚨 Anthropic just shared the exact file their Claude Code team uses internally. It’s called CLAUDE.md. Drop it into your ...
+4. Claude Code Hooks - all 23 explained and implemented
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-19.html

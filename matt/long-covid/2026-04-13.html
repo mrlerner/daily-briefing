@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 13, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 13, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Monday, Apr 13: Overcast , 44–53°F</div>
+            
+                <div>Tuesday, Apr 14: Overcast , 41–50°F</div>
+            
+                <div>Wednesday, Apr 15: Partly Cloudy , 37–47°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sjq0nt/my_friend_who_cut_me_off_when_i_fell_sick_has/" target="_blank">My friend who cut me off when I fell sick has just gotten engaged.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 201 points · 37 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">I (32F) got long Covid three and a half years ago. before falling sick, I had a very close friend (31F) who I&#39;d speak to everyday, see three times a week, we&#39;d go to the gym, cook each other dinner, go OK nights out, for walks, shopping, etc.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sjxk5i/for_those_who_have_mostly_recovered_how_did_you/" target="_blank">For those who have mostly recovered, how did you rebuild your life?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 24 points · 7 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">TLDR: For those of you who have recovered or improved significantly, what are some small steps you&#39;ve taken to get back out in the world again? Thank you.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sk6pj0/australia_23_million_for_research_into_postacute/" target="_blank">(Australia) $23 million for research into Post-Acute Sequelae of COVID-19</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 18 points · 3 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">The MRFF’s [2026 PASC grant opportunity](https://www.grants.gov.au/Go/Show?GoUuid=a31891d8-0cd9-4126-b91c-150d7b18e4d2) is providing up to $23 million for medical research and innovation projects that:
+
+* investigate the biological pathways and causes of PASC subtypes to better design interventions</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sjyd36/i_built_an_interactive_intervention_guide_that/" target="_blank">I built an interactive intervention guide that ranks treatments by your specific symptom profile — ME/CFS, Long COVID, MCAS, POTS, Etc.</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 14 points · 1 comments · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve been dealing with ME/CFS, MCAS and other systemic chronic health issues for 10+ years I&#39;ve been frustrated by how scattered the information is on potential treatments. So I spent some time putting together a reference guide that tries to synthesize the major evidence-based interventions into a</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sjm6k6/creation_of_a_dataset_on_lcmecfs_reseach/" target="_blank">Creation of a Dataset on LC/ME/CFS Reseach</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 13 points · 7 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hey everyone,
+
+a lot of you probably already needed to dig a bit for reseach articles because doctors/family/friends or whatever are dismissive about that disease. Just today a microbiologist wanted to explain to me that Long covid is caused by mrna vaccines, and normal covid infections do not cause</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sjxl8f/trying_a_stimulant_for_adhd_has_made_me_so_much/" target="_blank">Trying a stimulant for ADHD has made me so much worse. Anyone else, and what&#39;s going on here?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 7 points · 4 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">My long Covid shows up as POTs and ME/CFS. My only medication is an SSRI for depression.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 13, 2026 at 08:08
+        </footer>
+    </div>
+</body>
+</html>

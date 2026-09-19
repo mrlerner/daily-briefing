@@ -1,0 +1,67 @@
+{
+  "generated": "2026-04-22T12:02:59.634298+00:00",
+  "items": [
+    {
+      "id": "ddde2bfcc96e5370",
+      "title": "Solve Science Spotlight: Systematic Underfunding of Long Covid, ME/CFS, and Other Debilitating Diseases That Disproportionately Affect Women",
+      "url": "https://solvecfs.org/solve-science-spotlight-systematic-underfunding-of-long-covid-me-cfs-and-other-debilitating-diseases-that-disproportionately-affect-women/",
+      "source": "Solve ME/CFS Initiative",
+      "source_type": "rss",
+      "published": "2026-04-21T03:34:39+00:00",
+      "summary": "Dr. Karen Bonuck is professor of family and social medicine at Albert Einstein College of Medicine. Her research uses diverse methods to understand the burden of different disabilities among children [&#8230;]\nThe post Solve Science Spotlight: Systematic Underfunding of Long Covid, ME/CFS, and Ot...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "Dr. Karen Bonuck is professor of family and social medicine at Albert Einstein College of Medicine."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-22",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 22",
+          "high": 57,
+          "low": 47,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-04-23",
+          "day": "Thu",
+          "day_full": "Thursday, Apr 23",
+          "high": 55,
+          "low": 44,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-04-24",
+          "day": "Fri",
+          "day_full": "Friday, Apr 24",
+          "high": 63,
+          "low": 39,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Fri"
+      ],
+      "summary_line": "Sunny Fri — good day to be outside."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "generated": "2026-06-03T12:02:16.333966+00:00",
+  "items": [
+    {
+      "id": "a019e6cc619baf10",
+      "title": "Research ethics boards need urgent training on Long COVID and myalgic encephalomyelitis",
+      "url": "https://thesicktimes.org/2026/06/02/research-ethics-boards-need-urgent-training-on-long-covid-and-myalgic-encephalomyelitis/?utm_source=rss&utm_medium=rss&utm_campaign=research-ethics-boards-need-urgent-training-on-long-covid-and-myalgic-encephalomyelitis",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-06-03T01:17:32+00:00",
+      "summary": "Last year, researchers in Ontario, Canada started recruiting participants for a Long COVID trial testing the feasibility of exercise and rehabilitation. Like many other studies of exercise, it doesn’t use validated measures for post-exertional malaise (PEM). But the Pursuing Reduction in Fatigue ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management",
+        "Clinical trials",
+        "ME/CFS research"
+      ],
+      "relevance_score": 1.15,
+      "time_ago": "10h ago",
+      "summary_short": "Last year, researchers in Ontario, Canada started recruiting participants for a Long COVID trial testing the feasibility of exercise and rehabilitation. Like many other studies of exercise, it doesn’t use validated measures for post-exertional malaise (PEM)."
+    },
+    {
+      "id": "f0b082cd2520a267",
+      "title": "Why are RECOVER’s first round of Long COVID clinical trials failing?",
+      "url": "https://thesicktimes.org/2026/06/02/why-are-recovers-first-round-of-long-covid-clinical-trials-failing/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-recovers-first-round-of-long-covid-clinical-trials-failing",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-06-03T00:29:09+00:00",
+      "summary": "The U.S.'s flagship Long COVID research program has received over a billion dollars in funding and had years of input from people with the disease. But its first round of clinical trials are failing, at least in the results out so far.\nThe post Why are RECOVER’s first round of Long COVID clinical...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "11h ago",
+      "summary_short": "The U.S.'s flagship Long COVID research program has received over a billion dollars in funding and had years of input from people with the disease. But its first round of clinical trials are failing, at least in the results out so far."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-03",
+          "day": "Wed",
+          "day_full": "Wednesday, Jun 03",
+          "high": 70,
+          "low": 54,
+          "condition": "Cloudy "
+        },
+        {
+          "date": "2026-06-04",
+          "day": "Thu",
+          "day_full": "Thursday, Jun 04",
+          "high": 70,
+          "low": 51,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-06-05",
+          "day": "Fri",
+          "day_full": "Friday, Jun 05",
+          "high": 59,
+          "low": 45,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Fri"
+      ],
+      "summary_line": "Sunny Wed and Fri — good days to be outside."
+    }
+  ]
+}

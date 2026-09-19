@@ -1,0 +1,148 @@
+{
+  "generated": "2026-04-01T11:02:57.819208+00:00",
+  "items": [
+    {
+      "id": "d3674245ae260993",
+      "title": "Looking for advice for handling cancer treatment with MECFS",
+      "url": "https://reddit.com/r/cfs/comments/1s9c17k/looking_for_advice_for_handling_cancer_treatment/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-01T05:54:25+00:00",
+      "summary": "Right now getting out for two appointments per month is a real struggle. I will need to go daily for two months of consecutive treatments.\n\nThe oncologist has no experience with ME/CFS or similar (e.g. long COVID) patients.\n\nMessage is short because I am pretty overwhelmed right now.\n\nAny advice app",
+      "points": null,
+      "score": 9,
+      "comments": 1,
+      "author": "DisasterSpinach",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.471,
+      "time_ago": "5h ago",
+      "summary_short": "Right now getting out for two appointments per month is a real struggle. I will need to go daily for two months of consecutive treatments."
+    },
+    {
+      "id": "eb5d544ff9d15737",
+      "title": "Antidepressant fluvoxamine reduces long COVID fatigue in clinical trial",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1s8s3fs/antidepressant_fluvoxamine_reduces_long_covid/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-31T16:20:35+00:00",
+      "summary": "TL;DR: A randomized, placebo-controlled trial found that **fluvoxamine improved fatigue and quality of life in some Long COVID patients**, while **metformin didn’t help** with established fatigue. It’s interesting, but this was still a selected group, the main outcome was self-reported fatigue, and ",
+      "points": null,
+      "score": 94,
+      "comments": 49,
+      "author": "filipo11121",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "18h ago",
+      "summary_short": "TL;DR: A randomized, placebo-controlled trial found that **fluvoxamine improved fatigue and quality of life in some Long COVID patients**, while **metformin didn’t help** with established fatigue. It’s interesting, but this was still a selected group, the main outcome was self-reported fatigue, and"
+    },
+    {
+      "id": "d5ce3bc6217fca18",
+      "title": "Improved from bedbound miraculously to moderate (with official severe MECFS diagnosis.)",
+      "url": "https://reddit.com/r/cfs/comments/1s9bzzm/improved_from_bedbound_miraculously_to_moderate/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-01T05:52:27+00:00",
+      "summary": "I just wanted to share. I DO have an official severe diagnosis through the UW Medicine long covid clinic. I’m still extremely symptomatic but I am no longer in bed 24/7. I really didn’t think I was going to make it, honestly. We are now looking into other underlying causes that linger albeit slow im",
+      "points": null,
+      "score": 254,
+      "comments": 51,
+      "author": "Saltycapss",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.371,
+      "time_ago": "5h ago",
+      "summary_short": "I just wanted to share. I DO have an official severe diagnosis through the UW Medicine long covid clinic."
+    },
+    {
+      "id": "49e6c97616318038",
+      "title": "New Scientist: new evidence for autoantibodies in some long covid cases",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1s8ruj9/new_scientist_new_evidence_for_autoantibodies_in/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-31T16:11:42+00:00",
+      "summary": "Actual headline: “Attacks from our immune system are a cause of long covid”\n\n**TL;DR:** Worth reading, but the headline oversells it a bit. The article points to **autoimmunity as one possible mechanism in a subset of Long Covid patients**, particularly people with **pain-related or sensory symptoms",
+      "points": null,
+      "score": 126,
+      "comments": 46,
+      "author": "filipo11121",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "18h ago",
+      "summary_short": "Actual headline: “Attacks from our immune system are a cause of long covid”\n\n**TL;DR:** Worth reading, but the headline oversells it a bit. The article points to **autoimmunity as one possible mechanism in a subset of Long Covid patients**, particularly people with **pain-related or sensory symptoms"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 6528.52001953125,
+      "prev_close": 6343.72021484375,
+      "change_pts": 184.8,
+      "change_pct": 2.91,
+      "direction": "up",
+      "summary_line": "S&P 500 closed at 6,528.52, up +2.9% (+184.80 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-01",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 01",
+          "high": 51,
+          "low": 39,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-04-02",
+          "day": "Thu",
+          "day_full": "Thursday, Apr 02",
+          "high": 48,
+          "low": 40,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-04-03",
+          "day": "Fri",
+          "day_full": "Friday, Apr 03",
+          "high": 51,
+          "low": 42,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

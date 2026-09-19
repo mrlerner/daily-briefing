@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 07, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 07, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">8 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Tuesday, Apr 07: Partly Cloudy , 42–54°F</div>
+            
+                <div>Wednesday, Apr 08: Partly Cloudy , 44–57°F</div>
+            
+                <div>Thursday, Apr 09: Sunny, 39–65°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Tue, Wed and Thu — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1seemgi/plot_twist_my_doctor_is_the_reason_my_mom_is_more/" target="_blank">Plot twist: my doctor is the reason my mom is more understanding now of this condition.</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 152 points · 6 comments · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">I have ME as a result of Covid. My mom used to not be very sympathetic and wouldn’t understand why I could t do things.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1se9q6e/emotional_exhaustion_triggers_my_pem_way_more/" target="_blank">Emotional exhaustion triggers my PEM way more than any other kind</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 37 points · 1 comments · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">I don&#39;t know if this is the same for anyone else but I&#39;ve noticed than any kind of emotional exhaustion causes more PEM than physical or mental exhaustion. Its possible that its because I&#39;m doing ok at pacing physically and because I don&#39;t work I&#39;m not usually doing anything mentally demanding for m</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sei21g/doctor_silent_diagnosed_me_with_mecfs/" target="_blank">Doctor Silent Diagnosed Me with ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 21 points · 9 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">First post here but I&#39;ve been a long time lurker for over a year now due to my suspicion of ME/CFS. I have all the hallmark symptoms, though my experience with PEM is incredibly unpredictable.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sekhg2/sounds_silly_but_has_anyone_tried_laugh_therapy/" target="_blank">Sounds silly, but has anyone tried laugh therapy?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 13 points · 29 comments · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Probably most people have heard that there are scientific studies that laughing reduces stress, which calms the immune system. It can even help heal injuries faster.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1ser5x1/diabetes_typ_2_from_long_covid/" target="_blank">Diabetes Typ 2 from long Covid?</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 2 points · 7 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi everyone,
+
+I’ve been dealing with Long Covid symptoms for about two and a half years now. It hasn’t been officially diagnosed yet, but I finally have an appointment at a Long Covid clinic this year and I’m really curious how that’s going to go.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1seazt4/complete_longcovid_recovery_timeline/" target="_blank">Complete Long-COVID Recovery Timeline</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 5 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Covid Infection: Dec 2023
+
+Dec 2023 – Mar 2024: Initial Long COVID episode
+
+	•	Symptoms: Fatigue, left-sided numbness, eye floaters / visual snow
+
+	•	Brain fog: None
+
+	•	PEM: None
+
+	•	Progress:
+
+	•	Numbness gradually improved after use of diclofenac sodium gel (\~Mar 2024)
+
+	•	Fatigue slowly improve</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sesh1v/how_long_to_recover_chatgpt_answer/" target="_blank">&#34;How long to recover ?&#34; chatgpt answer :</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 0 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">There is no single clean number, but the best rough summary is this:
+
+For long covid overall, a lot of improvement happens in the first 6 to 12 months. WHO says symptoms generally improve over about 4 to 9 months, but around 15% of people still have symptoms at 12 months.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1set07z/chronic_fatigue_syndrome_and_herbal_medicine_does/" target="_blank">Chronic Fatigue Syndrome and Herbal Medicine - does it work?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 0 points · 2 comments · 47m ago
+                    
+                </div>
+                
+                <div class="item-summary">Hello everyone,
+
+I am a researcher looking to talk to people about their experiences of using herbal medicine. I can arrange Microsoft TEAMS meetings or phone calls to chat about your experiences.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 07, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

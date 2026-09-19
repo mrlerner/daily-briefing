@@ -1,0 +1,89 @@
+{
+  "generated": "2026-03-13T12:03:21.249201+00:00",
+  "items": [
+    {
+      "id": "cf579576abd3e3f8",
+      "title": "Chronic inflammation (High CRP), autonomous nervous system issues and possible help from stellate ganglion block ? Searching for a provider in SF Bay",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1rs5yw0/chronic_inflammation_high_crp_autonomous_nervous/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-12T22:49:08+00:00",
+      "summary": "Hi fellow Long haulers. I have had long covid for 4 years now. I have gotten much better over the years and what is left is chronic inflammation (high sensitive CRP) and CF with PEM and some POTS (treated with Ivabradine). I am very blessed to be able to work full time, and my boss is understanding ",
+      "points": null,
+      "score": 4,
+      "comments": 7,
+      "author": "DinosaursAreFriends",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "13h ago",
+      "summary_short": "Hi fellow Long haulers. I have had long covid for 4 years now."
+    },
+    {
+      "id": "7a4929b7bed1b770",
+      "title": "The United States government launches a dedicated website for Long COVID",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1rs0w2q/the_united_states_government_launches_a_dedicated/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-03-12T19:41:27+00:00",
+      "summary": "",
+      "points": null,
+      "score": 255,
+      "comments": 46,
+      "author": "Liface",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "16h ago",
+      "summary_short": ""
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-03-13",
+          "day": "Fri",
+          "day_full": "Friday, Mar 13",
+          "high": 44,
+          "low": 33,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-03-14",
+          "day": "Sat",
+          "day_full": "Saturday, Mar 14",
+          "high": 44,
+          "low": 36,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-03-15",
+          "day": "Sun",
+          "day_full": "Sunday, Mar 15",
+          "high": 45,
+          "low": 33,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

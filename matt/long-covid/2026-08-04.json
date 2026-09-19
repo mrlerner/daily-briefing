@@ -1,0 +1,52 @@
+{
+  "generated": "2026-08-04T12:03:41.103304+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7600.5,
+      "prev_close": 7489.72021484375,
+      "change_pts": 110.78,
+      "change_pct": 1.48,
+      "direction": "up",
+      "summary_line": "S&P 500 closed at 7,600.50, up +1.5% (+110.78 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-04",
+          "day": "Tue",
+          "day_full": "Tuesday, Aug 04",
+          "high": 83,
+          "low": 57,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-08-05",
+          "day": "Wed",
+          "day_full": "Wednesday, Aug 05",
+          "high": 87,
+          "low": 55,
+          "condition": "Smoky haze"
+        },
+        {
+          "date": "2026-08-06",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 06",
+          "high": 92,
+          "low": 56,
+          "condition": "Smoky haze"
+        }
+      ],
+      "highlights": [
+        "Tue",
+        "Thu"
+      ],
+      "summary_line": "Sunny Tue and Thu — good days to be outside."
+    }
+  ]
+}
