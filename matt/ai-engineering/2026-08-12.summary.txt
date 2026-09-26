@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. Introducing Unsloth Desktop 🦥 The first desktop app to run and train models locally. • Open-source. Runs on Mac, Windows...
+2. Best-seller in AI on Amazon... "Agentic Coding with Claude Code: The everyday developer's guide to agentic coding with C...
+3. Tell HN: Anthropic is starting to inject ads into Claude Code turns
+4. OpenClaw + Hermes + Claude Code (/rc) + Codex (/remote) Using Anthropic Cli + GPT oAuth in combination with Qwen / Gemma...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-12.html

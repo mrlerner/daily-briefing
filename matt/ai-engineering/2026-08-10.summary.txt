@@ -1,0 +1,9 @@
+Sunny Mon, Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. Anthropic says auto mode will be the default in Claude Code for Pro, Max, Team plans, starting on Aug. 14, claiming it's...
+2. Anthropic to put AI in charge of reviewing Claude Code actions by default
+3. Auto mode is now the default in Claude Code for Pro, Max, and Team plans
+4. Anthropic is turning Claude Code’s auto mode on by default
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-10.html

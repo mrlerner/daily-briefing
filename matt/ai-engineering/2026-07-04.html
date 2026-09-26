@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 04, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 04, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">3 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">7 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Saturday, Jul 04: Sunny, 54–75°F</div>
+            
+                <div>Sunday, Jul 05: Sunny, 51–74°F</div>
+            
+                <div>Monday, Jul 06: Sunny, 49–81°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sat, Sun and Mon — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/" target="_blank">Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says</a></p>
+                <div class="item-meta">
+                    
+                    329 points · 278 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48772443" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/regolo-ai/brick-SR1" target="_blank">Save Claude Code Tokens with Smart Routing</a></p>
+                <div class="item-meta">
+                    
+                    11 points · 3 comments · 14h ago
+                     · <a href="https://news.ycombinator.com/item?id=48780858" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://contextify.sh/" target="_blank">Show HN: Pull Claude Code transcripts into your Codex session, and vice versa</a></p>
+                <div class="item-meta">
+                    
+                    7 points · 1 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=48777790" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.scmp.com/tech/big-tech/article/3359375/alibaba-bans-staff-using-claude-code-over-anthropic-spyware-concerns" target="_blank">Alibaba bans staff from using Claude Code over Anthropic spyware concerns</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 2 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48776842" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/0xmmo/crew" target="_blank">Show HN: Crew – Let Claude Code agents talk to each other</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 2 comments · 7h ago
+                     · <a href="https://news.ycombinator.com/item?id=48782800" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://pookify.vercel.app/" target="_blank">Claude Code Dynamic Island on macOS</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 1 comments · 23h ago
+                     · <a href="https://news.ycombinator.com/item?id=48774615" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/rickardstureborg/claude-needs-input" target="_blank">Show HN: Make your terminal pulse orange when Claude Code needs input</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 17h ago
+                     · <a href="https://news.ycombinator.com/item?id=48778710" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://jsdev.space/claude-code-settings-software-architect/" target="_blank">Claude Code Settings That Made Me a Faster Software Architect</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48770897" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/hannah-wright/saas-landing-page-template" target="_blank">Free SaaS Landing Page Template – React, Vue, HTML for Claude Code and Cursor</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1h ago
+                     · <a href="https://news.ycombinator.com/item?id=48784569" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://sajith.me/blog/2026/six_months_with_claude_code.html" target="_blank">Six Months with Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 38m ago
+                     · <a href="https://news.ycombinator.com/item?id=48784795" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/poezhao0605/status/2072965498619437557" target="_blank">Alibaba bans Claude Code from all workplaces starting July 10, citing backdoor security risks. Replacement: Qoder, its o...</a></p>
+                <div class="item-meta">
+                    
+                    @poezhao0605 · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">Alibaba bans Claude Code from all workplaces starting July 10, citing backdoor security risks. Replacement: Qoder, its own AI coding tool.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/claudeai/status/2072725610061803522" target="_blank">A conversation with Boris Cherny and Cat Wu on the path from Claude Code to Claude Tag, and how it spread from engineeri...</a></p>
+                <div class="item-meta">
+                    
+                    @claudeai · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">A conversation with Boris Cherny and Cat Wu on the path from Claude Code to Claude Tag, and how it spread from engineering to the rest of Anthropic. Claude Fable 5 is now available in Claude Tag.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/SCMPNews/status/2073096876178509944" target="_blank">Claude Code was accused of logging information about certain users – including whether they were using proxies or locate...</a></p>
+                <div class="item-meta">
+                    
+                    @SCMPNews · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code was accused of logging information about certain users – including whether they were using proxies or located in Chinese time zones. Read more: sc.mp/59ec16 #alibaba #claude #anthropic #ai #spy</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2073291840154116555" target="_blank">Alibaba blocked Claude Code after Anthropic’s tracking experiment angered Chinese developers and security staff. Claude ...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · just now
+                    
+                </div>
+                
+                <div class="item-summary">Alibaba blocked Claude Code after Anthropic’s tracking experiment angered Chinese developers and security staff. Claude access becomes risky when it also inspects timezone, proxy, or identity signals.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Hiteshdotcom/status/2072991855416094947" target="_blank">Alibaba is banning Claude Code internally over alleged backdoor risks. This is wild to think about. Claude Code, Anthrop...</a></p>
+                <div class="item-meta">
+                    
+                    @Hiteshdotcom · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Alibaba is banning Claude Code internally over alleged backdoor risks. This is wild to think about.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2072906250661285895" target="_blank">Really interesting Boris Cherny and Cat Wu interview on the move from Claude Code to Claude Tag. Anthropic&#39;s launched Cl...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">Really interesting Boris Cherny and Cat Wu interview on the move from Claude Code to Claude Tag. Anthropic&#39;s launched Claude Tag last week and it added a layer of persistent context and memory that would have been difficult to maintain with previous tool</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/FirstSquawk/status/2073222679356924184" target="_blank">Alibaba bans staff from using Claude Code over Anthropic spyware concerns-SCMP</a></p>
+                <div class="item-meta">
+                    
+                    @FirstSquawk · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Alibaba bans staff from using Claude Code over Anthropic spyware concerns-SCMP</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/gp_pulipaka/status/2072899639875936569" target="_blank">Claude Code! #BigData #Analytics #DataScience #AI #MachineLearning #NLProc #LLM #IoT #IIoT #PyTorch #Python #RStats #Ten...</a></p>
+                <div class="item-meta">
+                    
+                    @gp_pulipaka · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code! #BigData #Analytics #DataScience #AI #MachineLearning #NLProc #LLM #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Java #JavaScript #ReactJS #GoLang #CloudComputing #Serverless #DataScientist #Linux #Programming #Codin</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/emerywells/status/2073095541412573692" target="_blank">In every Claude Code session, Anthropic practically begs you not to use Fable. So weird.</a></p>
+                <div class="item-meta">
+                    
+                    @emerywells · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">In every Claude Code session, Anthropic practically begs you not to use Fable. So weird.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/steipete/status/2073193871744675948" target="_blank">Great night hanging with the Claude Code folks. 🙌✌️ @trq212 @The_Whole_Daisy</a></p>
+                <div class="item-meta">
+                    
+                    @steipete · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Great night hanging with the Claude Code folks. 🙌✌️ @trq212 @The_Whole_Daisy</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank">Anthropic is discussing a new custom chip with Samsung</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">The news comes about a week after OpenAI announced its own custom AI chip in a partnership with Broadcom.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank">The only AI glossary you’ll need this year</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/" target="_blank">The browser wars aren’t about search anymore — here are the best alternatives to Chrome and Safari</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">We’ve compiled an overview of some of the top alternative browsers available today aiming to challenge Chrome and Safari.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/3/judgement/#atom-everything" target="_blank">Fable&#39;s judgement</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work. The example they gave was testin...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5aUmUwaFFoeGMxbmo1RWtnemM2dFRFS1pCZUlUWTd6ckJEUC16ZzFwVFZ4QW5jeGdCa0VzbGpFQW96TmpUTmpYd1pyb1U2X3hRQXRyZG9CY1R4RFo0QnhlWlc0YVVLZjVyTEc2TkUxNnpuZllxUmc?oc=5" target="_blank">More details on Fable 5’s cyber safeguards and our jailbreak framework - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">More details on Fable 5’s cyber safeguards and our jailbreak framework&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything" target="_blank">June 2026 newsletter</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything" target="_blank">Open Source AI Gap Map</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Open Source AI Gap Map
+Current AI is &#34;a global partnership building a public option for AI&#34;, founded as a non-profit at the AI Action Summit in Paris in February 2025 and backed by serious capital ($400m already committed). They launched their Gap Map a couple of days ago - an attempt at indexing...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything" target="_blank">llm-coding-agent 0.1a0</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Release: llm-coding-agent 0.1a0
+        Another Fable 5 experiment. Now that my LLM library has evolved into more of an agent framework it&#39;s time to see what a simple coding agent would look like built on it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything" target="_blank">Using DSPy to evaluate and improve Datasette Agent&#39;s SQL system prompts</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Research: Using DSPy to evaluate and improve Datasette Agent&amp;#x27;s SQL system prompts
+        One of this morning&#39;s AIE keynotes covered dspy, which reminded me I&#39;ve been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous researc...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything" target="_blank">Understand to participate</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me:
+Understand to participate
+Geoffrey was talking about the challenge of collaborating with coding agents as they construct increasingly large and sophisticated changes, and the need to avoid taking o...</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 04, 2026 at 05:42
+        </footer>
+    </div>
+</body>
+</html>

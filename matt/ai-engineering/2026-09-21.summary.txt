@@ -1,0 +1,9 @@
+Sunny Mon and Wed — good days to be outside.
+
+Today's briefing:
+1. Anthropic cooked with Opus 5.5 🔥🔥 its better than Fable 5.1 and Astra its little close to real one those tiny details: j...
+2. Anthropic is cutting Claude Code's current weekly limits by 17%
+3. Good @AmpCode + @vercel news: Amp can push & deploy to your Vercel projects without needing a paid seat for the Amp comm...
+4. Someone gave Claude Code permission to fix their backtesting scripts. It deleted 48,000 files in under two minutes. Here...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-21.html

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — August 23, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">August 23, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">8 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">6 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Aug 23: Clear , 58–77°F</div>
+            
+                <div>Monday, Aug 24: Sunny, 55–79°F</div>
+            
+                <div>Tuesday, Aug 25: Smoky haze, 59–91°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun, Mon and Tue — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/argofowl/status/2091150597374537729" target="_blank">Anthropic appears to be A/B testing reduced effort levels in Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    195 points · 173 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=49401549" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/arturlimaaa/terminito" target="_blank">Claude Code status line for worktree, branch, context and quota</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=49403092" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://structo.redbeardlab.com/" target="_blank">Show HN: Structo – Claude Code for short form writing</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 13h ago
+                     · <a href="https://news.ycombinator.com/item?id=49404457" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://skillworks.kynth.studio" target="_blank">Show HN: SkillWorks – every Claude Code skill, scored on whether it loads</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49398601" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49396175" target="_blank">Ask HN: How to Claude Like Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49396175" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://digg.com/tech/fktxxvtg" target="_blank">Claude Code Adds Concise Output Style Option</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 23h ago
+                     · <a href="https://news.ycombinator.com/item?id=49398966" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/HarjjotSinghh/locum" target="_blank">Show HN: Locum – Grok Bot delegates tasks to Claude/Codex CLI on your machine</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=49403691" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/dat999zx/knowl" target="_blank">Show HN: Knowl – CLAUDE.md hit 1000 lines, so I built memory that prunes itself</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49399942" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/CodeByPoonam/status/2091208189773742448" target="_blank">Anthropic just launched Claude Academy. Free courses that teach you Claude Code, Cowork, and even how to think about AI ...</a></p>
+                <div class="item-meta">
+                    
+                    @CodeByPoonam · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just launched Claude Academy. Free courses that teach you Claude Code, Cowork, and even how to think about AI collaboration properly.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kimmonismus/status/2091178321669198014" target="_blank">Wtf Anthropic: If Fable has felt noticeably dumber this week, it’s because Claude Code has apparently been running “high...</a></p>
+                <div class="item-meta">
+                    
+                    @kimmonismus · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Wtf Anthropic: If Fable has felt noticeably dumber this week, it’s because Claude Code has apparently been running “high” reasoning effort at just 10/100, the same level that was „low“ before. They dumbed down fable without telling it seems.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/argofowl/status/2091150597374537729" target="_blank">update: it&#39;s server-side, not the app anthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that ...</a></p>
+                <div class="item-meta">
+                    
+                    @argofowl · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">update: it&#39;s server-side, not the app anthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that shrinks the effort scale, older versions and opus 5 are left alone probably an a/b test, so not everyone will see it if &#34;high&#34; feels like &#34;low&#34; for yo</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/tom_doerr/status/2091179191127441877" target="_blank">Installs 28 portable thinking skills into Claude Code, GitHub Copilot, Codex, and Cursor to provide agents with structur...</a></p>
+                <div class="item-meta">
+                    
+                    @tom_doerr · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">Installs 28 portable thinking skills into Claude Code, GitHub Copilot, Codex, and Cursor to provide agents with structured mental models for diagnosis, decisions, and strategy. github.com/tjboudreaux/cc…</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/emollick/status/2091207070951395337" target="_blank">In terms of everyday usefulness and saving time, Codex &amp; Claude Code are very capable of doing the thing where you ask t...</a></p>
+                <div class="item-meta">
+                    
+                    @emollick · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">In terms of everyday usefulness and saving time, Codex &amp; Claude Code are very capable of doing the thing where you ask them to &#34;fill out the forms that I got an email about&#34; and they do it well &amp; without further intervention from you. Really nice for low-risk time</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/omarsar0/status/2091180120610312573" target="_blank">Own your harness. I really wish the Claude Code harness was open source. I often think about this, especially now that c...</a></p>
+                <div class="item-meta">
+                    
+                    @omarsar0 · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">Own your harness. I really wish the Claude Code harness was open source.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/nikunj/status/2090884422178627624" target="_blank">This is still SO underrated btw.. My daughter just started kindergarten. The daily meal is on a random website with weir...</a></p>
+                <div class="item-meta">
+                    
+                    @nikunj · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">This is still SO underrated btw.. My daughter just started kindergarten.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Yuchenj_UW/status/2091215363052896611" target="_blank">AI won’t erase the gap between people. YouTube, Coursera, and Internet made world-class knowledge free. Most people stil...</a></p>
+                <div class="item-meta">
+                    
+                    @Yuchenj_UW · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI won’t erase the gap between people. YouTube, Coursera, and Internet made world-class knowledge free.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/dani_avila7/status/2090981613706293539" target="_blank">I’ve been using Claude Code’s Concise Output Style and it makes the experience much cleaner I’d combine it with these se...</a></p>
+                <div class="item-meta">
+                    
+                    @dani_avila7 · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve been using Claude Code’s Concise Output Style and it makes the experience much cleaner I’d combine it with these settings: - Output Style: Concise Straight to the answer, no preambles or unnecessary narration - spinnerTipsEnabled: false No tips while</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/tom_doerr/status/2091384004654027132" target="_blank">Installs 132 hand-curated SKILL.md playbooks into Mercury, Claude Code, Codex CLI, and other AI agents to support divers...</a></p>
+                <div class="item-meta">
+                    
+                    @tom_doerr · just now
+                    
+                </div>
+                
+                <div class="item-summary">Installs 132 hand-curated SKILL.md playbooks into Mercury, Claude Code, Codex CLI, and other AI agents to support diverse coding workflows. github.com/cosmicstack-la…</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/" target="_blank">Anthropic’s Opus 4.6 is a smut-machine</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic forbids its Claude models from generating sexually explicit content. But a series of tests conducted by TechCrunch found that it didn&#39;t take much to get past the restriction.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/" target="_blank">Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">Built by DeepMind alumni, British AI lab Inherent released Faraday, an AI agent whose ability to replicate scientific papers could be a stepping stone for innovation.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/" target="_blank">Harvard’s $699 startup bootcamp offers AI avatars of its instructors</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">In the HBS Foundry program, AI avatars provide feedback during practice pitches and board meetings.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/" target="_blank">OpenAI says California should strengthen its AI safety bill</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenAI is calling for California to strengthen SB 53, an AI safety bill that the company previously opposed.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9JMHZ5dTlFbTZNQXBNc2pmTmxEd0owZU5wTzh1a1FiTFFLRW5MQkh4WVE0aE84bkxzZWR2VEU4TTFmMjh0V2tuRnN3Q3ZsVGlpTFRzbmt5TkxDYmlQazJhM0J3bWtuSjhtTFFQT3lR?oc=5" target="_blank">ANT-2026-VS18SA90 · nginx - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">ANT-2026-VS18SA90 · nginx&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank">llm 0.33</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Release: llm 0.33
+        My highlights from this release:
+
+
+Upgraded to the OpenAI Python library 3.x and switched the HTTP client dependency from httpx to httpx2. #1608, #1631
+
+
+I shipped a quick 0.32.1 fix for this yesterday, but this is the more comprehensive fix.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/21/llm/" target="_blank">llm 0.32.1</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Release: llm 0.32.1
+        Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx, and it turned out LLM depended on that library but only installed it via a transitive openai dependency. This dot-release fixes that for the moment by pinn...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/21/llm-openrouter/" target="_blank">llm-openrouter 0.7</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Release: llm-openrouter 0.7
+        Now that this plugin is compatible with LLM 0.32 it can display the reasoning traces for LLMs available through OpenRouter. Updated for compatibility with LLM 0.32.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Aug/22/linus-torvalds/" target="_blank">Quoting Linus Torvalds</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">And this was a debug session from hell, enormously helped by an AI doing much of the grunt-work. I&#39;d like to call it my tireless helper, but the AI several times stated flat out that this was impossible and unsolvable and that we should just write a report about it.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated August 23, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

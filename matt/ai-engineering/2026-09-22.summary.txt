@@ -1,0 +1,11 @@
+S&P 500 closed at 7,764.70, up +1.5% (+114.20 pts).
+
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Anthropic is gearing up to compete with OpenAI at the forefront of model releases, and according to the latest rumors, w...
+2. Best-seller in AI on Amazon... "Agentic Coding with Claude Code: The everyday developer's guide to agentic coding with C...
+3. Not really sure how @capydotai does it, but it really is able to track multi-step workflow and do large PRs faster than ...
+4. Show HN: aSPARK – an agile AI product team for Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-22.html

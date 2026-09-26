@@ -1,0 +1,43 @@
+{
+  "generated": "2026-08-15T12:02:55.015147+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-15",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 15",
+          "high": 84,
+          "low": 58,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-08-16",
+          "day": "Sun",
+          "day_full": "Sunday, Aug 16",
+          "high": 83,
+          "low": 55,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-08-17",
+          "day": "Mon",
+          "day_full": "Monday, Aug 17",
+          "high": 85,
+          "low": 55,
+          "condition": "Clear "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat, Sun and Mon — good days to be outside."
+    }
+  ]
+}

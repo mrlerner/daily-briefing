@@ -1,0 +1,140 @@
+{
+  "generated": "2026-05-26T12:03:54.451506+00:00",
+  "items": [
+    {
+      "id": "5ac7ba2655109ca7",
+      "title": "Stellate ganglion block - I'm scared",
+      "url": "https://reddit.com/r/POTS/comments/1tntbjl/stellate_ganglion_block_im_scared/",
+      "source": "r/POTS",
+      "source_type": "reddit",
+      "published": "2026-05-26T02:17:30+00:00",
+      "summary": "I have long COVID POTS + MCAS. I'm on a waitlist (should take 1-2 months) for this procedure. I want to try it because PEM is ruining my life. The plan is for me to get those blocks 4 times 2 weeks apart and potentially do that every 6 months. \n\nI watched the procedure done on YouTube and although t",
+      "points": null,
+      "score": 2,
+      "comments": 6,
+      "author": "JustLikeOtherGirls4",
+      "subreddit": "POTS",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "9h ago",
+      "summary_short": "I have long COVID POTS + MCAS. I'm on a waitlist (should take 1-2 months) for this procedure."
+    },
+    {
+      "id": "38cbe9a54ee13426",
+      "title": "ADHD medicine that works",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1to3dec/adhd_medicine_that_works/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-26T10:52:43+00:00",
+      "summary": "I have long COVID and ADHD. Most of the medicines give me Raynauds in the peripheries and then Guanfacine gave me extreme dizziness. Has anyone found something that works for them alongside long Covid please?",
+      "points": null,
+      "score": 2,
+      "comments": 2,
+      "author": "marble272",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.37,
+      "time_ago": "1h ago",
+      "summary_short": "I have long COVID and ADHD. Most of the medicines give me Raynauds in the peripheries and then Guanfacine gave me extreme dizziness."
+    },
+    {
+      "id": "25c80a902a866590",
+      "title": "Does anyone else get extremely hungry with PEM? And/or seem to need carbs in particular",
+      "url": "https://reddit.com/r/cfs/comments/1to3al4/does_anyone_else_get_extremely_hungry_with_pem/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-26T10:48:49+00:00",
+      "summary": "I have PMOS so I'm guessing thats related, but my insulin resistance is pretty well managed at the moment \n\nWhen I'm in PEM I'm so hungry, I feel like a bottomless pit and Im insatiayble. I've been doing keto\\* , but I find that I really need carbs during this time. High carbs seem to be able to hel",
+      "points": null,
+      "score": 30,
+      "comments": 9,
+      "author": "Sea-Tadpole-7158",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.369,
+      "time_ago": "1h ago",
+      "summary_short": "I have PMOS so I'm guessing thats related, but my insulin resistance is pretty well managed at the moment \n\nWhen I'm in PEM I'm so hungry, I feel like a bottomless pit and Im insatiayble. I've been doing keto\\* , but I find that I really need carbs during this time."
+    },
+    {
+      "id": "52cd88b8a9ce6e07",
+      "title": "NADH promising studies against fatigue / CFS",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1to0iza/nadh_promising_studies_against_fatigue_cfs/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-26T08:19:01+00:00",
+      "summary": "Hey, just wanted to share a short breakdown on why NADH keeps coming up in Long COVID / post-viral fatigue discussions, and what the actual studies used.\n\nThe basic idea: Post-viral illnesses can measure with mitochondrial function and lower NAD+ levels, which may contribute to fatigue, crashes, bra",
+      "points": null,
+      "score": 7,
+      "comments": 22,
+      "author": "John_Locke227",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.306,
+      "time_ago": "3h ago",
+      "summary_short": "Hey, just wanted to share a short breakdown on why NADH keeps coming up in Long COVID / post-viral fatigue discussions, and what the actual studies used. The basic idea: Post-viral illnesses can measure with mitochondrial function and lower NAD+ levels, which may contribute to fatigue, crashes, bra"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-05-26",
+          "day": "Tue",
+          "day_full": "Tuesday, May 26",
+          "high": 57,
+          "low": 48,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-05-27",
+          "day": "Wed",
+          "day_full": "Wednesday, May 27",
+          "high": 70,
+          "low": 45,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-28",
+          "day": "Thu",
+          "day_full": "Thursday, May 28",
+          "high": 77,
+          "low": 49,
+          "condition": "Clear "
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu"
+      ],
+      "summary_line": "Sunny Wed and Thu — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+S&P 500 closed at 7,457.69, down -1.0% (-76.08 pts).
+
+Sunny Mon, Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. ANTHROPIC 🔥: Claude Code weekly limits will be 50% higher through August 19, for all Pro, Max, Team, and seat-based Ente...
+2. Anthropic recently cut Claude Code’s system prompt by 80%. @trq212 explains why: “As the models have gotten smarter, the...
+3. There are still a lot of people who don't know Claude Code or Codex or Hermes Agent or OpenClaw. There are still a lot o...
+4. Anthropic runs large-scale code migrations with Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-20.html

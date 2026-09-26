@@ -1,0 +1,9 @@
+Sunny Thu, Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. this might sound counter-productive but it changed how i ship with AI agents... as you may know, Hermes can control Clau...
+2. Anthropic's Champion Kit for engineers pushing Claude Code at their company
+3. What I changed in how I use Claude Code after Anthropic's postmortem
+4. How Anthropic teams use Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-30.html

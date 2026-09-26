@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 05, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 05, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Apr 05: Clear , 44–67°F</div>
+            
+                <div>Monday, Apr 06: Sunny, 52–68°F</div>
+            
+                <div>Tuesday, Apr 07: Partly Cloudy , 42–51°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun and Mon — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sc8yxl/long_covid_associated_with_increased_risk_of/" target="_blank">Long COVID associated with increased risk of cardiovascular disease</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 144 points · 41 comments · 22h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1scpjev/recover_vital_results/" target="_blank">Recover Vital Results</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 47 points · 3 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">1) The RECOVER-VITAL results are in. The trial tested long-term Paxlovid to treat viral persistence.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1scha95/in_a_much_worse_crash_than_usual_dont_know_how_to/" target="_blank">In a much worse crash than usual - don’t know how to deal with it</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 24 points · 5 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve had long covid, and as result — ME/CFS for 5 years now and I’ve managed to increase my baseline very slowly to the point where I can now work full time, flexibly and (mostly) remotely. I thought I had been pacing well, but a busier than normal week, and what I think now may have been rolling P</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sd0se4/long_covid_timelinedo_i_even_have_it/" target="_blank">Long Covid Timeline-Do I even have it?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 5 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Today I had an online appointment with GP who questioned if I have Long Covid or not,because my symptoms did not appear within the 3 months after infection period. I had Acute Covid in Jan 2022,had bouts of dizziness spells(started on propranolol) and probably a little bit fatigued
+
+Also started Ps</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1sc8ni0/long_covid_explained_for_people_just_learning/" target="_blank">Long COVID explained for people just learning about this condition and those who need help educating those around them.</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 1 points · 1 comments · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">This page explains what Long COVID is so you can help people understand what you are going through. [About Long COVID](https://www.promedview.com/about-long-covid)
+
+The symptoms checklist will help you organize your thoughts when you speak to the dr.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/POTS/comments/1sd10dq/best_treatment_for_orthostaticpositional_chest/" target="_blank">Best treatment for orthostatic/positional chest pain?</a></p>
+                <div class="item-meta">
+                    
+                    r/POTS · 1 points · 2 comments · 47m ago
+                    
+                </div>
+                
+                <div class="item-summary">I am a male in my late 40s diagnosed with post-viral/suspected-post-COVID POTS by a cardiologist and have dealt with this for about 6 years now. I also have an immediate family history of sudden cardiac death from unclear cause which makes this more fraught.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 05, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

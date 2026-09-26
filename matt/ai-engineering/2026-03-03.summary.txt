@@ -1,0 +1,7 @@
+Today's briefing:
+1. On one end, the Anthropic team is a massive user of AI to write code (80%+ of all code deployed is written by Claude Cod...
+2. Voice mode is rolling out in Claude Code now. It means you can code even faster. Freaking awesome. No matter what is goi...
+3. BEWARE of factory.ai. 10x more expensive than Claude Code and you can't cancel your subscription.
+4. New: Voice mode is rolling out now in Claude Code, live for ~5% of users today, details below
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-03.html

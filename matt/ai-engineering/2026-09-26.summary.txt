@@ -1,0 +1,9 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Anthropic is developing a new Claude Code layout for Claude Desktop, with an updated model selector and an expandable us...
+2. You can use Claude after hitting rate limits Anthropic secretly dropped this option alongside Opus 5.5 for some users In...
+3. Anthropic engineer: "99% of people use Claude Code like Google, and only 1% are running swarms of self-learning Claude a...
+4. Quiet-guardrails: Claude Code manual mode, minus the nagging
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-26.html

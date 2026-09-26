@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — June 17, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">June 17, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">6 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Jun 17: Sunny, 53–74°F</div>
+            
+                <div>Thursday, Jun 18: Sunny, 49–78°F</div>
+            
+                <div>Friday, Jun 19: Sunny, 54–82°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Wed, Thu and Fri — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://venturebeat.com/technology/xiaomis-new-open-source-agentic-ai-coding-harness-mimo-code-beats-claude-code-at-ultra-long-200-step-tasks" target="_blank">Xiaomi&#39;s agentic AI coding harness MiMo Code beats Claude Code at 200 step tasks</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48548834" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://9to5mac.com/2026/06/16/spacex-lands-deal-to-likely-purchase-claude-code-and-openai-codex-competitor/" target="_blank">SpaceX Purchases Cursor, a Claude Code and OpenAI Codex Competitor</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 1 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48557095" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.youtube.com/watch?v=rwkAksbNsTg" target="_blank">Building Production AI Apps on Claude Code and Cloudflare [video]</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 12h ago
+                     · <a href="https://news.ycombinator.com/item?id=48564001" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://provi.me/cc-reflection" target="_blank">cc-reflection: teaching Claude Code to reflect</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 4h ago
+                     · <a href="https://news.ycombinator.com/item?id=48567237" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://nextweekai.com/blog/claude-code-27-skills-ai-engineering-team/" target="_blank">Claude Code Skills Turn It into an AI Engineering Team</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=48567320" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://finmindai-moneyverse.vercel.app/" target="_blank">Show HN: FinMind AI – what if Claude Code was built for Wall Street?</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 7h ago
+                     · <a href="https://news.ycombinator.com/item?id=48565890" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://thelatexlab.com/latexdiff-online/" target="_blank">I Built a LaTeXdiff Online tool – using Claude Code (Reddit users Loved it)</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 2 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=48567336" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://provi.me/cc-like-video-games" target="_blank">Claude Code is a video game</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 4h ago
+                     · <a href="https://news.ycombinator.com/item?id=48567001" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://codeaholicguy.com/2026/06/17/i-read-every-claude-code-hook-so-you-dont-have-to/" target="_blank">I read every Claude Code hook so you don&#39;t have to</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 7m ago
+                     · <a href="https://news.ycombinator.com/item?id=48569091" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Stewie-pixel/claude-with-leetcode" target="_blank">Grind LeetCode questions with Claude Code dsa mentor</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 5h ago
+                     · <a href="https://news.ycombinator.com/item?id=48566427" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kimmonismus/status/2066638883060691217" target="_blank">Holy, in its early days, Cursor accounted for roughly 40% to 50% of Anthropic&#39;s revenue. And Claude Code was just a rese...</a></p>
+                <div class="item-meta">
+                    
+                    @kimmonismus · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Holy, in its early days, Cursor accounted for roughly 40% to 50% of Anthropic&#39;s revenue. And Claude Code was just a reserach project.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/PeterMcCrory/status/2067060307646636442" target="_blank">How might agentic coding tools, like Claude Code, alter the returns to expertise? In this report, we find evidence that ...</a></p>
+                <div class="item-meta">
+                    
+                    @PeterMcCrory · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">How might agentic coding tools, like Claude Code, alter the returns to expertise? In this report, we find evidence that domain expertise leads to better outcomes: more successful sessions and better recoveries after Claude struggles.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2067017552619069679" target="_blank">Anthropic just made big dev teams free. Claude Code has a new update. It uses RipGrep to search super fast. You set stri...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just made big dev teams free. Claude Code has a new update.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/kunchenguid/status/2066608004464861546" target="_blank">wow - this is huge! anthropic is officially walking back their decision about banning programmatic use of claude code su...</a></p>
+                <div class="item-meta">
+                    
+                    @kunchenguid · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">wow - this is huge! anthropic is officially walking back their decision about banning programmatic use of claude code subscription quota why is this a big deal?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Diyi_Yang/status/2066996225292083545" target="_blank">Cool to see that the Claude Code sessions we collected and released are now helping Anthropic study Claude Code 😎</a></p>
+                <div class="item-meta">
+                    
+                    @Diyi_Yang · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Cool to see that the Claude Code sessions we collected and released are now helping Anthropic study Claude Code 😎</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/joabaum/status/2066995982194315297" target="_blank">Cool to see that the Claude Code sessions we collected and released are now helping Anthropic study Claude Code 😎 Check ...</a></p>
+                <div class="item-meta">
+                    
+                    @joabaum · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Cool to see that the Claude Code sessions we collected and released are now helping Anthropic study Claude Code 😎 Check out SWE-chat if you haven&#39;t! (more data coming soon...)</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/LandingAI/status/2066831209112752255" target="_blank">Turn Claude Code into a Document Processing Agent! We just released Agentic Document Extraction (ADE) skills for AI codi...</a></p>
+                <div class="item-meta">
+                    
+                    @LandingAI · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Turn Claude Code into a Document Processing Agent! We just released Agentic Document Extraction (ADE) skills for AI coding agents.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/thenewstack/status/2067114516177953239" target="_blank">Six months ago, AI coding tools were competing on interface and workflow. @janakiramm explores how Claude Code, Cursor, ...</a></p>
+                <div class="item-meta">
+                    
+                    @thenewstack · just now
+                    
+                </div>
+                
+                <div class="item-summary">Six months ago, AI coding tools were competing on interface and workflow. @janakiramm explores how Claude Code, Cursor, Codex, and Antigravity have quietly converged on the same agentic blueprint.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2067041701542469708" target="_blank">How to Rank #1 with Claude AI SEO! Claude Code just turned AI SEO into a production line. 🏭 The daily workflow: → 2 tren...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">How to Rank #1 with Claude AI SEO! Claude Code just turned AI SEO into a production line.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/AnthropicAI/status/2066969532380721386" target="_blank">Our latest economic research introduces a framework for tracking Claude Code as it scales. Who is using Claude Code, and...</a></p>
+                <div class="item-meta">
+                    
+                    @AnthropicAI · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Our latest economic research introduces a framework for tracking Claude Code as it scales. Who is using Claude Code, and what are they using it for?</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/" target="_blank">ChatGPT’s market share slips below 50% for first time</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/" target="_blank">The US government’s Anthropic models ban was never about an AI jailbreak</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">The Trump administration&#39;s decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn&#39;t immune from U.S. government interference.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/" target="_blank">Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic&#39;s popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/" target="_blank">SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">The deal is supposed to help SpaceX&#39;s struggling AI division. The company told IPO investors it sees a $26 trillion addressable market in AI.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdnpPVE1uWkc5VzE2V0Z3MlVQTV9aeXRtN3lDT2V1RTJvUGhvcnB5dnZsTzc4M1lmamMxek9yQ1ZUakU3dkJwaHhOc0VPR1RGZnR6S1BEbVhCV2dHT3BodWxORHlzbTdtYWlqTElqUU9wMFg0c1FFdWI0T3BVTXRkY052dnNKMTV5?oc=5" target="_blank">Claude Corps: How to Become a Host Organization - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · just now
+                    
+                </div>
+                
+                <div class="item-summary">Claude Corps: How to Become a Host Organization&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything" target="_blank">The Fable 5 Export Controls Harm US Cyber Defense</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">The Fable 5 Export Controls Harm US Cyber Defense
+I quoted The Atlantic quoting Kate Moussouris earlier, when I should have gone straight to the source. Here she is confirming that the &#34;jailbreak&#34; that got Claude Fable 5 banned under an export control really was &#34;fix this code&#34;:
+
+The researchers ...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything" target="_blank">Quoting Matteo Wong, The Atlantic</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic.) The report, Moussouris said, involved IT experts asking...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/" target="_blank">Critical Copilot vulnerability allowed hackers to steal 2FA code from users</a></p>
+                <div class="item-meta">
+                    
+                    Ars Technica AI · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">SearchLeak exploit shows why the industry&#39;s approach to LLM security fails over and over.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lM0p2cGtZWWJ4aE9Ocy05NEU1SXFraWl1V1gwNmxwdGpMWkg3N2Z3WGF6eFFMZXlWMGZEeGZZVGxmcGJyVlBSLXlCUXhma0lWRm1SNllTSVlmNXlTMFEzLTZIMFIwSDA?oc=5" target="_blank">Agentic coding and persistent returns to expertise - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Agentic coding and persistent returns to expertise&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9TblYyMlZ3TEQwZHZXNjNtNzJ3TVJoMklQSnp3cUhoUklTNnhuVm1nMU16cHZ4R0s0V1Mxd2dMMTZ0Qzk3MTZEVE9jRWN5VGhYejZCeWxMV3hMRExRRjJFMnp5S2h2VTB6RjZHTWpR?oc=5" target="_blank">ANT-2026-H97FY6C8 · freerdp - Anthropic&#39;s Red Team</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">ANT-2026-H97FY6C8 · freerdp&amp;nbsp;&amp;nbsp;Anthropic&#39;s Red Team</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated June 17, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+S&P 500 closed at 6,528.52, up +2.9% (+184.80 pts).
+
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Vibe Coding vs Vibe Engineering: Why the Difference Matters in the AI Era
+2. Anthropic Employees Use This Secret CLAUDE.md (USER_TYPE=ant) – Here’s the leaked &amp; improved version
+3. 🚨 DO NOT USE THIS This emulator makes your api call to claude 100% identical to claude code request from your subscripti...
+4. Got this email from GitHub, possibly related to the Claude Code codebase leak but the repo they're referencing is a fork...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-01.html

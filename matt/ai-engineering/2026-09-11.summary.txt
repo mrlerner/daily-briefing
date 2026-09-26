@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. If you’re a researcher who uses Claude Code or Codex for your daily work, consider using open models instead. Recent eve...
+2. EXCLUSIVE: stealth startup Accomplish reported vulnerabilities in Claude Code, Codex and Cursor this summer. One wasn't ...
+3. Learn how to optimize for app development in your favorite AI IDE https://t.co/a5hkM1olIz 🔍 Review designs inside AI IDE...
+4. Moshi – SSH and Mosh Terminal for Claude Code and AI Agents
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-11.html

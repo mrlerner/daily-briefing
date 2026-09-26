@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Cursor just one shot OpenAI Codex and Claude Code with their new update. they solved Context Decay.... ok vibe coder I k...
+2. EXCLUSIVE: stealth startup Accomplish reported vulnerabilities in Claude Code, Codex and Cursor this summer. One wasn't ...
+3. Quoting Boris Cherny
+4. New in Claude Code: claude plugin eval See what value your plugin is adding, or if it needs more work. You can create te...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-12.html

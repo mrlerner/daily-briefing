@@ -1,0 +1,9 @@
+Sunny Thu and Sat — good days to be outside.
+
+Today's briefing:
+1. Anthropic Updates Claude Code With Security Plugin and Faster Performance Source: cybersecuritynews.com/anthropic-upda… ...
+2. Claude Code's macOS install creates a permission prompt that's indistinguishable from malware UX. Easy fix on Anthropic's side
+3. Claude Code feels completely different once you install this. Anthropic quietly released an official plugin called claud...
+4. best accounts to follow from each frontier lab to stay constantly up to date Anthropic @karpathy - must-follow account f...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-28.html

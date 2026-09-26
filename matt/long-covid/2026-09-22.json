@@ -1,0 +1,74 @@
+{
+  "generated": "2026-09-22T12:03:20.224268+00:00",
+  "items": [
+    {
+      "id": "c7f9ae250dad22ca",
+      "title": "Brain scans reveal a possible cause of long COVID fatigue and brain fog",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260920222412.htm",
+      "source": "ScienceDaily — Infectious Diseases",
+      "source_type": "rss",
+      "published": "2026-09-22T11:48:58+00:00",
+      "summary": "Researchers have found evidence that long COVID may damage dopamine releasing neurons in the brain, potentially explaining persistent fatigue, low motivation, slowed movement, and memory difficulties. The discovery could lead to new treatments that target the brain's dopamine system.",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.394,
+      "time_ago": "14m ago",
+      "summary_short": "Researchers have found evidence that long COVID may damage dopamine releasing neurons in the brain, potentially explaining persistent fatigue, low motivation, slowed movement, and memory difficulties. The discovery could lead to new treatments that target the brain's dopamine system."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7764.7001953125,
+      "prev_close": 7650.5,
+      "change_pts": 114.2,
+      "change_pct": 1.49,
+      "direction": "up",
+      "summary_line": "S&P 500 closed at 7,764.70, up +1.5% (+114.20 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-22",
+          "day": "Tue",
+          "day_full": "Tuesday, Sep 22",
+          "high": 67,
+          "low": 55,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-09-23",
+          "day": "Wed",
+          "day_full": "Wednesday, Sep 23",
+          "high": 68,
+          "low": 49,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-09-24",
+          "day": "Thu",
+          "day_full": "Thursday, Sep 24",
+          "high": 58,
+          "low": 52,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

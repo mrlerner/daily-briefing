@@ -1,0 +1,67 @@
+{
+  "generated": "2026-07-03T13:14:41.795517+00:00",
+  "items": [
+    {
+      "id": "c8568ad40f74d5dc",
+      "title": "Trial By Error: The BMJ Review on Long Covid Interventions Cited in Wired Article",
+      "url": "https://virology.ws/2026/07/02/trial-by-error-the-bmj-review-on-long-covid-interventions-cited-in-wired-article/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-07-03T10:05:22+00:00",
+      "summary": "By David Tuller, DrPH I am reposting below a blog about a “living systematic review” of interventions for Long Covid, which was published by The BMJ in late 2024. This systematic review figured prominently in the opening of the recent Wired piece about mind-body interventions for Long Covid. (I&#...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.321,
+      "time_ago": "3h ago",
+      "summary_short": "By David Tuller, DrPH I am reposting below a blog about a “living systematic review” of interventions for Long Covid, which was published by The BMJ in late 2024. This systematic review figured prominently in the opening of the recent Wired piece about mind-body interventions for Long Covid."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-03",
+          "day": "Fri",
+          "day_full": "Friday, Jul 03",
+          "high": 74,
+          "low": 57,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-04",
+          "day": "Sat",
+          "day_full": "Saturday, Jul 04",
+          "high": 75,
+          "low": 50,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-07-05",
+          "day": "Sun",
+          "day_full": "Sunday, Jul 05",
+          "high": 74,
+          "low": 49,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun"
+      ],
+      "summary_line": "Sunny Sat and Sun — good days to be outside."
+    }
+  ]
+}

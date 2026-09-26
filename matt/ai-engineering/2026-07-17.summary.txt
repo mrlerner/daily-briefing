@@ -1,0 +1,9 @@
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. ANTHROPIC JUST GAVE CLAUDE CODE A FRONTEND DESIGN BRAIN * Frontend Design applies consistent visual styles before genera...
+2. Best-seller in AI on Amazon... "Agentic Coding with Claude Code: The everyday developer's guide to agentic coding with C...
+3. 🚨 ANTHROPIC RESETS CLAUDE CODE WEEKLY AND 5-HOUR LIMITS 7 TIMES yesterday kimi drops a k3 teaser that already feels fabl...
+4. thinkingmachines Inkling is now available in claude code via hf claude
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-17.html

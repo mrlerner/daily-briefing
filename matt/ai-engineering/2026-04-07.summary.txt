@@ -1,0 +1,9 @@
+Sunny Tue, Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67%
+2. Claude Code for Healthcare: How Physicians Build with AI - Anthropic
+3. Anthropic really is burning more and more dev goodwill Claude Code is suddenly getting unusable for stuff you could use ...
+4. My biggest takeaways from @AnthropicAI's Head of Growth Amol Avasare: 1. Engineering is getting the most AI leverage—and...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-07.html

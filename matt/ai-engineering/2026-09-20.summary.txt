@@ -1,0 +1,9 @@
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Anthropic's new Claude Code feature could drain your plan before lunch https://t.co/4elGdH0iQb
+2. Anthropic engineer: "99% of people use Claude Code like Google, and only 1% are running swarms of self-learning Claude a...
+3. Show HN: Built a local guardrail layer for Claude Code
+4. Introducing Jev Model Router for Claude Code This Claude Code Mod lets you use Jev through its direct @typesafeai API or...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-20.html

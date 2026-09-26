@@ -1,0 +1,9 @@
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Anthropic just launched Claude Academy. Free courses that teach you Claude Code, Cowork, and even how to think about AI ...
+2. Anthropic appears to be A/B testing reduced effort levels in Claude Code
+3. Wtf Anthropic: If Fable has felt noticeably dumber this week, it’s because Claude Code has apparently been running “high...
+4. update: it's server-side, not the app anthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-23.html

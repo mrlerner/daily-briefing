@@ -1,0 +1,7 @@
+Today's briefing:
+1. Claude Just Fixed Its Most Annoying Developer Problem
+2. What does it mean for software engineering when we no longer write the code? Here's the take from Boris Cherny ( @bchern...
+3. Show HN: Claude Code for iPad – Agentic AI coding tool with file ops, Git, shell
+4. Claude Code told me "No."
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-06.html

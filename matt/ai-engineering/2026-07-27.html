@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 27, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 27, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">4 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,408.30, down
+                -1.2%
+                (-90.66 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Monday, Jul 27: Sunny, 58–80°F</div>
+            
+                <div>Tuesday, Jul 28: Partly Cloudy , 56–76°F</div>
+            
+                <div>Wednesday, Jul 29: Sunny, 52–79°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Mon and Wed — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://old.reddit.com/r/ClaudeCode/comments/1v6y5q2/claude_code_has_a_hardcoded_instruction_telling/" target="_blank">Claude Code has a hardcoded instruction telling Opus 5 not to use subagents</a></p>
+                <div class="item-meta">
+                    
+                    27 points · 13 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49056022" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/hkc5/cursor-bridge" target="_blank">Cursor Bridge – Run Unlimited Claude Code on Your Cursor Subscription</a></p>
+                <div class="item-meta">
+                    
+                    19 points · 20 comments · 13h ago
+                     · <a href="https://news.ycombinator.com/item?id=49063186" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://code.claude.com/docs/en/data-usage" target="_blank">Claude Code Deletes Your Context History from Your Device After 30 Days</a></p>
+                <div class="item-meta">
+                    
+                    14 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49056689" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Nutlope/hallmark" target="_blank">Hallmark – Anti-AI-Slop Design Skill for Claude Code, Cursor, and Codex</a></p>
+                <div class="item-meta">
+                    
+                    7 points · 8 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49058547" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://antigma.ai/blog/2026/07/25/short-prompt-small-models" target="_blank">Claude Code Cut Their System Prompt by 80%. Does That Work for Small Models Too?</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 4 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49055752" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/pipilot-dev/anyclaude-sdk" target="_blank">Show HN: Anyclaude-SDK – Claude Code-Style SDK for OpenAI/Anthropic Endpoints</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 0 comments · 13h ago
+                     · <a href="https://news.ycombinator.com/item?id=49063069" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49067964" target="_blank">Claude Code getting &#34;API Error: 529 Overloaded&#34;</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 2 comments · 36m ago
+                     · <a href="https://news.ycombinator.com/item?id=49067964" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://firasd.substack.com/p/accidental-data-loss-in-claude-code-openai-codex-ai-agent-harness-file-deletion" target="_blank">Data loss in Claude Code and OpenAI Codex: when AI deletes user files</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49058441" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/buhuipao/agent-console" target="_blank">Show HN: Agent Console – A Local Dashboard for Codex and Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 2h ago
+                     · <a href="https://news.ycombinator.com/item?id=49067274" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/YoniRaviv/Relay" target="_blank">Show HN: Relay – turn Claude Code into a visual Kanban build loop</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 5h ago
+                     · <a href="https://news.ycombinator.com/item?id=49065903" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/KirkDBorne/status/2081574796807069806" target="_blank">Best-seller in AI on Amazon... &#34;Agentic Coding with Claude Code: The everyday developer&#39;s guide to agentic coding with C...</a></p>
+                <div class="item-meta">
+                    
+                    @KirkDBorne · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Best-seller in AI on Amazon... &#34;Agentic Coding with Claude Code: The everyday developer&#39;s guide to agentic coding with Claude Code&#34; 𝗚𝗲𝘁 𝗶𝘁 𝗵𝗲𝗿𝗲: amzn.to/42FSct9 v/ @PacktDataML 𝗪𝗵𝗮𝘁 𝘆𝗼𝘂 𝘄𝗶𝗹𝗹 𝗹𝗲𝗮𝗿𝗻: ❇️Design agentic coding workflows in t</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2081509383880794384" target="_blank">Boris Cherny, head of Claude Code at Anthropic, on optimizing token cost and model use. “I use Fable for everything&#34; The...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Boris Cherny, head of Claude Code at Anthropic, on optimizing token cost and model use. “I use Fable for everything&#34; There is probably a 50% opportunity to reduce the investment (on token cost).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/SakanaAILabs/status/2081526987777278155" target="_blank">Announcing Fugu-Ultra v1.1 and Claude Code interface for Fugu Release Notes: sakana.ai/fugu-1-1-claud… 🐡</a></p>
+                <div class="item-meta">
+                    
+                    @SakanaAILabs · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Announcing Fugu-Ultra v1.1 and Claude Code interface for Fugu Release Notes: sakana.ai/fugu-1-1-claud… 🐡</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/emollick/status/2081603003866329496" target="_blank">We are in a world where you can create truly unique, visually interesting and creative playable demos on demand with the...</a></p>
+                <div class="item-meta">
+                    
+                    @emollick · just now
+                    
+                </div>
+                
+                <div class="item-summary">We are in a world where you can create truly unique, visually interesting and creative playable demos on demand with the current capabilities of Codex and Claude Code. We don&#39;t need to keep cloning the same six existing games as AI examples.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/majidmanzarpour/status/2081342998831378739" target="_blank">Initial prompt with Claude Code harness (note: this took a few rounds of iteration and wasn&#39;t built in 1 shot, but the i...</a></p>
+                <div class="item-meta">
+                    
+                    @majidmanzarpour · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">Initial prompt with Claude Code harness (note: this took a few rounds of iteration and wasn&#39;t built in 1 shot, but the initial prompt got 90% of it correct) -- BUILD: single-file Three.js diorama. One ultra-detailed cherry blossom bonsai in a tokonoma alcove.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2081353856043364740" target="_blank">Gemma 4: The Coding Assistant That Never Locks You Out Claude Code has one painful flaw. A 5-hour timeout when you need ...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Gemma 4: The Coding Assistant That Never Locks You Out Claude Code has one painful flaw. A 5-hour timeout when you need it most.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/burkov/status/2081189421265645958" target="_blank">Modern AI agents rely on elaborate inference harnesses such as Claude Code or Codex to drive multi-turn reasoning, tool ...</a></p>
+                <div class="item-meta">
+                    
+                    @burkov · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Modern AI agents rely on elaborate inference harnesses such as Claude Code or Codex to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infr</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2081631630935154829" target="_blank">How to Rank #1 with Claude AI SEO! Claude Code just turned AI SEO into a production line. 🏭 The daily workflow: → 2 tren...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · just now
+                    
+                </div>
+                
+                <div class="item-summary">How to Rank #1 with Claude AI SEO! Claude Code just turned AI SEO into a production line.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/_avichawla/status/2081677914383532370" target="_blank">The top Claude Code CLI integrations for AI engineers: (bookmark this) 1. GitHub Helps the agent read and write issues, ...</a></p>
+                <div class="item-meta">
+                    
+                    @_avichawla · just now
+                    
+                </div>
+                
+                <div class="item-summary">The top Claude Code CLI integrations for AI engineers: (bookmark this) 1. GitHub Helps the agent read and write issues, PRs, Actions, and releases, so it works the codebase the way an engineer does, not by editing text on disk.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2081549009731420566" target="_blank">Both Claude Code and Codex offer a &#34;fast mode&#34;. Their best models both have context windows up to 1m tokens. Claude Code...</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Both Claude Code and Codex offer a &#34;fast mode&#34;. Their best models both have context windows up to 1m tokens.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/" target="_blank">Are brain waves the next unlock for physical AI?</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Forget YouTube videos—frontier physical AI models need multiple camera angles, dense annotation, and soon, brain wave readings.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/" target="_blank">Making sense of the panic over Chinese AI</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">On the latest episode of Equity, we discussed why Moonshot AI&#39;s Kimi seemed to panic Silicon Valley and Wall Street.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/" target="_blank">Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;The first autonomous agent cyberattack is an unprecedented event. It deserves an unprecedented response!&#34;</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/" target="_blank">Monday.com is the latest tech company to blame AI for layoffs — here are 20 others</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://openai.com/index/how-ai-is-expanding-what-people-do-at-work" target="_blank">How AI is expanding what people do at work</a></p>
+                <div class="item-meta">
+                    
+                    OpenAI Blog · 31m ago
+                    
+                </div>
+                
+                <div class="item-summary">New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything" target="_blank">An Inside Look at the Relay Market Powering Token Resellers and Fraud</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">An Inside Look at the Relay Market Powering Token Resellers and Fraud
+Fascinating investigation by Matt Lenhard into the market that has grown up around reselling LLM tokens at a discount by pooling API keys from various sources. This looks to be mostly a thing in China.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/25/ruff/#atom-everything" target="_blank">Ruff v0.16.0</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Ruff v0.16.0
+Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned &#34;ruff&#34; dev dependency.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 27, 2026 at 05:01
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+S&P 500 closed at 7,408.50, down -1.2% (-92.74 pts).
+
+Sunny Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Claude Code | Anthropic's agentic coding system - Anthropic
+2. Claude Code just got an update nobody is talking about. And it turns a basic chat box into a full-time digital worker. I...
+3. 🚨 Google just dropped official skills for AI agents. 13 skills. Compatible with Claude Code, Cursor, Copilot, and more. ...
+4. Anthropic's Claude Code agent view is a better dashboard. So why aren't developers convinced?
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-17.html

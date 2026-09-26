@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — April 14, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">April 14, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1skqub5/tui_to_see_where_claude_code_tokens_actually_go/" target="_blank">TUI to see where Claude Code tokens actually go</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 525 points · 60 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">been spending $200+/day on claude code and had zero visibility into what was eating the tokens. ccusage shows cost per model per day which is great but i wanted to know - is it the debugging thats expensive?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ChatGPT/comments/1sku1ue/beginner_guide_for_anyone_coming_from_chatgpt_who/" target="_blank">Beginner guide for anyone coming from ChatGPT who has never touched Claude before. No terminal, no tech talk. Ten steps, each with a plain explanation and a tip.</a></p>
+                <div class="item-meta">
+                    
+                    r/ChatGPT · 191 points · 45 comments · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">1. Download the Claude app.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1skzbiw/claude_has_just_fixed_overusage_of_their_compute/" target="_blank">Claude has just fixed over-usage of their compute</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 160 points · 36 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">As of 2.1.105 you cannot paste the auth code into the terminal, hence you cannot login. Of course, one workaround is to downgrade to 104.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1sken9y/claude_status_update_claudeai_down_on/" target="_blank">Claude Status Update : Claude.ai down on 2026-04-13T15:40:43.000Z</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 156 points · 77 comments · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">This is an automatic post triggered within 2 minutes of an official Claude system status update. Incident: Claude.ai down
+
+Check on progress and whether or not the incident has been resolved yet here : https://status.claude.com/incidents/6jd2m42f8mld
+
+Also check the Performance Megathread to see w</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1skw2vb/claude_code_obsidian/" target="_blank">Claude Code + Obsidian?</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 123 points · 65 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Been seeing some posts recently of people hyping up obsidian saying to pair it with Claude for a “persistent brain”. Has anyone actually done it and if so has it worked without breaking?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1skl7z9/claude_diagnosed_me_when_my_doctor_wouldnt/" target="_blank">Claude diagnosed me when my doctor wouldn’t</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 109 points · 44 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve got to give a shout out to Claude/anthropic because I was feeling weird the other day and had a strange pain unlike anything else I’ve ever felt so I put my symptoms into Claude and simultaneously scheduled an appointment with my doctor. Claude, after about 2-3 questions immediately and confi</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1sl23pl/claude_vs_gpt_in_a_bombermanstyle_1v1_game/" target="_blank">Claude vs GPT in a bomberman-style 1v1 game</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 61 points · 8 comments · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">A few weeks ago, ARC-AGI 3 was released. For those unfamiliar, it’s a benchmark designed to study agentic intelligence through interactive environments.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1skabty/ai_emotions_on_a_physical_pixel_display_bridging/" target="_blank">AI emotions on a physical pixel display — bridging the digital-physical divide</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 33 points · 6 comments · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Hey everyone,
+
+I built something that lets Claude &#34;step out of the screen&#34; and into the physical world. Tivoo Control is a macOS tool that connects Claude Code to a Divoom Tivoo — a tiny 16×16 pixel art display — over Bluetooth.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1ske13b/when_claude_code_fails_i_ask_it_to_write_a_short/" target="_blank">When claude code fails, I ask it to write a short paragraph on the issue. Most of the times it finds correct solutions before finishing the writing.</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 21 points · 10 comments · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Few days ago claude code was not working well, became very dumb and wasting tokens. Then thaught of summarising the issue so that I can paste issue in other models.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/ClaudeAI/comments/1skn98k/cleaned_up_my_claudemd_and_my_agent_sessions_got/" target="_blank">Cleaned up my CLAUDE.md and my agent sessions got noticeably faster — here&#39;s what I removed</a></p>
+                <div class="item-meta">
+                    
+                    r/ClaudeAI · 6 points · 4 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">Been using Claude Code daily for a few months. Sessions felt off, agents doing redundant tool calls, burning time on files that clearly weren&#39;t there, re-inferring stuff I&#39;d already told it.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 14, 2026 at 12:40
+        </footer>
+    </div>
+</body>
+</html>

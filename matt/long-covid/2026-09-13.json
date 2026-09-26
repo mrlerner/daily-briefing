@@ -1,0 +1,41 @@
+{
+  "generated": "2026-09-13T12:02:34.278609+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-13",
+          "day": "Sun",
+          "day_full": "Sunday, Sep 13",
+          "high": 63,
+          "low": 53,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-09-14",
+          "day": "Mon",
+          "day_full": "Monday, Sep 14",
+          "high": 66,
+          "low": 53,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-09-15",
+          "day": "Tue",
+          "day_full": "Tuesday, Sep 15",
+          "high": 69,
+          "low": 50,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Tue"
+      ],
+      "summary_line": "Sunny Tue — good day to be outside."
+    }
+  ]
+}

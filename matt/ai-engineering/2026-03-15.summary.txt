@@ -1,0 +1,9 @@
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. What Anthropic has shipped so far in 2026 is just insane: → Claude Cowork → Free plan upgrades with connectors + skills ...
+2. 🚨 This might be the most complete Claude Code setup on GitHub right now. Built by an Anthropic hackathon winner. Now it'...
+3. I used Claude Code to reverse engineer a 13-year-old game binary and crack a restriction nobody had solved — the community is losing it
+4. Claude Code can run entirely on your local GPU now. Unsloth AI published the complete guide. The setup itself is straigh...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-15.html

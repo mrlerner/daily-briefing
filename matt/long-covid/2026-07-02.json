@@ -1,0 +1,68 @@
+{
+  "generated": "2026-07-02T12:41:17.008871+00:00",
+  "items": [
+    {
+      "id": "917dfeaf7cae71fd",
+      "title": "Research updates, June 30",
+      "url": "https://thesicktimes.org/2026/06/30/research-updates-june-30/?utm_source=rss&utm_medium=rss&utm_campaign=research-updates-june-30",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-07-01T00:22:33+00:00",
+      "summary": "A recent imaging study in Sage Journals identified metabolic dysfunction in the brains of people with Long COVID who experience PEM. The study assessed 40 people with the disease from a Long COVID clinic with an advanced imaging technique that can detect various cancers and neurologic conditions....",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "1d ago",
+      "summary_short": "A recent imaging study in Sage Journals identified metabolic dysfunction in the brains of people with Long COVID who experience PEM. The study assessed 40 people with the disease from a Long COVID clinic with an advanced imaging technique that can detect various cancers and neurologic conditions...."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-02",
+          "day": "Thu",
+          "day_full": "Thursday, Jul 02",
+          "high": 73,
+          "low": 51,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-03",
+          "day": "Fri",
+          "day_full": "Friday, Jul 03",
+          "high": 74,
+          "low": 51,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-07-04",
+          "day": "Sat",
+          "day_full": "Saturday, Jul 04",
+          "high": 72,
+          "low": 52,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu and Sat — good days to be outside."
+    }
+  ]
+}

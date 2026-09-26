@@ -1,0 +1,51 @@
+{
+  "generated": "2026-03-30T11:02:59.718549+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 6368.85009765625,
+      "prev_close": 6477.16015625,
+      "change_pts": -108.31,
+      "change_pct": -1.67,
+      "direction": "down",
+      "summary_line": "S&P 500 closed at 6,368.85, down -1.7% (-108.31 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-03-30",
+          "day": "Mon",
+          "day_full": "Monday, Mar 30",
+          "high": 51,
+          "low": 34,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-03-31",
+          "day": "Tue",
+          "day_full": "Tuesday, Mar 31",
+          "high": 55,
+          "low": 36,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-04-01",
+          "day": "Wed",
+          "day_full": "Wednesday, Apr 01",
+          "high": 49,
+          "low": 41,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Mon"
+      ],
+      "summary_line": "Sunny Mon — good day to be outside."
+    }
+  ]
+}

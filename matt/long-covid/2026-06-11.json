@@ -1,0 +1,53 @@
+{
+  "generated": "2026-06-11T12:02:16.108503+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7266.990234375,
+      "prev_close": 7386.64990234375,
+      "change_pts": -119.66,
+      "change_pct": -1.62,
+      "direction": "down",
+      "summary_line": "S&P 500 closed at 7,266.99, down -1.6% (-119.66 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-11",
+          "day": "Thu",
+          "day_full": "Thursday, Jun 11",
+          "high": 72,
+          "low": 48,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-12",
+          "day": "Fri",
+          "day_full": "Friday, Jun 12",
+          "high": 74,
+          "low": 48,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-13",
+          "day": "Sat",
+          "day_full": "Saturday, Jun 13",
+          "high": 76,
+          "low": 48,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu, Fri and Sat — good days to be outside."
+    }
+  ]
+}

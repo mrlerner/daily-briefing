@@ -1,0 +1,9 @@
+Sunny Thu and Sat — good days to be outside.
+
+Today's briefing:
+1. Official: Anthropic just released Claude Code 2.1.59 with 7 CLI &amp; 5 prompt changes, details below
+2. Cybersecurity solutions company Check Point has found critical flaws in Anthropic’s Claude Code. They cautioned that att...
+3. Right now, @AnthropicAI Claude Code only offers a specific security tool to identify and patch software vulnerabilities,...
+4. Google Antigravity vs Cursor vs Claude Code vs Copilot – was nutzt ihr für größere Projekte?
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-02-26.html

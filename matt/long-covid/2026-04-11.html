@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 11, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 11, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">7 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Saturday, Apr 11: Overcast , 48–52°F</div>
+            
+                <div>Sunday, Apr 12: Cloudy , 47–54°F</div>
+            
+                <div>Monday, Apr 13: Overcast , 45–52°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1shpkbi/i_was_accepted_into_the_remote_lumbrokinase_trial/" target="_blank">I was accepted into the remote lumbrokinase trial! 🥳</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 230 points · 60 comments · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">If you haven’t heard, **Mount Sinai is recruiting for a lumbrokinase clinical trial**. It’s meant to **dissolve microclots** and improve symptoms like fatigue.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1siera3/my_life_is_ruined_by_this_weird_fight_or_flight/" target="_blank">my life is ruined by this weird fight or flight/ physiological anxiety</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 18 points · 10 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">hey everyone,
+
+this is kinda hard to explain but i’ll try
+
+doctors think i might have some form of long covid, and the main thing i’m dealing with is this constant state where my nervous system just feels stuck “on.” it’s not anxiety in the usual sense — i’m not worrying about anything or overthinki</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1shum80/does_anyone_else_feel_better_from_hot_showers/" target="_blank">Does anyone else feel better from hot showers?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 13 points · 24 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve had severe long COVID for a year and a half now, with ME/CFS, POTS and suspected MCAS. I&#39;m almost fully bedbound and have a super low baseline, I can&#39;t handle sitting upright for more than an hour, no TV or music or anything.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sid8y6/my_pem_is_mostly_just_sleeping/" target="_blank">My PEM is mostly just sleeping</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 11 points · 9 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">After I exert myself I have to sleep for a long time. If I exert myself a lot over a few days I end up sleeping near constantly for over a week.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sifp92/im_pem_hell_wish_i_was_dead/" target="_blank">I’m PEM hell. Wish I was dead.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 9 points · 2 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">In PEM hell again. Had a few good weeks and I always over do it and end up wishing I would just end it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1si96kv/sudden_crashes_with_extreme_sleepiness_mecfs_pem/" target="_blank">Sudden “crashes” with extreme sleepiness (ME/CFS / PEM or something else?)</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 3 points · 1 comments · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">I’ve been dealing with chronic fatigue with PEM, but I’m having episodes that feel more extreme than typical fatigue. At times I suddenly “crash” into a state of overwhelming, almost paralyzing sleepiness.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sier1c/what_is_the_difference_between_fatigue_and_pem/" target="_blank">What is the difference between fatigue and PEM?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 2 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hi everyone,
+
+I’ve been struggling with long-term fatigue ever since the lockdown ended. I worked in an office at the time and couldn&#39;t isolate as much as I wanted, ended up contracting Covid a few times, and I’m cautious that I’m showing signs of ME / CFS.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 11, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

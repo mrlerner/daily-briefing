@@ -1,0 +1,11 @@
+S&P 500 closed at 7,736.52, up +1.8% (+136.02 pts).
+
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. llm-anthropic 0.26
+2. Claude Code can read plaintext secrets even when Read is denied
+3. Show HN: Aimeterly – Per-user cost dashboards from Claude Code's built-in OTel
+4. Show HN: Bourdon – one shared memory file for Claude Code, Codex, Cursor
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-05.html

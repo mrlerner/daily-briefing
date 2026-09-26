@@ -1,0 +1,9 @@
+Sunny Thu and Sat — good days to be outside.
+
+Today's briefing:
+1. My Claude Code setup used to be 3 skills. Now it's 7. Each one earned its spot. data engineering ( @AnthropicAI) → dbt a...
+2. I just found a way to use Claude Code completely free. Claude Code is Anthropic’s terminal coding agent that usually nee...
+3. Anthropic just dropped a free 28-minute talk on how the Claude Code team actually ships software. This is the most pract...
+4. Anthropic embedded spyware in Claude Code – and attempted to hide it from you
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-02.html

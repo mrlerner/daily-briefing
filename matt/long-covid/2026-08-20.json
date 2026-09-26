@@ -1,0 +1,93 @@
+{
+  "generated": "2026-08-20T12:02:56.247345+00:00",
+  "items": [
+    {
+      "id": "cc32c9d217e96de8",
+      "title": "Congress’s 2027 budget could include new funding for Long COVID and ME",
+      "url": "https://thesicktimes.org/2026/08/18/congresss-2027-budget-could-include-new-funding-for-long-covid-and-me/?utm_source=rss&utm_medium=rss&utm_campaign=congresss-2027-budget-could-include-new-funding-for-long-covid-and-me",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-08-19T01:48:59+00:00",
+      "summary": "Advocates are calling on senators and representatives to include the ME/CFS Research Roadmap and new Long COVID funding in the fiscal year 2027 budget as legislators debate appropriations bills in the coming weeks.\nThe post Congress’s 2027 budget could include new funding for Long COVID and ME fi...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "Advocates are calling on senators and representatives to include the ME/CFS Research Roadmap and new Long COVID funding in the fiscal year 2027 budget as legislators debate appropriations bills in the coming weeks. The post Congress’s 2027 budget could include new funding for Long COVID and ME fi..."
+    },
+    {
+      "id": "9bbe6892a319814b",
+      "title": "Trial By Error: Some Things I’ve Recently Read…Ponting on BPS, Viral Reactivation, and ME/CFS and HIV/AIDS",
+      "url": "https://virology.ws/2026/08/19/trial-by-error-some-things-ive-recently-read-ponting-on-bps-viral-reactivation-and-me-cfs-and-hiv-aids/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-08-19T23:52:19+00:00",
+      "summary": "By David Tuller, DrPH Professor Ponting on the biopsychosocial approach Chris Ponting, a geneticist at the University of Edinburgh, has long been a critic of biopsychosocial treatments for ME/CFS, Long Covid, and related illnesses. Professor Ponting is the lead investigator of the groundbreaking ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "12h ago",
+      "summary_short": "By David Tuller, DrPH Professor Ponting on the biopsychosocial approach Chris Ponting, a geneticist at the University of Edinburgh, has long been a critic of biopsychosocial treatments for ME/CFS, Long Covid, and related illnesses. Professor Ponting is the lead investigator of the groundbreaking ..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-20",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 20",
+          "high": 89,
+          "low": 57,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-08-21",
+          "day": "Fri",
+          "day_full": "Friday, Aug 21",
+          "high": 86,
+          "low": 62,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-22",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 22",
+          "high": 70,
+          "low": 58,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Fri"
+      ],
+      "summary_line": "Sunny Thu and Fri — good days to be outside."
+    }
+  ]
+}

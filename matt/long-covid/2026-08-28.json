@@ -1,0 +1,39 @@
+{
+  "generated": "2026-08-28T12:02:48.796596+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-28",
+          "day": "Fri",
+          "day_full": "Friday, Aug 28",
+          "high": 71,
+          "low": 57,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-29",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 29",
+          "high": 66,
+          "low": 54,
+          "condition": "Light rain shower"
+        },
+        {
+          "date": "2026-08-30",
+          "day": "Sun",
+          "day_full": "Sunday, Aug 30",
+          "high": 66,
+          "low": 53,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

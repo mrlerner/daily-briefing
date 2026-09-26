@@ -1,0 +1,11 @@
+S&P 500 closed at 7,764.70, up +1.5% (+114.20 pts).
+
+Sunny Fri — good day to be outside.
+
+Today's briefing:
+1. free Claude/AI coding courses : 1. Mastering Claude Code: From Setup to Real Projects ↳ https://t.co/Y5kG6irHP7 2. Anthr...
+2. Not really sure how @capydotai does it, but it really is able to track multi-step workflow and do large PRs faster than ...
+3. Great prompt from Anthropic. It helps steer long runs when using Opus 5.5 in Claude Code. Apparently, on long-running ta...
+4. Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-23.html

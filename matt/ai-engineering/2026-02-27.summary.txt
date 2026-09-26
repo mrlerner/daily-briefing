@@ -1,0 +1,7 @@
+Today's briefing:
+1. Figma partners with OpenAI to bake in support for Codex
+2. Claude Code on your Phone is OFFICIAL (it changes everything) ----> introducing claude-remote @claudeai @AnthropicAI
+3. How Anthropic uses Claude Code for product design.
+4. Linear → Your AI coding tool Open any issue directly in Claude Code, Codex, Conductor, Cursor, GitHub Copilot, OpenCode,...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-02-27.html

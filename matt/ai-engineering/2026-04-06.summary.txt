@@ -1,0 +1,9 @@
+Sunny Mon and Wed — good days to be outside.
+
+Today's briefing:
+1. Claude Code for Healthcare: How Physicians Build with AI - Anthropic
+2. Anthropic really is burning more and more dev goodwill Claude Code is suddenly getting unusable for stuff you could use ...
+3. Built my 10x NVidia V100 AI Server - 320gb vram - vLLM Testing Linux Headless - Just a Lawyer,Need Tips
+4. Anthropic Removed MagicDocs from Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-06.html

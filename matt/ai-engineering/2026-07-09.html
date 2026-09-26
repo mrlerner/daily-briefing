@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 09, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 09, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Thursday, Jul 09: Sunny, 53–76°F</div>
+            
+                <div>Friday, Jul 10: Overcast , 53–71°F</div>
+            
+                <div>Saturday, Jul 11: Sunny, 52–74°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Thu and Sat — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Cointelegraph/status/2075042355988627607" target="_blank">🇨🇳 NEW: China&#39;s cybersecurity platform flags a &#34;backdoor&#34; security risk in Anthropic&#39;s Claude Code, claiming it can tran...</a></p>
+                <div class="item-meta">
+                    
+                    @Cointelegraph · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">🇨🇳 NEW: China&#39;s cybersecurity platform flags a &#34;backdoor&#34; security risk in Anthropic&#39;s Claude Code, claiming it can transmit user location and identity data without consent. Anthropic says the flagged feature was an experimental anti-abuse mechanism, and th</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2074707690908258612" target="_blank">Claude Code creator Boris Cherny: Anthropic’s reported jump of roughly 250% in code written per engineer without a visib...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code creator Boris Cherny: Anthropic’s reported jump of roughly 250% in code written per engineer without a visible collapse in quality. And here&#39;s his advice for other companies to achieve the same.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rohanpaul_ai/status/2075083541243961379" target="_blank">Head of Claude Code Boris Cherny at Anthropic&#39;s annual developer conference in San Francisco on how his life changed in ...</a></p>
+                <div class="item-meta">
+                    
+                    @rohanpaul_ai · just now
+                    
+                </div>
+                
+                <div class="item-summary">Head of Claude Code Boris Cherny at Anthropic&#39;s annual developer conference in San Francisco on how his life changed in the last 6 months with AI writing all the code. &#34;About 6 months ago what happened is all the code that I used to have written by hand no</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/CNBC/status/2074771493427265560" target="_blank">China warns about AI risks with Anthropic&#39;s Claude Code https://t.co/0qwcAc2R4X</a></p>
+                <div class="item-meta">
+                    
+                    @CNBC · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">China warns about AI risks with Anthropic&#39;s Claude Code https://t.co/0qwcAc2R4X</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Reuters/status/2074752893257666933" target="_blank">China issues &#39;backdoor&#39; security alert over Anthropic&#39;s Claude Code reut.rs/4f3lK9U</a></p>
+                <div class="item-meta">
+                    
+                    @Reuters · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">China issues &#39;backdoor&#39; security alert over Anthropic&#39;s Claude Code reut.rs/4f3lK9U</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JinjingLiang/status/2075018548259541180" target="_blank">I didn&#39;t expect to say this... But after one day with Grok 4.5 from @SpaceXAI, I&#39;ve already started moving some of my Cl...</a></p>
+                <div class="item-meta">
+                    
+                    @JinjingLiang · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">I didn&#39;t expect to say this... But after one day with Grok 4.5 from @SpaceXAI, I&#39;ve already started moving some of my Claude Code and Codex workflows over.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/bcherny/status/2074997570317779038" target="_blank">New in Claude Code: /checkup Run /checkup to: 1. Clean up unused skills/MCPs/plugins and save context 2. Dedup your loca...</a></p>
+                <div class="item-meta">
+                    
+                    @bcherny · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">New in Claude Code: /checkup Run /checkup to: 1. Clean up unused skills/MCPs/plugins and save context 2.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Saboo_Shubham_/status/2074682734933619061" target="_blank">Hermes, OpenClaw, Claude Code doesn&#39;t need more Memory. They need TASTE. Here&#39;s a step-by-step guide to build that with ...</a></p>
+                <div class="item-meta">
+                    
+                    @Saboo_Shubham_ · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Hermes, OpenClaw, Claude Code doesn&#39;t need more Memory. They need TASTE.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/jukan05/status/2074989572686315630" target="_blank">One of the more interesting Grok bull cases I heard at ICML was this: The core idea is that xAI may actually be better p...</a></p>
+                <div class="item-meta">
+                    
+                    @jukan05 · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">One of the more interesting Grok bull cases I heard at ICML was this: The core idea is that xAI may actually be better positioned than OpenAI Codex in the coding-agent market. The reason Claude Code is currently leading in coding agents is not just model qu</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/mikefutia/status/2074674892604399941" target="_blank">I just vibe coded a Meta Ads creative analytics tool in Claude Code 🤯 It plugs into your ad accounts, AI-analyzes every ...</a></p>
+                <div class="item-meta">
+                    
+                    @mikefutia · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I just vibe coded a Meta Ads creative analytics tool in Claude Code 🤯 It plugs into your ad accounts, AI-analyzes every creative you&#39;ve ever run, and tells you exactly what&#39;s working, what isn&#39;t, and why. Built 100% in Claude Code.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 09, 2026 at 05:56
+        </footer>
+    </div>
+</body>
+</html>

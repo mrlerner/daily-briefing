@@ -1,0 +1,11 @@
+S&P 500 closed at 7,408.30, down -1.2% (-90.66 pts).
+
+Sunny Sat and Mon — good days to be outside.
+
+Today's briefing:
+1. Anthropic just revealed they deleted 80% of Claude Code's system prompt for their newest models. And everything still wo...
+2. every fucking convo with Claude Code just because a "select your adventure" book, what the ever living fuck is this?? @c...
+3. Anthropic updates Claude voice mode with more capable models
+4. Show HN: Power Coding – an AI-coding skill I audited on Claude Code and Codex
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-25.html

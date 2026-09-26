@@ -1,0 +1,7 @@
+Today's briefing:
+1. Claude Code Advanced Patterns: Subagents, MCP, and Scaling to Real Codebases - Anthropic
+2. 早起读了 LangChain 工程师这篇讨论 Agent Harness 的文章，之前一些碎片性的概念被串起来了，也能更好理解类似 Claude Code 这些工具为什么这样设计。推荐阅读。
+3. Show HN: Railguard – A safer –dangerously-skip-permissions for Claude Code
+4. Use subagents and custom agents in Codex
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-17.html

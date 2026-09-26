@@ -1,0 +1,7 @@
+Today's briefing:
+1. Claude Code rolls out a voice mode capability
+2. Is ClaudeCode worth it over OpenCode + CoPilot? What am I missing out on by going directly to Anthropic?
+3. 🚨 Stop building agents from scratch. Anthropic hackathon winner just dropped the complete Claude Code config bible. It g...
+4. I love Claude Code, but Anthropic's speech to text inside of the Claude mobile app is one of the worst dictation options...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-05.html

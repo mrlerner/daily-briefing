@@ -1,0 +1,9 @@
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Alibaba is reportedly banning employees from using Claude Code at work starting July 10. The company has classified Anth...
+2. Alibaba blocked Claude Code after Anthropic’s tracking experiment angered Chinese developers and security staff. Claude ...
+3. Alibaba bans staff from using Claude Code over Anthropic spyware concerns-SCMP
+4. Fable's judgement
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-05.html

@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Breaking Claude Code Opus 5 Auto Mode
+2. The Independent AI Coding Community for Cursor, Claude Code and LLMs
+3. How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep - Claude by Anth...
+4. AI coding agents like Claude Code, Codex, Copilot, and Cursor can access repos, invoke tools, and connect through MCP. P...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-28.html

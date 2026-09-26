@@ -1,0 +1,94 @@
+{
+  "generated": "2026-08-23T12:02:52.044897+00:00",
+  "items": [
+    {
+      "id": "23a346f9c324afd0",
+      "title": "Insights from a double-blind, randomized, direct-to-participant intervention trial for Long COVID",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360832v1?rss=1",
+      "source": "medRxiv — Infectious Diseases",
+      "source_type": "rss",
+      "published": "2026-08-22T08:00:00+00:00",
+      "summary": "Background. Long COVID affects an estimated 400 million people worldwide, and is associated with low quality of life. Nearly all completed Long COVID clinical trials reported no benefit, and most required participants to travel to study sites. This requirement systematically excludes severely aff...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "Background. Long COVID affects an estimated 400 million people worldwide, and is associated with low quality of life."
+    },
+    {
+      "id": "975df2c9465bc9fd",
+      "title": "Trial By Error: Canada’s McMaster University Launches Trial of Lightning Process for Long Covid",
+      "url": "https://virology.ws/2026/08/22/trial-by-error-canadas-mcmaster-university-launches-trial-of-lightning-process-for-long-covid/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-08-22T15:53:20+00:00",
+      "summary": "By David Tuller, DrPH McMaster University in Hamilton, Ontario, has launched a clinical trial of the Lightning Process (LP), a well-known “mind-body” intervention, as a treatment for Long Covid. The study, called Fatigue in Long COVID, or FALCON, was registered last month on ClinicalTrials.gov. T...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "20h ago",
+      "summary_short": "By David Tuller, DrPH McMaster University in Hamilton, Ontario, has launched a clinical trial of the Lightning Process (LP), a well-known “mind-body” intervention, as a treatment for Long Covid. The study, called Fatigue in Long COVID, or FALCON, was registered last month on ClinicalTrials.gov."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-23",
+          "day": "Sun",
+          "day_full": "Sunday, Aug 23",
+          "high": 77,
+          "low": 58,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-08-24",
+          "day": "Mon",
+          "day_full": "Monday, Aug 24",
+          "high": 79,
+          "low": 55,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-08-25",
+          "day": "Tue",
+          "day_full": "Tuesday, Aug 25",
+          "high": 91,
+          "low": 59,
+          "condition": "Smoky haze"
+        }
+      ],
+      "highlights": [
+        "Sun",
+        "Mon",
+        "Tue"
+      ],
+      "summary_line": "Sunny Sun, Mon and Tue — good days to be outside."
+    }
+  ]
+}

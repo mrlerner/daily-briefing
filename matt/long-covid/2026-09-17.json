@@ -1,0 +1,94 @@
+{
+  "generated": "2026-09-17T12:02:44.208645+00:00",
+  "items": [
+    {
+      "id": "ad29cf0bf524de0d",
+      "title": "Bezisterim may help with some Long COVID symptoms, drug’s developer reports in early trial results",
+      "url": "https://thesicktimes.org/2026/09/15/bezisterim-may-help-with-some-long-covid-symptoms-drugs-developer-reports-in-early-trial-results/?utm_source=rss&utm_medium=rss&utm_campaign=bezisterim-may-help-with-some-long-covid-symptoms-drugs-developer-reports-in-early-trial-results",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-09-15T23:54:14+00:00",
+      "summary": "While the phase 2 clinical trial results, shared by BioVie in a webinar on Tuesday, have yet to be peer-reviewed, investigators say they can inform a confirmatory phase 3 trial.\nThe post Bezisterim may help with some Long COVID symptoms, drug’s developer reports in early trial results first appea...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "While the phase 2 clinical trial results, shared by BioVie in a webinar on Tuesday, have yet to be peer-reviewed, investigators say they can inform a confirmatory phase 3 trial. The post Bezisterim may help with some Long COVID symptoms, drug’s developer reports in early trial results first appea..."
+    },
+    {
+      "id": "a13c6265105641de",
+      "title": "Comment by Friday, Sept. 18: Protect ME/CFS & Long Covid Research",
+      "url": "https://solvecfs.org/niaid-reorganization-mecfs-long-covid-research/",
+      "source": "Solve ME/CFS Initiative",
+      "source_type": "rss",
+      "published": "2026-09-16T06:10:40+00:00",
+      "summary": "The National Institute of Allergy and Infectious Diseases (NIAID) has proposed a reorganization that would eliminate its Division of Clinical Research and spread its work across other offices. We have [&#8230;]\nThe post Comment by Friday, Sept. 18: Protect ME/CFS &#038; Long Covid Research appear...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "The National Institute of Allergy and Infectious Diseases (NIAID) has proposed a reorganization that would eliminate its Division of Clinical Research and spread its work across other offices. We have [&#8230;]\nThe post Comment by Friday, Sept."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-17",
+          "day": "Thu",
+          "day_full": "Thursday, Sep 17",
+          "high": 76,
+          "low": 54,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-09-18",
+          "day": "Fri",
+          "day_full": "Friday, Sep 18",
+          "high": 74,
+          "low": 53,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-09-19",
+          "day": "Sat",
+          "day_full": "Saturday, Sep 19",
+          "high": 74,
+          "low": 53,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu, Fri and Sat — good days to be outside."
+    }
+  ]
+}

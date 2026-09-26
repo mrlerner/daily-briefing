@@ -1,0 +1,9 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. We recently ran a Claude Code workshop for 50 Fortune 500 execs. It was a massive success & we got 1,000+ applicants loo...
+2. Hot take: Most developers are using AI wrong. They use it to autocomplete one line at a time. That's like hiring a senio...
+3. Anthropic's anti-distillation defense,reverse-engineered from Claude Code source
+4. Uber torches 2026 AI budget on Claude Code in four months
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-02.html

@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. 1,525+ agentic skills for Claude Code and other AI coding tools github.com/sickn33/antigr…
+2. Show HN: AgentHUD – Live TUI and daily digest for parallel Claude Code sessions
+3. 5 things most Claude Code users don't know: 1. Claude Code is open source. You're not locked to Anthropic's API. Route i...
+4. Most builders open a new Claude Code session and spend the first ten minutes re-explaining their stack.Some are paying f...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-10.html
