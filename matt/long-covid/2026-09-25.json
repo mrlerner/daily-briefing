@@ -1,0 +1,42 @@
+{
+  "generated": "2026-09-25T12:03:35.805356+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-25",
+          "day": "Fri",
+          "day_full": "Friday, Sep 25",
+          "high": 57,
+          "low": 49,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-09-26",
+          "day": "Sat",
+          "day_full": "Saturday, Sep 26",
+          "high": 63,
+          "low": 46,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-09-27",
+          "day": "Sun",
+          "day_full": "Sunday, Sep 27",
+          "high": 65,
+          "low": 47,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun"
+      ],
+      "summary_line": "Sunny Sat and Sun — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Sunny Tue, Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. ANTHROPIC 🔥: Claude users can now share artifacts publicly, edit one Claude Code artifact as a team, and use Claude Tag ...
+2. Fable gets another bump
+3. Anthropic just released a free course on loop engineering with Fable 5 00:00 - how Claude Code works under the hood 05:0...
+4. ANTHROPIC BLINKED. Fable 5 stays on all paid plans. Claude Code weekly limits stay 50% higher. Those are the EXACT two d...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-14.html

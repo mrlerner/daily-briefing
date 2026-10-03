@@ -1,0 +1,9 @@
+Sunny Thu — good day to be outside.
+
+Today's briefing:
+1. How to learn Claude Code for free with Anthropic's AI courses - one took me just 20 minutes
+2. I tested GPT-5.5 Codex against Opus 4.7 Claude Code, and it's about time Anthropic bros take pricing seriously.
+3. Anthropic’s Cat Wu says that, in the future, AI will anticipate your needs before you know what they are
+4. Anthropic raise weekly limits on Claude Code by 50% until July 13! Sounds like Colossus 1 came into play!
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-14.html

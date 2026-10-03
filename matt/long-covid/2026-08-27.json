@@ -1,0 +1,41 @@
+{
+  "generated": "2026-08-27T12:02:55.841092+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-27",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 27",
+          "high": 79,
+          "low": 60,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-28",
+          "day": "Fri",
+          "day_full": "Friday, Aug 28",
+          "high": 70,
+          "low": 58,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-29",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 29",
+          "high": 69,
+          "low": 55,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Thu"
+      ],
+      "summary_line": "Sunny Thu — good day to be outside."
+    }
+  ]
+}

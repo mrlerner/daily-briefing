@@ -1,0 +1,49 @@
+{
+  "generated": "2026-06-06T12:02:27.231886+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7383.740234375,
+      "prev_close": 7584.31005859375,
+      "change_pts": -200.57,
+      "change_pct": -2.64,
+      "direction": "down",
+      "summary_line": "S&P 500 closed at 7,383.74, down -2.6% (-200.57 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-06",
+          "day": "Sat",
+          "day_full": "Saturday, Jun 06",
+          "high": 57,
+          "low": 47,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-06-07",
+          "day": "Sun",
+          "day_full": "Sunday, Jun 07",
+          "high": 63,
+          "low": 44,
+          "condition": "Fog"
+        },
+        {
+          "date": "2026-06-08",
+          "day": "Mon",
+          "day_full": "Monday, Jun 08",
+          "high": 63,
+          "low": 48,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

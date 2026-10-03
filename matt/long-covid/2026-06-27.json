@@ -1,0 +1,39 @@
+{
+  "generated": "2026-06-27T12:53:41.388494+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-27",
+          "day": "Sat",
+          "day_full": "Saturday, Jun 27",
+          "high": 68,
+          "low": 53,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-06-28",
+          "day": "Sun",
+          "day_full": "Sunday, Jun 28",
+          "high": 67,
+          "low": 52,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-06-29",
+          "day": "Mon",
+          "day_full": "Monday, Jun 29",
+          "high": 66,
+          "low": 54,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

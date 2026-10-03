@@ -1,0 +1,9 @@
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)
+2. My LinkedIn network is about to be aggressively flooded with Claude Code certifications
+3. MICROSOFT CANCELED CLAUDE CODE! IT COST TOO MUCH. Major tech companies are confronting the steep reality of AI inference...
+4. ⚠️Claude Code's Network Sandbox Vulnerability Exposes User Credentials and Source Code Source: cybersecuritynews.com/cla...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-22.html

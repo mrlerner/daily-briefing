@@ -1,0 +1,118 @@
+{
+  "generated": "2026-02-28T13:05:20.875555+00:00",
+  "items": [
+    {
+      "id": "21bfced2efaed51c",
+      "title": "Those with mild ME/CFS, what does your baseline vs PEM look like?",
+      "url": "https://reddit.com/r/cfs/comments/1rgg7k8/those_with_mild_mecfs_what_does_your_baseline_vs/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-02-27T19:23:22+00:00",
+      "summary": "As the titles says\\^\n\nThis is a long one… sorry haha.\n\nI have been told by my doctors they think I have ME/CFS and I have been referred to the ME service in my area. I have an assessment in April. I believe I may have ME/CFS, at the very least I experience PEM. I have been learning about the concept",
+      "points": null,
+      "score": 12,
+      "comments": 4,
+      "author": "bunnyspit333",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "17h ago",
+      "summary_short": "As the titles says\\^\n\nThis is a long one… sorry haha. I have been told by my doctors they think I have ME/CFS and I have been referred to the ME service in my area."
+    },
+    {
+      "id": "c9b425bec755fd20",
+      "title": "Stand test - had all the symptoms of POTS but HR wasn't that high?",
+      "url": "https://reddit.com/r/POTS/comments/1rg7w2t/stand_test_had_all_the_symptoms_of_pots_but_hr/",
+      "source": "r/POTS",
+      "source_type": "reddit",
+      "published": "2026-02-27T14:17:54+00:00",
+      "summary": "Hi, so I was diagnosed by standing test last year when my lying down HR was low 90s and standing after 10 mins was around 135. \n\nHave had gradually worsening fatigue and doctor suspected ME/CFS. Got referred from ME clinic to Long Covid clinic as my symptoms got much worse after multiple infections.",
+      "points": null,
+      "score": 0,
+      "comments": 2,
+      "author": "Liliana3",
+      "subreddit": "POTS",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "22h ago",
+      "summary_short": "Hi, so I was diagnosed by standing test last year when my lying down HR was low 90s and standing after 10 mins was around 135. Have had gradually worsening fatigue and doctor suspected ME/CFS."
+    },
+    {
+      "id": "3935235fb14a9c02",
+      "title": "Long COVID studies stymied by pharma’s lack of cooperation",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1rg9bhr/long_covid_studies_stymied_by_pharmas_lack_of/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-02-27T15:13:23+00:00",
+      "summary": "This article will be really upsetting... I'm frustrated with the lack of progress, particularly at the NIH but this sheds some light on one part of the problem.\n\n&gt;Avindra Nath believes he has a way to treat certain people with long COVID—or at least shed a light on their condition.\n\n&gt;Nath, a n",
+      "points": null,
+      "score": 228,
+      "comments": 36,
+      "author": "SpaceXCoyote",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "21h ago",
+      "summary_short": "This article will be really upsetting... I'm frustrated with the lack of progress, particularly at the NIH but this sheds some light on one part of the problem."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-02-28",
+          "day": "Sat",
+          "day_full": "Saturday, Feb 28",
+          "high": 49,
+          "low": 38,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-03-01",
+          "day": "Sun",
+          "day_full": "Sunday, Mar 01",
+          "high": 56,
+          "low": 37,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-03-02",
+          "day": "Mon",
+          "day_full": "Monday, Mar 02",
+          "high": 58,
+          "low": 36,
+          "condition": "Clear "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat, Sun and Mon — good days to be outside."
+    }
+  ]
+}

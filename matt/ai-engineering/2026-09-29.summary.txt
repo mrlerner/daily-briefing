@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. "Cursor, Claude Code and Copilot all sit in front of the same gap, whatever each of them indexes, because the informatio...
+2. Show HN: Guardrails for Claude Code: blocks rm -RF, reports what loaded
+3. Claude Code vs Codex vs Pi: which coding agent wins? @melissapan, PhD candidate at UC Berkeley’s Sky Computing Lab and p...
+4. Boris Cherny (@bcherny), Claude Code creator, said the same thing sometime back. AI works better when you give tools and...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-29.html

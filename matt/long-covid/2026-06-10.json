@@ -1,0 +1,43 @@
+{
+  "generated": "2026-06-10T12:02:21.379729+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-10",
+          "day": "Wed",
+          "day_full": "Wednesday, Jun 10",
+          "high": 64,
+          "low": 49,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-11",
+          "day": "Thu",
+          "day_full": "Thursday, Jun 11",
+          "high": 71,
+          "low": 44,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-12",
+          "day": "Fri",
+          "day_full": "Friday, Jun 12",
+          "high": 73,
+          "low": 46,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "summary_line": "Sunny Wed, Thu and Fri — good days to be outside."
+    }
+  ]
+}

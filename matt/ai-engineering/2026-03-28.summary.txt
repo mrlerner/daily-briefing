@@ -1,0 +1,11 @@
+S&P 500 closed at 6,368.85, down -1.7% (-108.31 pts).
+
+Sunny Sat and Mon — good days to be outside.
+
+Today's briefing:
+1. Claude Code on Windows: 6 critical bugs closed as "not planned" — is Anthropic aware that 70% of the world and nearly all enterprise IT runs Windows?
+2. Anthropic turned Claude Code into a background PR (Pull request) mechanic that can watch a GitHub pull request, react to...
+3. An open letter to Anthropic: Want to free up compute during peak hours? How about restricting free accounts to off peak hours instead of punishing your paid users
+4. Any real alternative to Claude code?
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-28.html

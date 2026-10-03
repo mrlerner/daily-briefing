@@ -1,0 +1,65 @@
+{
+  "generated": "2026-09-24T12:03:38.934131+00:00",
+  "items": [
+    {
+      "id": "ed86949faf5c9d10",
+      "title": "People with Long COVID demand pause of McMaster University clinical trial",
+      "url": "https://thesicktimes.org/2026/09/22/people-with-long-covid-demand-pause-of-mcmaster-university-clinical-trial/?utm_source=rss&utm_medium=rss&utm_campaign=people-with-long-covid-demand-pause-of-mcmaster-university-clinical-trial",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-09-22T21:00:00+00:00",
+      "summary": "The trial, run by researchers at McMaster University in Canada, is testing the Lightning Process, a pseudoscientific mind-body program that outside experts have heavily criticized.\nThe post People with Long COVID demand pause of McMaster University clinical trial first appeared on The Sick Times.",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "The trial, run by researchers at McMaster University in Canada, is testing the Lightning Process, a pseudoscientific mind-body program that outside experts have heavily criticized. The post People with Long COVID demand pause of McMaster University clinical trial first appeared on The Sick Times."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-24",
+          "day": "Thu",
+          "day_full": "Thursday, Sep 24",
+          "high": 61,
+          "low": 50,
+          "condition": "Smoky haze"
+        },
+        {
+          "date": "2026-09-25",
+          "day": "Fri",
+          "day_full": "Friday, Sep 25",
+          "high": 57,
+          "low": 50,
+          "condition": "Light rain shower"
+        },
+        {
+          "date": "2026-09-26",
+          "day": "Sat",
+          "day_full": "Saturday, Sep 26",
+          "high": 64,
+          "low": 47,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+S&P 500 closed at 7,126.06, up +1.2% (+84.78 pts).
+
+Sunny Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Anthropic Claude Code Leak Reveals Critical Command Injection Vulnerabilities
+2. Architecture discussion: The missing infrastructure for continuously running AI Agents
+3. Changes in the system prompt between Claude Opus 4.6 and 4.7
+4. Clerk – Auto-summarize Claude Code sessions into plain Markdown
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-20.html

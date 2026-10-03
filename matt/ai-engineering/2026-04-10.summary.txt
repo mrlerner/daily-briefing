@@ -1,0 +1,9 @@
+Sunny Fri — good day to be outside.
+
+Today's briefing:
+1. Claude Code plugin for LLM research with typed claims and conflict detection
+2. Combined Karpathy's LLM Wiki with Milla Jovovich`s MemPalace MCP. Claude Code now remembers everything across sessions
+3. We tracked 511 bugs our /buddy companion caught that Claude missed in 7 days -- asking Anthropic to bring it back
+4. An accidental leak exposed over 500,000 lines of Anthropic’s Claude Code, revealing its agentic structure: modular tools...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-10.html

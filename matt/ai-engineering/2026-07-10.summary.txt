@@ -1,0 +1,9 @@
+Sunny Fri and Sun — good days to be outside.
+
+Today's briefing:
+1. 🇨🇳 NEW: China's cybersecurity platform flags a "backdoor" security risk in Anthropic's Claude Code, claiming it can tran...
+2. Head of Claude Code Boris Cherny at Anthropic's annual developer conference in San Francisco on how his life changed in ...
+3. China issues 'backdoor' security alert over Anthropic's Claude Code
+4. UST is bringing Claude to physical AI - Anthropic
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-10.html

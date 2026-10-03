@@ -1,0 +1,68 @@
+{
+  "generated": "2026-08-22T12:02:44.039946+00:00",
+  "items": [
+    {
+      "id": "975df2c9465bc9fd",
+      "title": "Trial By Error: Canada’s McMaster University Launches Trial of Lightning Process for Long Covid",
+      "url": "https://virology.ws/2026/08/22/trial-by-error-canadas-mcmaster-university-launches-trial-of-lightning-process-for-long-covid/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-08-22T15:53:20+00:00",
+      "summary": "By David Tuller, DrPH McMaster University in Hamilton, Ontario, has launched a clinical trial of the Lightning Process (LP), a well-known “mind-body” intervention, as a treatment for Long Covid. The study, called Fatigue in Long COVID, or FALCON, was registered last month on ClinicalTrials.gov. T...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "just now",
+      "summary_short": "By David Tuller, DrPH McMaster University in Hamilton, Ontario, has launched a clinical trial of the Lightning Process (LP), a well-known “mind-body” intervention, as a treatment for Long Covid. The study, called Fatigue in Long COVID, or FALCON, was registered last month on ClinicalTrials.gov."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-22",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 22",
+          "high": 77,
+          "low": 61,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-08-23",
+          "day": "Sun",
+          "day_full": "Sunday, Aug 23",
+          "high": 73,
+          "low": 57,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-08-24",
+          "day": "Mon",
+          "day_full": "Monday, Aug 24",
+          "high": 76,
+          "low": 55,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat and Mon — good days to be outside."
+    }
+  ]
+}

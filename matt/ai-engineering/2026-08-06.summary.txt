@@ -1,0 +1,9 @@
+Sunny Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. I analyzed every task I did with Codex/Claude Code and after 57.6B I found out why some tasks cost huge tokens and other...
+2. Creator and Head of Claude Code, Boris Cherny, sat down for 41 minutes with AMD CTO Mark Papermaster and explained how A...
+3. llm-anthropic 0.26
+4. Most AI data tools make you move into their stack before you find out if the data is any good. Teneo's CLI speaks MCP. O...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-06.html

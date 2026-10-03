@@ -1,0 +1,9 @@
+Sunny Tue, Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. Inside local-first memory for Claude Code, Cursor, and Codex: SQLite plus LanceDB storage, async writes, and hybrid reca...
+2. early last year, anthropic reassured cursor that claude code was “more of a research effort than a major commercial push...
+3. Anthropic told Cursor that Claude Code was just a 'research effort' BRUH
+4. Anthropic pauses credit change for Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-16.html

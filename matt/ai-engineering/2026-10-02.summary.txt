@@ -1,0 +1,9 @@
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Claude Code 2.1.286 has been released. 88 CLI changes Highlights: • Permission prompts now show counts like '2 of 5' whe...
+2. Anthropic is about to announce that Claude for Government is now generally available, and that Claude Code CLI and Claud...
+3. CHM Live – Anthropic's Boris Cherny, Creator of Claude Code [video]
+4. Boris Cherny (Head of Claude code at Anthropick ) has merged around 1,700 pull requests, added 400,000 lines of code, an...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-10-02.html

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 12, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 12, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Sunday, Jul 12: Sunny, 52–74°F</div>
+            
+                <div>Monday, Jul 13: Sunny, 48–77°F</div>
+            
+                <div>Tuesday, Jul 14: Sunny, 50–82°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sun, Mon and Tue — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366" target="_blank">Secret Claude tracker surprises users after Anthropic&#39;s anti-surveillance stance</a></p>
+                <div class="item-meta">
+                    
+                    7 points · 1 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=48876037" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/ninjahawk/Confessor" target="_blank">Show HN: Confessor – replay what private info Claude Code accessed on your PC</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 0 comments · 12h ago
+                     · <a href="https://news.ycombinator.com/item?id=48877650" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.runaether.dev/" target="_blank">Show HN: Aether – Run Claude Code, Codex, or OpenCode in devboxes you can watch</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 3 comments · 22h ago
+                     · <a href="https://news.ycombinator.com/item?id=48872847" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Trivo25/code-airlock" target="_blank">Show HN: Code Airlock: Run Claude Code and Codex in Disposable MicroVMs</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48870603" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://old.reddit.com/r/ClaudeAI/comments/1tc9oa0/claude_code_weekly_limits_are_increasing_50_now/" target="_blank">Claude Code weekly limits will be lower from Jul 13th</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 4 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48870928" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/theo/status/2075776733626892542" target="_blank">GPT 5.6 Ultra better in Claude Code than in Codex?</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48869610" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://mentedb.com" target="_blank">Persistent memory for Claude Code that survives context compaction</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 17h ago
+                     · <a href="https://news.ycombinator.com/item?id=48875892" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://claudelines.com" target="_blank">Show HN: Share and explore custom Claude Code status lines</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=48875212" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/dotbrt/dejaview" target="_blank">Show HN: DejaView – Terminal dashboard for all your Claude Code sessions</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 5h ago
+                     · <a href="https://news.ycombinator.com/item?id=48879501" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/raine/claude-code-proxy" target="_blank">Show HN: Use GPT-5.6 and other models in Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=48875375" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2075768231403667645" target="_blank">I would like to thank OpenAI for putting out a model exactly good enough to force Anthropic to keep bundling Fable in th...</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I would like to thank OpenAI for putting out a model exactly good enough to force Anthropic to keep bundling Fable in the Claude Code plan</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/AMD/status/2076038656926589315" target="_blank">Building with AI requires organizations to embrace a new mindset alongside new tools. In the next episode of Advanced In...</a></p>
+                <div class="item-meta">
+                    
+                    @AMD · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Building with AI requires organizations to embrace a new mindset alongside new tools. In the next episode of Advanced Insights, Head of Claude Code at @AnthropicAI Boris Cherny ( @BCherny) joins Mark Papermaster for a conversation on how AI is acceler</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/aniketapanjwani/status/2076035816376144374" target="_blank">An underestimated advantage of Codex over Claude Code is that OpenAI&#39;s speech-to-text model is much better than Anthropi...</a></p>
+                <div class="item-meta">
+                    
+                    @aniketapanjwani · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">An underestimated advantage of Codex over Claude Code is that OpenAI&#39;s speech-to-text model is much better than Anthropic&#39;s. This makes Codex mobile a much better experience than Claude Remote Control, since with Codex, you can reliably speak for fiv</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/mikefutia/status/2076119050795487518" target="_blank">Higgsfield MCP + Claude Code = AI Ad Agency Use Higgsfield to generate AI statics &amp; AI UGC... All without leaving Claude...</a></p>
+                <div class="item-meta">
+                    
+                    @mikefutia · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Higgsfield MCP + Claude Code = AI Ad Agency Use Higgsfield to generate AI statics &amp; AI UGC... All without leaving Claude.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/PrajwalTomar_/status/2076238393881796742" target="_blank">This flew under the radar and it should NOT have. Claude Code forgets your entire project every single session. You know...</a></p>
+                <div class="item-meta">
+                    
+                    @PrajwalTomar_ · just now
+                    
+                </div>
+                
+                <div class="item-summary">This flew under the radar and it should NOT have. Claude Code forgets your entire project every single session.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VaibhavSisinty/status/2075655300766679191" target="_blank">Claude Code just shipped its own browser. Built into the desktop app. It reads docs, clicks through pages, interacts wit...</a></p>
+                <div class="item-meta">
+                    
+                    @VaibhavSisinty · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code just shipped its own browser. Built into the desktop app.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2075776733626892542" target="_blank">gpt-5.6-sol is meaningfully better in Claude Code than in Codex I&#39;m going to crash out so badly over this</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">gpt-5.6-sol is meaningfully better in Claude Code than in Codex I&#39;m going to crash out so badly over this</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/_catwu/status/2075647324790112304" target="_blank">Claude Code can now open any website inside the desktop app. Claude can use your production app, open the links it sends...</a></p>
+                <div class="item-meta">
+                    
+                    @_catwu · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code can now open any website inside the desktop app. Claude can use your production app, open the links it sends you, check Twitter, and even watch the FIFA World Cup!</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2075776895292248173" target="_blank">It MAKES BETTER DESIGNS. WHY. WHY IS IT BETTER AT DESIGN WHEN USED IN CLAUDE CODE.</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">It MAKES BETTER DESIGNS. WHY.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2075742083370127504" target="_blank">If you set gpt-5.6-sol to &#34;ultra&#34;, all the subagents it spawns will also be set to ultra. IMO this is a fumble. Causes m...</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">If you set gpt-5.6-sol to &#34;ultra&#34;, all the subagents it spawns will also be set to ultra. IMO this is a fumble.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/" target="_blank">OpenAI bets on families as ChatGPT goes deeper into households</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/" target="_blank">Meta removes controversial AI feature on Instagram after backlash</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,&#34; the company said in a blog post. &#34;We&#39;ve heard the feedback that this feature missed the mark, so it&#39;s no longer available.&#34;</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank">Apple sues OpenAI over alleged trade secret theft</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Apple alleges the misconduct was directed by OpenAI&#39;s senior leadership, including a longtime former employee.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/" target="_blank">Open source AI matters more than ever, according to Hugging Face’s Clem Delangue</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Open source AI is booming, according to&amp;#160;Hugging Face&amp;#160;CEO&amp;#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 12, 2026 at 07:21
+        </footer>
+    </div>
+</body>
+</html>

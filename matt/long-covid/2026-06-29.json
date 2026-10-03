@@ -1,0 +1,67 @@
+{
+  "generated": "2026-06-29T12:02:39.996971+00:00",
+  "items": [
+    {
+      "id": "55cd08ec3e1207b3",
+      "title": "Trial By Error: Some Things I’ve Read Recently–FAIR on Wired; German Psychiatrists on LC and ME/CFS; UK’s ME/CFS Delivery Plan at One Year",
+      "url": "https://virology.ws/2026/06/27/trial-by-error-some-things-ive-read-recently-fair-on-wired-german-psychiatrists-on-lc-and-me-cfs-uks-me-cfs-delivery-plan-at-one-year/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-06-28T05:34:43+00:00",
+      "summary": "By David Tuller, DrPH Media watchdog covers how major news articles have psychologized Long Covid The organization Fairness &#38; Accuracy in Reporting (FAIR), based in New York City, is a progressive news watchdog focused on exposing bias and censorship. FAIR recently published an article called...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "By David Tuller, DrPH Media watchdog covers how major news articles have psychologized Long Covid The organization Fairness &#38; Accuracy in Reporting (FAIR), based in New York City, is a progressive news watchdog focused on exposing bias and censorship. FAIR recently published an article called..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-29",
+          "day": "Mon",
+          "day_full": "Monday, Jun 29",
+          "high": 69,
+          "low": 53,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-06-30",
+          "day": "Tue",
+          "day_full": "Tuesday, Jun 30",
+          "high": 68,
+          "low": 54,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-07-01",
+          "day": "Wed",
+          "day_full": "Wednesday, Jul 01",
+          "high": 68,
+          "low": 52,
+          "condition": "Partly Cloudy "
+        }
+      ],
+      "highlights": [
+        "Mon"
+      ],
+      "summary_line": "Sunny Mon — good day to be outside."
+    }
+  ]
+}

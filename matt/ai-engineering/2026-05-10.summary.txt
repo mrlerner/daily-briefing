@@ -1,0 +1,9 @@
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Hugging Face co-founder says Qwen 3.6 27B running on airplane mode is close to latest Opus in Claude Code
+2. First look at Grok Build by @xai, this time as a CLI tool running directly in the terminal. This is clearly positioned a...
+3. Using Claude Code: The Unreasonable Effectiveness of HTML
+4. Snyk and Claude Code: real-time security scanning of AI-generated code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-10.html

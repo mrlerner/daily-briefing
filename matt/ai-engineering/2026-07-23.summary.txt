@@ -1,0 +1,9 @@
+Sunny Thu, Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. finally started using Codex and while as an Anthropic fan it gives me no pleasure to say this, the interface and overall...
+2. ANTHROPIC 🔥: A new capability to work with an iOS simulator has been added to Claude Code desktop. Support for Android s...
+3. Proxy for OpenAI Codex and Claude Code, use any LLM with those apps
+4. Claude Code is an agentic coding tool that runs in your terminal and uses natural language to help you understand and wo...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-23.html

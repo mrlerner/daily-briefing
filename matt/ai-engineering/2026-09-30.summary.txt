@@ -1,0 +1,9 @@
+Sunny Fri — good day to be outside.
+
+Today's briefing:
+1. It's moves like this OpenAI feels to be pulling ahead of Anthropic. Anthropic is closed everything: closed source Claude...
+2. Anthropic just published a guide where they had Claude tune an AI feature round by round, and the same job ended up cost...
+3. Sonnet 5.5 is literally free for everyone… anyone can try it on Claude Code... an Opus 5.5 level model is accessible to ...
+4. Show HN: Guardrails for Claude Code: blocks rm -RF, reports what loaded
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-30.html

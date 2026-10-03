@@ -1,0 +1,43 @@
+{
+  "generated": "2026-05-30T12:49:13.695445+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-05-30",
+          "day": "Sat",
+          "day_full": "Saturday, May 30",
+          "high": 63,
+          "low": 46,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-05-31",
+          "day": "Sun",
+          "day_full": "Sunday, May 31",
+          "high": 65,
+          "low": 40,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-01",
+          "day": "Mon",
+          "day_full": "Monday, Jun 01",
+          "high": 73,
+          "low": 45,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat, Sun and Mon — good days to be outside."
+    }
+  ]
+}

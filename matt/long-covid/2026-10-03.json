@@ -1,0 +1,69 @@
+{
+  "generated": "2026-10-03T12:02:59.831564+00:00",
+  "items": [
+    {
+      "id": "7f39ddb78ce137b1",
+      "title": "Trial By Error: Interview with George Monbiot on Recent Guardian Column",
+      "url": "https://virology.ws/2026/10/01/trial-by-error-interview-with-george-monbiot-on-recent-guardian-column/",
+      "source": "Trial by Error (Virology Blog)",
+      "source_type": "rss",
+      "published": "2026-10-02T02:06:13+00:00",
+      "summary": "By David Tuller, DrPH As I mentioned last week, George Monbiot, the British investigative journalist and longtime contributor to The Guardian, published a corker of a column about the mistreatment and abuse of people with ME/CFS, including those with Long COVID. Previous Monbiot essays on the iss...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "By David Tuller, DrPH As I mentioned last week, George Monbiot, the British investigative journalist and longtime contributor to The Guardian, published a corker of a column about the mistreatment and abuse of people with ME/CFS, including those with Long COVID. Previous Monbiot essays on the iss..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-10-03",
+          "day": "Sat",
+          "day_full": "Saturday, Oct 03",
+          "high": 72,
+          "low": 55,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-10-04",
+          "day": "Sun",
+          "day_full": "Sunday, Oct 04",
+          "high": 76,
+          "low": 53,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-10-05",
+          "day": "Mon",
+          "day_full": "Monday, Oct 05",
+          "high": 74,
+          "low": 54,
+          "condition": "Cloudy "
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat, Sun and Mon — good days to be outside."
+    }
+  ]
+}

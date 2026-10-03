@@ -1,0 +1,39 @@
+{
+  "generated": "2026-09-29T12:02:56.886355+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-29",
+          "day": "Tue",
+          "day_full": "Tuesday, Sep 29",
+          "high": 58,
+          "low": 55,
+          "condition": "Light drizzle"
+        },
+        {
+          "date": "2026-09-30",
+          "day": "Wed",
+          "day_full": "Wednesday, Sep 30",
+          "high": 63,
+          "low": 51,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-10-01",
+          "day": "Thu",
+          "day_full": "Thursday, Oct 01",
+          "high": 66,
+          "low": 51,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [],
+      "summary_line": "No particularly sunny days in the forecast."
+    }
+  ]
+}

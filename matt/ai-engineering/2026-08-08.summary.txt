@@ -1,0 +1,9 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Anthropic announces a feature that allows different Claude Code sessions to message each other with updates and other in...
+2. Anthropic is making auto mode the default in Claude Code, citing research that shows humans catch far fewer dangerous co...
+3. Please help me spread the word about this. People still think Claude Code subs won’t work in apps like T3 Code. Anthropi...
+4. PSA: Claude Code enabling auto mode as default next week, Anthropic says 9to5mac.com/2026/08/07/psa… by @apollozac
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-08.html

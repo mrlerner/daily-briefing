@@ -1,0 +1,11 @@
+S&P 500 closed at 7,500.58, up +1.1% (+80.48 pts).
+
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. this is so not true. anthropic’s own Claude Code uses harnesses, symbolic tools, regular expressions and 500,000 lines o...
+2. Paying for AI APIs is optional. Here's the full list of 243+ free ones. NVIDIA NIM, Groq, GitHub Models, Google Gemini, ...
+3. Claude Code’s biggest new feature isn’t better coding. It’s better communication. The new Artifacts feature can turn tec...
+4. Show HN: Maccha – Cross Agent Brain for Antigravity, Claude Code, OpenCode etc.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-21.html

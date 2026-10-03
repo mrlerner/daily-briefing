@@ -1,0 +1,9 @@
+Sunny Mon and Wed — good days to be outside.
+
+Today's briefing:
+1. Tell HN: Claude Code now allows Anthropic to remotely inject system prompts
+2. ANTHROPIC 🔥: Mythos 1, "claude-mythos-1-preview", is being prepared for a release on Claude Code and Claude Security. Th...
+3. I can run Claude Code with open weight models: $ ollama launch claude --model gemma4:26b But this no longer lets me use ...
+4. Claude Code nearly saturates CLEVER, a Lean 4 benchmark for verifiable code generation: 98.8% arguably valid generated s...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-25.html

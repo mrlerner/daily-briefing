@@ -1,0 +1,9 @@
+Sunny Fri and Sun — good days to be outside.
+
+Today's briefing:
+1. 1 week into switching from Anthropic to OpenAI ecosystem: > codex is awesome - prefer it over Claude code > sol is a fan...
+2. Claude Code 2.1.236 has been released. 33 CLI changes Highlights: • ANTHROPIC_DEFAULT_MODEL sets the model new sessions ...
+3. Binance now lets AI agents trade, but keeping them in check is largely up to users
+4. Your AI agent feels useless because it can't touch anything outside the chat window. Every harness (Claude Code, Codex, ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-21.html

@@ -1,0 +1,53 @@
+{
+  "generated": "2026-09-18T12:03:09.614941+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "market",
+      "label": "Market",
+      "close": 7637.759765625,
+      "prev_close": 7551.81005859375,
+      "change_pts": 85.95,
+      "change_pct": 1.14,
+      "direction": "up",
+      "summary_line": "S&P 500 closed at 7,637.76, up +1.1% (+85.95 pts)."
+    },
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-18",
+          "day": "Fri",
+          "day_full": "Friday, Sep 18",
+          "high": 74,
+          "low": 53,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-09-19",
+          "day": "Sat",
+          "day_full": "Saturday, Sep 19",
+          "high": 76,
+          "low": 53,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-09-20",
+          "day": "Sun",
+          "day_full": "Sunday, Sep 20",
+          "high": 75,
+          "low": 53,
+          "condition": "Clear "
+        }
+      ],
+      "highlights": [
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "summary_line": "Sunny Fri, Sat and Sun — good days to be outside."
+    }
+  ]
+}

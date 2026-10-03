@@ -1,0 +1,11 @@
+S&P 500 closed at 7,457.69, down -1.0% (-76.08 pts).
+
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. I am begging @AnthropicAI please add an automated test suite somewhere that ensures Claude Code on the web never blocks ...
+2. Stop prompting AI agents. Design the loops that prompt them instead!Boris Cherny, Head of Claude Code at Anthropic, puts...
+3. ANTHROPIC 🔥: Claude Code weekly limits will be 50% higher through August 19, for all Pro, Max, Team, and seat-based Ente...
+4. Anthropic runs large-scale code migrations with Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-19.html

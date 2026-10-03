@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT
+2. I made a Claude Code skill to check if AI crawlers can read your site
+3. Have been taking different local open-weight LLMs for a test drive in different harnesses (Qwen-Code, Codex, Claude Code...
+4. I have three Layer2c sites which I maintain with dedicated Claude Code sessions. The problem is that the agents don't co...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-27.html

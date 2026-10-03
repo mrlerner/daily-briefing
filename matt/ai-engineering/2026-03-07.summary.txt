@@ -1,0 +1,9 @@
+S&P 500 closed at 6,740.02, down -1.3% (-90.69 pts).
+
+Today's briefing:
+1. Cursor internal analysis shows how hard Anthropic is subsidizing Claude Code. Last year, a $200 monthly subscription cou...
+2. I built an interactive website that teaches Claude Code by letting you explore a simulated project in your browser
+3. Anthropic: In evaluating Claude Opus 4.6 on BrowseComp, we found cases where the model recognized the test, then found and decrypted answers to it—raising questions about eval integrity in web-enabled environments.
+4. I let Claude Code monitor its own Lighthouse scores and fix them in real time. Ended up with 95/100/100/100 on PageSpeed Insights.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-07.html

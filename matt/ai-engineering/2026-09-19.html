@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — September 19, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">September 19, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">5 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">5 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Saturday, Sep 19: Overcast , 53–75°F</div>
+            
+                <div>Sunday, Sep 20: Sunny, 53–76°F</div>
+            
+                <div>Monday, Sep 21: Sunny, 51–73°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Sat, Sun and Mon — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://code.claude.com/docs/en/changelog" target="_blank">Claude Code now reads AGENTS.md if there is no Claude.md</a></p>
+                <div class="item-meta">
+                    
+                    672 points · 245 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=49760187" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/trq212/status/2101009392611278961" target="_blank">Anthropic finally adds AGENTS.md support to Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    48 points · 10 comments · 17h ago
+                     · <a href="https://news.ycombinator.com/item?id=49758250" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://claude-code-from-source.com/" target="_blank">Claude Code from Source</a></p>
+                <div class="item-meta">
+                    
+                    20 points · 5 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49749019" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://apnews.com/article/anthropic-claude-ai-model-self-improvement-4d3a7430f57cbc7c39e1c5f2b7d7e132" target="_blank">Anthropic says its model Claude is helping to build the next version of itself</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49751716" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models" target="_blank">Anthropic says Claude now leads a quarter of work building its next AI models</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49748648" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49755575" target="_blank">Ask HN: What happens when Claude Code goes away?</a></p>
+                <div class="item-meta">
+                    
+                    4 points · 16 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=49755575" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/anthropics/claude-code/tree/main/mods/agents-md" target="_blank">Claude Code Supports AGENTS.md</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 32m ago
+                     · <a href="https://news.ycombinator.com/item?id=49765635" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://osr.im/notes/claude-code-model-picker-older-opus/" target="_blank">Bring back Opus 4.8 in Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 4 comments · 12h ago
+                     · <a href="https://news.ycombinator.com/item?id=49761861" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/anthropics/claude-code/commit/a92ea1cdb11ad21f9d583fad2db181dfdac918a6" target="_blank">Claude Code 2.1.277 adds support for AGENTS.md</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=49759414" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://thenewstack.io/claude-code-parallel-projects/" target="_blank">Anthropic&#39;s new Claude Code feature could drain your plan before lunch</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=49759033" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VaibhavSisinty/status/2101037475544355031" target="_blank">Big update for every Claude Code user. Anthropic added AGENTS.md support If you use multiple AI coding agents, you no lo...</a></p>
+                <div class="item-meta">
+                    
+                    @VaibhavSisinty · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">Big update for every Claude Code user. Anthropic added AGENTS.md support If you use multiple AI coding agents, you no longer need separate instruction files.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/e_opore/status/2101143834772013164" target="_blank">80+ Modern AI Tools Developers Should Know in 2026 1. AI Coding Agents - OpenAI Codex - Claude Code - GitHub Copilot - G...</a></p>
+                <div class="item-meta">
+                    
+                    @e_opore · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">80+ Modern AI Tools Developers Should Know in 2026 1. AI Coding Agents - OpenAI Codex - Claude Code - GitHub Copilot - Google Jules - Cursor Agent 2.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/testingcatalog/status/2101029758276706387" target="_blank">ANTHROPIC 🔥: Claude Code now can pull project instructions from AGENTS md file in case if CLAUDE md file is not present....</a></p>
+                <div class="item-meta">
+                    
+                    @testingcatalog · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">ANTHROPIC 🔥: Claude Code now can pull project instructions from AGENTS md file in case if CLAUDE md file is not present. A code cleanup on a global scale 👀 It is inevitable that most of the common coding AI agents will be eventually working on same rep</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/pranathiperii/status/2100635051872632874" target="_blank">my first biiiiiig launch at anthropic is finally here!! 🫶 projects are a huge labor of love from the claude code team - ...</a></p>
+                <div class="item-meta">
+                    
+                    @pranathiperii · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">my first biiiiiig launch at anthropic is finally here!! 🫶 projects are a huge labor of love from the claude code team - it&#39;s the only way i&#39;ve been working with claude for the last several months (including using projects...to build projects!!) spam the coordinator with a</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/i/trending/2100639050138804706" target="_blank">Anthropic Rolls Out Redesigned Projects in Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    Twitter — Claude Code / Cursor / Vibe Coding · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic Rolls Out Redesigned Projects in Claude Code</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/aibuilderclub_/status/2101161343386800199" target="_blank">After a long wait, Claude Code now natively supports AGENTS.md when no CLAUDE.md is present. AGENTS.md grew out of colla...</a></p>
+                <div class="item-meta">
+                    
+                    @aibuilderclub_ · just now
+                    
+                </div>
+                
+                <div class="item-summary">After a long wait, Claude Code now natively supports AGENTS.md when no CLAUDE.md is present. AGENTS.md grew out of collaboration among OpenAI, Google&#39;s Jules, Cursor, Amp, and others.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/dani_avila7/status/2101176629745561686" target="_blank">Introducing Jev Model Router for Claude Code This Claude Code Mod lets you use Jev through its direct @typesafeai API or...</a></p>
+                <div class="item-meta">
+                    
+                    @dani_avila7 · just now
+                    
+                </div>
+                
+                <div class="item-summary">Introducing Jev Model Router for Claude Code This Claude Code Mod lets you use Jev through its direct @typesafeai API or @vercel AI Gateway With every request you send to Claude Code, Jev classifies the subagent model, main model (only at session sta</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/i/status/2100650221604626927" target="_blank">Who’s vibe coding right now? Come join on YouTube, the music is pretty chill while working with Claude Code 👇 https://t....</a></p>
+                <div class="item-meta">
+                    
+                    @i · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Who’s vibe coding right now? Come join on YouTube, the music is pretty chill while working with Claude Code 👇 https://t.co/iIkdowkbMm</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/siddarthpaim/status/2100882989689475101" target="_blank">I put my young team on Java Spring Boot without AI for a week, same for TypeScript React, then use Claude. Else you’re v...</a></p>
+                <div class="item-meta">
+                    
+                    @siddarthpaim · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">I put my young team on Java Spring Boot without AI for a week, same for TypeScript React, then use Claude. Else you’re vibe coding what you can’t debug… it’s laughable some junior VC analysts talking of vibe coding when they haven’t written a industry stan</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/trq212/status/2101009392611278961" target="_blank">We&#39;re adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a fold...</a></p>
+                <div class="item-meta">
+                    
+                    @trq212 · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">We&#39;re adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/" target="_blank">Researchers used Anthropic’s Claude to hack into OpenAI</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Security researchers used Anthropic’s Claude to exploit vulnerabilities in OpenAI’s systems, taking over employee accounts and gaining access to an internal code repository before reporting the flaws.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/" target="_blank">Anthropic is operating a lab that conducts biology experiments</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/" target="_blank">Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">A week after an Anthropic researcher&amp;#8217;s doomsday warning rattled the AI world, the company&amp;#8217;s CEO Dario Amodei has&amp;#160;outlined his plan to “pace the frontier”&amp;#160;of AI development. The proposal leans on independent safety evaluators and coordination between AI labs in democratic cou...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/podcast/automattics-33-hour-coup-and-can-ai-labs-police-themselves/" target="_blank">Automattic’s 33-Hour Coup, and can AI labs police themselves?</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">A week after an Anthropic researcher&amp;#8217;s doomsday warning rattled the AI world, the company&amp;#8217;s CEO Dario Amodei has&amp;#160;outlined his plan to “pace the frontier”&amp;#160;of AI development. The proposal leans on independent safety evaluators and coordination between AI labs in democratic cou...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/" target="_blank">AI hallucination nearly triggers US military operation</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">“It’s important for service members to understand the uncertainty inherent to LLMs,&#34; a GovAI research scholar warns.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Sep/18/thariq-shihipar/" target="_blank">Quoting Thariq Shihipar</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">We&#39;re adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5PbzNJUlpWVXZ6VzVsNU13YVBoQUNmTDNEUG83cTFoZk1oU0ZQMFJCWFhqNTFZSGVZWkg3RjBRNktiaXZjd1ZoNTRLM3NpS2V4a3lVUXRJVXFDbXVwRmhfdDlPSy04ZVBzUHB3aHFEUjRtcHVzd0dvN0NYMA?oc=5" target="_blank">How Claude is uplifting biomolecular modeling - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">How Claude is uplifting biomolecular modeling&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1sOGpwSU80bnNqZUI3ZEdjWk9xQkV5Mi1oX09uVzR5QmVrd2R1c0M1UWxMdFRUc0U1RExVbWJ1UldieEh0RU0yaWM3MDNaazRuUFFRQm5VR096VmE1SmJGSVdXZ2hXd3NDbk96OHh6VDc2aE1UMHBlV2RBZw?oc=5" target="_blank">Inside Claude for Financial Advisors - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Inside Claude for Financial Advisors&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1hSlNaZU5CMXdjOERiMTltcEVxMXduUXVrT1UtSExlUGlUUHFCc2huOVM0NEY0cmhCMVF6X0o2QjMwUUZOQkhuSGlHVjFlaWdKelR3ZTEzUV9SRzRIdkxhV3RfQ0N2OUI5U214a0RqZjh3c2MxUktr?oc=5" target="_blank">Measurements for understanding the pace of AI development inside frontier labs - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · just now
+                    
+                </div>
+                
+                <div class="item-summary">Measurements for understanding the pace of AI development inside frontier labs&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated September 19, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

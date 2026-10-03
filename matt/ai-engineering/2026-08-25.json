@@ -1,0 +1,190 @@
+{
+  "generated": "2026-08-25T22:41:54.506352+00:00",
+  "items": [
+    {
+      "id": "d575b37a76b54135",
+      "title": "🚨CLAUDE IS DOWN Anthropic status reports elevated errors across Mythos 5, Fable 5, Opus 5, Opus 4.8, plus “other models”...",
+      "url": "https://x.com/ns123abc/status/2091784366519193852",
+      "source": "@ns123abc",
+      "source_type": "twitter_gnews",
+      "published": "2026-08-24T15:07:11+00:00",
+      "summary": "🚨CLAUDE IS DOWN Anthropic status reports elevated errors across Mythos 5, Fable 5, Opus 5, Opus 4.8, plus “other models” Affecting the Claude app, the API, Claude Code, and Cowork",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "ns123abc",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "Anthropic"
+      ],
+      "relevance_score": 1.0,
+      "time_ago": "1d ago",
+      "summary_short": "🚨CLAUDE IS DOWN Anthropic status reports elevated errors across Mythos 5, Fable 5, Opus 5, Opus 4.8, plus “other models” Affecting the Claude app, the API, Claude Code, and Cowork"
+    },
+    {
+      "id": "fb5cdcf06fc17c7d",
+      "title": "claude is having a major outage across claudeai, the API, and claude code",
+      "url": "https://x.com/Ananth7e/status/2091786981051359582",
+      "source": "@Ananth7e",
+      "source_type": "twitter_gnews",
+      "published": "2026-08-24T15:17:34+00:00",
+      "summary": "claude is having a major outage across claudeai, the API, and claude code",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "Ananth7e",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.867,
+      "time_ago": "1d ago",
+      "summary_short": "claude is having a major outage across claudeai, the API, and claude code"
+    },
+    {
+      "id": "75707a0da52f16c8",
+      "title": "The thing people who are late to AI agents miss: Claude Code and Codex get all the buzz because they’re the default harn...",
+      "url": "https://x.com/MatthiasWagner/status/2091759598583922765",
+      "source": "@MatthiasWagner",
+      "source_type": "twitter_gnews",
+      "published": "2026-08-24T13:28:45+00:00",
+      "summary": "The thing people who are late to AI agents miss: Claude Code and Codex get all the buzz because they’re the default harnesses for the best models. They are not the best harnesses! The benchmarks increasingly show that the harness matters as much as the",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "MatthiasWagner",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.867,
+      "time_ago": "1d ago",
+      "summary_short": "The thing people who are late to AI agents miss: Claude Code and Codex get all the buzz because they’re the default harnesses for the best models. They are not the best harnesses!"
+    },
+    {
+      "id": "8aad712d18486bd6",
+      "title": "with the current software on r1 you can run hermes/openclaw/claude code. with upcoming OS3 (hopefully in coming weeks), ...",
+      "url": "https://x.com/jesselyu/status/2091739947984466278",
+      "source": "@jesselyu",
+      "source_type": "twitter_gnews",
+      "published": "2026-08-24T12:10:40+00:00",
+      "summary": "with the current software on r1 you can run hermes/openclaw/claude code. with upcoming OS3 (hopefully in coming weeks), it runs everything. we crawled, got laughed and misunderstood for 2 years, yet we put our shits together and now running.",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "jesselyu",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "Anthropic"
+      ],
+      "relevance_score": 0.667,
+      "time_ago": "1d ago",
+      "summary_short": "with the current software on r1 you can run hermes/openclaw/claude code. with upcoming OS3 (hopefully in coming weeks), it runs everything."
+    },
+    {
+      "id": "7cadf06b65e4ac08",
+      "title": "- Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5",
+      "source": "Anthropic Blog",
+      "source_type": "rss",
+      "published": "2026-08-24T12:41:36+00:00",
+      "summary": "&nbsp;&nbsp;Anthropic",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Blogs",
+      "topics_matched": [
+        "Anthropic"
+      ],
+      "relevance_score": 0.333,
+      "time_ago": "1d ago",
+      "summary_short": "&nbsp;&nbsp;Anthropic"
+    },
+    {
+      "id": "c71c3b7fffe7ff78",
+      "title": "Some thoughts of anger vs anxiety for people in tech when it comes to what AI does to the industry in response to a comm...",
+      "url": "https://bsky.app/profile/mitsuhiko.at/post/3mtst3ltmqc22",
+      "source": "@mitsuhiko.at",
+      "source_type": "bluesky",
+      "published": "2026-08-24T15:52:00+00:00",
+      "summary": "Some thoughts of anger vs anxiety for people in tech when it comes to what AI does to the industry in response to a comment I read that made if think. https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "mitsuhiko.at",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Bluesky",
+      "topics_matched": [
+        "AI engineering"
+      ],
+      "relevance_score": 0.2,
+      "time_ago": "1d ago",
+      "summary_short": "Some thoughts of anger vs anxiety for people in tech when it comes to what AI does to the industry in response to a comment I read that made if think. https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-25",
+          "day": "Tue",
+          "day_full": "Tuesday, Aug 25",
+          "high": 87,
+          "low": 57,
+          "condition": "Smoky haze"
+        },
+        {
+          "date": "2026-08-26",
+          "day": "Wed",
+          "day_full": "Wednesday, Aug 26",
+          "high": 82,
+          "low": 57,
+          "condition": "Cloudy "
+        },
+        {
+          "date": "2026-08-27",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 27",
+          "high": 77,
+          "low": 58,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "summary_line": "Sunny Tue, Wed and Thu — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — March 12, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">March 12, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">7 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Thursday, Mar 12: Overcast , 38–44°F</div>
+            
+                <div>Friday, Mar 13: Moderate snow, 37–42°F</div>
+            
+                <div>Saturday, Mar 14: Mist, 36–44°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Thu — good day to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rrdqs1/where_the_hell_are_all_the_other_black_mecfs/" target="_blank">where the hell are all the other black ME/CFS sufferers?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 252 points · 59 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">alongside the obvious troubles me/cfs comes with, this just adds another layer of isolation for myself. there is damn near no representation on social media or anywhere for that matter, my recent post has about 25% of views coming from nigeria, now whether thats a vpn or something i dont know, but i</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rr202w/who_wants_to_play/" target="_blank">Who wants to play?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 144 points · 10 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary"># Long Covid: All Snakes, No Ladders
+
+*Board game courtesy of CovidActionAUS*
+
+**How to play:**
+
+1. Use a virtual dice roller like [this one](https://www.online-stopwatch.com/chance-games/roll-a-dice/full-screen/) or [this one](https://freeonlinedice.com/) to roll 1 six-sided dice
+
+2.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rr0rz8/does_anyone_else_get_immediate_pem_during_or/" target="_blank">Does anyone else get immediate PEM during or immediately after activity, not just delayed PEM?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 36 points · 34 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hey everyone, I wanted to ask about post-exertional malaise (PEM) and how it shows up for you. For me, PEM always hits during or immediately after activity, even small things.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rqw1w9/frustrated_about_unwinnable_situation_im_in_pem/" target="_blank">Frustrated about Unwinnable Situation: I&#39;m in PEM, Dad Had a Stroke, Mother in Drunk Stupor</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 33 points · 4 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">I came back to live with my mother after going in absentia in a PhD program. I had contracted ME/CFS following a mononucleosis infection between my second and third years in the program.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rr1m5q/is_long_covid_a_vascular_disease/" target="_blank">Is Long Covid a vascular disease?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 10 points · 9 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Read: https://www.healthrising.org/blog/2026/03/05/blood-sex-inflammation-long-covid-chronic-fatigue
+
+And: https://pmc.ncbi.nlm.nih.gov/articles/PMC8710949/</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rrlxw5/if_you_developed_me_cfs_after_long_covid_this/" target="_blank">If you developed ME CFS after long covid this treatment guide might be useful</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 4 points · 0 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">If you developed ME CFS after long covid you might find this treatment guide interesting, because it gives a fairly clear overview of many of the mechanisms that researchers and clinics are currently looking at in long covid and related illnesses like ME CFS, including post exertional malaise, dysau</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1rr1nef/is_long_covid_a_vascular_disease/" target="_blank">Is Long Covid a vascular disease?</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 3 points · 2 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Read: https://www.healthrising.org/blog/2026/03/05/blood-sex-inflammation-long-covid-chronic-fatigue
+
+And: https://pmc.ncbi.nlm.nih.gov/articles/PMC8710949/</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 12, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

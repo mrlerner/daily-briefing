@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. Claude Code just took the blindfold off. It can see websites now. Anthropic gave it a browser built right into the deskt...
+2. Bonsai 27B now available in claude code via hf claude
+3. Milepost – plain-Markdown long-term memory for Claude Code
+4. Did... Codex just overtake Claude Code? 24.5 hours ago Tibo announced 6M active users. this means Codex usage jumped 1M ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-15.html

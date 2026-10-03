@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. A Fireside Chat with Cat and Thariq from the Claude Code team
+2. Thanks for the update! Anthropic’s Claude Code in Action course has been updated This is the link so you can check it ou...
+3. Claude Code is an agentic coding tool that runs in your terminal and uses natural language to help you understand and wo...
+4. Anthropic runs large-scale code migrations with Claude Code
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-22.html

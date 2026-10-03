@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — March 21, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">March 21, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Saturday, Mar 21: Overcast , 40–48°F</div>
+            
+                <div>Sunday, Mar 22: Partly Cloudy , 37–49°F</div>
+            
+                <div>Monday, Mar 23: Overcast , 35–47°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rzc45b/heres_why_every_incidence_of_pem_counts_eleanor/" target="_blank">Here&#39;s why every incidence of PEM counts - Eleanor Stein interviewing Klaus Wirth</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 138 points · 24 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">**Why Does Medicine Ignore the Sodium-Potassium Pump in Post Exertional Malaise?**
+*Dr. Eleanor Stein Podcast*
+
+https://youtu.be/TMljHRxphJA
+
+After six months of doing everything humanly possible to avoid a crash, barely leaving my house, barely doing anything, I am finally starting to get out of ro</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rz328b/long_covid_feels_like_in_living_in_the_backup/" target="_blank">Long Covid feels like in living in the backup generator of my bodies energy supply that’s not supposed to be used.</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 136 points · 35 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">I feel like I’m always on my reserve energy supply. Not my main bodies energy.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rz44nz/living_with_mecfs_in_a_psych_ward_my_experience/" target="_blank">Living with ME/CFS in a Psych Ward: My Experience</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 62 points · 15 comments · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">**TL;DR:** In 2023, after graduating from college while constantly in PEM, my ME/CFS had progressed to a more severe state. Every day felt like I hadn’t slept in days, and the exhaustion was unbearable.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rzl3ur/can_a_severe_respiratory_infection_put_long_covid/" target="_blank">Can a severe respiratory infection put long covid into remission?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 5 points · 5 comments · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Long story shorf, I’ve been dealing with long covid for about 4 years. I’ve felt consistently run down, with severe neck pain and ongoing inflammation, possibly from covid, vaccine, or a combination.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rzmkqk/ldn_is_giving_me_insane_symptoms_should_i_try_to/" target="_blank">LDN is giving me insane symptoms, should I try to ride it out?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 4 points · 2 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve had severe long COVID since November 2024. My initial infection was very extreme as far as symptoms go, and I&#39;ve had a lot of terrifying neurological symptoms since the very beginning.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rzj6mx/can_calciumdglucarate_support_detoxification_in/" target="_blank">Can Calcium-D-Glucarate Support Detoxification in Long COVID and ME/CFS?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 6 comments · 5h ago
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 21, 2026 at 05:04
+        </footer>
+    </div>
+</body>
+</html>

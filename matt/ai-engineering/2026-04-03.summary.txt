@@ -1,0 +1,9 @@
+Sunny Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. Ship Code Faster with Claude Code on Vertex AI - Anthropic
+2. Claude Code | Anthropic's agentic coding system - Anthropic
+3. What that Claude Code source leak reveals about Anthropic's plans
+4. Anthropic leak reveals Claude Code tracking user frustration
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-03.html

@@ -1,0 +1,116 @@
+{
+  "generated": "2026-04-26T12:03:57.113270+00:00",
+  "items": [
+    {
+      "id": "c12c97473a502662",
+      "title": "Long COVID explained for people just learning about this condition and those who need help educating those around them.",
+      "url": "https://reddit.com/r/LongCovid/comments/1svbks5/long_covid_explained_for_people_just_learning/",
+      "source": "r/LongCovid",
+      "source_type": "reddit",
+      "published": "2026-04-25T13:00:49+00:00",
+      "summary": "This page explains what Long COVID is so you can help people understand what you are going through. \n\n[About Long COVID](https://www.promedview.com/about-long-covid)\n\nThe symptoms checklist will help you organize your thoughts when you speak to the dr. You can also repeat the checklist to monitor wh",
+      "points": null,
+      "score": 5,
+      "comments": 0,
+      "author": "CovidCareGroup",
+      "subreddit": "LongCovid",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "23h ago",
+      "summary_short": "This page explains what Long COVID is so you can help people understand what you are going through. [About Long COVID](https://www.promedview.com/about-long-covid)\n\nThe symptoms checklist will help you organize your thoughts when you speak to the dr."
+    },
+    {
+      "id": "c9fb107c829584ee",
+      "title": "USA: LTD and SSDI Lawyer AMA: April 28",
+      "url": "https://reddit.com/r/cfs/comments/1svwq02/usa_ltd_and_ssdi_lawyer_ama_april_28/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-04-26T03:47:43+00:00",
+      "summary": "Hello! For those who don't know me, my name is Andrew and I’m an American disability lawyer.\n\nI handle POTS, ME/CFS, and Long Covid cases regularly, because insurance companies love to find reasons to avoid paying these claims.\n\nI'm putting together an AMA with my colleague Megan who specializes in ",
+      "points": null,
+      "score": 25,
+      "comments": 2,
+      "author": "TheGreatK",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "8h ago",
+      "summary_short": "Hello! For those who don't know me, my name is Andrew and I’m an American disability lawyer."
+    },
+    {
+      "id": "581ce51ca1bbfc2c",
+      "title": "USA: LTD and SSDI Lawyer AMA: April 28",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1svwqhr/usa_ltd_and_ssdi_lawyer_ama_april_28/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-04-26T03:48:26+00:00",
+      "summary": "Hello! My name is Andrew and I’m an American disability lawyer.\n\nI handle POTS, ME/CFS, and Long Covid cases regularly, because insurance companies love to find reasons to avoid paying these claims.\n\nI'm putting together an AMA with my colleague Megan who specializes in SSDI. We’re happy to answer q",
+      "points": null,
+      "score": 12,
+      "comments": 4,
+      "author": "TheGreatK",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "8h ago",
+      "summary_short": "Hello! My name is Andrew and I’m an American disability lawyer."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-04-26",
+          "day": "Sun",
+          "day_full": "Sunday, Apr 26",
+          "high": 68,
+          "low": 44,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-04-27",
+          "day": "Mon",
+          "day_full": "Monday, Apr 27",
+          "high": 53,
+          "low": 47,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-04-28",
+          "day": "Tue",
+          "day_full": "Tuesday, Apr 28",
+          "high": 56,
+          "low": 47,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [
+        "Sun"
+      ],
+      "summary_line": "Sunny Sun — good day to be outside."
+    }
+  ]
+}

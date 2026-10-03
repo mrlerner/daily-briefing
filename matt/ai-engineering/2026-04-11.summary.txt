@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. You're probably spending more on Claude Code than you think! TokenSignal shows you. 𝐅𝐫𝐞𝐞 native macOS menu bar app. @cla...
+2. I ported Anthropic's official skill-creator from Claude Code to OpenCode — now you can create and evaluate AI agent skills with any model
+3. AMD AI directors analysis confirms lobotomization of Claude
+4. Sometimes GStack /office-hours and + Claude Code just gets me. It knows what is going on in my brain and is nodding alon...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-11.html

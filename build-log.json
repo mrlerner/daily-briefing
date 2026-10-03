@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-03T05:02:59.836962",
+  "briefings_built": 2,
+  "successful": 2,
+  "failed": 0,
+  "results": [
+    {
+      "user_id": "matt",
+      "briefing": "ai-engineering",
+      "success": true,
+      "error": null,
+      "items_fetched": 1734,
+      "items_after_filter": 30,
+      "blocks": 1,
+      "elapsed_seconds": 137.0,
+      "display_name": "AI Engineering"
+    },
+    {
+      "user_id": "matt",
+      "briefing": "long-covid",
+      "success": true,
+      "error": null,
+      "items_fetched": 444,
+      "items_after_filter": 1,
+      "blocks": 1,
+      "elapsed_seconds": 42.2,
+      "display_name": "Long COVID"
+    }
+  ],
+  "total_elapsed_seconds": 179.2
+}

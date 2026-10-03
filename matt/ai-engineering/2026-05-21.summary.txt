@@ -1,0 +1,11 @@
+S&P 500 closed at 7,432.97, up +1.1% (+79.36 pts).
+
+Sunny Thu, Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. ⚠️Claude Code's Network Sandbox Vulnerability Exposes User Credentials and Source Code Source: cybersecuritynews.com/cla...
+2. CLAUDE CODE JUST BECAME AN AI WORKER Version 2.1.42 is not a small update. It’s Anthropic turning Claude Code into somet...
+3. RT @iscreamnearby: 4/🧵Leaderboard Results Best overall: Anthropic's Claude Code Opus 4.6 — 28% pass@1. Runner-up: OpenAI...
+4. I'm a software engineer with a decade of experience. I vibe code all of my side projects from my phone using Claude Code and don't read any of the code. It's so fun. Here are the rules I follow:
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-21.html

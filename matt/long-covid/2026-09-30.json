@@ -1,0 +1,91 @@
+{
+  "generated": "2026-09-30T12:03:07.254781+00:00",
+  "items": [
+    {
+      "id": "aaa9d01f266187b7",
+      "title": "Antiviral Antibody Fc Dysfunction Is Linked to Increased IgG1 Fucosylation in Long COVID",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.09.28.26364044v1?rss=1",
+      "source": "medRxiv — Infectious Diseases",
+      "source_type": "rss",
+      "published": "2026-09-29T08:00:00+00:00",
+      "summary": "Background. Persistent SARS-CoV-2 antigen is a leading hypothesis for post-acute sequelae of SARS-CoV-2 infection (PASC), commonly known as Long COVID. Impaired Fc-mediated antiviral antibody function could contribute to inefficient clearance of infected cells and viral antigen despite preserved ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "1d ago",
+      "summary_short": "Background. Persistent SARS-CoV-2 antigen is a leading hypothesis for post-acute sequelae of SARS-CoV-2 infection (PASC), commonly known as Long COVID."
+    },
+    {
+      "id": "a00c3a50063f161b",
+      "title": "Research updates, September 29",
+      "url": "https://thesicktimes.org/2026/09/29/research-updates-september-29/?utm_source=rss&utm_medium=rss&utm_campaign=research-updates-september-29",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-09-30T01:03:34+00:00",
+      "summary": "A small clinical trial found Remdesivir was safe for people with Long COVID and that some exploratory results warrant a larger trial. The U.K. trial, which included 73 participants who took a five day course of the intravenous antiviral COVID-19 drug, was published in Oxford Open Immunology.\nThe ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "10h ago",
+      "summary_short": "A small clinical trial found Remdesivir was safe for people with Long COVID and that some exploratory results warrant a larger trial. The U.K."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-30",
+          "day": "Wed",
+          "day_full": "Wednesday, Sep 30",
+          "high": 65,
+          "low": 52,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-10-01",
+          "day": "Thu",
+          "day_full": "Thursday, Oct 01",
+          "high": 64,
+          "low": 49,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-10-02",
+          "day": "Fri",
+          "day_full": "Friday, Oct 02",
+          "high": 71,
+          "low": 56,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Fri"
+      ],
+      "summary_line": "Sunny Fri — good day to be outside."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Disentangling Confounders from Pathology in Long-COVID Trajectory Prediction for Women: An Interpretable Large-Language-Model Approach
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/long-covid/2026-06-13.html

@@ -1,0 +1,9 @@
+Sunny Tue and Thu — good days to be outside.
+
+Today's briefing:
+1. What two decades of data loss trauma does to a woman. (Claude Code)
+2. Anthropic Claude Code Leak Reveals Critical Command Injection Vulnerabilities
+3. Unpopular opinion: OpenClaw and all its clones are almost useless tools for those who know what they're doing. It's kind of impressive for someone who has never used a CLI, Claude Code, Codex, etc. Nor used any workflow tool like 8n8 or make.
+4. Claude Design is the most Anthropic product Anthropic has ever shipped
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-21.html

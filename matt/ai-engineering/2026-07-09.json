@@ -1,0 +1,292 @@
+{
+  "generated": "2026-07-09T12:56:22.807230+00:00",
+  "items": [
+    {
+      "id": "a9d6fba8e86a8cdc",
+      "title": "🇨🇳 NEW: China's cybersecurity platform flags a \"backdoor\" security risk in Anthropic's Claude Code, claiming it can tran...",
+      "url": "https://x.com/Cointelegraph/status/2075042355988627607",
+      "source": "@Cointelegraph",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-09T10:20:24+00:00",
+      "summary": "🇨🇳 NEW: China's cybersecurity platform flags a \"backdoor\" security risk in Anthropic's Claude Code, claiming it can transmit user location and identity data without consent. Anthropic says the flagged feature was an experimental anti-abuse mechanism, and th",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "Cointelegraph",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 1.285,
+      "time_ago": "2h ago",
+      "summary_short": "🇨🇳 NEW: China's cybersecurity platform flags a \"backdoor\" security risk in Anthropic's Claude Code, claiming it can transmit user location and identity data without consent. Anthropic says the flagged feature was an experimental anti-abuse mechanism, and th"
+    },
+    {
+      "id": "ec8121676449dff4",
+      "title": "Claude Code creator Boris Cherny: Anthropic’s reported jump of roughly 250% in code written per engineer without a visib...",
+      "url": "https://x.com/rohanpaul_ai/status/2074707690908258612",
+      "source": "@rohanpaul_ai",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-08T12:10:34+00:00",
+      "summary": "Claude Code creator Boris Cherny: Anthropic’s reported jump of roughly 250% in code written per engineer without a visible collapse in quality. And here's his advice for other companies to achieve the same. - Companies should not over-control AI usage. Inst",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "rohanpaul_ai",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 1.2,
+      "time_ago": "1d ago",
+      "summary_short": "Claude Code creator Boris Cherny: Anthropic’s reported jump of roughly 250% in code written per engineer without a visible collapse in quality. And here's his advice for other companies to achieve the same."
+    },
+    {
+      "id": "717e5f3226a76eec",
+      "title": "Head of Claude Code Boris Cherny at Anthropic's annual developer conference in San Francisco on how his life changed in ...",
+      "url": "https://x.com/rohanpaul_ai/status/2075083541243961379",
+      "source": "@rohanpaul_ai",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-09T13:04:04+00:00",
+      "summary": "Head of Claude Code Boris Cherny at Anthropic's annual developer conference in San Francisco on how his life changed in the last 6 months with AI writing all the code. \"About 6 months ago what happened is all the code that I used to have written by hand no",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "rohanpaul_ai",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 1.2,
+      "time_ago": "just now",
+      "summary_short": "Head of Claude Code Boris Cherny at Anthropic's annual developer conference in San Francisco on how his life changed in the last 6 months with AI writing all the code. \"About 6 months ago what happened is all the code that I used to have written by hand no"
+    },
+    {
+      "id": "fc46feef4122baa8",
+      "title": "China warns about AI risks with Anthropic's Claude Code https://t.co/0qwcAc2R4X",
+      "url": "https://x.com/CNBC/status/2074771493427265560",
+      "source": "@CNBC",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-08T16:24:06+00:00",
+      "summary": "China warns about AI risks with Anthropic's Claude Code https://t.co/0qwcAc2R4X",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "CNBC",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 1.2,
+      "time_ago": "20h ago",
+      "summary_short": "China warns about AI risks with Anthropic's Claude Code https://t.co/0qwcAc2R4X"
+    },
+    {
+      "id": "9d6f5a4c56858aad",
+      "title": "China issues 'backdoor' security alert over Anthropic's Claude Code reut.rs/4f3lK9U",
+      "url": "https://x.com/Reuters/status/2074752893257666933",
+      "source": "@Reuters",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-08T15:10:11+00:00",
+      "summary": "China issues 'backdoor' security alert over Anthropic's Claude Code reut.rs/4f3lK9U",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "Reuters",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "Anthropic"
+      ],
+      "relevance_score": 1.0,
+      "time_ago": "21h ago",
+      "summary_short": "China issues 'backdoor' security alert over Anthropic's Claude Code reut.rs/4f3lK9U"
+    },
+    {
+      "id": "aaf6eb27cc29ccc8",
+      "title": "I didn't expect to say this... But after one day with Grok 4.5 from @SpaceXAI, I've already started moving some of my Cl...",
+      "url": "https://x.com/JinjingLiang/status/2075018548259541180",
+      "source": "@JinjingLiang",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-09T08:45:48+00:00",
+      "summary": "I didn't expect to say this... But after one day with Grok 4.5 from @SpaceXAI, I've already started moving some of my Claude Code and Codex workflows over. It's ridiculously fast, and the intelligence is way better than I expected. Huge props to @elonmusk and",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "JinjingLiang",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.912,
+      "time_ago": "4h ago",
+      "summary_short": "I didn't expect to say this... But after one day with Grok 4.5 from @SpaceXAI, I've already started moving some of my Claude Code and Codex workflows over."
+    },
+    {
+      "id": "72e42ca7bdb9e6fe",
+      "title": "New in Claude Code: /checkup Run /checkup to: 1. Clean up unused skills/MCPs/plugins and save context 2. Dedup your loca...",
+      "url": "https://x.com/bcherny/status/2074997570317779038",
+      "source": "@bcherny",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-09T07:22:27+00:00",
+      "summary": "New in Claude Code: /checkup Run /checkup to: 1. Clean up unused skills/MCPs/plugins and save context 2. Dedup your local CLAUDE.md against the checked in CLAUDE.md 3. Break up root CLAUDE.md into nested CLAUDE.md's + skills 4. Turn off slow h",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "bcherny",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.878,
+      "time_ago": "5h ago",
+      "summary_short": "New in Claude Code: /checkup Run /checkup to: 1. Clean up unused skills/MCPs/plugins and save context 2."
+    },
+    {
+      "id": "57cfc3bba9ba4506",
+      "title": "Hermes, OpenClaw, Claude Code doesn't need more Memory. They need TASTE. Here's a step-by-step guide to build that with ...",
+      "url": "https://x.com/Saboo_Shubham_/status/2074682734933619061",
+      "source": "@Saboo_Shubham_",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-08T10:31:24+00:00",
+      "summary": "Hermes, OpenClaw, Claude Code doesn't need more Memory. They need TASTE. Here's a step-by-step guide to build that with @garrytan's Gbrain.",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "Saboo_Shubham_",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.867,
+      "time_ago": "1d ago",
+      "summary_short": "Hermes, OpenClaw, Claude Code doesn't need more Memory. They need TASTE."
+    },
+    {
+      "id": "4a484c8e6a9c2f8c",
+      "title": "One of the more interesting Grok bull cases I heard at ICML was this: The core idea is that xAI may actually be better p...",
+      "url": "https://x.com/jukan05/status/2074989572686315630",
+      "source": "@jukan05",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-09T06:50:40+00:00",
+      "summary": "One of the more interesting Grok bull cases I heard at ICML was this: The core idea is that xAI may actually be better positioned than OpenAI Codex in the coding-agent market. The reason Claude Code is currently leading in coding agents is not just model qu",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "jukan05",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.867,
+      "time_ago": "6h ago",
+      "summary_short": "One of the more interesting Grok bull cases I heard at ICML was this: The core idea is that xAI may actually be better positioned than OpenAI Codex in the coding-agent market. The reason Claude Code is currently leading in coding agents is not just model qu"
+    },
+    {
+      "id": "35d3bb6492fc3d39",
+      "title": "I just vibe coded a Meta Ads creative analytics tool in Claude Code 🤯 It plugs into your ad accounts, AI-analyzes every ...",
+      "url": "https://x.com/mikefutia/status/2074674892604399941",
+      "source": "@mikefutia",
+      "source_type": "twitter_gnews",
+      "published": "2026-07-08T10:00:14+00:00",
+      "summary": "I just vibe coded a Meta Ads creative analytics tool in Claude Code 🤯 It plugs into your ad accounts, AI-analyzes every creative you've ever run, and tells you exactly what's working, what isn't, and why. Built 100% in Claude Code. Perfect for media buyers and",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": "mikefutia",
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": "Twitter",
+      "topics_matched": [
+        "AI engineering",
+        "Anthropic"
+      ],
+      "relevance_score": 0.867,
+      "time_ago": "1d ago",
+      "summary_short": "I just vibe coded a Meta Ads creative analytics tool in Claude Code 🤯 It plugs into your ad accounts, AI-analyzes every creative you've ever run, and tells you exactly what's working, what isn't, and why. Built 100% in Claude Code."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-09",
+          "day": "Thu",
+          "day_full": "Thursday, Jul 09",
+          "high": 76,
+          "low": 53,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-07-10",
+          "day": "Fri",
+          "day_full": "Friday, Jul 10",
+          "high": 71,
+          "low": 53,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-07-11",
+          "day": "Sat",
+          "day_full": "Saturday, Jul 11",
+          "high": 74,
+          "low": 52,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Thu",
+        "Sat"
+      ],
+      "summary_line": "Sunny Thu and Sat — good days to be outside."
+    }
+  ]
+}

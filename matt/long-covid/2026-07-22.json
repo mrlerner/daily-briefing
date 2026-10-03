@@ -1,0 +1,119 @@
+{
+  "generated": "2026-07-22T15:13:50.725967+00:00",
+  "items": [
+    {
+      "id": "1516d776e3ea759e",
+      "title": "How to interpret clinical trial results for Long COVID",
+      "url": "https://thesicktimes.org/2026/07/21/how-to-interpret-clinical-trial-results-for-long-covid/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-interpret-clinical-trial-results-for-long-covid",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-07-22T01:51:30+00:00",
+      "summary": "With no proven treatments or cures, many people with Long COVID are turning to off-label medications, supplements, and medical devices to treat their symptoms. There are numerous options — and some of them even have clinical trials underway or are reporting results. But even if one study suggests...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "13h ago",
+      "summary_short": "With no proven treatments or cures, many people with Long COVID are turning to off-label medications, supplements, and medical devices to treat their symptoms. There are numerous options — and some of them even have clinical trials underway or are reporting results."
+    },
+    {
+      "id": "b573cc4816c5f75f",
+      "title": "Abandoned by our governments, people with severe ME and Long COVID are supported by severely ill peers",
+      "url": "https://thesicktimes.org/2026/07/20/abandoned-by-our-governments-people-with-severe-me-and-long-covid-are-supported-by-severely-ill-peers/?utm_source=rss&utm_medium=rss&utm_campaign=abandoned-by-our-governments-people-with-severe-me-and-long-covid-are-supported-by-severely-ill-peers",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-07-21T00:53:28+00:00",
+      "summary": "Mari, a Black Canadian woman with severe myalgic encephalomyelitis (ME), is supported by fellow people with ME in the absence of institutional care.\nThe post Abandoned by our governments, people with severe ME and Long COVID are supported by severely ill peers first appeared on The Sick Times.",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "Mari, a Black Canadian woman with severe myalgic encephalomyelitis (ME), is supported by fellow people with ME in the absence of institutional care. The post Abandoned by our governments, people with severe ME and Long COVID are supported by severely ill peers first appeared on The Sick Times."
+    },
+    {
+      "id": "21682b3b23d253b7",
+      "title": "Solve M.E. Announces Catalyst Award To Study Therapeutic Devices for People with ME/CFS and Long Covid",
+      "url": "https://solvecfs.org/july-2026-catalyst-awards/",
+      "source": "Solve ME/CFS Initiative",
+      "source_type": "rss",
+      "published": "2026-07-20T23:56:33+00:00",
+      "summary": "Solve M.E. today announced Renegade Research as the latest recipient of our ME/CFS Catalyst Award, funding its study, “SIGNAL: A Decentralized Discovery Platform for Emerging Therapeutic Devices in ME/CFS and [&#8230;]\nThe post Solve M.E. Announces Catalyst Award To Study Therapeutic Devices for ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "Solve M.E. today announced Renegade Research as the latest recipient of our ME/CFS Catalyst Award, funding its study, “SIGNAL: A Decentralized Discovery Platform for Emerging Therapeutic Devices in ME/CFS and [&#8230;]\nThe post Solve M.E."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-07-22",
+          "day": "Wed",
+          "day_full": "Wednesday, Jul 22",
+          "high": 94,
+          "low": 64,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-07-23",
+          "day": "Thu",
+          "day_full": "Thursday, Jul 23",
+          "high": 82,
+          "low": 63,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-07-24",
+          "day": "Fri",
+          "day_full": "Friday, Jul 24",
+          "high": 83,
+          "low": 56,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "summary_line": "Sunny Wed, Thu and Fri — good days to be outside."
+    }
+  ]
+}

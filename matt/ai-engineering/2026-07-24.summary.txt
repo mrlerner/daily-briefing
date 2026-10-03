@@ -1,0 +1,9 @@
+Sunny Fri and Sat — good days to be outside.
+
+Today's briefing:
+1. One reason I’m bullish on AMD: Advances in coding AI will naturally accelerate ROCm’s development and help close the gap...
+2. The Independent AI Coding Community for Cursor, Claude Code and LLMs
+3. What most impresses me about Anthropic (besides unprecedented revenue growth) is their enterprise hat trick: the best mo...
+4. Anthropic updates Claude voice mode with more capable models
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-24.html

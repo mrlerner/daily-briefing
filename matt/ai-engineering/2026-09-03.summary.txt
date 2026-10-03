@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Claude's new system prompt really doesn't want to reproduce song lyrics
+2. @jmdagdelen Does anyone ever compare using Anthropic models in Claude Code vs. the exact same thing in Cursor or another...
+3. Anthropic upgrades Claude Code's computer use to run in the background on Mac https://t.co/8nJAJqFd2w by @apollozac
+4. Shopify's CEO threatened to ban Claude Code. Anthropic had already closed the feature request. https://t.co/Xq22IVZH6U
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-03.html

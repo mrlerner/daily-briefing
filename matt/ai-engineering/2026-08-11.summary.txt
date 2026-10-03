@@ -1,0 +1,9 @@
+Sunny Tue, Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. Claude Code auto mode is going on by default at @AnthropicAI, with classifiers meant to catch destructive actions. Every...
+2. Anthropic to put AI in charge of reviewing Claude Code actions by default
+3. Tell HN: Anthropic is starting to inject ads into Claude Code turns
+4. Anthropic is turning Claude Code’s auto mode on by default
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-11.html

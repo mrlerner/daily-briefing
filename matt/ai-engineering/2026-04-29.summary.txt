@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. The last month, Anthropic: - Quietly nerfed their flagship model harness (Claude Code) without telling anyone - Banned c...
+2. The debugging wars: Cursor 3 takes aim at Claude Code's agentic edge
+3. Anthropic's Champion Kit for engineers pushing Claude Code at their company
+4. Anthropic Claude Code HERMES.md billing flaw
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-29.html

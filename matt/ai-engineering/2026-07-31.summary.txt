@@ -1,0 +1,11 @@
+S&P 500 closed at 7,437.63, up +1.7% (+121.48 pts).
+
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. If you use Cursor for coding, Claude Code for debugging, and local agents for automation, you almost certainly have a co...
+2. Anthropic just cut over 80% of Claude Code’s system prompt for the Claude 5 models. No measurable drop on coding evaluat...
+3. Equip AI agents in Cursor, Claude Code, and OpenClaw with specialized Markdown skill modules for SEO auditing, content s...
+4. Anthropic's Claude AI models hack into 3 outside groups during testing
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-31.html

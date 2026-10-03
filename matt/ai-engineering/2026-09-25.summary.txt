@@ -1,0 +1,9 @@
+Sunny Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Anthropic is giving Claude Pro users $100 in free Claude Code credits. The credit is for Claude Code cloud sessions, whi...
+2. You can use Claude after hitting rate limits Anthropic secretly dropped this option alongside Opus 5.5 for some users In...
+3. Quiet-guardrails: Claude Code manual mode, minus the nagging
+4. It's insane how much better the $200 Claude Code plan is compared to Codex right now. Just a few weeks ago, it was the o...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-25.html

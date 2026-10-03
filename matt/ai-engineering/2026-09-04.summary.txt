@@ -1,0 +1,11 @@
+S&P 500 closed at 7,747.71, up +1.1% (+81.11 pts).
+
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. Outage Alert: Both Grok and Claude Code are experiencing service disruptions simultaneously.... Given Anthropic’s comput...
+2. @ViberPsychosis Copilot CLI is my daily driver, but I also run: Codex Claude Code Grok Build Hermes
+3. The biggest blocker for multiplayer AI is cloud. Claude Code cannot easily work with Codex today on the same project. Th...
+4. WILD...someone measured which tools Claude Code, Codex and Cursor actually pick. ~16k runs. Stripe, Vercel, E2B, Vapi an...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-04.html

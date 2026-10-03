@@ -1,0 +1,116 @@
+{
+  "generated": "2026-05-02T12:02:53.925552+00:00",
+  "items": [
+    {
+      "id": "84f4638717d15d78",
+      "title": "A reminder that avoiding PEM crashes is the most effective treatment",
+      "url": "https://reddit.com/r/cfs/comments/1t163t1/a_reminder_that_avoiding_pem_crashes_is_the_most/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-01T21:11:20+00:00",
+      "summary": "I think we all know this, and most ME CFS patient resources start by emphasizing pacing. But many of us forget it and get pulled into searching for medications and supplements. Your single most important and effective treatment is to identify all the emotional, mental, and physical activities that t",
+      "points": null,
+      "score": 225,
+      "comments": 23,
+      "author": "BobBash64",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.6,
+      "time_ago": "14h ago",
+      "summary_short": "I think we all know this, and most ME CFS patient resources start by emphasizing pacing. But many of us forget it and get pulled into searching for medications and supplements."
+    },
+    {
+      "id": "b9dd995f0282400e",
+      "title": "methylene blue and long covid",
+      "url": "https://reddit.com/r/LongCovid/comments/1t1lqog/methylene_blue_and_long_covid/",
+      "source": "r/LongCovid",
+      "source_type": "reddit",
+      "published": "2026-05-02T10:01:52+00:00",
+      "summary": "For those who took methylene blue for long covid and it helped, did symptoms return if you stopped taking methylene blue?",
+      "points": null,
+      "score": 3,
+      "comments": 1,
+      "author": "PercentageAble9822",
+      "subreddit": "LongCovid",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "2h ago",
+      "summary_short": "For those who took methylene blue for long covid and it helped, did symptoms return if you stopped taking methylene blue?"
+    },
+    {
+      "id": "1124e7a47d1910c1",
+      "title": "methylene blue",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1t1lqku/methylene_blue/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-02T10:01:42+00:00",
+      "summary": "For those who took methylene blue for long covid and it helped, did symptoms return if you stopped taking methylene blue?",
+      "points": null,
+      "score": 2,
+      "comments": 3,
+      "author": "PercentageAble9822",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "2h ago",
+      "summary_short": "For those who took methylene blue for long covid and it helped, did symptoms return if you stopped taking methylene blue?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-05-02",
+          "day": "Sat",
+          "day_full": "Saturday, May 02",
+          "high": 71,
+          "low": 51,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-03",
+          "day": "Sun",
+          "day_full": "Sunday, May 03",
+          "high": 77,
+          "low": 51,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-04",
+          "day": "Mon",
+          "day_full": "Monday, May 04",
+          "high": 83,
+          "low": 53,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Sat",
+        "Sun",
+        "Mon"
+      ],
+      "summary_line": "Sunny Sat, Sun and Mon — good days to be outside."
+    }
+  ]
+}

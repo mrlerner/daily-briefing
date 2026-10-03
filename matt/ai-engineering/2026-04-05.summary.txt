@@ -1,0 +1,9 @@
+Sunny Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Claude Code for Healthcare: How Physicians Build with AI - Anthropic
+2. Claude Code rate limits are back to normal. Been vibe coding with Claude Opus 4.6 on Claude Code all morning. 27% sessio...
+3. Peter Steinberger (OpenClaw Creator) credits Boris Cherny (Claude Code Creator) amid anthropic subscription ban for using openclaw
+4. scan-for-secrets 0.1
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-05.html

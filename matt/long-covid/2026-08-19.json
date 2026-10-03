@@ -1,0 +1,69 @@
+{
+  "generated": "2026-08-19T12:02:59.687494+00:00",
+  "items": [
+    {
+      "id": "cc32c9d217e96de8",
+      "title": "Congress’s 2027 budget could include new funding for Long COVID and ME",
+      "url": "https://thesicktimes.org/2026/08/18/congresss-2027-budget-could-include-new-funding-for-long-covid-and-me/?utm_source=rss&utm_medium=rss&utm_campaign=congresss-2027-budget-could-include-new-funding-for-long-covid-and-me",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-08-19T01:48:59+00:00",
+      "summary": "Advocates are calling on senators and representatives to include the ME/CFS Research Roadmap and new Long COVID funding in the fiscal year 2027 budget as legislators debate appropriations bills in the coming weeks.\nThe post Congress’s 2027 budget could include new funding for Long COVID and ME fi...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "10h ago",
+      "summary_short": "Advocates are calling on senators and representatives to include the ME/CFS Research Roadmap and new Long COVID funding in the fiscal year 2027 budget as legislators debate appropriations bills in the coming weeks. The post Congress’s 2027 budget could include new funding for Long COVID and ME fi..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-19",
+          "day": "Wed",
+          "day_full": "Wednesday, Aug 19",
+          "high": 84,
+          "low": 56,
+          "condition": "Clear "
+        },
+        {
+          "date": "2026-08-20",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 20",
+          "high": 86,
+          "low": 59,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-08-21",
+          "day": "Fri",
+          "day_full": "Friday, Aug 21",
+          "high": 86,
+          "low": 61,
+          "condition": "Clear "
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "summary_line": "Sunny Wed, Thu and Fri — good days to be outside."
+    }
+  ]
+}

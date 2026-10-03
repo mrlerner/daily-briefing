@@ -1,0 +1,9 @@
+Sunny Thu — good day to be outside.
+
+Today's briefing:
+1. Even with big players like @AnthropicAI entering the space with @Claude Code, Lovable is carving out a massive niche. I ...
+2. Lovable, a Swedish vibe coding startup valued at $6.6 billion that is one of the fastest-growing software companies in h...
+3. Microsoft just launched an AI that does your office work for you — and it's built on Anthropic's Claude
+4. I delayed my product launch for months because I couldn't afford demo videos. Spent a weekend with Claude Code and Remotion. Now my reels are getting thousands of views.
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-12.html

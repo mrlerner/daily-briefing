@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — April 15, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">April 15, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">6 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 6,967.38, up
+                +1.2%
+                (+81.14 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Apr 15: Partly Cloudy , 36–46°F</div>
+            
+                <div>Thursday, Apr 16: Cloudy , 35–50°F</div>
+            
+                <div>Friday, Apr 17: Partly Cloudy , 42–59°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1slq2e4/bradford_man_says_long_covid_sufferers_have_been/" target="_blank">Bradford man says long Covid sufferers have been &#39;abandoned&#39;</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 195 points · 18 comments · 12h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1slgkbm/friend_with_ms_doesnt_understand_mecfs/" target="_blank">Friend with MS doesn&#39;t understand ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 160 points · 39 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">A high school friend of mine has had MS and endometriosis for a decade. Her life has drastically changed as a result of her illnesses, but she was still able to get married, complete graduate school, and find a full-time job.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1sltjo6/an_error_by_the_us_cdc_in_1994_resulted_in/" target="_blank">An error by the US CDC in 1994 resulted in enterovirus ME/CFS being ignored in the US for decades</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 111 points · 1 comments · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">From the 1970s onwards, a number of studies by British researchers found persistent enterovirus infections in ME/CFS patients&#39; muscles. These many UK studies are detailed in an MEpedia article [here](https://me-pedia.org/wiki/List_of_enterovirus_infection_studies).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1slwalz/my_pem_suffering_reduction_stack/" target="_blank">my PEM suffering reduction stack</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 4 points · 2 comments · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">for my specific long covid, I find relief from my PEM on 2g taurine, 600-800mg magnesium glycinate, 200mg benfothiamine, 20mg TTFD, 200mg riboflavin, 200mg Coq10, 10mg loratadine, and 20mg famotadine (and 10mg nadolol). i wake up barely able to support my body walking, and 2 hours after taking it,</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1sm1pnc/evaluation_of_tissue_fibrin_accumulation_and/" target="_blank">Evaluation of tissue fibrin accumulation and perfusion in Long COVID</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 2 points · 0 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;The project is the first in the world to use advanced positron emission tomography (PET) imaging to test the hypothesis that Long COVID symptoms could result in part from fibrin accumulation in body sites such as the lung, heart, and brain.&#34;  
+  
+[https://polybio.org/projects/evaluation-of-tissue-f</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1slf6d9/how_does_anyone_tell_the_difference_between/" target="_blank">How does anyone tell the difference between dysautonomia, mcas and me/cfs symptoms?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 0 points · 6 comments · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">Like I know I’ve identified some patterns at this point. I only have about 9 safe foods but cromolyn isn’t helping that.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated April 15, 2026 at 08:40
+        </footer>
+    </div>
+</body>
+</html>

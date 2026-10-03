@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 17, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 17, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">5 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Friday, Jul 17: Sunny, 55–80°F</div>
+            
+                <div>Saturday, Jul 18: Sunny, 52–81°F</div>
+            
+                <div>Sunday, Jul 19: Sunny, 53–85°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Fri, Sat and Sun — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://twitter.com/BraedendotTECH/status/2077353000486547633" target="_blank">I&#39;m 33 and I think Claude Code is melting my brain</a></p>
+                <div class="item-meta">
+                    
+                    7 points · 1 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48935780" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/archiewood/claudeisms" target="_blank">Claudeisms: A list of words Claude Code overuses</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=48937785" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://snippai.dev" target="_blank">SnippAI – Screenshot, speak, straight into your Claude Code session</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48936307" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.norrin.dev/" target="_blank">You can see inline diffs in Claude Code for free, similar to Cursor</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=48936889" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=48939454" target="_blank">Ask HN: How companies are protecting Claude Code from reading IP and PII data</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 6 comments · 16h ago
+                     · <a href="https://news.ycombinator.com/item?id=48939454" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://danangell.com/blog/posts/claude-code/" target="_blank">Claude Code is the ceiling on vibe-coded software</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 4 comments · 10h ago
+                     · <a href="https://news.ycombinator.com/item?id=48942532" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/vmc-7645/claude-fleet" target="_blank">Manage your Claude Code agents in Raycast</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48930525" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Piebald-AI/claude-code-system-prompts" target="_blank">Claude Code&#39;s system prompts, extracted and tracked across 237 versions</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=48940173" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://sokkan.ch" target="_blank">Show HN: Sokkan – my Claude Code sessions kept forgetting, so I gave them memory</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 9m ago
+                     · <a href="https://news.ycombinator.com/item?id=48946201" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/alagiz/cc-context-telemetry" target="_blank">Show HN: cc-context-telemetry - context and rate-limit % in Claude Code&#39;s bar</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 4h ago
+                     · <a href="https://news.ycombinator.com/item?id=48944489" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/RoundtableSpace/status/2077851435342168420" target="_blank">ANTHROPIC JUST GAVE CLAUDE CODE A FRONTEND DESIGN BRAIN * Frontend Design applies consistent visual styles before genera...</a></p>
+                <div class="item-meta">
+                    
+                    @RoundtableSpace · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">ANTHROPIC JUST GAVE CLAUDE CODE A FRONTEND DESIGN BRAIN * Frontend Design applies consistent visual styles before generating code * Builds production-ready UIs across multiple frameworks with one install</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/KirkDBorne/status/2077596673652527548" target="_blank">Best-seller in AI on Amazon... &#34;Agentic Coding with Claude Code: The everyday developer&#39;s guide to agentic coding with C...</a></p>
+                <div class="item-meta">
+                    
+                    @KirkDBorne · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Best-seller in AI on Amazon... &#34;Agentic Coding with Claude Code: The everyday developer&#39;s guide to agentic coding with Claude Code&#34; 𝗚𝗲𝘁 𝗶𝘁 𝗵𝗲𝗿𝗲: amzn.to/42FSct9 v/ @PacktDataML 𝗪𝗵𝗮𝘁 𝘆𝗼𝘂 𝘄𝗶𝗹𝗹 𝗹𝗲𝗮𝗿𝗻: ❇️Design agentic coding workflows in t</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/israfill/status/2077611163807015131" target="_blank">🚨 ANTHROPIC RESETS CLAUDE CODE WEEKLY AND 5-HOUR LIMITS 7 TIMES yesterday kimi drops a k3 teaser that already feels fabl...</a></p>
+                <div class="item-meta">
+                    
+                    @israfill · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">🚨 ANTHROPIC RESETS CLAUDE CODE WEEKLY AND 5-HOUR LIMITS 7 TIMES yesterday kimi drops a k3 teaser that already feels fable 5 tier today claude resets weekly and 5-hour limits for all pro and max users chinese models cooking so hard claude ha</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/_akhaliq/status/2077943614529835202" target="_blank">thinkingmachines Inkling is now available in claude code via hf claude</a></p>
+                <div class="item-meta">
+                    
+                    @_akhaliq · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">thinkingmachines Inkling is now available in claude code via hf claude</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ClaudeDevs/status/2077489907350856038" target="_blank">Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that can fetch information and ...</a></p>
+                <div class="item-meta">
+                    
+                    @ClaudeDevs · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that can fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/NVIDIAAI/status/2077528638723862723" target="_blank">NVIDIA DeepStream 9.1 is here, with 13 agentic skills for building video analytics pipelines. Instead of manually buildi...</a></p>
+                <div class="item-meta">
+                    
+                    @NVIDIAAI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">NVIDIA DeepStream 9.1 is here, with 13 agentic skills for building video analytics pipelines. Instead of manually building your vision AI pipeline from scratch, describe what you want in plain natural language.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/evantana/status/2077783840441909265" target="_blank">AI coding is changing faster than almost anyone can keep up. It&#39;s impossible to predict exactly where we&#39;ll be a year fr...</a></p>
+                <div class="item-meta">
+                    
+                    @evantana · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI coding is changing faster than almost anyone can keep up. It&#39;s impossible to predict exactly where we&#39;ll be a year from now.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Saboo_Shubham_/status/2077580737050788098" target="_blank">Google just dropped a new way for AI agents to self-improve. An agent evals skill that finds quality bugs in your AI age...</a></p>
+                <div class="item-meta">
+                    
+                    @Saboo_Shubham_ · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Google just dropped a new way for AI agents to self-improve. An agent evals skill that finds quality bugs in your AI agents, fixes them, and proves the fix worked.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/btibor91/status/2077866448991736265" target="_blank">Since I have been working on AIPRM for ChatGPT &amp; Claude and watching both companies for a while now, it&#39;s very interesti...</a></p>
+                <div class="item-meta">
+                    
+                    @btibor91 · 6h ago
+                    
+                </div>
+                
+                <div class="item-summary">Since I have been working on AIPRM for ChatGPT &amp; Claude and watching both companies for a while now, it&#39;s very interesting to me how different the OpenAI and Anthropic teams are in many aspects (from the outside), and how similar in others Not just in vib</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/gokhan_egri/status/2077522154988745076" target="_blank">We just made Thinking Machines Inkling runnable on Claude Code, Codex and OpenCode. We&#39;re making it free for the next 24...</a></p>
+                <div class="item-meta">
+                    
+                    @gokhan_egri · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">We just made Thinking Machines Inkling runnable on Claude Code, Codex and OpenCode. We&#39;re making it free for the next 24 hours for the first 1000 people that interact with this post, try it on @BrainbaseHQ!</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/" target="_blank">Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s Opus 4.8</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">The FT reports Kimi K3 will be the largest open AI model from China, with a parameter count between 2 trillion and 3 trillion.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/" target="_blank">Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Microsoft is looking to sell its in-house AI models as more efficient and cost-effective than its competitors&#39; models.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/" target="_blank">Whatnot acquires Shaped to power real-time live shopping recommendations</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new product categories.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/" target="_blank">Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything" target="_blank">Mermaid to ASCII art (mermaid-ascii)</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">Tool: Mermaid to ASCII art (mermaid-ascii)
+        After building the Mermaid to ASCII tool based on Grok Build&#39;s Rust code I learned that there&#39;s an older, more fully-featured Go library called AlexanderGrooff/mermaid-ascii that implements a similar pattern, so I had Claude Fable 5 compile that ...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/16/inkling/#atom-everything" target="_blank">Inkling: Our open-weights model</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">Inkling: Our open-weights model
+Mira Murati&#39;s Thinking Machines Lab just released their first open-weights model. Inkling is &#34;a Mixture-of-Experts transformer with 975B total parameters, 41B active&#34; - an Apache-2.0 licensed multimodal model trained on 45 trillion tokens of text, images, audio and...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything" target="_blank">Spot birds not golf</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">Suggestion for hyperscalers feeling pressure over data center water use:
+Buy up a few exclusive country clubs, convert the golf courses into public parks, pay for guides and binoculars to get the previous members into birdwatching - help them embrace a more sustainable hobby! Google used 10.9 bil...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything" target="_blank">Kimi K3, and what we can still learn from the pelican benchmark</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">Chinese AI lab Moonshot AI announced Kimi K3 this morning, describing it as their &#34;most capable model to date, with 2.8 trillion parameters&#34;. It&#39;s currently available via their website and API, but an open weight release is promised &#34;by July 27, 2026&#34;.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything" target="_blank">Quoting Linus Torvalds</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">I realize that some people really dislike AI, but this is an area where I&#39;m willing to absolutely put my foot down as the top-level maintainer. Linux is not one of those anti-AI projects, and if somebody has issues with that, they can do the open-source thing and fork it.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 17, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

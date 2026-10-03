@@ -1,0 +1,41 @@
+{
+  "generated": "2026-06-02T12:02:23.447507+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-02",
+          "day": "Tue",
+          "day_full": "Tuesday, Jun 02",
+          "high": 87,
+          "low": 55,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-06-03",
+          "day": "Wed",
+          "day_full": "Wednesday, Jun 03",
+          "high": 72,
+          "low": 56,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-06-04",
+          "day": "Thu",
+          "day_full": "Thursday, Jun 04",
+          "high": 69,
+          "low": 50,
+          "condition": "Patchy rain nearby"
+        }
+      ],
+      "highlights": [
+        "Tue"
+      ],
+      "summary_line": "Sunny Tue — good day to be outside."
+    }
+  ]
+}

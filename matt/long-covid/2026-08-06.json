@@ -1,0 +1,68 @@
+{
+  "generated": "2026-08-06T12:03:41.169640+00:00",
+  "items": [
+    {
+      "id": "807ad7978462a127",
+      "title": "Research updates, August 4",
+      "url": "https://thesicktimes.org/2026/08/04/research-updates-august-4/?utm_source=rss&utm_medium=rss&utm_campaign=research-updates-august-4",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-08-04T22:48:00+00:00",
+      "summary": "A new study in Nature Communications confirmed skeletal muscle abnormalities in Long COVID and ME. The study, which furthered past research on post-exertional malaise from the same research group, compared various exercise tests and biopsies of people with Long COVID and ME to results from people...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Pacing and energy management"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "1d ago",
+      "summary_short": "A new study in Nature Communications confirmed skeletal muscle abnormalities in Long COVID and ME. The study, which furthered past research on post-exertional malaise from the same research group, compared various exercise tests and biopsies of people with Long COVID and ME to results from people..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-08-06",
+          "day": "Thu",
+          "day_full": "Thursday, Aug 06",
+          "high": 92,
+          "low": 58,
+          "condition": "Smoky haze"
+        },
+        {
+          "date": "2026-08-07",
+          "day": "Fri",
+          "day_full": "Friday, Aug 07",
+          "high": 90,
+          "low": 55,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-08-08",
+          "day": "Sat",
+          "day_full": "Saturday, Aug 08",
+          "high": 85,
+          "low": 55,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Fri",
+        "Sat"
+      ],
+      "summary_line": "Sunny Fri and Sat — good days to be outside."
+    }
+  ]
+}

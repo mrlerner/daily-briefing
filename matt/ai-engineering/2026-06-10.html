@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — June 10, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">June 10, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">2 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">8 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Jun 10: Sunny, 49–64°F</div>
+            
+                <div>Thursday, Jun 11: Sunny, 44–71°F</div>
+            
+                <div>Friday, Jun 12: Sunny, 46–73°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Wed, Thu and Fri — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/grzegorz-raczek-unit8/claude-quota" target="_blank">Show HN: macOS menu bar gauges for your Claude Code quota</a></p>
+                <div class="item-meta">
+                    
+                    9 points · 7 comments · 2h ago
+                     · <a href="https://news.ycombinator.com/item?id=48473845" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/OpenYabby/OpenYabby" target="_blank">Show HN: OpenYabby, voice-controlled multi-agent orchestrator for Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    8 points · 0 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=48466939" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/varmabudharaju/agent-pd/blob/master/README.md" target="_blank">Show HN: Agent-pd – A zero-token audit log to catch rogue Claude Code subagents</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 2 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=48466954" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/jianzhichun/permafrost" target="_blank">Permafrost – freeze Claude Code&#39;s prompt prefix, cut your DeepSeek bill 64%</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 2 comments · 6h ago
+                     · <a href="https://news.ycombinator.com/item?id=48471898" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/ashp15205/guardian-runtime" target="_blank">Show HN: Stop letting Claude Code burn your tokens and leak API keys</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=48464199" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/sudomichael/agentgraphed" target="_blank">Show HN: Local-first history, search, and analytics for Claude Code and Codex</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=48462489" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/wiztek-llc/context-ledger/tree/main" target="_blank">How to have Claude Code run 28× longer before auto-compaction</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48455012" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/manavgup/context-analyzer" target="_blank">Show HN: Claude Code Context Analyzer</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 7h ago
+                     · <a href="https://news.ycombinator.com/item?id=48471407" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/neochoon/agenthud" target="_blank">Show HN: AgentHUD – Live TUI and daily digest for parallel Claude Code sessions</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 36m ago
+                     · <a href="https://news.ycombinator.com/item?id=48474693" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://niptao.com/blog/an-engineer-you-manage-from-a-group-chat/" target="_blank">Auto complete tickets using Claude Code loop on telegram with linear MCP</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 40m ago
+                     · <a href="https://news.ycombinator.com/item?id=48474637" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/tom_doerr/status/2064550228951269457" target="_blank">1,525+ agentic skills for Claude Code and other AI coding tools github.com/sickn33/antigr…</a></p>
+                <div class="item-meta">
+                    
+                    @tom_doerr · 33m ago
+                    
+                </div>
+                
+                <div class="item-summary">1,525+ agentic skills for Claude Code and other AI coding tools github.com/sickn33/antigr…</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2064387250394370456" target="_blank">5 things most Claude Code users don&#39;t know: 1. Claude Code is open source. You&#39;re not locked to Anthropic&#39;s API. Route i...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">5 things most Claude Code users don&#39;t know: 1. Claude Code is open source.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/PrajwalTomar_/status/2064324584254710262" target="_blank">Most builders open a new Claude Code session and spend the first ten minutes re-explaining their stack.Some are paying f...</a></p>
+                <div class="item-meta">
+                    
+                    @PrajwalTomar_ · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">Most builders open a new Claude Code session and spend the first ten minutes re-explaining their stack.Some are paying for three different agents (Cursor, Claude Code, Codex) and still losing every Friday afternoon to context drift.And then there&#39;s a small gr</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/hackerrank/status/2064360619160285234" target="_blank">If AI Models were people - Ep1 featuring Claude Code, Codex, Cursor, and Deepseek🤫</a></p>
+                <div class="item-meta">
+                    
+                    @hackerrank · 13h ago
+                    
+                </div>
+                
+                <div class="item-summary">If AI Models were people - Ep1 featuring Claude Code, Codex, Cursor, and Deepseek🤫</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/MushtaqBilalPhD/status/2064523786616205582" target="_blank">Claude Code Fable 5 gave me a 7,000-word research paper with a single prompt. It offers a theoretically-grounded argumen...</a></p>
+                <div class="item-meta">
+                    
+                    @MushtaqBilalPhD · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code Fable 5 gave me a 7,000-word research paper with a single prompt. It offers a theoretically-grounded argument.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/AlexFinn/status/2064492311686607161" target="_blank">AI subscriptions are dead Claude Fable 5 will only be on the Anthropic subscription until June 22nd. After that, you wil...</a></p>
+                <div class="item-meta">
+                    
+                    @AlexFinn · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI subscriptions are dead Claude Fable 5 will only be on the Anthropic subscription until June 22nd. After that, you will need to pay for usage per token This will be the start of a much larger trend Frontier models will no longer be included in subs You’ll pay a fe</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2064473960897823111" target="_blank">Claude Code is now basically FREE By connecting it to free models on OpenRouter through an open-source setup, you can bu...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code is now basically FREE By connecting it to free models on OpenRouter through an open-source setup, you can build without paying per token. 3 things you can make: ✅ working apps ✅ playable games ✅ AI-generated videos Save this for when yo</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Sentdex/status/2064470472067092595" target="_blank">Claude Code Mythos and Fable is INSANE when you use ultracode effort. You can become a millionaire overnight. Here&#39;s how...</a></p>
+                <div class="item-meta">
+                    
+                    @Sentdex · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code Mythos and Fable is INSANE when you use ultracode effort. You can become a millionaire overnight.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/bcherny/status/2064402671898075579" target="_blank">Fable 5 is now available in Claude Code and Cowork Fable is the best model I have used for coding, by a wide margin. It ...</a></p>
+                <div class="item-meta">
+                    
+                    @bcherny · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Fable 5 is now available in Claude Code and Cowork Fable is the best model I have used for coding, by a wide margin. It is a big step up, enabling less prompts and steers, more efficient token use, better code quality, better tool use, more intelligent self-verific</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/lydiahallie/status/2064395735383286124" target="_blank">Claude Fable 5 is now available in Claude Code! 🎉</a></p>
+                <div class="item-meta">
+                    
+                    @lydiahallie · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Fable 5 is now available in Claude Code! 🎉</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/" target="_blank">Anthropic’s Claude Fable 5 is a version of Mythos the public can access today</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic is releasing Claude Fable 5, its first Mythos-class model available to the public. The model comes with guardrails that block responses in high-risk areas like cybersecurity and biology.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/" target="_blank">Anthropic’s Fable 5 can make weirdly fun video games with the click of a button</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic&#39;s Claude Fable 5 is going to be a big hit with the web&#39;s vibe coders.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jun/9/llm/#atom-everything" target="_blank">llm 0.32a3</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Release: llm 0.32a3
+        Almost entirely written by the new Claude Fable 5, see my write-up for more details. Tags: projects, ai, generative-ai, llms, llm, claude-mythos</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMUx5Y3ZHakZaZGc1Ujhpdm4yR0pfZ0RCRm5uOEtCd3F5SHVJV2VsWFZCVjdoTjlhbWhacUVfaFlKSkVuMHQ1cGNGU1laa3lQUDZVR0dmN3Jxenlfbk5UYmJiVjNwVUJVWU1Ja0R5anZ5TVdFSFVOZzI5VGFscWRuaUlrTEhnZVhjdU00dTJJYjNpQjhPUDJiMWk1OGpRbm1WckJWRmVOTk5QRmM?oc=5" target="_blank">Working with Autonomous Agents: How to get the most out of Claude Fable 5 - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Working with Autonomous Agents: How to get the most out of Claude Fable 5&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzbzZ1YXJvTGxkLXFKODRvd09sZzNQTlFfSnRmR2F2VVBlVzNWcFNxN0E2Mm1iaFBXVW1HTk1LT3A4eWJ1Nl9MNm02RTN0d28?oc=5" target="_blank">Claude Fable 5 - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Fable 5&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5EMXJHU19rYVk5Mko5TU1qQ3d1eXVJenhycmQ3M0ItSGVham55NXBlQk95Rm1zZV9Sc2pWbkQ3UDh6eU5LUUpiS2k0LTMxYURI?oc=5" target="_blank">Claude Mythos 5 - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Mythos 5&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9SNG95VU9PeDJnQkZxWUFjem9OSkFjZUQ5Vms1OHJ2Q1UyLS1adTBLVERIM1YxckxZQjZpR1I4ekZPaUNpMDhiLWdUemhRMlF0TjdZRC11SWx4d2R2eFNkTVlEQnJaNlpwTnBLbkttSi1jRUU2ZWRjeVUwVGttX3c?oc=5" target="_blank">Claude Fable 5 &amp; Claude Mythos 5 System Card - www-cdn.anthropic.com</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Fable 5 &amp; Claude Mythos 5 System Card&amp;nbsp;&amp;nbsp;www-cdn.anthropic.com</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tNXJJQXNGZWM1d1VmMVRfOFZlYU9VUFcwdm03RFhDRE5uajJOY19mbUQ5ZVpXYW9IOWhzd3JOS3F2c0xIdFRYVUgtZF9RVVI1VW1KVExGb0RVRDBWdlpNTXN1cTA?oc=5" target="_blank">Claude Fable 5 and Claude Mythos 5 - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Fable 5 and Claude Mythos 5&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMixwJBVV95cUxOUS1zbWE4NXloX3FtbFdTeFpodkczdjVNZUZQelVvcTRzNFZWYXBpdFJVUVEzZ0Z0Z3ZYM0xkX0xxMktXX0g1aFROc3JUTDk2SGlIc0k5eHFyR0lzRnpNUGZHWEUtNEJ3c1AyWVR6eEY2NHJTTFNzaGtVbUZMcjFfWFliRG5hVWJjWVFyM2liaHpmWkVyT285X0NnQWY0bk1tQWRBMmdiWU1pVkNvY1dEbFJoRkxKUVRzTGtOekhKZGlEbVJPd1hKVUhyeW5kbVo1SFhYSnBVZ25XWGdlUUpBaFM5bEZhTV9CNUx3ZzRCamlVb3dveXREMlltN2M3M2QwRzJDcDE4eVlMMVpWU0dxdXZyeDFzaEt2SWVQcXctamdNUkMwbzRfUWNCOG5RclZtODJNTnhtbF9tNHM2LTQ4YmhSeFpUYlE?oc=5" target="_blank">Introducing Claude Pro - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">Introducing Claude Pro&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything" target="_blank">If Claude Fable stops helping you, you&#39;ll never know</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">If Claude Fable stops helping you, you&amp;#x27;ll never know
+Jonathon Ready highlights one of the more eyebrow-raising details from the 319 page system card for Fable 5 and Mythos 5. Here&#39;s a longer excerpt, highlights mine:
+
+In light of the ability of recent models to accelerate their own developme...</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated June 10, 2026 at 05:01
+        </footer>
+    </div>
+</body>
+</html>

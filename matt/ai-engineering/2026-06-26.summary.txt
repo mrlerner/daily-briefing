@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. How I AI: Using Codex + Claude Code to Prototype Agents
+2. 🚨 Anthropic's own team just showed how to actually use Claude Code properly. 30 minutes. free. from the person who actua...
+3. I'm now running GLM 5.2 as my default model in claude code + cursor, and it's cost me *checks notes* $3.36 Today's ep of...
+4. What Claude Code and Cursor did to writing code, Sazabi is doing to software observability and debugging. While code gen...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-26.html

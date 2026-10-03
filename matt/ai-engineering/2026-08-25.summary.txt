@@ -1,0 +1,9 @@
+Sunny Tue, Wed and Thu — good days to be outside.
+
+Today's briefing:
+1. 🚨CLAUDE IS DOWN Anthropic status reports elevated errors across Mythos 5, Fable 5, Opus 5, Opus 4.8, plus “other models”...
+2. claude is having a major outage across claudeai, the API, and claude code
+3. The thing people who are late to AI agents miss: Claude Code and Codex get all the buzz because they’re the default harn...
+4. with the current software on r1 you can run hermes/openclaw/claude code. with upcoming OS3 (hopefully in coming weeks), ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-08-25.html

@@ -1,0 +1,9 @@
+Sunny Wed, Thu and Fri — good days to be outside.
+
+Today's briefing:
+1. Ponytail Skill for Claude Code: Does It Cut Tokens
+2. Show HN: AI Usage – Native macOS Menu Bar for Claude Code and Codex Limits
+3. Today Waddle Labs is launching: they are Claude Code for robots. I've been excited about this launch for a few months an...
+4. Netflix paid $587 million in cash for Ben Affleck's AI startup... i rebuilt my own version from scratch inside Claude Co...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-29.html

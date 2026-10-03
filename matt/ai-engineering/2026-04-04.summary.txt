@@ -1,0 +1,9 @@
+Sunny Sat — good day to be outside.
+
+Today's briefing:
+1. TIL Anthropic's rate limit pool for OAuth tokens is gated by... the system prompt saying "You are Claude Code"
+2. Claude Code for Healthcare: How Physicians Build with AI - Anthropic
+3. Ship Code Faster with Claude Code on Vertex AI - Anthropic
+4. Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-04.html

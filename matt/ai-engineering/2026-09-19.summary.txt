@@ -1,0 +1,9 @@
+Sunny Sat, Sun and Mon — good days to be outside.
+
+Today's briefing:
+1. Big update for every Claude Code user. Anthropic added AGENTS.md support If you use multiple AI coding agents, you no lo...
+2. 80+ Modern AI Tools Developers Should Know in 2026 1. AI Coding Agents - OpenAI Codex - Claude Code - GitHub Copilot - G...
+3. Anthropic's new Claude Code feature could drain your plan before lunch
+4. ANTHROPIC 🔥: Claude Code now can pull project instructions from AGENTS md file in case if CLAUDE md file is not present....
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-19.html

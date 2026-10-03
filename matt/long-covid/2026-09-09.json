@@ -1,0 +1,42 @@
+{
+  "generated": "2026-09-09T12:03:05.707528+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-09-09",
+          "day": "Wed",
+          "day_full": "Wednesday, Sep 09",
+          "high": 77,
+          "low": 53,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-09-10",
+          "day": "Thu",
+          "day_full": "Thursday, Sep 10",
+          "high": 67,
+          "low": 55,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-09-11",
+          "day": "Fri",
+          "day_full": "Friday, Sep 11",
+          "high": 65,
+          "low": 52,
+          "condition": "Overcast "
+        }
+      ],
+      "highlights": [
+        "Wed",
+        "Thu"
+      ],
+      "summary_line": "Sunny Wed and Thu — good days to be outside."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Sunny Tue and Wed — good days to be outside.
+
+Today's briefing:
+1. Tutorial on how to use GLM-5.2 in Claude Code (bookmark this) ~4.5x faster & ~5x cheaper compared to Opus 4.8! 1. Instal...
+2. Ask HN: Anthropic banned me from using Claude Code and I don't know what to do
+3. My biggest takeaways from Claude Code/Cowork lead @Nerdi_Yogi: 1. When your engineers ship 8x more code than a year ago ...
+4. CODING IS NO LONGER THE BOTTLENECK Fiona Fung, Head of Engineering for Claude Code and Cowork (Anthropic), interviewed b...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-06-23.html

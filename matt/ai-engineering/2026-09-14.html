@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — September 14, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">September 14, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">2 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo" target="_blank">Houthis used Claude Code to develop missile guidance software: Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    100 points · 88 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49684266" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-military-researchers-and-tech-giants-caught-using-claude-us-frontier-model-coded-16-air-defense-suppression-tools-targeting-taiwan-drafted-anti-torpedo-specs-and-fed-151-million-training-queries-to-alibaba" target="_blank">Chinese military researchers caught using Claude for air-defense and weapons</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 1 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49684165" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49689905" target="_blank">Ask HN: How is AI actively a threat to humanity if it&#39;s only online?</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 11 comments · 12h ago
+                     · <a href="https://news.ycombinator.com/item?id=49689905" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://effect.website/" target="_blank">I think Effect-TS is a strong fit for AI agent development</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 12h ago
+                     · <a href="https://news.ycombinator.com/item?id=49689884" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/swobuforge/swobu" target="_blank">Show HN: Swobu – Local LLM Switchboard You Can Share over HTTPS</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 13h ago
+                     · <a href="https://news.ycombinator.com/item?id=49689250" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49681100" target="_blank">How are you using a Desktop or Browser AI agent daily?</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49681100" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.coldbeamgames.com/ghostcade.html" target="_blank">Claude and I made a MAME attact mode app</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=49693890" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://apiweiser-cli-fe.vercel.app/" target="_blank">Show HN: AI-Native dependency upgrades through codemods</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 20m ago
+                     · <a href="https://news.ycombinator.com/item?id=49695191" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://clientcoded.com/environments" target="_blank">Show HN: ClientCoded – QA Platform for AI Agents</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 15h ago
+                     · <a href="https://news.ycombinator.com/item?id=49688290" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://replay.doctor/" target="_blank">Show HN: Replay – Audit silent prompt cache misses in AI agent transcripts</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 9h ago
+                     · <a href="https://news.ycombinator.com/item?id=49691257" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/goyalshaliniuk/status/2098947271585157356" target="_blank">Most AI agent courses charge hundreds of dollars. This one costs nothing. An Anthropic senior engineer just released a f...</a></p>
+                <div class="item-meta">
+                    
+                    @goyalshaliniuk · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Most AI agent courses charge hundreds of dollars. This one costs nothing.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/twannl/status/2099189177627660545" target="_blank">🥇 The iOS Simulator Inside Cursor, Claude Code, and Codex https://t.co/a5hkM1olIz 🥈 MVVM in SwiftUI: Using view models w...</a></p>
+                <div class="item-meta">
+                    
+                    @twannl · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">🥇 The iOS Simulator Inside Cursor, Claude Code, and Codex https://t.co/a5hkM1olIz 🥈 MVVM in SwiftUI: Using view models without overengineering https://t.co/pLRHmFiYpN 🥉 Sendable and @Sendable closures explained with code examples https://t.co/dTO</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/tom_doerr/status/2099132179569689024" target="_blank">M3E Canvas sketches Material 3 Expressive screen prototypes in the browser and generates a detailed prompt for AI coding...</a></p>
+                <div class="item-meta">
+                    
+                    @tom_doerr · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">M3E Canvas sketches Material 3 Expressive screen prototypes in the browser and generates a detailed prompt for AI coding tools like Cursor, Codex, or Claude Code. https://t.co/kUA3ijWpYL</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Saboo_Shubham_/status/2099205136413593605" target="_blank">I just shipped a free crash course on building AI agents without writing a single line of code. In 20 mins, I take one p...</a></p>
+                <div class="item-meta">
+                    
+                    @Saboo_Shubham_ · 9h ago
+                    
+                </div>
+                
+                <div class="item-summary">I just shipped a free crash course on building AI agents without writing a single line of code. In 20 mins, I take one problem through the full agent development lifecycle using just a coding agent.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/tom_doerr/status/2099009967760044179" target="_blank">Retrieves, evaluates, and evolves skills for Claude Code, Codex, and other AI agents through a unified management layer....</a></p>
+                <div class="item-meta">
+                    
+                    @tom_doerr · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">Retrieves, evaluates, and evolves skills for Claude Code, Codex, and other AI agents through a unified management layer. https://t.co/X6YpeS5oem</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2099180315944403417" target="_blank">Claude Code + Codex can now use FREE local AI 🤯 No need to replace your best cloud models. Just add local models as anot...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code + Codex can now use FREE local AI 🤯 No need to replace your best cloud models. Just add local models as another option.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/freeCodeCamp/status/2099045742635622567" target="_blank">AI agents need more than a model to plan, use tools, remember context, and work safely. In this article, Rudrendu explai...</a></p>
+                <div class="item-meta">
+                    
+                    @freeCodeCamp · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">AI agents need more than a model to plan, use tools, remember context, and work safely. In this article, Rudrendu explains the architecture behind agent harnesses like Claude Code, DeepSeek Harness, and Hermes Agent.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/alfcnz/status/2098899658743386621" target="_blank">Vibe coding from Central Park with @claudeai and @OnyxBoox! 🤓🤓🤓 Flask + xterm.js bridge that pipes a tmux session over a...</a></p>
+                <div class="item-meta">
+                    
+                    @alfcnz · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Vibe coding from Central Park with @claudeai and @OnyxBoox! 🤓🤓🤓 Flask + xterm.js bridge that pipes a tmux session over a websocket, served through @Tailscale.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/trq212/status/2098860941391872132" target="_blank">If you showed me Claude Code today in 2018, I would have thought it was AGI. We have already absorbed a dramatic amount ...</a></p>
+                <div class="item-meta">
+                    
+                    @trq212 · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">If you showed me Claude Code today in 2018, I would have thought it was AGI. We have already absorbed a dramatic amount of change in the profession of software engineering and society as a whole.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/socialwithaayan/status/2099464791467388989" target="_blank">You don&#39;t need a $300 course to learn Claude Code. 19 free Code with Claude sessions (links below): Full playlist → http...</a></p>
+                <div class="item-meta">
+                    
+                    @socialwithaayan · just now
+                    
+                </div>
+                
+                <div class="item-summary">You don&#39;t need a $300 course to learn Claude Code. 19 free Code with Claude sessions (links below): Full playlist → https://t.co/hIZXX1KStR 1.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/" target="_blank">Anthropic CEO outlines plan to slow AI development</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic&#39;s Dario Amodei and OpenAI&#39;s Sam Altman seem to agree that it&#39;s time to &#34;pace the frontier.&#34; What would that actually look like?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/" target="_blank">What’s behind the AI industry’s latest warnings of doom?</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 8h ago
+                    
+                </div>
+                
+                <div class="item-summary">On Equity, we discussed the AI industry&#39;s latest debate about whether it poses an existential threat to humanity.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/" target="_blank">Obama urges Democrats to have a ‘clear plan’ for AI safeguards</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank">OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nNk9oS1M5R2tRa1hxZ0I1X0ZvNC15aEhrT2hyMFRpZnRUdDY4QzZSRXdfUmU1YjlYNGctV1dZXzZoakVEY19GNlNBNW1iX1RvWWxWNXhzUmRJcm93YTFr?oc=5" target="_blank">Scenarios for our Economic Future - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · just now
+                    
+                </div>
+                
+                <div class="item-summary">Scenarios for our Economic Future&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Sep/12/paul-ford/" target="_blank">Quoting Paul Ford</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">For a while, I must admit, it looked as if software developer roles like mine were done for. How could we fight against tireless robots?</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated September 14, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>

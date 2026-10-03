@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — March 11, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">March 11, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">10 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Mar 11: Light rain, 38–47°F</div>
+            
+                <div>Thursday, Mar 12: Overcast , 40–46°F</div>
+            
+                <div>Friday, Mar 13: Moderate rain, 35–39°F</div>
+            
+            </div>
+            
+            <p class="summary">No particularly sunny days in the forecast.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rqe3i0/famous_basketball_player_porzingis_obviously_has/" target="_blank">Famous basketball player Porzingis obviously has Long Covid/ME/CFS</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 87 points · 15 comments · 12h ago
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rq1nj2/is_pempene_unique_to_mecfs_or_did_i_get_this_wrong/" target="_blank">IS PEM/PENE unique to ME/CFS or did I get this wrong?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 76 points · 109 comments · 19h ago
+                    
+                </div>
+                
+                <div class="item-summary">I had what ended up being a super heated and accusatory conversation on Reddit about PEM/PENE. I was explaining to someone who asked that PEM is unique to ME/CFS.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rq9mnb/has_anyone_here_fully_dedicated_their_life_to/" target="_blank">Has anyone here fully dedicated their life to recovering from long COVID?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 30 points · 30 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Has anyone here taken a really active, disciplined approach to trying to solve their long COVID and made real progress? I mean going all in with research, experimenting, journaling, tracking symptoms, testing protocols, pacing, etc.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rqaglz/long_covid_symposium_march_21st/" target="_blank">Long Covid Symposium March 21st</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 13 points · 0 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Dr. David Putrino is the keynote speaker and his research on associated illnesses triggered by LC ought to be insightful.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rqd52j/nobody_experiencing_symptoms_identical_to_pem_but/" target="_blank">Nobody experiencing symptoms identical to PEM but named otherwise should be forced to exercise.</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 11 points · 11 comments · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">Can we all agree that pushing people to engage in activity that harms them should be avoided? If I suppose that PEM is a thing that only exists in ME/CFS, I can see this is an important distinction because people with ME/CFS can suffer extreme harms, certainly long-term, potentially permanently.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1rqnep3/sarscov2_monoclonal_antibody_aer002_produced_no/" target="_blank">SARS-CoV-2 monoclonal antibody AER002 produced no significant improvements in physical health, quality of life, or biomarkers vs placebo. However, patients with lower baseline antibodies + higher drug exposure more likely to report perceived benefit in phase 2a RCT.  (n=36)</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 6 points · 1 comments · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">A phase 2a clinical trial tested whether a single infusion of AER002, a long-acting monoclonal antibody designed to clear lingering SARS-CoV-2 virus, could treat Long COVID. The study of 36 participants found no significant improvements in physical health, cognitive function, or quality of life comp</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rqg3m6/mecfs_and_new_piercings/" target="_blank">me/cfs and new piercings</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 4 points · 5 comments · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">tl;dr does having me/cfs affect healing new piercings, or vice versa? wondering if anyone has got piercings before and after developing me/cfs, and has noticed any difference in ease/length of healing?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rqene0/long_covid_iacci_forum_march_21st/" target="_blank">Long COVID + IACCI Forum March 21st</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 2 points · 0 comments · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">Dr. David Putrino is the keynote speaker and his research on Infection-Associated Chronic Conditions &amp;amp; Illnesses (IACCI) triggered by LC ought to be insightful.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1rqouf8/can_you_not_know_you_have_mecfs_because_youre_in/" target="_blank">Can you not know you have ME/CFS because you&#39;re in rolling PEM, so you don&#39;t notice it? Or would you still get extra PEM upon even more exertion?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 1 points · 8 comments · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;ve been dealing with some probably Long Covid bullshit for a while now, mainly (mental) fatigue and brainfog. I am (or was) 99% sure, I&#39;ve ruled out ME, because I don&#39;t think I have PEM and also I&#39;d be super mild, at least physically.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/LongCovid/comments/1rqawgs/long_covid_iacci_forum_march_21st/" target="_blank">Long Covid &amp;amp; IACCI Forum March 21st</a></p>
+                <div class="item-meta">
+                    
+                    r/LongCovid · 1 points · 0 comments · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Dr. David Putrino is the keynote speaker and his research on associated illnesses triggered by LC ought to be insightful.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated March 11, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

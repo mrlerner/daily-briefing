@@ -1,0 +1,9 @@
+Sunny Sat — good day to be outside.
+
+Today's briefing:
+1. Anthropic is about to announce that Claude for Government is now generally available, and that Claude Code CLI and Claud...
+2. Boris Cherny (Head of Claude code at Anthropick ) has merged around 1,700 pull requests, added 400,000 lines of code, an...
+3. Show HN: AgentX – Run Claude Code, Codex or Any LLM from Your Chats and GitHub
+4. I am not particularly looking to use Claude Code, but we're at the point where if I don't teach myself how to use AI too...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-10-01.html

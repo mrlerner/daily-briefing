@@ -1,0 +1,7 @@
+Today's briefing:
+1. TUI to see where Claude Code tokens actually go
+2. Claude Code + Obsidian?
+3. Claude diagnosed me when my doctor wouldn’t
+4. AI emotions on a physical pixel display — bridging the digital-physical divide
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-04-14.html

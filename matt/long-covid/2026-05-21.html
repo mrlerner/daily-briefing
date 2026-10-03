@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long COVID Briefing — May 21, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>Long COVID Briefing</h1>
+            <div class="date">May 21, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#reddit">Reddit</a> <span class="toc-count">7 posts</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        <div class="market" id="market">
+            <p class="label">Market</p>
+            <p class="market-line">S&amp;P 500 closed at 7,432.97, up
+                +1.1%
+                (+79.36 pts).</p>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Thursday, May 21: Sunny, 46–74°F</div>
+            
+                <div>Friday, May 22: Sunny, 48–75°F</div>
+            
+                <div>Saturday, May 23: Clear , 50–69°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Thu, Fri and Sat — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="reddit">
+            <h2>Reddit</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tin859/why_do_so_many_mecfs_treatments_stop_working/" target="_blank">Why Do So Many ME/CFS Treatments stop Working</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 115 points · 27 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">TL; DR. Many people with severe ME/CFS experience temporary improvements from treatments or supplements, only for the effects to fade weeks or months later.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tio8bh/struggling_to_differentiate_pem_vs_autistic/" target="_blank">Struggling to differentiate PEM vs autistic burnout</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 25 points · 27 comments · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">Hello! I’m a 25 YO autistic woman trying to figure out if I could have mild ME/CFS.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tiv7iv/if_you_have_post_viral_mecfs_andor_long_covid_do/" target="_blank">If You Have Post Viral ME/CFS and/or Long Covid, Do You Find Doctors Take the Condition Seriously?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 8 points · 16 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">[View Poll](https://www.reddit.com/poll/1tiv7iv)</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tiurk0/any_japanese_or_koreans_here_ever_tried_those/" target="_blank">Any Japanese or Koreans here ever tried those Hovenia raisin hangover supplements for reducing PEM symptoms?</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 0 comments · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">I woke up this morning with PEM feeling like I had a really bad hangover, almost identical in feeling except additional physical symptoms. I also remembered that alcohol intolerance is often reported early on in mitochondrial dysfunction related conditions (MECFS, long COVID, MCAS).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/covidlonghaulers/comments/1tjgtvc/three_year_long_cough_postcovid_gp_dismissive/" target="_blank">Three year long cough post-covid, GP dismissive</a></p>
+                <div class="item-meta">
+                    
+                    r/covidlonghaulers · 3 points · 3 comments · 1h ago
+                    
+                </div>
+                
+                <div class="item-summary">I (33F) have a fairly serious chronic illness, and despite trying my best to be safe, I ended up catching covid whilst in hospital 3 years ago. It wasn&#39;t a severe case, so I was discharged from the surgical unit as I would have been normally and told to rest at home 
+
+Most of the severe symptoms cle</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tisgpl/any_japanese_or_koreans_here_ever_tried_those/" target="_blank">Any Japanese or Koreans here ever tried those Hovenia raisin hangover supplements for reducing PEM symptoms?</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 2 points · 2 comments · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">I woke up this morning with PEM feeling like I had a really bad hangover, almost identical in feeling except additional physical symptoms. I also remembered that alcohol intolerance is often reported early on in mitochondrial dysfunction related conditions (MECFS, long COVID, MCAS).</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://reddit.com/r/cfs/comments/1tjchkl/acetylcholine/" target="_blank">Acetylcholine</a></p>
+                <div class="item-meta">
+                    
+                    r/cfs · 0 points · 23 comments · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">Title:
+
+I have a condition similar to myalgic encephalomyelitis, but much worse. \---
+
+My illness and early symptoms:
+
+At age 13, my brain &#34;went crazy.&#34; My brainstem, hypothalamus, and thalamus began to waste away.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated May 21, 2026 at 05:03
+        </footer>
+    </div>
+</body>
+</html>

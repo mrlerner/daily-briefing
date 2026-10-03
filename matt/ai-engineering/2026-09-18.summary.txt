@@ -1,0 +1,11 @@
+S&P 500 closed at 7,637.76, up +1.1% (+85.95 pts).
+
+Sunny Fri, Sat and Sun — good days to be outside.
+
+Today's briefing:
+1. Developers are pairing Claude Code with OpenAI and open-source models to cut costs, even though Anthropic doesn’t suppor...
+2. my first biiiiiig launch at anthropic is finally here!! 🫶 projects are a huge labor of love from the claude code team - ...
+3. Manages AI coding agent skills for Obsidian across Claude Code, Cursor, Codex, Windsurf, and 17 other tools. https://t.c...
+4. Projects in Claude Code just dropped as a preview. If you don't have access yet, sign up for the waitlist here:
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-18.html

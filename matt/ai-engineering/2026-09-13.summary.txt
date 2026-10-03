@@ -1,0 +1,9 @@
+Sunny Tue — good day to be outside.
+
+Today's briefing:
+1. Most AI agent courses charge hundreds of dollars. This one costs nothing. An Anthropic senior engineer just released a f...
+2. Cursor just one shot OpenAI Codex and Claude Code with their new update. they solved Context Decay.... ok vibe coder I k...
+3. Quoting Boris Cherny
+4. New in Claude Code: claude plugin eval See what value your plugin is adding, or if it needs more work. You can create te...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-13.html

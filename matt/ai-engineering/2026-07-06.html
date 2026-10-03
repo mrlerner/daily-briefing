@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 06, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 06, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">3 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">4 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Monday, Jul 06: Sunny, 55–85°F</div>
+            
+                <div>Tuesday, Jul 07: Partly Cloudy , 50–80°F</div>
+            
+                <div>Wednesday, Jul 08: Patchy rain nearby, 52–68°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Mon and Tue — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/puffinsoft/peek-cli" target="_blank">Show HN: Peek-CLI: Let Claude Code See the Browser</a></p>
+                <div class="item-meta">
+                    
+                    9 points · 0 comments · 12h ago
+                     · <a href="https://news.ycombinator.com/item?id=48799078" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/ostikwhy-blip/claude-code-handoff-skill" target="_blank">Show HN: Handoff – a verified context bridge between Claude Code sessions</a></p>
+                <div class="item-meta">
+                    
+                    7 points · 2 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=48795956" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.nomlings.cc/" target="_blank">Show HN: Nomlings – a virtual pet that eats your Claude Code session&#39;s tokens</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 1 comments · 17h ago
+                     · <a href="https://news.ycombinator.com/item?id=48796800" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://verity.md" target="_blank">Show HN: Self-healing review gate and knowledge base for Claude Code (Beta)</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48792661" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=48803415" target="_blank">Show HN: Open-source Claude Code skills that mine Reddit/X for content topics</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 30m ago
+                     · <a href="https://news.ycombinator.com/item?id=48803415" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Priyanshu-byte-coder/contextrot" target="_blank">Show HN: Contextrot– Analyze where Claude Code degrades from its own session log</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=48794873" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/nsankar/Aletheia" target="_blank">Show HN: Aletheia – The Uncertainty Loop Agent for Claude Code and Codex</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 18h ago
+                     · <a href="https://news.ycombinator.com/item?id=48796189" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/breschio/drawbridge" target="_blank">Drawbridge – Design Editor for Claude Code and Cursor</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=48791105" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=48802300" target="_blank">Claude Code deletes conversations after 30 days</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 2 comments · 3h ago
+                     · <a href="https://news.ycombinator.com/item?id=48802300" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/yuliang615/claude-cache-guard" target="_blank">Claude Code cache guard because Fable 5 tokens are way too precious to waste</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 17h ago
+                     · <a href="https://news.ycombinator.com/item?id=48796616" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/MichLieben/status/2073814386360393918" target="_blank">The simplest way to run cold email from Claude Code:</a></p>
+                <div class="item-meta">
+                    
+                    @MichLieben · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">The simplest way to run cold email from Claude Code:</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/JulianGoldieSEO/status/2073723570182934732" target="_blank">Why pay for AI coding? Run Free Claude Code with powerful local models and build apps, automations, and AI agents withou...</a></p>
+                <div class="item-meta">
+                    
+                    @JulianGoldieSEO · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">Why pay for AI coding? Run Free Claude Code with powerful local models and build apps, automations, and AI agents without expensive API costs.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/VaibhavSisinty/status/2073723635416895883" target="_blank">I just found a tool that makes your Claude Code sessions basically unlimited. It&#39;s called 9Router and it&#39;s trending on G...</a></p>
+                <div class="item-meta">
+                    
+                    @VaibhavSisinty · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">I just found a tool that makes your Claude Code sessions basically unlimited. It&#39;s called 9Router and it&#39;s trending on GitHub right now.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/dani_avila7/status/2073911520568709576" target="_blank">Claude Code Desktop has an internal browser with DOM element selection Fast way to make front-end changes Start your dev...</a></p>
+                <div class="item-meta">
+                    
+                    @dani_avila7 · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code Desktop has an internal browser with DOM element selection Fast way to make front-end changes Start your dev server on localhost, just ask Claude to do it, and the internal browser opens in a panel inside the app 1 - Click the selector icon in th</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/AlexFinn/status/2073625394436337938" target="_blank">Everything you need to master in 2026 to get rich: • Using Fable 5 for planning, Codex for execution • Hermes agent • Co...</a></p>
+                <div class="item-meta">
+                    
+                    @AlexFinn · 23h ago
+                    
+                </div>
+                
+                <div class="item-summary">Everything you need to master in 2026 to get rich: • Using Fable 5 for planning, Codex for execution • Hermes agent • Coding loops • Running Codex/Claude Code side by side • /goal • Running local models • Karpathy&#39;s Autoresearch • Building an X audience •</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/emollick/status/2074015247627682171" target="_blank">Deleting this because I found I had left a setting on Claude Code allowing writing to memory files on one of my computer...</a></p>
+                <div class="item-meta">
+                    
+                    @emollick · just now
+                    
+                </div>
+                
+                <div class="item-summary">Deleting this because I found I had left a setting on Claude Code allowing writing to memory files on one of my computers, so I am not sure where this all crept in, but it might be my fault!</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/_catwu/status/2073806626965049686" target="_blank">what are your top claude code + workflows + artifacts use cases? one of my new favorites is for sourcing candidates: - t...</a></p>
+                <div class="item-meta">
+                    
+                    @_catwu · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">what are your top claude code + workflows + artifacts use cases? one of my new favorites is for sourcing candidates: - tell cc about the role and backgrounds i’m looking for - ask cc to kick off a dynamic workflow to find 100 candidates, and include linkedin, twitt</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/PrajwalTomar_/article/2074095215422705805" target="_blank">These 10 Skills Turn Claude Code Into an ENTIRE Team.</a></p>
+                <div class="item-meta">
+                    
+                    Twitter — Claude Code / Cursor / Vibe Coding · just now
+                    
+                </div>
+                
+                <div class="item-summary">These 10 Skills Turn Claude Code Into an ENTIRE Team.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/sairahul1/status/2073768727972360351" target="_blank">Cut Your Claude Code Token Usage by 90% He leaked the exact methods. Most people will scroll past it. Nothing complicate...</a></p>
+                <div class="item-meta">
+                    
+                    @sairahul1 · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">Cut Your Claude Code Token Usage by 90% He leaked the exact methods. Most people will scroll past it.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/dr_cintas/status/2073791486236270596" target="_blank">Claude Code can now finish a task, commit it, push it, and open the pull request while you go do something else. as of t...</a></p>
+                <div class="item-meta">
+                    
+                    @dr_cintas · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code can now finish a task, commit it, push it, and open the pull request while you go do something else. as of the latest update, its agents run in the background by default.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank">Alibaba reportedly bans employees from using Claude Code</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Alibaba has reportedly classified Claude Code as high-risk software.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/" target="_blank">New Google commercial imagines a Declaration of Independence written with help from AI</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Two hundred and fifty years after the signing of the Declaration of Independence, a new commercial asks: What if the Founding Fathers had access to Google Workspace?</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/" target="_blank">Midjourney wants Hollywood studios to reveal the details of their AI usage</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">As part of an ongoing legal dispute with three Hollywood studios, Midjourney is seeking to compel those studios to reveal how they use AI themselves.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything" target="_blank">Better Models: Worse Tools</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Better Models: Worse Tools
+Armin reports on a weird problem he ran into while hacking on Pi:
+
+The short version is that newer Claude models sometimes call Pi’s edit tool with extra, invented fields in the nested edits[] array. And not Haiku or some small model: Opus 4.8.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything" target="_blank">sqlite-utils 4.0rc3</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · just now
+                    
+                </div>
+                
+                <div class="item-summary">Release: sqlite-utils 4.0rc3
+        I hoped to release sqlite-utils 4.0 stable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 and GPT-5.5 the changelog since rc2 kept getting bigger. The biggest new feature is support for introspecting an...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything" target="_blank">sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incomp...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything" target="_blank">sqlite-utils 4.0rc2</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Release: sqlite-utils 4.0rc2
+        See sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25).</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 06, 2026 at 05:25
+        </footer>
+    </div>
+</body>
+</html>

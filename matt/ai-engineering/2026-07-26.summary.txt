@@ -1,0 +1,11 @@
+S&P 500 closed at 7,408.30, down -1.2% (-90.66 pts).
+
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. Anthropic just revealed they deleted 80% of Claude Code's system prompt for their newest models. And everything still wo...
+2. 🚨 BIG: Anthropic cut Claude Code's system prompt 80% with zero performance loss.
+3. CLAUDE OPUS 5 IS IN CLAUDE CODE RIGHT NOW. I can select it. 1M context. It saved as my default. The endpoint is not live...
+4. Modern AI agents rely on elaborate inference harnesses such as Claude Code or Codex to drive multi-turn reasoning, tool ...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-26.html

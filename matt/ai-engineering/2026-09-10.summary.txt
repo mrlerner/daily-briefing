@@ -1,0 +1,9 @@
+No particularly sunny days in the forecast.
+
+Today's briefing:
+1. Anthropic's Claude Code tool became popular at Meta earlier this year. https://t.co/vX7W5A0jRH
+2. $5 in free Anthropic credits covers ~12 real Claude Code sessions. That's one of 4 ways to run it for free, each with it...
+3. Run Claude Code entirely on-device using an MLX-native server on Apple Silicon to execute local AI models without API ke...
+4. Show HN: GuardRail, shell guards that stop Claude Code before it pushes to main
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-10.html

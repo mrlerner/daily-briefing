@@ -1,0 +1,142 @@
+{
+  "generated": "2026-05-10T12:03:35.364066+00:00",
+  "items": [
+    {
+      "id": "6d84c47ba8f606a9",
+      "title": "Long COVID explained for people just learning about this condition and those who need help educating those around them.",
+      "url": "https://reddit.com/r/LongCovid/comments/1t84e0e/long_covid_explained_for_people_just_learning/",
+      "source": "r/LongCovid",
+      "source_type": "reddit",
+      "published": "2026-05-09T13:00:47+00:00",
+      "summary": "This page explains what Long COVID is so you can help people understand what you are going through. \n\n[About Long COVID](https://www.promedview.com/about-long-covid)\n\nThe symptoms checklist will help you organize your thoughts when you speak to the dr. You can also repeat the checklist to monitor wh",
+      "points": null,
+      "score": 6,
+      "comments": 1,
+      "author": "CovidCareGroup",
+      "subreddit": "LongCovid",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.5,
+      "time_ago": "23h ago",
+      "summary_short": "This page explains what Long COVID is so you can help people understand what you are going through. [About Long COVID](https://www.promedview.com/about-long-covid)\n\nThe symptoms checklist will help you organize your thoughts when you speak to the dr."
+    },
+    {
+      "id": "f309ee649482ef06",
+      "title": "NORWAY treatment",
+      "url": "https://reddit.com/r/cfs/comments/1t85gmu/norway_treatment/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-09T13:46:06+00:00",
+      "summary": "Is there any way to get help in norway atm? Any good doctors, hospitals etc. Seems like no one wants to treat or have any responsibility for ME/cfs/long covid here.\n\nI'm currently very severe from late diagnosis and constant pushing yourself from before diagnosis and after. I get often contradictory",
+      "points": null,
+      "score": 13,
+      "comments": 14,
+      "author": "raging-otters",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "22h ago",
+      "summary_short": "Is there any way to get help in norway atm? Any good doctors, hospitals etc."
+    },
+    {
+      "id": "aa316c5c6f5afe1f",
+      "title": "Immediate PEM vs just exertion, maybe during a crash?",
+      "url": "https://reddit.com/r/cfs/comments/1t8tzc2/immediate_pem_vs_just_exertion_maybe_during_a/",
+      "source": "r/cfs",
+      "source_type": "reddit",
+      "published": "2026-05-10T02:11:07+00:00",
+      "summary": "Hey all, I’m curious if anybody else experiences anything like this? I think I’ve got ME/cfs but am trying to fully understand some symptoms before I try and talk with doctors again next week about it (I’ve tried in the past but it was kind of brushed aside). I’m curious if anybody else experiences ",
+      "points": null,
+      "score": 10,
+      "comments": 6,
+      "author": "Sparrowfan101",
+      "subreddit": "cfs",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Pacing and energy management",
+        "ME/CFS research"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "9h ago",
+      "summary_short": "Hey all, I’m curious if anybody else experiences anything like this? I think I’ve got ME/cfs but am trying to fully understand some symptoms before I try and talk with doctors again next week about it (I’ve tried in the past but it was kind of brushed aside)."
+    },
+    {
+      "id": "0b1bbe6307ba7781",
+      "title": "Many with long covid have side effects from fragrances... Now, A Major Anti Chemical Fragrance Class Action Lawsuit has been filed in USA",
+      "url": "https://reddit.com/r/covidlonghaulers/comments/1t88njo/many_with_long_covid_have_side_effects_from/",
+      "source": "r/covidlonghaulers",
+      "source_type": "reddit",
+      "published": "2026-05-09T15:52:09+00:00",
+      "summary": "Cole Van Note from California has officially filed a federal lawsuit against fragrance in public spaces! The lawsuit is against scent marketing in major businesses including Marriott, a business that is not ADA accessible. Why? Because they use non-consensual scent marketing that harms more than one",
+      "points": null,
+      "score": 111,
+      "comments": 39,
+      "author": "TopazCoracle",
+      "subreddit": "covidlonghaulers",
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment"
+      ],
+      "relevance_score": 0.35,
+      "time_ago": "20h ago",
+      "summary_short": "Cole Van Note from California has officially filed a federal lawsuit against fragrance in public spaces! The lawsuit is against scent marketing in major businesses including Marriott, a business that is not ADA accessible."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-05-10",
+          "day": "Sun",
+          "day_full": "Sunday, May 10",
+          "high": 72,
+          "low": 50,
+          "condition": "Sunny"
+        },
+        {
+          "date": "2026-05-11",
+          "day": "Mon",
+          "day_full": "Monday, May 11",
+          "high": 69,
+          "low": 48,
+          "condition": "Partly Cloudy "
+        },
+        {
+          "date": "2026-05-12",
+          "day": "Tue",
+          "day_full": "Tuesday, May 12",
+          "high": 76,
+          "low": 48,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Sun",
+        "Mon",
+        "Tue"
+      ],
+      "summary_line": "Sunny Sun, Mon and Tue — good days to be outside."
+    }
+  ]
+}

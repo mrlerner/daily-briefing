@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — July 24, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">July 24, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">4 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">5 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Friday, Jul 24: Sunny, 58–83°F</div>
+            
+                <div>Saturday, Jul 25: Partly Cloudy , 57–77°F</div>
+            
+                <div>Sunday, Jul 26: Partly Cloudy , 59–75°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Fri and Sat — good days to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/SteveVitali/claude-hibernate" target="_blank">Show HN: Hibernate and restore Claude Code sessions across reboots</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 2 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49023103" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/Amal-David/bookshelf" target="_blank">Show HN: Bookshelf – book quotes that appear between Claude Code and Codex turns</a></p>
+                <div class="item-meta">
+                    
+                    6 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=49028693" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://blog.jetbrains.com/ai/2026/07/rtk-claude-code-token-savings/" target="_blank">RTK and Claude Code Token Savings: A Closer Look</a></p>
+                <div class="item-meta">
+                    
+                    5 points · 0 comments · 10h ago
+                     · <a href="https://news.ycombinator.com/item?id=49032964" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/raine/claude-code-proxy" target="_blank">Show HN: Run Claude Code Through Codex, Kimi, Grok, or Cursor</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 1 comments · 22h ago
+                     · <a href="https://news.ycombinator.com/item?id=49027640" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/5dive-ai/5dive" target="_blank">Show HN: 5dive – Run a Company of Claude Code/Codex Agents (Written in Bash)</a></p>
+                <div class="item-meta">
+                    
+                    3 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49022492" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://firasd.substack.com/p/accidental-data-loss-in-claude-code-openai-codex-ai-agent-harness-file-deletion" target="_blank">Accidental data loss in Claude Code and OpenAI Codex: when AI deletes user files</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49025471" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://pypi.org/project/agentcost-cli/0.1.0/" target="_blank">AgentCost – local CLI,attributes token cost in Claude Code/Cursor/Codex sessions</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 7h ago
+                     · <a href="https://news.ycombinator.com/item?id=49034205" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/anthropics/claude-code/issues/80401" target="_blank">Claude Code built-in task tools disabled server-side</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 1 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49021654" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/HabibiCodeCH/claude-no-bash-detour" target="_blank">Claude Code hooks that block find/sed/cat, redirect to native tools</a></p>
+                <div class="item-meta">
+                    
+                    2 points · 0 comments · 10h ago
+                     · <a href="https://news.ycombinator.com/item?id=49032877" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://promptcube3.com/en/" target="_blank">The Independent AI Coding Community for Cursor, Claude Code and LLMs</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49020317" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/jukan05/status/2080207595722469687" target="_blank">One reason I’m bullish on AMD: Advances in coding AI will naturally accelerate ROCm’s development and help close the gap...</a></p>
+                <div class="item-meta">
+                    
+                    @jukan05 · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">One reason I’m bullish on AMD: Advances in coding AI will naturally accelerate ROCm’s development and help close the gap with CUDA. As part of its recent investment in Anthropic, AMD has already announced that it will actively use Claude Code for chip de</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Benioff/status/2080308148246896734" target="_blank">What most impresses me about Anthropic (besides unprecedented revenue growth) is their enterprise hat trick: the best mo...</a></p>
+                <div class="item-meta">
+                    
+                    @Benioff · 20h ago
+                    
+                </div>
+                
+                <div class="item-summary">What most impresses me about Anthropic (besides unprecedented revenue growth) is their enterprise hat trick: the best model (Claude), the best coding agents (Claude Code), &amp; the best productivity tool (Cowork). Salesforce is proud to be an early investor, cu</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/milesdeutscher/status/2080208806043406646" target="_blank">A 6-step prompting framework that connects TradingView MCP + Claude. Inject this straight into Claude Code, and it will ...</a></p>
+                <div class="item-meta">
+                    
+                    @milesdeutscher · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">A 6-step prompting framework that connects TradingView MCP + Claude. Inject this straight into Claude Code, and it will instantly install the TradingView MCP.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/rrhoover/status/2080285776303022442" target="_blank">Claude Code clearly padding when it replies: &#34;Implementation estimated to take 3 weeks&#34; AI, they&#39;re just like us.</a></p>
+                <div class="item-meta">
+                    
+                    @rrhoover · 21h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code clearly padding when it replies: &#34;Implementation estimated to take 3 weeks&#34; AI, they&#39;re just like us.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/wilreynolds/status/2080328380650582448" target="_blank">If you are &#34;newish&#34; to claude code trust me , do all the work in the most specific folder possible. I&#39;m un-spaghetti&#39;ing...</a></p>
+                <div class="item-meta">
+                    
+                    @wilreynolds · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">If you are &#34;newish&#34; to claude code trust me , do all the work in the most specific folder possible. I&#39;m un-spaghetti&#39;ing my old lazy ways of using one main folder with a bunch of subfolders (fine) but running claude from the main folder has made code borrow from</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/RedTeamVillage_/status/2080367429247553666" target="_blank">Devs running Claude Code or Codex CLI? Ahmet Furkan Aydogan has a high-impact, low-detection attack path called PMTC (Pe...</a></p>
+                <div class="item-meta">
+                    
+                    @RedTeamVillage_ · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">Devs running Claude Code or Codex CLI? Ahmet Furkan Aydogan has a high-impact, low-detection attack path called PMTC (Persistent MCP Tool Capture) that you need to know about.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/InsiderPhD/status/2080203807716188352" target="_blank">My brother asked me about vibe coding (he’s an aerospace engineer), and I was like “??? Just use Claude code” and it was...</a></p>
+                <div class="item-meta">
+                    
+                    @InsiderPhD · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">My brother asked me about vibe coding (he’s an aerospace engineer), and I was like “??? Just use Claude code” and it was at that moment that I realized that a full CLI just producing code as you read it is actually quite an intimidating experience for non-tech p</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2080535363207233575" target="_blank">btw if you have CLIProxyAPI set up with Claude Code + Codex auth, you can add gpt-5.6-sol to Claude Code in T3 Code with...</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 4h ago
+                    
+                </div>
+                
+                <div class="item-summary">btw if you have CLIProxyAPI set up with Claude Code + Codex auth, you can add gpt-5.6-sol to Claude Code in T3 Code with literally like 3 clicks You guys had me thinking this was going to be so hard and we literally already supported it</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/lydiahallie/status/2080378470111256907" target="_blank">btw Claude Code lets you configure your own output style! drop instructions in ~/.claude/output-styles, then run /config...</a></p>
+                <div class="item-meta">
+                    
+                    @lydiahallie · 15h ago
+                    
+                </div>
+                
+                <div class="item-summary">btw Claude Code lets you configure your own output style! drop instructions in ~/.claude/output-styles, then run /config → Output style this is the one I like to use after a long day lol.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/trq212/status/2080090919832084753" target="_blank">I&#39;m sad it took me this long to actually type /design but working on frontend with Claude Design and Claude Code is actu...</a></p>
+                <div class="item-meta">
+                    
+                    @trq212 · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;m sad it took me this long to actually type /design but working on frontend with Claude Design and Claude Code is actually so good</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/" target="_blank">Anthropic updates Claude voice mode with more capable models</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude&#39;s new voice model will let you reschedule your meeting or draft an email.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/" target="_blank">How AI guardrails are impeding the work of offensive cybersecurity researchers</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 10h ago
+                    
+                </div>
+                
+                <div class="item-summary">We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/" target="_blank">Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">&#34;I don&#39;t think you get a model this strong and this quickly on the heels of Fable doing strictly distillation,&#34; one expert told TechCrunch.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/" target="_blank">AMD takes on Nvidia with its Helios AI rack-scale system</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 14h ago
+                    
+                </div>
+                
+                <div class="item-summary">AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBleUV6and5RDlsRC1LNHMzd2xPaVVqamtRMEFocE1DcVJTaGhEeFBxMzlTYTN0Rm5oMTV2TTcwd2RMbUE5d1psUFdpOFIxdXBFbFRrakdpSWFPbW5PdVlHMTNwVmNVT2Y1aGdkSGtR?oc=5" target="_blank">Claude for Investing Teams - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 18h ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude for Investing Teams&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 17h ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything" target="_blank">The first known runaway AI agent - or a very bad marketing stunt?</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">The first known runaway AI agent - or a very bad marketing stunt? Martin Alderson&#39;s commentary on the OpenAI accidental cyberattack against Hugging Face includes a couple of details I hadn&#39;t considered.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything" target="_blank">Quoting Thomas Ptacek</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">I genuinely believe that if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI has sounder sandboxes.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything" target="_blank">OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">This story is wild. The short version: OpenAI were running a cybersecurity test against an unreleased model, with the model&#39;s guardrail features turned off.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated July 24, 2026 at 12:06
+        </footer>
+    </div>
+</body>
+</html>

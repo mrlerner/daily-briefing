@@ -1,0 +1,9 @@
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. Anthropic is developing a new Claude Code layout for Claude Desktop, with an updated model selector and an expandable us...
+2. Play chess with Jev inside Claude Code The Claude Code Chess Mod now supports your @typesafeai API key, so you can play ...
+3. Show HN: Waitwise, Replace Claude Code's spinner with anything usefull
+4. Introducing Agent Tincan. Let your AI agents ask each other for help. Your agents each have a superpower. Grok Bot is al...
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-09-27.html

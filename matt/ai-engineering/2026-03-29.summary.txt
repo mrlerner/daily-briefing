@@ -1,0 +1,11 @@
+S&P 500 closed at 6,368.85, down -1.7% (-108.31 pts).
+
+Sunny Sun — good day to be outside.
+
+Today's briefing:
+1. Anthropic shares how to make Claude code better with a harness
+2. I built a Claude Code plugin for SEO/GEO/AEO because most site audits still ignore AI search
+3. I ( &amp; claude code) built a way to turn books into explainer videos automatically
+4. Anyone using claude code for marketing apps? If yes how?
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-29.html

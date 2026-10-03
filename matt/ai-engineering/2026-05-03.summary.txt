@@ -1,0 +1,9 @@
+Sunny Sun, Mon and Tue — good days to be outside.
+
+Today's briefing:
+1. 2026 is the year of Agents OpenClaw, Claude Code, Codex and Cursor... In this video, I broke it all down with @Rasmic. C...
+2. Holy: Anthropic’s ARR has reportedly now surged past $44B, up from $9B at the end of 2025, a nearly 5x jump, or roughly ...
+3. If you've been waiting to try local AI development, please try it
+4. ICYMI: Anthropic's redesigned Claude Code desktop app lets you burn through tokens even faster
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-05-03.html

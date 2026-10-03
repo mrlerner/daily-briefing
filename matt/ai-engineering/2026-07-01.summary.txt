@@ -1,0 +1,9 @@
+Sunny Wed — good day to be outside.
+
+Today's briefing:
+1. wow 👀 Claude Code allegedly fingerprints China-linked custom routes through tiny prompt formatting changes. The claim co...
+2. Anthropic says it is rolling back a covert Claude Code tracking feature to identify users based in China or affiliated w...
+3. Quoting Anthropic
+4. Bridge between Claude Code and OpenAI's Codex CLI github.com/tuannvm/codex-…
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-07-01.html

@@ -1,0 +1,7 @@
+Today's briefing:
+1. New: Anthropic introduces a memory feature that lets users transfer their context and preferences from other AI tools into Claude
+2. Claude Status Update : Elevated errors on claude.ai, console, and claude code on 2026-03-02T12:22:12.000Z
+3. Show HN: GitAgent – Clone a repo, get an AI agent – Claude Code / OpenClaw
+4. These dudes are gonna run once they see Claude Code limits 💀
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-02.html

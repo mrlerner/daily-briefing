@@ -1,0 +1,9 @@
+S&P 500 closed at 6,740.02, down -1.3% (-90.69 pts).
+
+Today's briefing:
+1. Show HN: Apc-CLI – sync AI memory across Claude Code, Cursor, Copilot
+2. Kokoro TTS now hooked to my Claude Code CLI
+3. Claude Code /Loop – Here Are 3 Autonomous Loops for My Daily Work
+4. Codex for Open Source
+
+Full briefing: https://mrlerner.github.io/daily-briefing/matt/ai-engineering/2026-03-09.html

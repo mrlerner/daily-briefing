@@ -1,0 +1,41 @@
+{
+  "generated": "2026-06-05T12:02:09.511085+00:00",
+  "items": [],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-06-05",
+          "day": "Fri",
+          "day_full": "Friday, Jun 05",
+          "high": 60,
+          "low": 47,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-06-06",
+          "day": "Sat",
+          "day_full": "Saturday, Jun 06",
+          "high": 55,
+          "low": 45,
+          "condition": "Patchy rain nearby"
+        },
+        {
+          "date": "2026-06-07",
+          "day": "Sun",
+          "day_full": "Sunday, Jun 07",
+          "high": 64,
+          "low": 42,
+          "condition": "Fog"
+        }
+      ],
+      "highlights": [
+        "Fri"
+      ],
+      "summary_line": "Sunny Fri — good day to be outside."
+    }
+  ]
+}

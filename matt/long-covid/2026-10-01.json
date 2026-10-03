@@ -1,0 +1,67 @@
+{
+  "generated": "2026-10-01T12:03:14.745803+00:00",
+  "items": [
+    {
+      "id": "a00c3a50063f161b",
+      "title": "Research updates, September 29",
+      "url": "https://thesicktimes.org/2026/09/29/research-updates-september-29/?utm_source=rss&utm_medium=rss&utm_campaign=research-updates-september-29",
+      "source": "The Sick Times",
+      "source_type": "rss",
+      "published": "2026-09-30T01:03:34+00:00",
+      "summary": "A small clinical trial found Remdesivir was safe for people with Long COVID and that some exploratory results warrant a larger trial. The U.K. trial, which included 73 participants who took a five day course of the intravenous antiviral COVID-19 drug, was published in Oxford Open Immunology.\nThe ...",
+      "points": null,
+      "score": null,
+      "comments": null,
+      "author": null,
+      "subreddit": null,
+      "hn_url": null,
+      "likes": null,
+      "retweets": null,
+      "section": null,
+      "topics_matched": [
+        "Long COVID treatment",
+        "Clinical trials"
+      ],
+      "relevance_score": 0.45,
+      "time_ago": "1d ago",
+      "summary_short": "A small clinical trial found Remdesivir was safe for people with Long COVID and that some exploratory results warrant a larger trial. The U.K."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "weather",
+      "label": "Weather",
+      "location": "Seattle, WA",
+      "days": [
+        {
+          "date": "2026-10-01",
+          "day": "Thu",
+          "day_full": "Thursday, Oct 01",
+          "high": 62,
+          "low": 53,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-10-02",
+          "day": "Fri",
+          "day_full": "Friday, Oct 02",
+          "high": 61,
+          "low": 53,
+          "condition": "Overcast "
+        },
+        {
+          "date": "2026-10-03",
+          "day": "Sat",
+          "day_full": "Saturday, Oct 03",
+          "high": 69,
+          "low": 52,
+          "condition": "Sunny"
+        }
+      ],
+      "highlights": [
+        "Sat"
+      ],
+      "summary_line": "Sunny Sat — good day to be outside."
+    }
+  ]
+}

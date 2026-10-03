@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering — September 30, 2026</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #1a1a1a;
+            background: #fff;
+            margin: 0;
+            padding: 48px 24px;
+            line-height: 1.7;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.3px;
+        }
+        .date {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Market */
+        .market {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .market p {
+            margin: 0;
+        }
+        .market .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .market .market-line {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Weather */
+        .weather {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .weather p {
+            margin: 0;
+        }
+        .weather .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .weather .forecast {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .weather .summary {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 4px 0;
+        }
+        .item-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        .item-meta {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+        }
+        .item-meta a {
+            color: #888;
+            text-decoration: none;
+        }
+        .item-meta a:hover {
+            text-decoration: underline;
+        }
+        .item-summary {
+            font-size: 16px;
+            color: #444;
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc {
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .toc .label {
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin: 0 0 12px 0;
+        }
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .toc-list li {
+            line-height: 2;
+            font-size: 16px;
+        }
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .toc-count {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+                font-size: 17px;
+            }
+            h1 { font-size: 24px; }
+        }
+
+        @media print {
+            body { padding: 0; font-size: 11pt; }
+            .container { max-width: 100%; }
+            a { color: #1a1a1a; }
+            .toc, footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>AI Engineering</h1>
+            <div class="date">September 30, 2026</div>
+        </header>
+
+        
+        <nav class="toc">
+            <p class="label">Contents</p>
+            <ul class="toc-list">
+                
+                <li><a href="#hn">Hacker News</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#social">X &amp; Bluesky</a> <span class="toc-count">10 posts</span></li>
+                
+                <li><a href="#techcrunch">TechCrunch</a> <span class="toc-count">1 headlines</span></li>
+                
+                <li><a href="#blogs">Blogs</a> <span class="toc-count">8 headlines</span></li>
+                
+            </ul>
+        </nav>
+        
+
+        
+        
+        
+
+        
+        
+        <div class="weather" id="weather">
+            <p class="label">Weather — Seattle, WA</p>
+            <div class="forecast">
+            
+                <div>Wednesday, Sep 30: Overcast , 52–65°F</div>
+            
+                <div>Thursday, Oct 01: Overcast , 49–64°F</div>
+            
+                <div>Friday, Oct 02: Overcast , 56–71°F</div>
+            
+            </div>
+            
+            <p class="summary">Sunny Fri — good day to be outside.</p>
+            
+        </div>
+        
+        
+
+        
+        <div class="section" id="hn">
+            <h2>Hacker News</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/ahmed-alstaty/guardrails-plugin" target="_blank">Show HN: Guardrails for Claude Code: blocks rm -RF, reports what loaded</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49890579" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.ycombinator.com/item?id=49907638" target="_blank">Is Claude Code having issues?</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 3m ago
+                     · <a href="https://news.ycombinator.com/item?id=49907638" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.practicalsystems.io/blog/fable-opus-sonnet-claude-code-subagent-routing" target="_blank">Fable Decides, Opus and Sonnet Do the Work: How I Route Claude Code Subagents</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 2 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49888734" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/jaynlabs/jaynshare" target="_blank">Show HN: Share Claude Code rate-limits between friends</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 1 comments · 19h ago
+                     · <a href="https://news.ycombinator.com/item?id=49895933" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://nem035.com/thoughts/how-claude-code-works/" target="_blank">How Claude Code Works, from Tokens to Agents</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=49895593" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/jdleonruiz/estela-cli" target="_blank">Show HN: Estela – Rebuild billable hours from your Claude Code and Codex logs</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 20h ago
+                     · <a href="https://news.ycombinator.com/item?id=49895206" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://future-seems-so-good.com/blog/the-log-is-the-truth" target="_blank">Claude Code saves transcript.jsonl. The log is the truth</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 21h ago
+                     · <a href="https://news.ycombinator.com/item?id=49894071" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://github.com/quazardous/tvty" target="_blank">Terminal Velocity for Claude Code. Tickets, Loops, Focus. All in One</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49888836" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://nfltr.xyz/blog/distributed-claude-code" target="_blank">Show HN: How distributed Claude Code is built on a tunnelling service</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49888279" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://www.latent.space/p/thariq" target="_blank">Claude Code&#39;s Next Era</a></p>
+                <div class="item-meta">
+                    
+                    1 points · 0 comments · 1d ago
+                     · <a href="https://news.ycombinator.com/item?id=49887096" target="_blank">discussion</a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="social">
+            <h2>X &amp; Bluesky</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/GergelyOrosz/status/2105033276091961650" target="_blank">It&#39;s moves like this OpenAI feels to be pulling ahead of Anthropic. Anthropic is closed everything: closed source Claude...</a></p>
+                <div class="item-meta">
+                    
+                    @GergelyOrosz · 7h ago
+                    
+                </div>
+                
+                <div class="item-summary">It&#39;s moves like this OpenAI feels to be pulling ahead of Anthropic. Anthropic is closed everything: closed source Claude Code, no you cannot use other models with CC, and so on.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/Voxyz_ai/status/2104710877505089920" target="_blank">Anthropic just published a guide where they had Claude tune an AI feature round by round, and the same job ended up cost...</a></p>
+                <div class="item-meta">
+                    
+                    @Voxyz_ai · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Anthropic just published a guide where they had Claude tune an AI feature round by round, and the same job ended up costing 𝗮𝗯𝗼𝘂𝘁 𝟭/𝟱 𝗮𝘀 𝗺𝘂𝗰𝗵, with higher accuracy. You can have Claude Code follow it and put any feature in your product that calls th</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/astropol0/status/2104647161342496794" target="_blank">Sonnet 5.5 is literally free for everyone… anyone can try it on Claude Code... an Opus 5.5 level model is accessible to ...</a></p>
+                <div class="item-meta">
+                    
+                    @astropol0 · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Sonnet 5.5 is literally free for everyone… anyone can try it on Claude Code... an Opus 5.5 level model is accessible to everyone you gotta love Anthropic here..</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/arena/status/2104706256284065845" target="_blank">Claude Code vs Codex vs Pi: which coding agent wins? @melissapan, PhD candidate at UC Berkeley’s Sky Computing Lab and p...</a></p>
+                <div class="item-meta">
+                    
+                    @arena · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code vs Codex vs Pi: which coding agent wins? @melissapan, PhD candidate at UC Berkeley’s Sky Computing Lab and previous @arena intern, explored the hidden “harness tax”: how the system surrounding an AI model affects its cost and performa</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/idoubicc/status/2104895181912969644" target="_blank">Douchat is now open source 🎉 A desktop workspace where AI agents work and talk together. • Claude Code, Codex, Gemini &amp; ...</a></p>
+                <div class="item-meta">
+                    
+                    @idoubicc · 16h ago
+                    
+                </div>
+                
+                <div class="item-summary">Douchat is now open source 🎉 A desktop workspace where AI agents work and talk together. • Claude Code, Codex, Gemini &amp; more in one contact list • Group chats where agents collaborate and hand off tasks • Bring your own models • Chats &amp; memory stay</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/RLanceMartin/status/2104679933876576355" target="_blank">Claude Code can help with eval design + hillclimbing. check out this article i just published for details: https://t.co/...</a></p>
+                <div class="item-meta">
+                    
+                    @RLanceMartin · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Code can help with eval design + hillclimbing. check out this article i just published for details: https://t.co/fg3VvVwwpk</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/jarredsumner/status/2104739495895781679" target="_blank">An early preview of experimental Bun + JSC with ahead-of-time compilation For Claude Code&#39;s CLI: 24% faster startup, 48%...</a></p>
+                <div class="item-meta">
+                    
+                    @jarredsumner · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">An early preview of experimental Bun + JSC with ahead-of-time compilation For Claude Code&#39;s CLI: 24% faster startup, 48% lower memory, 46% lower CPU, and nearly 2x larger binary size</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/theo/status/2104683186215363058" target="_blank">A $200 Claude Code sub gets you ~$9,000 of Opus usage per month. I have managed to run 3 Claude accounts down to 0% sinc...</a></p>
+                <div class="item-meta">
+                    
+                    @theo · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">A $200 Claude Code sub gets you ~$9,000 of Opus usage per month. I have managed to run 3 Claude accounts down to 0% since Opus 5.5 dropped.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/bcherny/status/2104638725317923228" target="_blank">Sonnet 5.5 fixing a bug with Claude Code. 30% faster and 30% less usage.</a></p>
+                <div class="item-meta">
+                    
+                    @bcherny · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Sonnet 5.5 fixing a bug with Claude Code. 30% faster and 30% less usage.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://x.com/ClaudeDevs/status/2104676099083190435" target="_blank">Claude can now help you build evaluations and hillclimb on them. In this article, we share guidance on eval design &amp; ski...</a></p>
+                <div class="item-meta">
+                    
+                    @ClaudeDevs · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude can now help you build evaluations and hillclimb on them. In this article, we share guidance on eval design &amp; skills that Claude Code can use to improve your applications.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="techcrunch">
+            <h2>TechCrunch</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/" target="_blank">Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity</a></p>
+                <div class="item-meta">
+                    
+                    TechCrunch AI · 22h ago
+                    
+                </div>
+                
+                <div class="item-summary">In its prospectus, Anthropic just told investors it&#39;s losing tens of billions of dollars a year, but also growing like crazy, and — oh yeah — its own AI might pose an existential risk to humanity.</div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRHZqQWJnNEZtVXVNWUx1RlRacG5MLUFTcVBEb2FMZUtzMzNRdklBR0NIMERTbFppaTEyZUZrOFhWRjhMaFFPenE3eTBRX21vSlJKakwxU2Q4SzFqRXFyRDd5X1R5X2dQTUg4c0IxR2o2c09BTG9tOE5VZm1UczdHSjQyMGlPeEtqVzhzSURXb0xQbTJKVFFyQVFrTEpkMFZ1UUtPd2lTcEszMWh0NVA3SDBvcUREaVBDV1lVMUs0TzluNG0xcjk1MA?oc=5" target="_blank">Building with the Claude 5.5 Family: Choosing the Right Model and Getting More from Every Token - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 3h ago
+                    
+                </div>
+                
+                <div class="item-summary">Building with the Claude 5.5 Family: Choosing the Right Model and Getting More from Every Token&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/" target="_blank">Quoting Anthropic Frontier Red Team</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 5h ago
+                    
+                </div>
+                
+                <div class="item-summary">We evaluate several models on 100 tasks from the [internal Binary Exploitation benchmark] (selected at random), and find that GLM-5.3 develops full control flow hijacks in 4% of the trials; Claude Mythos Preview did so in 6%. Although GLM-5.3 performs below Claude Mythos Preview here, a meaningfu...</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/" target="_blank">Claude Sonnet 5.5</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Sonnet 5.5
+New Sonnet model from Anthropic today. They say it &#34;runs 30%+ faster, and costs up to 30% less for most work&#34; - it&#39;s priced the same as Sonnet 5 but appears to beat it on every benchmark, and should be cheaper to run as well.</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QeW1PdlZjMmdtNW5PQm94Nm1mN09LVFB1bk8zOE1fdTRhOG1nMUt4YnhPd0V5ZVNCWklyN0pGT29Uc2lxR3NZZjc0dG5ZaTB0dFBQNHZ3?oc=5" target="_blank">Introducing Claude Sonnet 5.5 - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Introducing Claude Sonnet 5.5&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9qV0J6eHRjNVU4N0s5TXVvN3Q1NUZ1SWt6a0dZLW9pcFppU0VhbmpFVS1NRzRTZGpyXzJseDI0S2JmcVlrTDEwUHRDSlRxYXNMNEQwUXE3TUpyTEVQT2w5RDM0RENpdw?oc=5" target="_blank">Claude Sonnet 5.5 System Card - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 1d ago
+                    
+                </div>
+                
+                <div class="item-summary">Claude Sonnet 5.5 System Card&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZOUN3YlBVMkVMVGkzNXQ0R0F4T181Z0dPSWd4QnpnMnR1M0FzckZnUDNqZ09JcG1OSUFwc2s0WkdIRTRGZlg0S015NnZjem9oUWF6MzYyYkpvTUU1OWlMZGxtbHQ?oc=5" target="_blank">What do you want from AI? - Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 11h ago
+                    
+                </div>
+                
+                <div class="item-summary">What do you want from AI?&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5" target="_blank">- Anthropic</a></p>
+                <div class="item-meta">
+                    
+                    Anthropic Blog · 2h ago
+                    
+                </div>
+                
+                <div class="item-summary">&amp;nbsp;&amp;nbsp;Anthropic</div>
+                
+            </div>
+            
+            <div class="item">
+                <p class="item-title"><a href="https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/" target="_blank">OpenAI DevDay 2026 live blog</a></p>
+                <div class="item-meta">
+                    
+                    Simon Willison · 12h ago
+                    
+                </div>
+                
+                <div class="item-summary">I&#39;m at OpenAI DevDay today, in Fort Mason, San Francisco. Same as last year I&#39;ll be live blogging the keynote and some other notes during the day.</div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <a href="#top">↑ Back to top</a><br>
+            Generated September 30, 2026 at 05:02
+        </footer>
+    </div>
+</body>
+</html>
